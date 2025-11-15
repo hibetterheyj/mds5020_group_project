@@ -415,20 +415,109 @@ plt.tight_layout()
 plt.show()
 
 # %%
-# Final insights and recommendations
+# Final insights and recommendations based on actual analysis results
 print("=== KEY INSIGHTS AND RECOMMENDATIONS ===")
-print("1. DATA IMBALANCE: Target variable is highly imbalanced")
-print("2. IMPORTANT FEATURES: Economic indicators show correlation with target")
-print("3. TEMPORAL PATTERNS: Clear monthly and daily patterns in subscription rates")
-print("4. PREVIOUS CONTACTS: Most clients were not contacted before")
-print("5. DATA QUALITY: Check for infinite values in numerical features")
-print("\nRECOMMENDATIONS:")
-print("- Use appropriate techniques for imbalanced data (SMOTE, class weights)")
-print("- Focus on economic indicators and previous campaign results")
-print("- Consider seasonal patterns in campaign timing")
-print("- Handle categorical 'unknown' values appropriately")
-print("- Clean infinite values before modeling")
 
-print("EDA completed successfully!")
+# 1. Data imbalance analysis
+target_ratio = train_df['y'].value_counts(normalize=True)
+minority_class_ratio = target_ratio.min()
+if minority_class_ratio < 0.3:
+    print(f"1. DATA IMBALANCE: Target variable is highly imbalanced (minority class: {minority_class_ratio:.1%})")
+else:
+    print(f"1. DATA BALANCE: Target variable is reasonably balanced")
+
+# 2. Feature importance based on correlation
+if 'target_correlations' in locals():
+    top_corr_features = target_correlations.index[1:4]  # Top 3 correlated features
+    print(f"2. IMPORTANT FEATURES: {', '.join(top_corr_features)} show highest correlation with target")
+else:
+    print("2. FEATURE CORRELATION: Check correlation analysis for important features")
+
+# 3. Temporal patterns
+if 'monthly_data' in locals() and len(monthly_data) > 0:
+    monthly_variation = monthly_data.max() - monthly_data.min()
+    if monthly_variation > 0.1:
+        print("3. TEMPORAL PATTERNS: Strong monthly patterns in subscription rates")
+    else:
+        print("3. TEMPORAL PATTERNS: Moderate monthly variation in subscription rates")
+
+# 4. Previous contacts analysis
+if 'contacted' in locals() and 'not_contacted' in locals():
+    contacted_ratio = contacted / (contacted + not_contacted)
+    if contacted_ratio < 0.3:
+        print(f"4. PREVIOUS CONTACTS: Most clients ({not_contacted/len(train_df)*100:.1f}%) were not contacted before")
+    else:
+        print(f"4. PREVIOUS CONTACTS: {contacted_ratio:.1%} of clients were previously contacted")
+
+# 5. Data quality issues
+data_quality_issues = []
+
+# Check for missing values
+missing_total = train_df.isnull().sum().sum()
+if missing_total > 0:
+    data_quality_issues.append(f"{missing_total} missing values")
+
+# Check for duplicates
+duplicate_count = train_df.duplicated().sum()
+if duplicate_count > 0:
+    data_quality_issues.append(f"{duplicate_count} duplicate rows")
+
+# Check for infinite values
+inf_count = 0
+for col in numerical_features:
+    if col in train_df.columns:
+        inf_count += np.isinf(train_df[col]).sum()
+if inf_count > 0:
+    data_quality_issues.append(f"{inf_count} infinite values")
+
+# Check for unknown categorical values
+unknown_total = 0
+for col in categorical_features:
+    if col in train_df.columns:
+        unknown_total += (train_df[col] == 'unknown').sum()
+if unknown_total > 0:
+    data_quality_issues.append(f"{unknown_total} 'unknown' categorical values")
+
+if data_quality_issues:
+    print(f"5. DATA QUALITY ISSUES: {', '.join(data_quality_issues)}")
+else:
+    print("5. DATA QUALITY: Good data quality with no major issues")
+
+print("\nRECOMMENDATIONS:")
+
+# Dynamic recommendations based on findings
+recommendations = []
+
+if minority_class_ratio < 0.3:
+    recommendations.append("- Use appropriate techniques for imbalanced data (SMOTE, class weights)")
+
+if 'target_correlations' in locals() and len(target_correlations) > 1:
+    recommendations.append("- Focus on highly correlated features in modeling")
+
+if monthly_variation > 0.05:
+    recommendations.append("- Consider seasonal patterns in campaign timing")
+
+if unknown_total > 0:
+    recommendations.append("- Handle categorical 'unknown' values appropriately")
+
+if inf_count > 0 or missing_total > 0:
+    recommendations.append("- Clean infinite and missing values before modeling")
+
+if duplicate_count > 0:
+    recommendations.append("- Remove duplicate rows from dataset")
+
+# Add general recommendations that are always relevant
+general_recommendations = [
+    "- Perform feature engineering based on domain insights",
+    "- Use cross-validation to evaluate model performance",
+    "- Consider ensemble methods for better generalization"
+]
+
+recommendations.extend(general_recommendations)
+
+# Print all recommendations
+for i, rec in enumerate(recommendations, 1):
+    print(rec)
+
 
 
