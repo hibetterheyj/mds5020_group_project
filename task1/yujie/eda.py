@@ -5,6 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder, StandardScaler
+import json
+import os
+from datetime import datetime
 from sklearn.model_selection import train_test_split
 import warnings
 warnings.filterwarnings('ignore')
@@ -1016,6 +1019,338 @@ recommendations.extend(general_recommendations)
 # Print all recommendations
 for i, rec in enumerate(recommendations, 1):
     print(rec)
+
+# %%
+# Export key analysis information to JSON file for feature engineering and KNN modeling preparation
+import json
+import os
+from datetime import datetime
+
+print("\n=== EXPORTING KEY ANALYSIS RESULTS TO JSON AND MARKDOWN ===\n")
+
+# Create output directory if it doesn't exist
+output_dir = '../tests/analysis_results'
+os.makedirs(output_dir, exist_ok=True)
+
+# 1. Collect key analysis information
+def collect_key_analysis_info():
+    """Collect all key analysis results for export."""
+
+    analysis_info = {}
+
+    # Basic dataset information
+    analysis_info['dataset_info'] = {
+        'training_set_shape': list(train_df.shape),
+        'test_set_shape': list(test_df.shape),
+        'missing_values_count': int(train_df.isnull().sum().sum()),
+        'duplicate_rows_count': int(train_df.duplicated().sum()),
+        'target_distribution': dict(train_df['y'].value_counts()),
+        'target_distribution_normalized': dict(train_df['y'].value_counts(normalize=True).round(4))
+    }
+
+    # Numerical features information
+    analysis_info['numerical_features'] = numerical_features
+
+    # Categorical features information
+    analysis_info['categorical_features'] = categorical_features
+
+    # Unknown features information
+    analysis_info['unknown_features'] = unknown_features
+    analysis_info['unknown_features_missing'] = {}
+    for col in unknown_features:
+        if col in train_df.columns:
+            missing_count = train_df[col].isnull().sum()
+            missing_percent = missing_count / len(train_df) * 100 if len(train_df) > 0 else 0
+            analysis_info['unknown_features_missing'][col] = {
+                'count': int(missing_count),
+                'percentage': round(missing_percent, 2)
+            }
+
+    # Feature importance from correlation
+    if 'target_correlations' in locals():
+        analysis_info['feature_correlations'] = target_correlations.head(10).to_dict()
+
+    # Mutual information scores (if available)
+    if 'mi_scores' in locals():
+        analysis_info['mutual_information_scores'] = mi_scores.head(20).to_dict()
+
+    # Data quality issues
+    analysis_info['data_quality_issues'] = data_quality_issues
+
+    # Key insights and recommendations
+    analysis_info['key_insights'] = {
+        'data_balance': f"{'Imbalanced' if minority_class_ratio < 0.3 else 'Balanced'} (minority class: {minority_class_ratio:.1%})",
+        'important_features': list(top_corr_features) if 'target_correlations' in locals() else [],
+        'temporal_patterns': 'Strong' if 'monthly_variation' in locals() and monthly_variation > 0.1 else 'Moderate'
+    }
+
+    analysis_info['recommendations'] = recommendations
+
+    # Subscription rates by feature categories (for top features)
+    analysis_info['subscription_rates_by_category'] = {}
+    for col in unknown_features[:2]:  # Just the first two to keep it manageable
+        if col in train_df.columns:
+            sub_rates = train_df.groupby(col)['y_encoded'].mean().sort_values(ascending=False)
+            analysis_info['subscription_rates_by_category'][col] = sub_rates.head(10).to_dict()
+
+    # Feature engineering suggestions
+    analysis_info['feature_engineering_suggestions'] = [
+        "Handle 'unknown' values in categorical features",
+        "Create binary feature from pdays: 'previously_contacted'",
+        "Bin age into categories (young, middle-aged, senior)",
+        "Transform skewed numerical features (campaign, previous)",
+        "Create interaction features (job × education, marital × loan)",
+        "Encode months with seasonal information",
+        "Handle high cardinality features with target encoding"
+    ]
+
+    # KNN-specific considerations
+    analysis_info['knn_modeling_considerations'] = [
+        "Standardize numerical features before KNN",
+        "Handle categorical features with appropriate encoding (one-hot for low cardinality, target for high)",
+        "Consider distance metric selection (Euclidean, Manhattan, etc.)",
+        "Tune k parameter using cross-validation",
+        "Address class imbalance for better KNN performance",
+        "Feature selection to reduce dimensionality and improve KNN efficiency"
+    ]
+
+    # Timestamp
+    analysis_info['timestamp'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    return analysis_info
+
+# 2. Export to JSON
+analysis_info = collect_key_analysis_info()
+json_output_path = os.path.join(output_dir, 'eda_analysis_results.json')
+
+with open(json_output_path, 'w', encoding='utf-8') as f:
+    # Convert numpy types to native Python types for JSON serialization
+    def convert_numpy_types(obj):
+        if isinstance(obj, np.integer):
+            return int(obj)
+        elif isinstance(obj, np.floating):
+            return float(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        elif isinstance(obj, dict):
+            return {key: convert_numpy_types(value) for key, value in obj.items()}
+        elif isinstance(obj, list):
+            return [convert_numpy_types(item) for item in obj]
+        return obj
+
+    json.dump(convert_numpy_types(analysis_info), f, indent=2, ensure_ascii=False)
+
+print(f"Key analysis results exported to JSON: {json_output_path}")
+
+# 3. Export analysis findings to Markdown file
+markdown_output_path = os.path.join(output_dir, 'eda_analysis_report.md')
+
+def generate_markdown_report():
+    """Generate a comprehensive Markdown report of EDA findings."""
+
+    # Create markdown content
+    markdown_content = []
+
+    # Header
+    markdown_content.append("# Bank Marketing Dataset - EDA Analysis Report")
+    markdown_content.append("**Generated on:** " + datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    markdown_content.append("\n## Table of Contents")
+    markdown_content.append("1. [Dataset Overview](#dataset-overview)")
+    markdown_content.append("2. [Data Quality Analysis](#data-quality-analysis)")
+    markdown_content.append("3. [Target Variable Analysis](#target-variable-analysis)")
+    markdown_content.append("4. [Feature Analysis](#feature-analysis)")
+    markdown_content.append("   - [Numerical Features](#numerical-features)")
+    markdown_content.append("   - [Categorical Features](#categorical-features)")
+    markdown_content.append("   - [Unknown Features](#unknown-features)")
+    markdown_content.append("5. [Key Findings](#key-findings)")
+    markdown_content.append("6. [Feature Engineering Recommendations](#feature-engineering-recommendations)")
+    markdown_content.append("7. [KNN Modeling Considerations](#knn-modeling-considerations)")
+    markdown_content.append("8. [Next Steps](#next-steps)")
+
+    # 1. Dataset Overview
+    markdown_content.append("\n## 1. Dataset Overview")
+    markdown_content.append("\n### Training Set")
+    markdown_content.append(f"- **Shape**: {train_df.shape[0]} rows × {train_df.shape[1]} columns")
+    markdown_content.append(f"- **Missing Values**: {train_df.isnull().sum().sum()}")
+    markdown_content.append(f"- **Duplicate Rows**: {train_df.duplicated().sum()}")
+
+    markdown_content.append("\n### Test Set")
+    markdown_content.append(f"- **Shape**: {test_df.shape[0]} rows × {test_df.shape[1]} columns")
+    markdown_content.append(f"- **Missing Values**: {test_df.isnull().sum().sum()}")
+    markdown_content.append(f"- **Duplicate Rows**: {test_df.duplicated().sum()}")
+
+    # 2. Data Quality Analysis
+    markdown_content.append("\n## 2. Data Quality Analysis")
+    if data_quality_issues:
+        markdown_content.append("\n### Issues Identified:")
+        for issue in data_quality_issues:
+            markdown_content.append(f"- {issue}")
+    else:
+        markdown_content.append("\n### No major data quality issues identified.")
+
+    # 3. Target Variable Analysis
+    markdown_content.append("\n## 3. Target Variable Analysis")
+    target_counts = train_df['y'].value_counts()
+    target_ratio = train_df['y'].value_counts(normalize=True)
+    markdown_content.append("\n### Target Distribution:")
+    markdown_content.append("| Class | Count | Percentage |")
+    markdown_content.append("|-------|-------|------------|")
+    for cls, count in target_counts.items():
+        percent = target_ratio[cls] * 100
+        markdown_content.append(f"| {cls} | {count} | {percent:.2f}% |")
+
+    balance_status = "Imbalanced" if target_ratio.min() < 0.3 else "Balanced"
+    markdown_content.append(f"\n**Data Balance Status**: {balance_status}")
+
+    # 4. Feature Analysis
+    markdown_content.append("\n## 4. Feature Analysis")
+
+    # 4.1 Numerical Features
+    markdown_content.append("\n### 4.1 Numerical Features")
+    markdown_content.append("\nList of numerical features:")
+    for feature in numerical_features:
+        markdown_content.append(f"- {feature}")
+
+    # 4.2 Categorical Features
+    markdown_content.append("\n### 4.2 Categorical Features")
+    markdown_content.append("\nList of categorical features:")
+    for feature in categorical_features:
+        if feature in train_df.columns:
+            unique_count = train_df[feature].nunique()
+            markdown_content.append(f"- {feature} ({unique_count} unique values)")
+
+    # 4.3 Unknown Features
+    markdown_content.append("\n### 4.3 Unknown Features")
+    markdown_content.append("\nMissing values in unknown features:")
+    markdown_content.append("| Feature | Missing Count | Percentage |")
+    markdown_content.append("|---------|---------------|------------|")
+    for col in unknown_features:
+        if col in train_df.columns:
+            missing_count = train_df[col].isnull().sum()
+            missing_percent = missing_count / len(train_df) * 100 if len(train_df) > 0 else 0
+            markdown_content.append(f"| {col} | {missing_count} | {missing_percent:.2f}% |")
+
+    # 5. Key Findings
+    markdown_content.append("\n## 5. Key Findings")
+
+    # Data balance
+    markdown_content.append(f"\n### 5.1 Data Balance")
+    markdown_content.append(f"- Target variable is {balance_status.lower()} with minority class representing {target_ratio.min():.1%} of the data")
+
+    # Important features
+    markdown_content.append("\n### 5.2 Important Features")
+    if 'target_correlations' in locals():
+        top_corr_features = target_correlations.index[1:4]  # Top 3 correlated features
+        markdown_content.append("Features with highest correlation to target:")
+        for i, feature in enumerate(top_corr_features, 1):
+            if feature != 'y_encoded' and feature in target_correlations:
+                correlation = target_correlations[feature]
+                markdown_content.append(f"- {i}. {feature}: {correlation:.4f}")
+
+    # Temporal patterns
+    markdown_content.append("\n### 5.3 Temporal Patterns")
+    if 'monthly_data' in locals() and len(monthly_data) > 0:
+        monthly_variation = monthly_data.max() - monthly_data.min()
+        variation_level = 'Strong' if monthly_variation > 0.1 else 'Moderate' if monthly_variation > 0.05 else 'Weak'
+        markdown_content.append(f"- {variation_level} monthly variation in subscription rates")
+        markdown_content.append(f"- Maximum rate: {monthly_data.max():.2%} (in {monthly_data.idxmax()})")
+        markdown_content.append(f"- Minimum rate: {monthly_data.min():.2%} (in {monthly_data.idxmin()})")
+
+    # Previous contacts
+    markdown_content.append("\n### 5.4 Previous Contact Analysis")
+    if 'contacted' in locals() and 'not_contacted' in locals():
+        contacted_ratio = contacted / (contacted + not_contacted) * 100
+        markdown_content.append(f"- Previously contacted: {contacted} ({contacted_ratio:.1f}%)")
+        markdown_content.append(f"- Not contacted before: {not_contacted} ({100-contacted_ratio:.1f}%)")
+
+    # Subscription rates by category
+    markdown_content.append("\n### 5.5 Subscription Rates by Category")
+    for col in unknown_features[:2]:  # First two features
+        if col in train_df.columns:
+            markdown_content.append(f"\n#### {col} Subscription Rates (Top 5):")
+            sub_rates = train_df.groupby(col)['y_encoded'].mean().sort_values(ascending=False)
+            top_rates = sub_rates.head(5)
+            for cat, rate in top_rates.items():
+                markdown_content.append(f"- {cat}: {rate:.2%}")
+
+    # 6. Feature Engineering Recommendations
+    markdown_content.append("\n## 6. Feature Engineering Recommendations")
+
+    # Missing value handling
+    markdown_content.append("\n### 6.1 Missing Value Handling")
+    markdown_content.append("- Create 'missing' category for unknown features instead of dropping data")
+    markdown_content.append("- For numerical features, consider mean/median imputation or model-based imputation")
+
+    # Categorical encoding
+    markdown_content.append("\n### 6.2 Categorical Encoding Strategies")
+    markdown_content.append("- **feature_3**: Use One-Hot Encoding or Target Encoding (low cardinality)")
+    markdown_content.append("- **feature_4** and **feature_5**: Use Target Encoding or Count Encoding (high cardinality)")
+    markdown_content.append("- Collapse rare categories: <5% for feature_3, <1% for feature_4 and feature_5")
+
+    # Feature creation
+    markdown_content.append("\n### 6.3 New Feature Creation")
+    markdown_content.append("- Create binary feature 'previously_contacted' from pdays (pdays != 999)")
+    markdown_content.append("- Bin age into meaningful categories (young, middle-aged, senior)")
+    markdown_content.append("- Create interaction features between important categorical variables")
+    markdown_content.append("- Encode month with seasonal information")
+
+    # Transformation
+    markdown_content.append("\n### 6.4 Feature Transformation")
+    markdown_content.append("- Apply log transformation to skewed numerical features (campaign, previous)")
+    markdown_content.append("- Standardize numerical features for distance-based models")
+
+    # 7. KNN Modeling Considerations
+    markdown_content.append("\n## 7. KNN Modeling Considerations")
+
+    markdown_content.append("\n### 7.1 Preprocessing Requirements")
+    markdown_content.append("- **Standardization**: Essential for KNN to treat all features equally")
+    markdown_content.append("- **Categorical Encoding**: One-hot for low cardinality, target encoding for high cardinality")
+    markdown_content.append("- **Feature Selection**: Reduce dimensionality to improve KNN performance and speed")
+
+    markdown_content.append("\n### 7.2 Model Tuning")
+    markdown_content.append("- **k parameter**: Use cross-validation to find optimal k value (start with 3, 5, 7, 11)")
+    markdown_content.append("- **Distance Metric**: Consider different metrics:")
+    markdown_content.append("  - Euclidean (default, works well for continuous features)")
+    markdown_content.append("  - Manhattan (more robust to outliers)")
+    markdown_content.append("  - Minkowski (generalization of Euclidean and Manhattan)")
+
+    markdown_content.append("\n### 7.3 Handling Imbalanced Data")
+    markdown_content.append("- Use class weights in KNN implementation if available")
+    markdown_content.append("- Consider SMOTE for oversampling minority class")
+    markdown_content.append("- Evaluate using F1-score, precision-recall AUC instead of accuracy")
+
+    markdown_content.append("\n### 7.4 Performance Optimization")
+    markdown_content.append("- Use ball trees or k-d trees for faster neighbor search")
+    markdown_content.append("- Limit feature dimensionality to improve performance")
+    markdown_content.append("- Consider PCA for dimensionality reduction if needed")
+
+    # 8. Next Steps
+    markdown_content.append("\n## 8. Next Steps")
+    markdown_content.append("\n### Immediate Actions")
+    markdown_content.append("1. Implement the recommended feature engineering steps")
+    markdown_content.append("2. Prepare the data for KNN modeling with proper preprocessing")
+    markdown_content.append("3. Perform hyperparameter tuning for KNN")
+    markdown_content.append("4. Evaluate model performance with appropriate metrics")
+
+    markdown_content.append("\n### Additional Recommendations")
+    markdown_content.append("- Compare KNN with other algorithms (Logistic Regression, Random Forest)")
+    markdown_content.append("- Consider ensemble methods to improve prediction accuracy")
+    markdown_content.append("- Perform more detailed feature selection to identify optimal feature subset")
+
+    # Footer
+    markdown_content.append("\n---")
+    markdown_content.append("\n*This report was automatically generated from the EDA analysis.*")
+
+    return '\n'.join(markdown_content)
+
+# Generate and save markdown report
+markdown_content = generate_markdown_report()
+with open(markdown_output_path, 'w', encoding='utf-8') as f:
+    f.write(markdown_content)
+
+print(f"Detailed analysis report exported to Markdown: {markdown_output_path}")
+print("\n=== EXPORT COMPLETE ===\n")
+print("Both JSON and Markdown files are ready for feature engineering and KNN modeling preparation.")
 
 
 
