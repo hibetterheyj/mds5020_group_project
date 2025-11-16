@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from data_loader import DataLoader
 from preprocessor import RobustDataPreprocessor as DataPreprocessor
-from knn_model import KNNModel
+from model_knn import KNNModel
 from results_handler import ResultsHandler
 
 def main():

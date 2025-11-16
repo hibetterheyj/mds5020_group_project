@@ -52,78 +52,112 @@ class HyperparameterTuner:
 
         # Use stratified k-fold for imbalanced data
         cv = StratifiedKFold(n_splits=cv_folds, shuffle=True, random_state=random_state)
-
-        # Special handling for k_values to ensure it stays as a list
-        # Separate k_values from other parameters if present
-        k_values = None
-        other_params = {}
         
-        for name, values in param_grid.items():
-            if name == 'k_values':
-                k_values = values  # Save k_values as a whole list
-            else:
-                other_params[name] = values
+        # Check if we need special handling for k_values (KNN-specific)
+        has_k_values = 'k_values' in param_grid
         
-        # Generate combinations only for other parameters
-        other_param_names = list(other_params.keys())
-        other_param_values_list = [other_params[name] for name in other_param_names]
-        
-        # Generate all possible parameter combinations for other parameters
-        for param_values in product(*other_param_values_list):
-            # Create parameter dictionary for this combination
-            params = dict(zip(other_param_names, param_values))
-
-            # Create a readable key for this parameter combination
-            param_key = ", ".join([f"{name}={value}" for name, value in params.items()])
-
-            # Initialize results storage for this parameter combination
-            self.tuning_results[param_key] = {}
+        if has_k_values:
+            # KNN-specific handling with k_values
+            k_values = param_grid.pop('k_values')
+            param_names = list(param_grid.keys())
+            param_values_list = [param_grid[name] for name in param_names]
             
-            # Use provided k_values or default to None (single iteration)
-            current_k_values = k_values if k_values is not None else [None]
-
-            # Iterate over k values if applicable
-            for k in current_k_values:
-                # Create model parameters for this iteration
-                model_params = params.copy()
-                if k is not None:
+            # Generate all possible parameter combinations
+            for param_values in product(*param_values_list):
+                params = dict(zip(param_names, param_values))
+                param_key = ", ".join([f"{name}={value}" for name, value in params.items()])
+                self.tuning_results[param_key] = {}
+                
+                for k in k_values:
+                    model_params = params.copy()
                     model_params['n_neighbors'] = k
-
-                try:
-                    # Create model with current parameters
-                    model = model_constructor(**model_params)
-
-                    # Perform cross-validation
-                    cv_scores = cross_val_score(model, X_train, y_train,
-                                              cv=cv, scoring=scoring, n_jobs=n_jobs)
-
-                    mean_score = np.mean(cv_scores)
-                    std_score = np.std(cv_scores)
-
-                    # Store results
-                    result_key = k if k is not None else 'single'
-                    self.tuning_results[param_key][result_key] = {
-                        'mean_score': mean_score,
-                        'std_score': std_score,
-                        'scores': cv_scores
-                    }
-
-                    # Log progress
-                    params_str = ", ".join([f"{name}={value}" for name, value in model_params.items()])
-                    print(f"{params_str}: Mean {scoring} = {mean_score:.4f} (+/- {std_score:.4f})")
-
-                    # Update best parameters if current score is better
-                    if mean_score > self.best_score:
-                        self.best_score = mean_score
-                        self.best_params = model_params.copy()
-
-                except Exception as e:
-                    print(f"Error with parameters {model_params}: {str(e)}")
-
+                    self._evaluate_model(X_train, y_train, model_constructor, model_params, 
+                                        cv, scoring, n_jobs, param_key, k)
+        else:
+            # General handling for all parameters (works for SVC, LinearSVC, etc.)
+            param_names = list(param_grid.keys())
+            param_values_list = [param_grid[name] for name in param_names]
+            
+            # Generate all possible parameter combinations
+            for param_values in product(*param_values_list):
+                model_params = dict(zip(param_names, param_values))
+                param_key = ", ".join([f"{name}={value}" for name, value in model_params.items()])
+                self.tuning_results[param_key] = {}
+                
+                # Evaluate with this parameter combination
+                self._evaluate_model(X_train, y_train, model_constructor, model_params, 
+                                    cv, scoring, n_jobs, param_key, 'single')
+        
+        # Restore k_values in param_grid for future use if it was present
+        if has_k_values:
+            param_grid['k_values'] = k_values
+            
         print(f"Best parameters: {self.best_params}")
         print(f"Best cross-validation {scoring}: {self.best_score:.4f}")
 
         return self.best_params, self.best_score
+        
+    def _evaluate_model(self, X_train, y_train, model_constructor, model_params, 
+                       cv, scoring, n_jobs, param_key, result_key):
+        """
+        Helper method to evaluate a model with given parameters and store results
+        
+        Args:
+            X_train: Training features
+            y_train: Training labels
+            model_constructor: Model constructor function
+            model_params: Model parameters
+            cv: Cross-validation strategy
+            scoring: Scoring metric
+            n_jobs: Number of parallel jobs
+            param_key: Key for parameter combination
+            result_key: Key for this specific result
+        """
+        try:
+            # Create model with current parameters
+            # Add random_state for reproducibility if supported by the model
+            if 'random_state' not in model_params and hasattr(model_constructor, '__name__'):
+                if model_constructor.__name__ in ['SVC', 'LinearSVC']:
+                    model_params['random_state'] = 42
+            
+            model = model_constructor(**model_params)
+
+            # Handle special case for LinearSVC with custom scoring
+            if hasattr(model_constructor, '__name__') and model_constructor.__name__ == 'LinearSVC':
+                from sklearn.metrics import roc_auc_score
+                
+                def custom_scorer(estimator, X, y):
+                    decision_scores = estimator.decision_function(X)
+                    return roc_auc_score(y, decision_scores)
+                
+                cv_scores = cross_val_score(model, X_train, y_train,
+                                          cv=cv, scoring=custom_scorer, n_jobs=n_jobs)
+            else:
+                # Standard cross-validation
+                cv_scores = cross_val_score(model, X_train, y_train,
+                                          cv=cv, scoring=scoring, n_jobs=n_jobs)
+
+            mean_score = np.mean(cv_scores)
+            std_score = np.std(cv_scores)
+
+            # Store results
+            self.tuning_results[param_key][result_key] = {
+                'mean_score': mean_score,
+                'std_score': std_score,
+                'scores': cv_scores
+            }
+
+            # Log progress
+            params_str = ", ".join([f"{name}={value}" for name, value in model_params.items()])
+            print(f"{params_str}: Mean {scoring} = {mean_score:.4f} (+/- {std_score:.4f})")
+
+            # Update best parameters if current score is better
+            if mean_score > self.best_score:
+                self.best_score = mean_score
+                self.best_params = model_params.copy()
+
+        except Exception as e:
+            print(f"Error with parameters {model_params}: {str(e)}")
 
     def visualize_tuning_results(self,
                                output_path: Optional[str] = None,
@@ -188,9 +222,74 @@ class HyperparameterTuner:
         # Define styles for different parameter combinations
         styles = self._get_visualization_styles()
 
-        # Plot results for each parameter combination
+        # Determine if this is KNN, SVC, or LinearSVC based on parameter keys
+        model_type = self._determine_model_type()
+
+        # Plot results based on model type
+        if model_type == 'knn':
+            self._plot_knn_results(styles, metric_name)
+        elif model_type in ['svc', 'linear_svc']:
+            self._plot_svm_results(styles, metric_name, model_type)
+        else:
+            # Default plotting for any other model type
+            self._plot_default_results(styles, metric_name, model_type)
+
+        # Highlight best parameter combination if available
+        if self.best_params:
+            self._highlight_best_parameters()
+
+        # Add plot details
+        plt.title(f'Hyperparameter Tuning Results - {model_type.upper()}')
+        
+        # Set appropriate x-label based on model type
+        if model_type == 'knn':
+            plt.xlabel('Number of Neighbors (k)')
+        elif model_type == 'svc':
+            if any('gamma' in params for params in self.tuning_results.values()):
+                plt.xlabel('Gamma Value (log scale)')
+                plt.xscale('log')
+            else:
+                plt.xlabel('C Value (log scale)')
+                plt.xscale('log')
+        elif model_type == 'linear_svc':
+            plt.xlabel('C Value (log scale)')
+            plt.xscale('log')
+        else:
+            plt.xlabel('Parameter Value')
+            
+        plt.ylabel(f'Mean {metric_name} Score')
+        plt.grid(True, linestyle='--', alpha=0.7)
+        plt.legend()
+
+        return plt.gcf()
+    
+    def _determine_model_type(self) -> str:
+        """
+        Determine the model type based on parameter keys
+        
+        Returns:
+            Model type as string ('knn', 'svc', 'linear_svc', or 'other')
+        """
+        # Check for KNN specific parameters
+        if any('weights=' in key or 'p=' in key for key in self.tuning_results.keys()):
+            return 'knn'
+        
+        # Check for SVC specific parameters
+        if any('kernel=' in key for key in self.tuning_results.keys()):
+            return 'svc'
+        
+        # Check for LinearSVC specific parameters
+        if any('penalty=' in key or 'loss=' in key for key in self.tuning_results.keys()):
+            return 'linear_svc'
+        
+        return 'other'
+    
+    def _plot_knn_results(self, styles: Dict[str, Dict[str, str]], metric_name: str) -> None:
+        """
+        Plot results specifically for KNN models
+        """
         for i, (param_key, k_results) in enumerate(self.tuning_results.items()):
-            # Check if we have multiple k values (for KNN-like models)
+            # Check if we have multiple k values
             has_multiple_ks = len(k_results) > 1 and all(k is not None for k in k_results.keys())
 
             if has_multiple_ks:
@@ -211,28 +310,160 @@ class HyperparameterTuner:
                             linestyle=style['linestyle'],
                             color=style['color'],
                             label=param_key)
-
-        # Highlight best parameter combination if available
-        if self.best_params:
-            self._highlight_best_parameters()
-
-        # Add plot details
-        plt.title(f'Hyperparameter Tuning Results')
-        plt.xlabel('Number of Neighbors (k)' if any('n_neighbors' in params for params in self.tuning_results.values()) else 'Parameter Value')
-        plt.ylabel(f'Mean {metric_name} Score')
-        plt.grid(True, linestyle='--', alpha=0.7)
-        plt.legend()
-
-        return plt.gcf()
+    
+    def _plot_svm_results(self, styles: Dict[str, Dict[str, str]], metric_name: str, model_type: str) -> None:
+        """
+        Plot results specifically for SVM models (SVC or LinearSVC)
+        """
+        # Group results by parameter groupings
+        param_groups = {}
+        
+        for param_key, results in self.tuning_results.items():
+            # For SVC, group by kernel
+            if model_type == 'svc':
+                # Extract kernel from param_key
+                kernel_match = None
+                for kernel in ['rbf', 'sigmoid']:
+                    if f'kernel={kernel}' in param_key:
+                        kernel_match = kernel
+                        break
+                
+                if kernel_match:
+                    if kernel_match not in param_groups:
+                        param_groups[kernel_match] = []
+                    # Extract C or gamma and the score
+                    param_groups[kernel_match].append((param_key, results))
+            # For LinearSVC, group by penalty and loss
+            elif model_type == 'linear_svc':
+                # Create a group key based on penalty and loss
+                group_key = param_key.split(', C=')[0]  # Get everything before C parameter
+                if group_key not in param_groups:
+                    param_groups[group_key] = []
+                param_groups[group_key].append((param_key, results))
+        
+        # Plot each parameter group
+        for group_idx, (group_key, group_data) in enumerate(param_groups.items()):
+            # Extract parameter values and scores
+            x_values = []
+            mean_scores = []
+            std_scores = []
+            
+            for param_key, results in group_data:
+                # For each result in this parameter combination
+                for result_key, metrics in results.items():
+                    # Extract C or gamma value from param_key
+                    if 'C=' in param_key:
+                        c_value = float(param_key.split('C=')[1].split(',')[0])
+                        x_values.append(c_value)
+                    elif 'gamma=' in param_key:
+                        gamma_value = float(param_key.split('gamma=')[1].split(',')[0])
+                        x_values.append(gamma_value)
+                    
+                    mean_scores.append(metrics['mean_score'])
+                    std_scores.append(metrics['std_score'])
+            
+            # Sort by x value
+            sorted_pairs = sorted(zip(x_values, mean_scores, std_scores))
+            x_values, mean_scores, std_scores = zip(*sorted_pairs)
+            
+            # Get style
+            style = styles.get(group_key, {
+                'color': f'C{group_idx}',
+                'marker': ['o', 's', '^', 'D', 'x'][group_idx % 5],
+                'linestyle': ['-', '--', '-.', ':'][group_idx % 4]
+            })
+            
+            plt.errorbar(x_values, mean_scores, yerr=std_scores,
+                        marker=style['marker'],
+                        linestyle=style['linestyle'],
+                        color=style['color'],
+                        label=group_key)
+    
+    def _plot_default_results(self, styles: Dict[str, Dict[str, str]], metric_name: str, model_type: str) -> None:
+        """
+        Default plotting for any other model type
+        """
+        for i, (param_key, results) in enumerate(self.tuning_results.items()):
+            # Extract values and scores
+            x_values = []
+            mean_scores = []
+            std_scores = []
+            
+            for result_key, metrics in results.items():
+                if result_key != 'single':
+                    x_values.append(result_key)
+                    mean_scores.append(metrics['mean_score'])
+                    std_scores.append(metrics['std_score'])
+            
+            if x_values:  # Only plot if we have data
+                # Get style
+                style = styles.get(param_key, {
+                    'color': f'C{i}',
+                    'marker': ['o', 's', '^', 'D', 'x'][i % 5],
+                    'linestyle': ['-', '--', '-.', ':'][i % 4]
+                })
+                
+                plt.errorbar(x_values, mean_scores, yerr=std_scores,
+                            marker=style['marker'],
+                            linestyle=style['linestyle'],
+                            color=style['color'],
+                            label=param_key)
+    
+    def _highlight_best_parameters(self) -> None:
+        """
+        Highlight the best parameter combination on the plot
+        Enhanced to work with different model types
+        """
+        # Find the parameter combination and key for the best score
+        best_param_key = None
+        best_key = None
+        
+        # Create a flat dictionary to find the best combination
+        for param_key, results in self.tuning_results.items():
+            for key, metrics in results.items():
+                if metrics['mean_score'] == self.best_score:
+                    best_param_key = param_key
+                    best_key = key
+                    break
+            if best_param_key:
+                break
+        
+        if best_param_key and best_key is not None:
+            best_score = self.tuning_results[best_param_key][best_key]['mean_score']
+            
+            # Determine x-value for highlighting based on model type
+            x_value = None
+            
+            # Check if best_key is a number (for KNN k values)
+            if isinstance(best_key, (int, float)):
+                x_value = best_key
+            # For SVC/LinearSVC, extract C or gamma from best_params
+            elif 'C' in self.best_params:
+                x_value = self.best_params['C']
+            elif 'gamma' in self.best_params:
+                x_value = self.best_params['gamma']
+            
+            if x_value is not None:
+                plt.scatter([x_value], [best_score], color='red', s=150, marker='*',
+                            label=f'Best: {best_param_key}')
 
     def _get_visualization_styles(self) -> Dict[str, Dict[str, str]]:
         """Define visualization styles for common parameter combinations"""
         # Default styles for common parameter combinations
         default_styles = {
+            # KNN styles
             'weights=uniform, p=1': {'color': 'blue', 'marker': 'o', 'linestyle': '-'},
             'weights=uniform, p=2': {'color': 'blue', 'marker': 's', 'linestyle': '--'},
             'weights=distance, p=1': {'color': 'green', 'marker': '^', 'linestyle': '-'},
-            'weights=distance, p=2': {'color': 'green', 'marker': 'D', 'linestyle': '--'}
+            'weights=distance, p=2': {'color': 'green', 'marker': 'D', 'linestyle': '--'},
+            # SVC styles
+            'kernel=rbf': {'color': 'red', 'marker': 'o', 'linestyle': '-'},
+            'kernel=sigmoid': {'color': 'purple', 'marker': 's', 'linestyle': '--'},
+            # LinearSVC styles
+            'penalty=l1, loss=hinge': {'color': 'orange', 'marker': '^', 'linestyle': '-'},
+            'penalty=l1, loss=squared_hinge': {'color': 'orange', 'marker': 'D', 'linestyle': '--'},
+            'penalty=l2, loss=hinge': {'color': 'brown', 'marker': 'x', 'linestyle': '-'},
+            'penalty=l2, loss=squared_hinge': {'color': 'brown', 'marker': '+', 'linestyle': '--'}
         }
         return default_styles
 
