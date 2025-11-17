@@ -33,7 +33,7 @@ def main():
         X_train_processed = preprocessor.preprocess_train(X_train)
         X_test_processed = preprocessor.preprocess_test(X_test)
 
-        # 3. Train KNN model
+        # 3. Train KNN model (using GridSearchCV for hyperparameter tuning)
         knn_model = KNNModel()
         # 设置保存结果的路径和格式
         results_file_path = "../yujie/res/knn_tuning_results.json"

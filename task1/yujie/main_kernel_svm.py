@@ -37,7 +37,7 @@ def main():
         X_train_processed = preprocessor.preprocess_train(X_train)
         X_test_processed = preprocessor.preprocess_test(X_test)
 
-        # 3. Train Kernel SVM model (SVC)
+        # 3. Train Kernel SVM model (SVC) - using GridSearchCV for hyperparameter tuning
         kernel_svm_model = KernelSVMModel()
         # 设置保存结果的路径和格式
         results_file_path = "../yujie/res/kernel_svm_tuning_results.json"

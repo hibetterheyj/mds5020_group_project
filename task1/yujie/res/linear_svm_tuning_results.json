@@ -3,8 +3,8 @@
     "parameters": {
       "penalty": "l2",
       "loss": "hinge",
-      "C": 0.001,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 0
     },
     "metrics": {
       "mean_score": 0.7046244678588198,
@@ -22,8 +22,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "hinge",
-      "C": 0.01,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6820052249409271,
+      "std_score": 0.014845270334434033,
+      "scores": [
+        0.6640065729729729,
+        0.7001235273735273,
+        0.6649608454608456,
+        0.6932917532917533,
+        0.6876434256055363
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6684873659591346,
+      "std_score": 0.009767172520816044,
+      "scores": [
+        0.6588571675675676,
+        0.6760417532917533,
+        0.6545415800415801,
+        0.6779726264726265,
+        0.6750237024221453
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
     },
     "metrics": {
       "mean_score": 0.6567563594579726,
@@ -41,8 +79,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "hinge",
-      "C": 0.1,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6674658907740746,
+      "std_score": 0.025542794457274157,
+      "scores": [
+        0.6234150054054053,
+        0.7031668399168399,
+        0.667963270963271,
+        0.6685589050589051,
+        0.6742254325259516
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6057008062019965,
+      "std_score": 0.01698215717083986,
+      "scores": [
+        0.5763199999999999,
+        0.6123314275814276,
+        0.6288225918225918,
+        0.6053083853083854,
+        0.6057216262975779
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
     },
     "metrics": {
       "mean_score": 0.6010805307773358,
@@ -60,8 +136,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "hinge",
-      "C": 1,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6682327729978155,
+      "std_score": 0.011139293900465438,
+      "scores": [
+        0.6641715891891892,
+        0.664244455994456,
+        0.6620696465696465,
+        0.6603551628551628,
+        0.6903230103806228
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7099952797634685,
+      "std_score": 0.051741680490743375,
+      "scores": [
+        0.6120707459459459,
+        0.7499800762300762,
+        0.7033298683298683,
+        0.736524255024255,
+        0.7480714532871973
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 1
     },
     "metrics": {
       "mean_score": 0.6693175599945327,
@@ -79,8 +193,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "hinge",
-      "C": 10,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 2
+    },
+    "metrics": {
+      "mean_score": 0.6782342582560842,
+      "std_score": 0.06390928493144384,
+      "scores": [
+        0.7340630486486487,
+        0.7198033610533611,
+        0.7046375606375607,
+        0.5562643797643798,
+        0.6764029411764705
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 5
+    },
+    "metrics": {
+      "mean_score": 0.6861808062745098,
+      "std_score": 0.0511896766245327,
+      "scores": [
+        0.716652627027027,
+        0.7292219334719335,
+        0.6683295218295218,
+        0.5933381843381843,
+        0.7233617647058824
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 10
     },
     "metrics": {
       "mean_score": 0.7046313126898738,
@@ -98,8 +250,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "hinge",
-      "C": 100,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 20
+    },
+    "metrics": {
+      "mean_score": 0.7263810107220875,
+      "std_score": 0.005763479581562396,
+      "scores": [
+        0.7229716756756758,
+        0.7310424462924463,
+        0.7184667359667359,
+        0.7346063756063755,
+        0.7248178200692041
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 50
+    },
+    "metrics": {
+      "mean_score": 0.6873190119699684,
+      "std_score": 0.05445682533008703,
+      "scores": [
+        0.6508471351351353,
+        0.7389579002079002,
+        0.6071115731115732,
+        0.6860561330561331,
+        0.7536223183391003
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 100
     },
     "metrics": {
       "mean_score": 0.6773316342598441,
@@ -115,10 +305,314 @@
   },
   {
     "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 1
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 2
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 5
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 10
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 20
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 50
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "n_neighbors": 100
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
       "penalty": "l2",
       "loss": "squared_hinge",
-      "C": 0.001,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 0
     },
     "metrics": {
       "mean_score": 0.7742062619047688,
@@ -136,8 +630,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "squared_hinge",
-      "C": 0.01,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7796173636795698,
+      "std_score": 0.008789197135091558,
+      "scores": [
+        0.7770188108108108,
+        0.7913570686070687,
+        0.7653374913374913,
+        0.7856909216909217,
+        0.7786825259515571
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7839293646632951,
+      "std_score": 0.008019982071318009,
+      "scores": [
+        0.7836952216216216,
+        0.7937073804573804,
+        0.7694223839223838,
+        0.7851524601524602,
+        0.7876693771626296
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
     },
     "metrics": {
       "mean_score": 0.784573758265436,
@@ -155,8 +687,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "squared_hinge",
-      "C": 0.1,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7844638292849144,
+      "std_score": 0.008510397261937945,
+      "scores": [
+        0.7856501621621623,
+        0.7936997574497574,
+        0.7692137907137908,
+        0.7829275814275815,
+        0.7908278546712801
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.784916006054668,
+      "std_score": 0.007489264405922211,
+      "scores": [
+        0.7855380756756757,
+        0.7935944213444213,
+        0.7722366597366598,
+        0.7822311157311157,
+        0.7909797577854671
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
     },
     "metrics": {
       "mean_score": 0.7836422124230804,
@@ -174,8 +744,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "squared_hinge",
-      "C": 1,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7766020706780137,
+      "std_score": 0.013137898114847,
+      "scores": [
+        0.7830880864864865,
+        0.7903615731115732,
+        0.771567914067914,
+        0.7846583506583507,
+        0.753334429065744
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7752733354051417,
+      "std_score": 0.013987504489095762,
+      "scores": [
+        0.7593167567567568,
+        0.7877361399861399,
+        0.7573555093555094,
+        0.782975744975745,
+        0.7889825259515572
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 1
     },
     "metrics": {
       "mean_score": 0.7614487813038484,
@@ -193,8 +801,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "squared_hinge",
-      "C": 10,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 2
+    },
+    "metrics": {
+      "mean_score": 0.7241471562088785,
+      "std_score": 0.05688482681706554,
+      "scores": [
+        0.7597775567567567,
+        0.6155770963270963,
+        0.7184909909909909,
+        0.7624989604989604,
+        0.7643911764705883
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 5
+    },
+    "metrics": {
+      "mean_score": 0.7467064253324606,
+      "std_score": 0.026691951510977408,
+      "scores": [
+        0.7446355027027027,
+        0.7738525641025642,
+        0.6971836451836452,
+        0.7530246015246015,
+        0.764835813148789
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 10
     },
     "metrics": {
       "mean_score": 0.6912882243400068,
@@ -212,8 +858,46 @@
     "parameters": {
       "penalty": "l2",
       "loss": "squared_hinge",
-      "C": 100,
-      "dual": "True"
+      "dual": "True",
+      "n_neighbors": 20
+    },
+    "metrics": {
+      "mean_score": 0.6758367411733053,
+      "std_score": 0.07966169946256468,
+      "scores": [
+        0.5260118486486487,
+        0.7634800762300762,
+        0.7084050589050588,
+        0.6977817047817048,
+        0.6835050173010381
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 50
+    },
+    "metrics": {
+      "mean_score": 0.676227939021694,
+      "std_score": 0.04535579281402884,
+      "scores": [
+        0.6195943783783784,
+        0.7392766805266805,
+        0.6322938322938323,
+        0.6796708246708247,
+        0.7103039792387542
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 100
     },
     "metrics": {
       "mean_score": 0.6713271112652179,
@@ -224,6 +908,310 @@
         0.6207716562716563,
         0.6722033957033957,
         0.7073621107266437
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 1
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 2
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 5
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 10
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 20
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 50
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "n_neighbors": 100
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
       ]
     }
   }

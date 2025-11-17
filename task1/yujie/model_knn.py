@@ -15,26 +15,27 @@ class KNNModel:
 
     def tune_hyperparameters(self, X_train, y_train, cv_folds=5, save_results=False,
                            results_file_path=None, export_format='csv'):
-        """Find best k parameter, weights parameter, and p parameter using cross-validation"""
+        """Find best k parameter, weights parameter, and p parameter using GridSearchCV for improved efficiency"""
         # Initialize hyperparameter tuner
         self.tuner = HyperparameterTuner()
 
         # Define parameter grid
         param_grid = {
-            'k_values': [i for i in range(3, 50, 2)],  # List of k values to try
+            'k_values': [i for i in range(3, 40, 2)],  # List of k values to try
             'weights': ['uniform', 'distance'],
             'p': [1, 2]  # p=1: Manhattan distance, p=2: Euclidean distance
         }
 
-        # Tune hyperparameters
-        print("Tuning KNN hyperparameters...")
-        best_params, best_score = self.tuner.tune_parameters(
+        # Tune hyperparameters using GridSearchCV for better efficiency
+        print("Tuning KNN hyperparameters with GridSearchCV...")
+        best_params, best_score = self.tuner.tune_parameters_with_gridsearch(
             X_train=X_train,
             y_train=y_train,
             model_constructor=KNeighborsClassifier,
             param_grid=param_grid,
             cv_folds=cv_folds,
             scoring='roc_auc',
+            n_jobs=-2,  # Use all but one CPU cores
             save_results=save_results,
             results_file_path=results_file_path,
             export_format=export_format

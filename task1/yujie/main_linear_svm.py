@@ -37,10 +37,10 @@ def main():
         X_train_processed = preprocessor.preprocess_train(X_train)
         X_test_processed = preprocessor.preprocess_test(X_test)
 
-        # 3. Train Linear SVM model (LinearSVC)
+        # 3. Train Linear SVM model (LinearSVC) - using GridSearchCV for hyperparameter tuning
         linear_svm_model = LinearSVMModel()
         # 设置保存结果的路径和格式
-        results_file_path = "linear_svm_tuning_results.json"
+        results_file_path = "../yujie/res/linear_svm_tuning_results.json"
         linear_svm_model.train(X_train_processed, y_train, cv_folds=5,
                               save_results=True,
                               results_file_path=results_file_path,

@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 from model_knn import KNNModel
-from model_svm import SVMModel
+from model_kernel_svm import KernelSVMModel
+from model_linear_svm import LinearSVMModel
 import os
 
 # 创建一个简单的测试数据集
@@ -15,19 +16,18 @@ def create_test_data(n_samples=100, n_features=10, random_state=42):
 
 # 测试KNN模型的参数调优和CSV导出
 def test_knn_model():
-    print("===== 测试KNN模型 ====")
+    print("===== 测试KNN模型 =====")
     X, y = create_test_data()
-    
+
     # 创建KNN模型实例
     knn_model = KNNModel()
-    
-    # 运行参数调优并导出CSV结果
-    print("\n测试CSV格式导出:")
-    knn_model.tune_hyperparameters(X, y, cv_folds=3, save_results=True, 
-                                 export_format='csv')
-    
-    # 检查CSV文件是否生成
-    csv_path = "./hyperparameter_tuning_data.csv"
+
+    # 运行参数调优 (使用GridSearchCV)
+    csv_path = "../tests/hyperparameter_tuning_data.csv"
+    print("\n测试KNN模型使用GridSearchCV:")
+    knn_model.tune_hyperparameters(X, y, cv_folds=3, save_results=True,
+                                 export_format='csv', results_file_path=csv_path)
+
     if os.path.exists(csv_path):
         print(f"\nCSV文件生成成功: {csv_path}")
         # 读取并显示CSV文件的前几行
@@ -37,14 +37,13 @@ def test_knn_model():
         print(df.head())
     else:
         print(f"错误: CSV文件 {csv_path} 未生成")
-    
+
     # 测试JSON格式导出
+    json_path = "../tests/hyperparameter_tuning_data.json"
     print("\n测试JSON格式导出:")
-    knn_model.tune_hyperparameters(X, y, cv_folds=3, save_results=True, 
-                                 export_format='json')
-    
-    # 检查JSON文件是否生成
-    json_path = "./hyperparameter_tuning_data.json"
+    knn_model.tune_hyperparameters(X, y, cv_folds=3, save_results=True,
+                                 export_format='json', results_file_path=json_path)
+
     if os.path.exists(json_path):
         print(f"\nJSON文件生成成功: {json_path}")
         # 读取并显示JSON文件的前几项
@@ -60,21 +59,44 @@ def test_knn_model():
     else:
         print(f"错误: JSON文件 {json_path} 未生成")
 
-# 测试SVM模型的参数调优和导出
-def test_svm_model():
-    print("\n===== 测试SVM模型 ====")
+# 测试Kernel SVM模型的参数调优和导出
+def test_kernel_svm_model():
+    print("\n===== 测试Kernel SVM模型 =====")
     X, y = create_test_data()
-    
-    # 创建SVM模型实例
-    svm_model = SVMModel()
-    
-    # 运行参数调优并导出CSV结果
-    print("\n测试SVC模型CSV格式导出:")
-    svm_model.tune_hyperparameters(X, y, cv_folds=3, model_type='svc',
-                                save_results=True, export_format='csv')
-    
-    # 检查CSV文件是否生成
-    csv_path = "./hyperparameter_tuning_data.csv"
+
+    # 创建Kernel SVM模型实例
+    kernel_svm_model = KernelSVMModel()
+
+    # 运行参数调优 (使用GridSearchCV)
+    print("\n测试Kernel SVM模型使用GridSearchCV:")
+    csv_path = "../tests/hyperparameter_tuning_data.csv"
+    kernel_svm_model.tune_hyperparameters(X, y, cv_folds=3,
+                                       save_results=True, export_format='csv', results_file_path=csv_path)
+
+    if os.path.exists(csv_path):
+        print(f"\nCSV文件生成成功: {csv_path}")
+        # 读取并显示CSV文件的信息
+        df = pd.read_csv(csv_path)
+        print(f"CSV文件形状: {df.shape}")
+        print("CSV文件前几行:")
+        print(df.head())
+    else:
+        print(f"错误: CSV文件 {csv_path} 未生成")
+
+# 测试Linear SVM模型的参数调优和导出
+def test_linear_svm_model():
+    print("\n===== 测试Linear SVM模型 =====")
+    X, y = create_test_data()
+
+    # 创建Linear SVM模型实例
+    linear_svm_model = LinearSVMModel()
+
+    # 运行参数调优 (使用GridSearchCV)
+    print("\n测试Linear SVM模型使用GridSearchCV:")
+    csv_path = "../tests/hyperparameter_tuning_data.csv"
+    linear_svm_model.tune_hyperparameters(X, y, cv_folds=3,
+                                        save_results=True, export_format='csv', results_file_path=csv_path)
+
     if os.path.exists(csv_path):
         print(f"\nCSV文件生成成功: {csv_path}")
         # 读取并显示CSV文件的信息
@@ -86,10 +108,16 @@ def test_svm_model():
         print(f"错误: CSV文件 {csv_path} 未生成")
 
 if __name__ == "__main__":
+    print("开始测试GridSearchCV超参数调优功能...")
+
     # 测试KNN模型
     test_knn_model()
-    
-    # 测试SVM模型
-    test_svm_model()
-    
+
+    # 测试Kernel SVM模型
+    test_kernel_svm_model()
+
+    # 测试Linear SVM模型
+    test_linear_svm_model()
+
     print("\n===== 测试完成 =====")
+    print("所有模型已使用GridSearchCV进行超参数调优测试")

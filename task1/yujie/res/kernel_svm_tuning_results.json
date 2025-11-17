@@ -2,9 +2,9 @@
   {
     "parameters": {
       "kernel": "rbf",
-      "C": 0.001,
       "gamma": "1e-05",
-      "probability": "True"
+      "probability": "True",
+      "n_neighbors": 0
     },
     "metrics": {
       "mean_score": 0.6069220099671244,
@@ -21,28 +21,9 @@
   {
     "parameters": {
       "kernel": "rbf",
-      "C": 0.001,
-      "gamma": 0.1,
-      "probability": "True"
-    },
-    "metrics": {
-      "mean_score": 0.6763773761073504,
-      "std_score": 0.01946058974743427,
-      "scores": [
-        0.6760102054054055,
-        0.6992766805266805,
-        0.6405855855855855,
-        0.6827855162855163,
-        0.683228892733564
-      ]
-    }
-  },
-  {
-    "parameters": {
-      "kernel": "rbf",
-      "C": 100,
       "gamma": "1e-05",
-      "probability": "True"
+      "probability": "True",
+      "n_neighbors": 100
     },
     "metrics": {
       "mean_score": 0.682112997274517,
@@ -58,29 +39,10 @@
   },
   {
     "parameters": {
-      "kernel": "rbf",
-      "C": 100,
-      "gamma": 0.1,
-      "probability": "True"
-    },
-    "metrics": {
-      "mean_score": 0.6729614737723937,
-      "std_score": 0.01053000883484237,
-      "scores": [
-        0.6727482810810812,
-        0.6856020443520444,
-        0.6576185031185032,
-        0.6832203742203743,
-        0.6656181660899654
-      ]
-    }
-  },
-  {
-    "parameters": {
       "kernel": "sigmoid",
-      "C": 0.001,
       "gamma": "1e-05",
-      "probability": "True"
+      "probability": "True",
+      "n_neighbors": 0
     },
     "metrics": {
       "mean_score": 0.6840281476485696,
@@ -97,9 +59,66 @@
   {
     "parameters": {
       "kernel": "sigmoid",
-      "C": 0.001,
+      "gamma": "1e-05",
+      "probability": "True",
+      "n_neighbors": 100
+    },
+    "metrics": {
+      "mean_score": 0.7034871848992031,
+      "std_score": 0.011407839140542437,
+      "scores": [
+        0.6981867243243243,
+        0.7219662162162163,
+        0.689559598059598,
+        0.6972713097713097,
+        0.7104520761245674
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "kernel": "rbf",
       "gamma": 0.1,
-      "probability": "True"
+      "probability": "True",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6763773761073504,
+      "std_score": 0.01946058974743427,
+      "scores": [
+        0.6760102054054055,
+        0.6992766805266805,
+        0.6405855855855855,
+        0.6827855162855163,
+        0.683228892733564
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "kernel": "rbf",
+      "gamma": 0.1,
+      "probability": "True",
+      "n_neighbors": 100
+    },
+    "metrics": {
+      "mean_score": 0.6729614737723937,
+      "std_score": 0.01053000883484237,
+      "scores": [
+        0.6727482810810812,
+        0.6856020443520444,
+        0.6576185031185032,
+        0.6832203742203743,
+        0.6656181660899654
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "kernel": "sigmoid",
+      "gamma": 0.1,
+      "probability": "True",
+      "n_neighbors": 0
     },
     "metrics": {
       "mean_score": 0.545386666488261,
@@ -116,28 +135,9 @@
   {
     "parameters": {
       "kernel": "sigmoid",
-      "C": 100,
-      "gamma": "1e-05",
-      "probability": "True"
-    },
-    "metrics": {
-      "mean_score": 0.7034871848992031,
-      "std_score": 0.011407839140542437,
-      "scores": [
-        0.6981867243243243,
-        0.7219662162162163,
-        0.689559598059598,
-        0.6972713097713097,
-        0.7104520761245674
-      ]
-    }
-  },
-  {
-    "parameters": {
-      "kernel": "sigmoid",
-      "C": 100,
       "gamma": 0.1,
-      "probability": "True"
+      "probability": "True",
+      "n_neighbors": 100
     },
     "metrics": {
       "mean_score": 0.5132133801799884,

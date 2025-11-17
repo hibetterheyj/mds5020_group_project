@@ -37,21 +37,22 @@ class LinearSVMModel:
         # For l1 penalty, must use dual=False
         # For hinge loss with l2 penalty, must use dual=True
         param_grid = {
-            'penalty': ['l2'],  # Remove l1 for simplicity
+            'penalty': ['l2', 'l1'],
             'loss': ['hinge', 'squared_hinge'],
-            'C': [0.001, 0.01, 0.1, 1, 10, 100],
+            'C': [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100],
             'dual': [True]  # For l2 penalty with hinge loss, dual must be True
         }
 
-        # Tune hyperparameters
-        print("Tuning LinearSVC hyperparameters...")
-        best_params, best_score = self.tuner.tune_parameters(
+        # Tune hyperparameters using GridSearchCV for better efficiency
+        print("Tuning LinearSVC hyperparameters with GridSearchCV...")
+        best_params, best_score = self.tuner.tune_parameters_with_gridsearch(
             X_train=X_train,
             y_train=y_train,
             model_constructor=LinearSVC,
             param_grid=param_grid,
             cv_folds=cv_folds,
             scoring='roc_auc',
+            n_jobs=-2,  # Use all but one CPU cores
             save_results=save_results,
             results_file_path=results_file_path,
             export_format=export_format
