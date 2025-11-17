@@ -35,8 +35,10 @@ class KernelSVMModel:
         # Define parameter grid for SVC with RBF and Sigmoid kernels
         param_grid = {
             'kernel': ['rbf', 'sigmoid'],
-            'C': [0.001, 0.01, 0.1, 1, 10, 100],
-            'gamma': [0.00001, 0.0001, 0.001, 0.01, 0.1],
+            # 'C': [0.001, 100], # for fast test
+            # 'gamma': [0.00001, 0.1], # for fast test
+            'C': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100, 500, 1000],
+            'gamma': [0.00001, 0.0005, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1.0],
             'probability': [True]  # Enable probability estimates
         }
 
@@ -60,14 +62,14 @@ class KernelSVMModel:
         return best_params
 
     def train(self, X_train, y_train, cv_folds=5,
-             save_results=False, results_file_path=None, export_format='csv'):
+             save_results=True, results_file_path=None, export_format='csv'):
         """Train SVC model with best parameters
 
         Args:
             X_train: Training features
             y_train: Training labels
             cv_folds: Number of cross-validation folds
-            save_results: Whether to save tuning results
+            save_results: Whether to save tuning results (default: True)
             results_file_path: Path to save results file
             export_format: Format to export results ('csv' or 'json')
 
@@ -75,6 +77,11 @@ class KernelSVMModel:
             Trained model
         """
         print("Training SVC model...")
+
+        # Set default results file path if not provided
+        if save_results and results_file_path is None:
+            results_file_path = f"kernel_svm_tuning_results.{export_format}"
+            print(f"Using default results path: {results_file_path}")
 
         # Find best parameters
         best_params = self.tune_hyperparameters(X_train, y_train, cv_folds,

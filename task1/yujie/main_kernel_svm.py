@@ -39,7 +39,12 @@ def main():
 
         # 3. Train Kernel SVM model (SVC)
         kernel_svm_model = KernelSVMModel()
-        kernel_svm_model.train(X_train_processed, y_train, cv_folds=5)
+        # 设置保存结果的路径和格式
+        results_file_path = "../yujie/res/kernel_svm_tuning_results.json"
+        kernel_svm_model.train(X_train_processed, y_train, cv_folds=5,
+                             save_results=True,
+                             results_file_path=results_file_path,
+                             export_format='json')
 
         # 4. Generate predictions
         predictions = kernel_svm_model.predict_proba(X_test_processed)
@@ -54,8 +59,8 @@ def main():
 
         # 7. Generate and save hyperparameter tuning visualization
         try:
-            visualization_path = "../yujie/kernel_svm_hyperparameter_tuning.png"
-            json_path = "../yujie/kernel_svm_hyperparameter_tuning_data.json"
+            visualization_path = "../yujie/res/kernel_svm_hyperparameter_tuning.png"
+            json_path = "../yujie/res/kernel_svm_hyperparameter_tuning_data.json"
             kernel_svm_model.visualize_hyperparameter_tuning(visualization_path, results_output_path=json_path)
             print(f"Hyperparameter tuning visualization generated and saved to {visualization_path}")
         except Exception as viz_error:

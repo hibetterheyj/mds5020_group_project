@@ -13,7 +13,7 @@ class KNNModel:
         self.best_params = None
         self.cv_auc_scores = None
 
-    def tune_hyperparameters(self, X_train, y_train, cv_folds=5, save_results=False, 
+    def tune_hyperparameters(self, X_train, y_train, cv_folds=5, save_results=False,
                            results_file_path=None, export_format='csv'):
         """Find best k parameter, weights parameter, and p parameter using cross-validation"""
         # Initialize hyperparameter tuner
@@ -50,7 +50,7 @@ class KNNModel:
 
         return best_k, best_weights, best_p
 
-    def train(self, X_train, y_train, cv_folds=5, save_results=True, 
+    def train(self, X_train, y_train, cv_folds=5, save_results=True,
              results_file_path=None, export_format='csv'):
         """Train KNN model with best parameters"""
         print("Training KNN model...")
@@ -111,7 +111,7 @@ class KNNModel:
             'all_scores': self.cv_auc_scores.tolist()
         }
 
-    def visualize_hyperparameter_tuning(self, output_path=None, save_results=False, 
+    def visualize_hyperparameter_tuning(self, output_path=None, save_results=False,
                                        results_output_path=None, export_format='csv'):
         """Visualize the hyperparameter tuning results using the HyperparameterTuner"""
         if not hasattr(self, 'tuner'):

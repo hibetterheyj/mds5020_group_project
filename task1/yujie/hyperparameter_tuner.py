@@ -406,20 +406,34 @@ class HyperparameterTuner:
         param_groups = {}
         
         for param_key, results in self.tuning_results.items():
-            # For SVC, group by kernel
+            # For SVC, group by kernel and gamma
             if model_type == 'svc':
-                # Extract kernel from param_key
+                # Extract kernel and gamma from param_key
                 kernel_match = None
+                gamma_match = None
+                
+                # Extract kernel
                 for kernel in ['rbf', 'sigmoid']:
                     if f'kernel={kernel}' in param_key:
                         kernel_match = kernel
                         break
                 
+                # Extract gamma
+                if 'gamma=' in param_key:
+                    gamma_value = param_key.split('gamma=')[1].split(',')[0]
+                    gamma_match = f"gamma={gamma_value}"
+                
                 if kernel_match:
-                    if kernel_match not in param_groups:
-                        param_groups[kernel_match] = []
+                    # Create a group key that includes both kernel and gamma
+                    if gamma_match:
+                        group_key = f"kernel={kernel_match}, {gamma_match}"
+                    else:
+                        group_key = f"kernel={kernel_match}"
+                    
+                    if group_key not in param_groups:
+                        param_groups[group_key] = []
                     # Extract C or gamma and the score
-                    param_groups[kernel_match].append((param_key, results))
+                    param_groups[group_key].append((param_key, results))
             # For LinearSVC, group by penalty and loss
             elif model_type == 'linear_svc':
                 # Create a group key based on penalty and loss
@@ -543,7 +557,18 @@ class HyperparameterTuner:
             'weights=uniform, p=2': {'color': 'blue', 'marker': 's', 'linestyle': '--'},
             'weights=distance, p=1': {'color': 'green', 'marker': '^', 'linestyle': '-'},
             'weights=distance, p=2': {'color': 'green', 'marker': 'D', 'linestyle': '--'},
-            # SVC styles
+            # SVC styles with gamma variations - using different shades for different gamma values
+            'kernel=rbf, gamma=0.00001': {'color': 'darkred', 'marker': 'o', 'linestyle': '-'},
+            'kernel=rbf, gamma=0.0001': {'color': 'red', 'marker': 'o', 'linestyle': '--'},
+            'kernel=rbf, gamma=0.001': {'color': 'lightcoral', 'marker': 'o', 'linestyle': '-.'},
+            'kernel=rbf, gamma=0.01': {'color': 'salmon', 'marker': 'o', 'linestyle': ':'},
+            'kernel=rbf, gamma=0.1': {'color': 'indianred', 'marker': 'o', 'linestyle': '-'},
+            'kernel=sigmoid, gamma=0.00001': {'color': 'darkpurple', 'marker': 's', 'linestyle': '-'},
+            'kernel=sigmoid, gamma=0.0001': {'color': 'purple', 'marker': 's', 'linestyle': '--'},
+            'kernel=sigmoid, gamma=0.001': {'color': 'violet', 'marker': 's', 'linestyle': '-.'},
+            'kernel=sigmoid, gamma=0.01': {'color': 'plum', 'marker': 's', 'linestyle': ':'},
+            'kernel=sigmoid, gamma=0.1': {'color': 'orchid', 'marker': 's', 'linestyle': '-'},
+            # Fallback SVC styles
             'kernel=rbf': {'color': 'red', 'marker': 'o', 'linestyle': '-'},
             'kernel=sigmoid': {'color': 'purple', 'marker': 's', 'linestyle': '--'},
             # LinearSVC styles

@@ -59,8 +59,8 @@ def main():
 
         # 7. Generate and save hyperparameter tuning visualization
         try:
-            visualization_path = "../yujie/linear_svm_hyperparameter_tuning.png"
-            json_path = "../yujie/linear_svm_hyperparameter_tuning_data.json"
+            visualization_path = "../yujie/res/linear_svm_hyperparameter_tuning.png"
+            json_path = "../yujie/res/linear_svm_hyperparameter_tuning_data.json"
             linear_svm_model.visualize_hyperparameter_tuning(visualization_path, results_output_path=json_path)
             print(f"Hyperparameter tuning visualization generated and saved to {visualization_path}")
         except Exception as viz_error:
