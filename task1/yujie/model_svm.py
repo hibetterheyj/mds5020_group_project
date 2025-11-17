@@ -36,17 +36,21 @@ class SVMModel:
             # SVC with RBF and Sigmoid kernels
             param_grid = {
                 'kernel': ['rbf', 'sigmoid'],
-                'C': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100],
-                'gamma': [0.00001, 0.00005, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1],
+                # 'C': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100],
+                # 'gamma': [0.00001, 0.00005, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1],
+                'C': [0.001, 0.01, 0.1, 1, 10, 100],
+                'gamma': [0.00001, 0.0001, 0.001, 0.01, 0.1],
                 'probability': [True]  # Enable probability estimates
             }
+            # Best parameters: {'kernel': 'rbf', 'C': 1000, 'gamma':  1e-05, 'probability': True, 'random_state': 42} Best cross-validation roc_auc: 0.7669
             model_constructor = SVC
         elif model_type == 'linear_svc':
             # LinearSVC with different penalties and loss functions
             param_grid = {
                 'penalty': ['l1', 'l2'],
                 'loss': ['hinge', 'squared_hinge'],
-                'C': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100],
+                # 'C': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100],
+                'C': [0.001, 0.01, 0.1, 1, 10, 100],
                 'dual': [False]  # Use primal form for better performance with n_samples > n_features
             }
             model_constructor = LinearSVC
