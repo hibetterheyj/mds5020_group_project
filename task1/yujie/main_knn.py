@@ -1,15 +1,16 @@
+from results_handler import ResultsHandler
+from model_knn import KNNModel
+from preprocessor import RobustDataPreprocessor as DataPreprocessor
+from data_loader import DataLoader
 import sys
 import os
+from typing import Tuple
 
 # Add current directory to path to import modules
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from data_loader import DataLoader
-from preprocessor import RobustDataPreprocessor as DataPreprocessor
-from model_knn import KNNModel
-from results_handler import ResultsHandler
 
-def main():
+def main() -> None:
     """Main function to execute the KNN modeling pipeline"""
     print("Bank Marketing Classification - KNN Model")
     print("=" * 50)
@@ -26,7 +27,8 @@ def main():
         # 1. Load data
         data_loader = DataLoader(train_path, test_path)
         train_data, test_data = data_loader.load_data()
-        X_train, y_train, X_test = data_loader.prepare_features(train_data, test_data)
+        X_train, y_train, X_test = data_loader.prepare_features(
+            train_data, test_data)
 
         # 2. Preprocess data
         preprocessor = DataPreprocessor()
@@ -35,12 +37,12 @@ def main():
 
         # 3. Train KNN model (using GridSearchCV for hyperparameter tuning)
         knn_model = KNNModel()
-        # 设置保存结果的路径和格式
+        # Set results file path and format
         results_file_path = "../yujie/res/knn_tuning_results.json"
         knn_model.train(X_train_processed, y_train, cv_folds=5,
-                      save_results=True,
-                      results_file_path=results_file_path,
-                      export_format='json')
+                        save_results=True,
+                        results_file_path=results_file_path,
+                        export_format='json')
 
         # 4. Generate predictions
         predictions = knn_model.predict_proba(X_test_processed)
@@ -57,10 +59,13 @@ def main():
         try:
             visualization_path = "../yujie/res/knn_hyperparameter_tuning.png"
             json_path = "../yujie/res/knn_hyperparameter_tuning_data.json"
-            knn_model.visualize_hyperparameter_tuning(visualization_path, results_output_path=json_path)
-            print(f"Hyperparameter tuning visualization generated and saved to {visualization_path}")
+            knn_model.visualize_hyperparameter_tuning(
+                visualization_path, results_output_path=json_path)
+            print(
+                f"Hyperparameter tuning visualization generated and saved to {visualization_path}")
         except Exception as viz_error:
-            print(f"Warning: Could not generate visualization: {str(viz_error)}")
+            print(
+                f"Warning: Could not generate visualization: {str(viz_error)}")
 
         print(f"\nPipeline completed successfully!")
         print(f"Output file: {output_path}")
@@ -68,6 +73,7 @@ def main():
     except Exception as e:
         print(f"Error in pipeline: {str(e)}")
         raise
+
 
 if __name__ == "__main__":
     main()

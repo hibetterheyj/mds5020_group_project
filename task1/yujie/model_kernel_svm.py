@@ -1,7 +1,9 @@
 import numpy as np
+from typing import Dict, Optional, List, Any, Union
 from sklearn.svm import SVC
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 from hyperparameter_tuner import HyperparameterTuner
+
 
 class KernelSVMModel:
     """SVC classifier with hyperparameter tuning and cross-validation
@@ -9,13 +11,13 @@ class KernelSVMModel:
     Supports RBF and Sigmoid kernels for non-linear classification.
     """
 
-    def __init__(self):
-        self.model = None
-        self.best_params = None
-        self.cv_auc_scores = None
+    def __init__(self) -> None:
+        self.model: Optional[SVC] = None
+        self.best_params: Optional[Dict[str, Any]] = None
+        self.cv_auc_scores: Optional[np.ndarray] = None
 
-    def tune_hyperparameters(self, X_train, y_train, cv_folds=5,
-                           save_results=False, results_file_path=None, export_format='csv'):
+    def tune_hyperparameters(self, X_train: np.ndarray, y_train: np.ndarray, cv_folds: int = 5,
+                             save_results: bool = False, results_file_path: Optional[str] = None, export_format: str = 'csv') -> Dict[str, Any]:
         """Find best hyperparameters using cross-validation
 
         Args:
@@ -35,8 +37,8 @@ class KernelSVMModel:
         # Define parameter grid for SVC with RBF and Sigmoid kernels
         param_grid = {
             'kernel': ['rbf', 'sigmoid'],
-            'C': [0.001, 0.01, 0.1, 1.0, 10], # for fast test
-            'gamma': [0.00001, 0.001, 0.1, 10], # for fast test
+            'C': [0.001, 0.01, 0.1, 1.0, 10],  # for fast test
+            'gamma': [0.00001, 0.001, 0.1, 10],  # for fast test
             # 'C': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100, 500, 1000],
             # 'gamma': [0.00001, 0.0005, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1.0],
             'probability': [True]  # Enable probability estimates
@@ -62,8 +64,8 @@ class KernelSVMModel:
 
         return best_params
 
-    def train(self, X_train, y_train, cv_folds=5,
-             save_results=True, results_file_path=None, export_format='csv'):
+    def train(self, X_train: np.ndarray, y_train: np.ndarray, cv_folds: int = 5,
+              save_results: bool = True, results_file_path: Optional[str] = None, export_format: str = 'csv') -> SVC:
         """Train SVC model with best parameters
 
         Args:
@@ -86,9 +88,9 @@ class KernelSVMModel:
 
         # Find best parameters
         best_params = self.tune_hyperparameters(X_train, y_train, cv_folds,
-                                             save_results=save_results,
-                                             results_file_path=results_file_path,
-                                             export_format=export_format)
+                                                save_results=save_results,
+                                                results_file_path=results_file_path,
+                                                export_format=export_format)
 
         # Train final model with best parameters
         self.model = SVC(**best_params)
@@ -97,15 +99,16 @@ class KernelSVMModel:
         # Calculate cross-validation scores for reporting
         cv = StratifiedKFold(n_splits=cv_folds, shuffle=True, random_state=42)
         self.cv_auc_scores = cross_val_score(self.model, X_train, y_train,
-                                           cv=cv, scoring='roc_auc', n_jobs=-1)
+                                             cv=cv, scoring='roc_auc', n_jobs=-1)
 
         print(f"Final model trained with parameters: {best_params}")
         print(f"5-fold CV AUC scores: {self.cv_auc_scores}")
-        print(f"Mean CV AUC: {np.mean(self.cv_auc_scores):.4f} (+/- {np.std(self.cv_auc_scores):.4f})")
+        print(
+            f"Mean CV AUC: {np.mean(self.cv_auc_scores):.4f} (+/- {np.std(self.cv_auc_scores):.4f})")
 
         return self.model
 
-    def predict_proba(self, X_test):
+    def predict_proba(self, X_test: np.ndarray) -> np.ndarray:
         """Predict probability scores for positive class
 
         Args:
@@ -125,10 +128,11 @@ class KernelSVMModel:
         # Ensure scores are between 0 and 1
         positive_proba = np.clip(positive_proba, 0, 1)
 
-        print(f"Predicted scores range: [{positive_proba.min():.4f}, {positive_proba.max():.4f}]")
+        print(
+            f"Predicted scores range: [{positive_proba.min():.4f}, {positive_proba.max():.4f}]")
         return positive_proba
 
-    def get_cv_performance(self):
+    def get_cv_performance(self) -> Dict[str, Union[float, List[float]]]:
         """Return cross-validation performance metrics
 
         Returns:
@@ -143,8 +147,8 @@ class KernelSVMModel:
             'all_scores': self.cv_auc_scores.tolist()
         }
 
-    def visualize_hyperparameter_tuning(self, output_path=None, save_results=False,
-                                       results_output_path=None, export_format='csv'):
+    def visualize_hyperparameter_tuning(self, output_path: Optional[str] = None, save_results: bool = False,
+                                        results_output_path: Optional[str] = None, export_format: str = 'csv') -> Any:
         """Visualize the hyperparameter tuning results using the HyperparameterTuner
 
         Args:
@@ -157,7 +161,8 @@ class KernelSVMModel:
             Matplotlib figure object
         """
         if not hasattr(self, 'tuner'):
-            raise ValueError("No tuning results available. Run tune_hyperparameters first.")
+            raise ValueError(
+                "No tuning results available. Run tune_hyperparameters first.")
 
         # Use the tuner's visualization method
         return self.tuner.visualize_tuning_results(

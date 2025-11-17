@@ -1,13 +1,14 @@
 from typing import Dict, List, Tuple, Any, Optional, Callable
 from itertools import product
 import inspect
-
 import json
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.model_selection import cross_val_score, StratifiedKFold, GridSearchCV
-from tqdm_joblib import tqdm_joblib  # 桥接 joblib 和 tqdm，提供进度条支持
+from tqdm_joblib import tqdm_joblib
+
 
 class HyperparameterTuner:
     """Generic hyperparameter tuning and visualization utility class"""
@@ -19,17 +20,17 @@ class HyperparameterTuner:
         self.model_constructor = None
 
     def tune_parameters(self,
-                       X_train: np.ndarray,
-                       y_train: np.ndarray,
-                       model_constructor: Callable,
-                       param_grid: Dict[str, List[Any]],
-                       cv_folds: int = 5,
-                       scoring: str = 'roc_auc',
-                       n_jobs: int = -1,
-                       random_state: int = 42,
-                       save_results: bool = False,
-                       results_file_path: Optional[str] = None,
-                       export_format: str = 'csv') -> Tuple[Dict[str, Any], float]:
+                        X_train: np.ndarray,
+                        y_train: np.ndarray,
+                        model_constructor: Callable,
+                        param_grid: Dict[str, List[Any]],
+                        cv_folds: int = 5,
+                        scoring: str = 'roc_auc',
+                        n_jobs: int = -1,
+                        random_state: int = 42,
+                        save_results: bool = False,
+                        results_file_path: Optional[str] = None,
+                        export_format: str = 'csv') -> Tuple[Dict[str, Any], float]:
         """
         Tune hyperparameters using cross-validation
 
@@ -46,7 +47,8 @@ class HyperparameterTuner:
         Returns:
             Tuple of (best_params, best_score)
         """
-        print(f"Tuning hyperparameters with {cv_folds}-fold cross-validation...")
+        print(
+            f"Tuning hyperparameters with {cv_folds}-fold cross-validation...")
 
         # Store model constructor for later use
         self.model_constructor = model_constructor
@@ -57,7 +59,8 @@ class HyperparameterTuner:
         self.best_score = 0
 
         # Use stratified k-fold for imbalanced data
-        cv = StratifiedKFold(n_splits=cv_folds, shuffle=True, random_state=random_state)
+        cv = StratifiedKFold(n_splits=cv_folds, shuffle=True,
+                             random_state=random_state)
 
         # Check if we need special handling for k_values (KNN-specific)
         has_k_values = 'k_values' in param_grid
@@ -71,14 +74,15 @@ class HyperparameterTuner:
             # Generate all possible parameter combinations
             for param_values in product(*param_values_list):
                 params = dict(zip(param_names, param_values))
-                param_key = ", ".join([f"{name}={value}" for name, value in params.items()])
+                param_key = ", ".join(
+                    [f"{name}={value}" for name, value in params.items()])
                 self.tuning_results[param_key] = {}
 
                 for k in k_values:
                     model_params = params.copy()
                     model_params['n_neighbors'] = k
                     self._evaluate_model(X_train, y_train, model_constructor, model_params,
-                                        cv, scoring, n_jobs, param_key, k)
+                                         cv, scoring, n_jobs, param_key, k)
         else:
             # General handling for all parameters (works for SVC, LinearSVC, etc.)
             param_names = list(param_grid.keys())
@@ -87,12 +91,13 @@ class HyperparameterTuner:
             # Generate all possible parameter combinations
             for param_values in product(*param_values_list):
                 model_params = dict(zip(param_names, param_values))
-                param_key = ", ".join([f"{name}={value}" for name, value in model_params.items()])
+                param_key = ", ".join(
+                    [f"{name}={value}" for name, value in model_params.items()])
                 self.tuning_results[param_key] = {}
 
                 # Evaluate with this parameter combination
                 self._evaluate_model(X_train, y_train, model_constructor, model_params,
-                                    cv, scoring, n_jobs, param_key, 'single')
+                                     cv, scoring, n_jobs, param_key, 'single')
 
         # Restore k_values in param_grid for future use if it was present
         if has_k_values:
@@ -110,8 +115,9 @@ class HyperparameterTuner:
 
         return self.best_params, self.best_score
 
-    def _evaluate_model(self, X_train, y_train, model_constructor, model_params,
-                       cv, scoring, n_jobs, param_key, result_key):
+    def _evaluate_model(self, X_train: np.ndarray, y_train: np.ndarray, model_constructor: Callable,
+                        model_params: Dict[str, Any], cv: StratifiedKFold, scoring: str, n_jobs: int,
+                        param_key: str, result_key: Any) -> None:
         """
         Helper method to evaluate a model with given parameters and store results
 
@@ -144,11 +150,11 @@ class HyperparameterTuner:
                     return roc_auc_score(y, decision_scores)
 
                 cv_scores = cross_val_score(model, X_train, y_train,
-                                          cv=cv, scoring=custom_scorer, n_jobs=n_jobs)
+                                            cv=cv, scoring=custom_scorer, n_jobs=n_jobs)
             else:
                 # Standard cross-validation
                 cv_scores = cross_val_score(model, X_train, y_train,
-                                          cv=cv, scoring=scoring, n_jobs=n_jobs)
+                                            cv=cv, scoring=scoring, n_jobs=n_jobs)
 
             mean_score = np.mean(cv_scores)
             std_score = np.std(cv_scores)
@@ -161,8 +167,10 @@ class HyperparameterTuner:
             }
 
             # Log progress
-            params_str = ", ".join([f"{name}={value}" for name, value in model_params.items()])
-            print(f"{params_str}: Mean {scoring} = {mean_score:.4f} (+/- {std_score:.4f})")
+            params_str = ", ".join(
+                [f"{name}={value}" for name, value in model_params.items()])
+            print(
+                f"{params_str}: Mean {scoring} = {mean_score:.4f} (+/- {std_score:.4f})")
 
             # Update best parameters if current score is better
             if mean_score > self.best_score:
@@ -173,11 +181,11 @@ class HyperparameterTuner:
             print(f"Error with parameters {model_params}: {str(e)}")
 
     def visualize_tuning_results(self,
-                               output_path: Optional[str] = None,
-                               save_results: bool = False,
-                               results_output_path: Optional[str] = None,
-                               export_format: str = 'csv',
-                               metric_name: str = 'AUC') -> plt.Figure:
+                                 output_path: Optional[str] = None,
+                                 save_results: bool = False,
+                                 results_output_path: Optional[str] = None,
+                                 export_format: str = 'csv',
+                                 metric_name: str = 'AUC') -> plt.Figure:
         """
         Visualize hyperparameter tuning results
 
@@ -192,7 +200,8 @@ class HyperparameterTuner:
             Matplotlib figure object
         """
         if not self.tuning_results:
-            raise ValueError("No tuning results available. Run tune_parameters first.")
+            raise ValueError(
+                "No tuning results available. Run tune_parameters first.")
 
         # Save tuning data if requested
         if save_results:
@@ -207,7 +216,8 @@ class HyperparameterTuner:
         # Save figure if path provided
         if output_path:
             plt.savefig(output_path, dpi=300, bbox_inches='tight')
-            print(f"Hyperparameter tuning visualization saved to {output_path}")
+            print(
+                f"Hyperparameter tuning visualization saved to {output_path}")
 
         plt.tight_layout()
         return fig
@@ -369,20 +379,22 @@ class HyperparameterTuner:
     def _plot_knn_results(self, styles: Dict[str, Dict[str, str]], metric_name: str) -> None:
         """
         Plot results specifically for KNN models
-        x轴为k_values（n_neighbors）从小到大，不同的weights和p组合以不同线型、颜色或标记展示
+        X-axis shows k_values (n_neighbors) in ascending order, with different weights and p combinations
+        displayed using different line styles, colors, or markers.
         """
         for i, (param_key, k_results) in enumerate(self.tuning_results.items()):
             # Check if we have multiple k values
-            has_multiple_ks = len(k_results) > 1 and all(k is not None for k in k_results.keys())
+            has_multiple_ks = len(k_results) > 1 and all(
+                k is not None for k in k_results.keys())
 
             if has_multiple_ks:
                 # For KNN-like models, plot k vs score
-                # 确保k_values从小到大排序
+                # Sort k_values in ascending order
                 k_values = sorted(list(k_results.keys()))
                 mean_scores = [k_results[k]['mean_score'] for k in k_values]
                 std_scores = [k_results[k]['std_score'] for k in k_values]
 
-                # 获取样式，优先使用预定义样式
+                # Get style, prefer predefined styles
                 style = styles.get(param_key, {
                     'color': f'C{i}',
                     'marker': ['o', 's', '^', 'D', 'x'][i % 5],
@@ -390,19 +402,20 @@ class HyperparameterTuner:
                 })
 
                 plt.errorbar(k_values, mean_scores, yerr=std_scores,
-                            marker=style['marker'],
-                            linestyle=style['linestyle'],
-                            color=style['color'],
-                            label=param_key)
+                             marker=style['marker'],
+                             linestyle=style['linestyle'],
+                             color=style['color'],
+                             label=param_key)
 
     def _plot_svm_results(self, styles: Dict[str, Dict[str, str]], metric_name: str, model_type: str) -> None:
         """
         Plot results specifically for SVM models (SVC or LinearSVC)
-        x轴为C值从小到大（log scale），不同参数组合以不同线型、颜色或标记展示
+        X-axis shows C values in ascending order (log scale), with different parameter combinations
+        displayed using different line styles, colors, or markers.
         """
-        # 直接使用self.tuning_results中的键作为不同参数组合的标识
+        # Use keys from self.tuning_results as identifiers for different parameter combinations
         for i, (param_key, results) in enumerate(self.tuning_results.items()):
-            # 提取C值和对应的分数
+            # Extract C values and corresponding scores
             x_values = []
             mean_scores = []
             std_scores = []
@@ -412,11 +425,11 @@ class HyperparameterTuner:
                 mean_scores.append(metrics['mean_score'])
                 std_scores.append(metrics['std_score'])
 
-            # 确保C值从小到大排序
+            # Sort C values in ascending order
             sorted_pairs = sorted(zip(x_values, mean_scores, std_scores))
             x_values, mean_scores, std_scores = zip(*sorted_pairs)
 
-            # 获取样式，优先使用预定义样式
+            # Get style, prefer predefined styles
             style = styles.get(param_key, {
                 'color': f'C{i}',
                 'marker': ['o', 's', '^', 'D', 'x'][i % 5],
@@ -424,10 +437,10 @@ class HyperparameterTuner:
             })
 
             plt.errorbar(x_values, mean_scores, yerr=std_scores,
-                        marker=style['marker'],
-                        linestyle=style['linestyle'],
-                        color=style['color'],
-                        label=param_key)
+                         marker=style['marker'],
+                         linestyle=style['linestyle'],
+                         color=style['color'],
+                         label=param_key)
 
     def _plot_default_results(self, styles: Dict[str, Dict[str, str]], metric_name: str, model_type: str) -> None:
         """
@@ -454,10 +467,10 @@ class HyperparameterTuner:
                 })
 
                 plt.errorbar(x_values, mean_scores, yerr=std_scores,
-                            marker=style['marker'],
-                            linestyle=style['linestyle'],
-                            color=style['color'],
-                            label=param_key)
+                             marker=style['marker'],
+                             linestyle=style['linestyle'],
+                             color=style['color'],
+                             label=param_key)
 
     def _highlight_best_parameters(self) -> None:
         """
@@ -480,16 +493,16 @@ class HyperparameterTuner:
         if best_param_key and best_key is not None:
             best_score = self.tuning_results[best_param_key][best_key]['mean_score']
 
-            # 确定要高亮显示的x值
+            # Determine the x-value to highlight
             if isinstance(best_key, (int, float)):
-                # 对于KNN，best_key是k值
+                # For KNN, best_key is the k value
                 plt.scatter([best_key], [best_score], color='red', s=150, marker='*',
-                           label=f'Best: k={best_key}, {best_param_key}')
+                            label=f'Best: k={best_key}, {best_param_key}')
             else:
-                # 对于SVM，从best_params中获取C值
+                # For SVM, get C value from best_params
                 if 'C' in self.best_params:
                     plt.scatter([self.best_params['C']], [best_score], color='red', s=150, marker='*',
-                               label=f'Best: C={self.best_params["C"]}, {best_param_key}')
+                                label=f'Best: C={self.best_params["C"]}, {best_param_key}')
 
     def _get_visualization_styles(self) -> Dict[str, Dict[str, str]]:
         """Define visualization styles for common parameter combinations"""
@@ -546,22 +559,23 @@ class HyperparameterTuner:
     def get_best_model(self) -> Any:
         """Return a model instance with the best parameters"""
         if not self.model_constructor or not self.best_params:
-            raise ValueError("No best parameters available. Run tune_parameters first.")
+            raise ValueError(
+                "No best parameters available. Run tune_parameters first.")
 
         return self.model_constructor(**self.best_params)
 
     def tune_parameters_with_gridsearch(self,
-                                      X_train: np.ndarray,
-                                      y_train: np.ndarray,
-                                      model_constructor: Callable,
-                                      param_grid: Dict[str, List[Any]],
-                                      cv_folds: int = 5,
-                                      scoring: str = 'roc_auc',
-                                      n_jobs: int = -2,
-                                      random_state: int = 42,
-                                      save_results: bool = False,
-                                      results_file_path: Optional[str] = None,
-                                      export_format: str = 'csv') -> Tuple[Dict[str, Any], float]:
+                                        X_train: np.ndarray,
+                                        y_train: np.ndarray,
+                                        model_constructor: Callable,
+                                        param_grid: Dict[str, List[Any]],
+                                        cv_folds: int = 5,
+                                        scoring: str = 'roc_auc',
+                                        n_jobs: int = -2,
+                                        random_state: int = 42,
+                                        save_results: bool = False,
+                                        results_file_path: Optional[str] = None,
+                                        export_format: str = 'csv') -> Tuple[Dict[str, Any], float]:
         """
         Tune hyperparameters using GridSearchCV for improved efficiency
 
@@ -581,7 +595,8 @@ class HyperparameterTuner:
         Returns:
             Tuple of (best_params, best_score)
         """
-        print(f"Tuning hyperparameters with GridSearchCV and {cv_folds}-fold cross-validation...")
+        print(
+            f"Tuning hyperparameters with GridSearchCV and {cv_folds}-fold cross-validation...")
 
         # Store model constructor for later use
         self.model_constructor = model_constructor
@@ -592,7 +607,8 @@ class HyperparameterTuner:
         self.best_score = 0
 
         # Use stratified k-fold for imbalanced data
-        cv = StratifiedKFold(n_splits=cv_folds, shuffle=True, random_state=random_state)
+        cv = StratifiedKFold(n_splits=cv_folds, shuffle=True,
+                             random_state=random_state)
 
         # Check if we need special handling for k_values (KNN-specific)
         has_k_values = 'k_values' in param_grid
@@ -639,13 +655,13 @@ class HyperparameterTuner:
 
             grid_search.scoring = custom_scorer
 
-        # 计算总参数组合数量用于进度条
+        # Calculate total number of parameter combinations for progress bar
         total_combinations = 1
         for param_values in gs_param_grid.values():
             total_combinations *= len(param_values)
-        
-        # 使用tqdm_joblib添加进度条支持
-        with tqdm_joblib(desc=f"GridSearchCV 超参数搜索 - {cv_folds}折交叉验证", 
+
+        # Add progress bar support using tqdm_joblib
+        with tqdm_joblib(desc=f"GridSearchCV hyperparameter search - {cv_folds}-fold cross-validation",
                          total=total_combinations) as progress_bar:
             grid_search.fit(X_train, y_train)
 
@@ -660,7 +676,8 @@ class HyperparameterTuner:
         if has_k_values:
             # KNN-specific organization
             # Group by parameters other than n_neighbors
-            knn_param_names = [param for param in gs_param_grid.keys() if param != 'n_neighbors']
+            knn_param_names = [
+                param for param in gs_param_grid.keys() if param != 'n_neighbors']
 
             for idx, row in results_df.iterrows():
                 # Create parameter key excluding k_values
@@ -669,7 +686,8 @@ class HyperparameterTuner:
                     if param in row['params']:
                         param_values[param] = row['params'][param]
 
-                param_key = ", ".join([f"{name}={value}" for name, value in param_values.items()])
+                param_key = ", ".join(
+                    [f"{name}={value}" for name, value in param_values.items()])
 
                 if param_key not in self.tuning_results:
                     self.tuning_results[param_key] = {}
@@ -684,8 +702,10 @@ class HyperparameterTuner:
         else:
             # SVC/LinearSVC organization
             # For SVC/LinearSVC, we need to identify the main parameter (C) and group by other parameters
-            main_param = 'C' if 'C' in gs_param_grid else list(gs_param_grid.keys())[0]
-            other_params = [param for param in gs_param_grid.keys() if param != main_param]
+            main_param = 'C' if 'C' in gs_param_grid else list(gs_param_grid.keys())[
+                0]
+            other_params = [
+                param for param in gs_param_grid.keys() if param != main_param]
 
             for idx, row in results_df.iterrows():
                 # Create parameter key excluding main parameter
@@ -694,7 +714,8 @@ class HyperparameterTuner:
                     if param in row['params']:
                         param_values[param] = row['params'][param]
 
-                param_key = ", ".join([f"{name}={value}" for name, value in param_values.items()])
+                param_key = ", ".join(
+                    [f"{name}={value}" for name, value in param_values.items()])
 
                 if param_key not in self.tuning_results:
                     self.tuning_results[param_key] = {}

@@ -1,29 +1,37 @@
 import pandas as pd
 import numpy as np
+from typing import List, Dict, Optional, Union, Any, Tuple
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.impute import SimpleImputer
+
 
 class RobustDataPreprocessor:
     """Handle data preprocessing with robust error handling"""
 
-    def __init__(self):
-        self.scaler = StandardScaler()
-        self.label_encoders = {}
-        self.imputer = SimpleImputer(strategy='median')
-        self.numerical_features = None
-        self.categorical_features = None
+    def __init__(self) -> None:
+        self.scaler: StandardScaler = StandardScaler()
+        self.label_encoders: Dict[str,
+                                  Union[LabelEncoder, Dict[str, int]]] = {}
+        self.imputer: SimpleImputer = SimpleImputer(strategy='median')
+        self.numerical_features: Optional[List[str]] = None
+        self.categorical_features: Optional[List[str]] = None
 
-    def identify_feature_types(self, X):
+    def identify_feature_types(self, X: pd.DataFrame) -> Tuple[List[str], List[str]]:
         """Identify numerical and categorical features"""
-        numerical_features = X.select_dtypes(include=[np.number]).columns.tolist()
-        categorical_features = X.select_dtypes(include=['object']).columns.tolist()
+        numerical_features = X.select_dtypes(
+            include=[np.number]).columns.tolist()
+        categorical_features = X.select_dtypes(
+            include=['object']).columns.tolist()
 
-        print(f"Numerical features ({len(numerical_features)}): {numerical_features}")
-        print(f"Categorical features ({len(categorical_features)}): {categorical_features}")
+        print(
+            f"Numerical features ({len(numerical_features)}): {numerical_features}")
+        print(
+            f"Categorical features ({len(categorical_features)}): {categorical_features}")
 
         return numerical_features, categorical_features
 
-    def clean_data_quality_issues(self, df, numerical_features, categorical_features):
+    def clean_data_quality_issues(self, df: pd.DataFrame, numerical_features: List[str],
+                                  categorical_features: List[str]) -> pd.DataFrame:
         """Handle various data quality issues including infinite values"""
         print("Cleaning data quality issues...")
 
@@ -40,7 +48,8 @@ class RobustDataPreprocessor:
                 if inf_count > 0:
                     print(f"Found {inf_count} infinite values in {feature}")
                     # Replace with NaN for imputation
-                    df_clean[feature] = df_clean[feature].replace([np.inf, -np.inf], np.nan)
+                    df_clean[feature] = df_clean[feature].replace(
+                        [np.inf, -np.inf], np.nan)
                     issues_found += inf_count
 
         # Handle 'unknown' values in categorical features
@@ -49,7 +58,8 @@ class RobustDataPreprocessor:
                 # Count 'unknown' values
                 unknown_count = (df_clean[feature] == 'unknown').sum()
                 if unknown_count > 0:
-                    print(f"Found {unknown_count} 'unknown' values in {feature}")
+                    print(
+                        f"Found {unknown_count} 'unknown' values in {feature}")
                     # Keep as 'unknown' - they will be encoded as a separate category
 
         if issues_found == 0:
@@ -59,12 +69,13 @@ class RobustDataPreprocessor:
 
         return df_clean
 
-    def preprocess_train(self, X_train):
+    def preprocess_train(self, X_train: pd.DataFrame) -> pd.DataFrame:
         """Preprocess training data with robust error handling"""
         print("Preprocessing training data...")
 
         X_train_processed = X_train.copy()
-        self.numerical_features, self.categorical_features = self.identify_feature_types(X_train_processed)
+        self.numerical_features, self.categorical_features = self.identify_feature_types(
+            X_train_processed)
 
         # Clean data quality issues
         X_train_processed = self.clean_data_quality_issues(
@@ -96,15 +107,17 @@ class RobustDataPreprocessor:
                 except Exception as e:
                     print(f"Error encoding {feature}: {e}")
                     # Fallback: simple integer encoding
-                    unique_vals = X_train_processed[feature].astype(str).unique()
+                    unique_vals = X_train_processed[feature].astype(
+                        str).unique()
                     mapping = {val: idx for idx, val in enumerate(unique_vals)}
-                    X_train_processed[feature] = X_train_processed[feature].map(mapping)
+                    X_train_processed[feature] = X_train_processed[feature].map(
+                        mapping)
                     self.label_encoders[feature] = mapping
 
         print(f"Processed training data shape: {X_train_processed.shape}")
         return X_train_processed
 
-    def preprocess_test(self, X_test):
+    def preprocess_test(self, X_test: pd.DataFrame) -> pd.DataFrame:
         """Preprocess test data using fitted transformers"""
         print("Preprocessing test data...")
 
@@ -136,9 +149,11 @@ class RobustDataPreprocessor:
                     else:
                         # Fallback mapping
                         mapping = self.label_encoders[feature]
-                        X_test_processed[feature] = X_test_processed[feature].astype(str).map(mapping)
+                        X_test_processed[feature] = X_test_processed[feature].astype(
+                            str).map(mapping)
                         # Fill unmapped values with 0 (most common category)
-                        X_test_processed[feature] = X_test_processed[feature].fillna(0)
+                        X_test_processed[feature] = X_test_processed[feature].fillna(
+                            0)
                 except Exception as e:
                     print(f"Error transforming {feature}: {e}")
                     # Default to 0 for all values

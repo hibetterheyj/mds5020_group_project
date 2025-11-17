@@ -1,7 +1,10 @@
 import numpy as np
+from typing import Dict, Optional, List, Any, Union, Callable
 from sklearn.svm import LinearSVC
 from sklearn.model_selection import StratifiedKFold, cross_val_score
+
 from hyperparameter_tuner import HyperparameterTuner
+
 
 class LinearSVMModel:
     """LinearSVC classifier with hyperparameter tuning and cross-validation
@@ -10,13 +13,13 @@ class LinearSVMModel:
     Optimized for linear classification tasks.
     """
 
-    def __init__(self):
-        self.model = None
-        self.best_params = None
-        self.cv_auc_scores = None
+    def __init__(self) -> None:
+        self.model: Optional[LinearSVC] = None
+        self.best_params: Optional[Dict[str, Any]] = None
+        self.cv_auc_scores: Optional[np.ndarray] = None
 
-    def tune_hyperparameters(self, X_train, y_train, cv_folds=5,
-                           save_results=False, results_file_path=None, export_format='csv'):
+    def tune_hyperparameters(self, X_train: np.ndarray, y_train: np.ndarray, cv_folds: int = 5,
+                             save_results: bool = False, results_file_path: Optional[str] = None, export_format: str = 'csv') -> Dict[str, Any]:
         """Find best hyperparameters using cross-validation
 
         Args:
@@ -63,8 +66,8 @@ class LinearSVMModel:
 
         return best_params
 
-    def train(self, X_train, y_train, cv_folds=5,
-             save_results=True, results_file_path=None, export_format='csv'):
+    def train(self, X_train: np.ndarray, y_train: np.ndarray, cv_folds: int = 5,
+              save_results: bool = True, results_file_path: Optional[str] = None, export_format: str = 'csv') -> LinearSVC:
         """Train LinearSVC model with best parameters
 
         Args:
@@ -87,9 +90,9 @@ class LinearSVMModel:
 
         # Find best parameters
         best_params = self.tune_hyperparameters(X_train, y_train, cv_folds,
-                                             save_results=save_results,
-                                             results_file_path=results_file_path,
-                                             export_format=export_format)
+                                                save_results=save_results,
+                                                results_file_path=results_file_path,
+                                                export_format=export_format)
 
         # Ensure parameter combinations are valid
         # For l2 penalty with hinge loss, dual must be True
@@ -109,15 +112,16 @@ class LinearSVMModel:
             return roc_auc_score(y, decision_scores)
 
         self.cv_auc_scores = cross_val_score(self.model, X_train, y_train,
-                                           cv=cv, scoring=custom_scorer, n_jobs=-1)
+                                             cv=cv, scoring=custom_scorer, n_jobs=-1)
 
         print(f"Final model trained with parameters: {best_params}")
         print(f"5-fold CV AUC scores: {self.cv_auc_scores}")
-        print(f"Mean CV AUC: {np.mean(self.cv_auc_scores):.4f} (+/- {np.std(self.cv_auc_scores):.4f})")
+        print(
+            f"Mean CV AUC: {np.mean(self.cv_auc_scores):.4f} (+/- {np.std(self.cv_auc_scores):.4f})")
 
         return self.model
 
-    def predict_proba(self, X_test):
+    def predict_proba(self, X_test: np.ndarray) -> np.ndarray:
         """Predict probability scores for positive class
 
         For LinearSVC, we use the decision function output scaled to [0, 1]
@@ -141,10 +145,11 @@ class LinearSVMModel:
         # Ensure scores are between 0 and 1
         positive_proba = np.clip(positive_proba, 0, 1)
 
-        print(f"Predicted scores range: [{positive_proba.min():.4f}, {positive_proba.max():.4f}]")
+        print(
+            f"Predicted scores range: [{positive_proba.min():.4f}, {positive_proba.max():.4f}]")
         return positive_proba
 
-    def get_cv_performance(self):
+    def get_cv_performance(self) -> Dict[str, Union[float, List[float]]]:
         """Return cross-validation performance metrics
 
         Returns:
@@ -159,8 +164,8 @@ class LinearSVMModel:
             'all_scores': self.cv_auc_scores.tolist()
         }
 
-    def visualize_hyperparameter_tuning(self, output_path=None, save_results=False,
-                                       results_output_path=None, export_format='csv'):
+    def visualize_hyperparameter_tuning(self, output_path: Optional[str] = None, save_results: bool = False,
+                                        results_output_path: Optional[str] = None, export_format: str = 'csv') -> Any:
         """Visualize the hyperparameter tuning results using the HyperparameterTuner
 
         Args:
@@ -173,7 +178,8 @@ class LinearSVMModel:
             Matplotlib figure object
         """
         if not hasattr(self, 'tuner'):
-            raise ValueError("No tuning results available. Run tune_hyperparameters first.")
+            raise ValueError(
+                "No tuning results available. Run tune_hyperparameters first.")
 
         # Use the tuner's visualization method
         return self.tuner.visualize_tuning_results(
