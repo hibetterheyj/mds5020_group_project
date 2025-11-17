@@ -13,7 +13,8 @@ class KNNModel:
         self.best_params = None
         self.cv_auc_scores = None
 
-    def tune_hyperparameters(self, X_train, y_train, cv_folds=5):
+    def tune_hyperparameters(self, X_train, y_train, cv_folds=5, save_results=False, 
+                           results_file_path=None, export_format='csv'):
         """Find best k parameter, weights parameter, and p parameter using cross-validation"""
         # Initialize hyperparameter tuner
         self.tuner = HyperparameterTuner()
@@ -33,7 +34,10 @@ class KNNModel:
             model_constructor=KNeighborsClassifier,
             param_grid=param_grid,
             cv_folds=cv_folds,
-            scoring='roc_auc'
+            scoring='roc_auc',
+            save_results=save_results,
+            results_file_path=results_file_path,
+            export_format=export_format
         )
 
         # Store best parameters
@@ -46,12 +50,16 @@ class KNNModel:
 
         return best_k, best_weights, best_p
 
-    def train(self, X_train, y_train, cv_folds=5):
+    def train(self, X_train, y_train, cv_folds=5, save_results=False, 
+             results_file_path=None, export_format='csv'):
         """Train KNN model with best parameters"""
         print("Training KNN model...")
 
         # Find best k, weights, and p
-        best_k, best_weights, best_p = self.tune_hyperparameters(X_train, y_train, cv_folds)
+        best_k, best_weights, best_p = self.tune_hyperparameters(X_train, y_train, cv_folds,
+                                                               save_results=save_results,
+                                                               results_file_path=results_file_path,
+                                                               export_format=export_format)
 
         # Train final model with best parameters
         self.model = KNeighborsClassifier(
@@ -98,7 +106,8 @@ class KNNModel:
             'all_scores': self.cv_auc_scores.tolist()
         }
 
-    def visualize_hyperparameter_tuning(self, output_path=None, save_json=True, json_output_path=None):
+    def visualize_hyperparameter_tuning(self, output_path=None, save_results=False, 
+                                       results_output_path=None, export_format='csv'):
         """Visualize the hyperparameter tuning results using the HyperparameterTuner"""
         if not hasattr(self, 'tuner'):
             raise ValueError("No tuning results available. Run tune_hyperparameters first.")
@@ -106,7 +115,8 @@ class KNNModel:
         # Use the tuner's visualization method
         return self.tuner.visualize_tuning_results(
             output_path=output_path,
-            save_json=save_json,
-            json_output_path=json_output_path,
+            save_results=save_results,
+            results_output_path=results_output_path,
+            export_format=export_format,
             metric_name='AUC'
         )

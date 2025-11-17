@@ -15,7 +15,8 @@ class SVMModel:
         self.cv_auc_scores = None
         self.model_type = None  # 'svc' or 'linear_svc'
 
-    def tune_hyperparameters(self, X_train, y_train, cv_folds=5, model_type='svc'):
+    def tune_hyperparameters(self, X_train, y_train, cv_folds=5, model_type='svc',
+                           save_results=False, results_file_path=None, export_format='csv'):
         """Find best hyperparameters using cross-validation
 
         Args:
@@ -23,6 +24,9 @@ class SVMModel:
             y_train: Training labels
             cv_folds: Number of cross-validation folds
             model_type: Type of SVM model ('svc' or 'linear_svc')
+            save_results: Whether to save tuning results
+            results_file_path: Path to save results file
+            export_format: Format to export results ('csv' or 'json')
 
         Returns:
             Best hyperparameters
@@ -65,7 +69,10 @@ class SVMModel:
             model_constructor=model_constructor,
             param_grid=param_grid,
             cv_folds=cv_folds,
-            scoring='roc_auc'
+            scoring='roc_auc',
+            save_results=save_results,
+            results_file_path=results_file_path,
+            export_format=export_format
         )
 
         # Store best parameters
@@ -73,7 +80,8 @@ class SVMModel:
 
         return best_params
 
-    def train(self, X_train, y_train, cv_folds=5, model_type='svc'):
+    def train(self, X_train, y_train, cv_folds=5, model_type='svc',
+             save_results=False, results_file_path=None, export_format='csv'):
         """Train SVM model with best parameters
 
         Args:
@@ -81,6 +89,9 @@ class SVMModel:
             y_train: Training labels
             cv_folds: Number of cross-validation folds
             model_type: Type of SVM model ('svc' or 'linear_svc')
+            save_results: Whether to save tuning results
+            results_file_path: Path to save results file
+            export_format: Format to export results ('csv' or 'json')
 
         Returns:
             Trained model
@@ -88,7 +99,10 @@ class SVMModel:
         print(f"Training {model_type.upper()} model...")
 
         # Find best parameters
-        best_params = self.tune_hyperparameters(X_train, y_train, cv_folds, model_type)
+        best_params = self.tune_hyperparameters(X_train, y_train, cv_folds, model_type,
+                                             save_results=save_results,
+                                             results_file_path=results_file_path,
+                                             export_format=export_format)
 
         # Create appropriate model constructor
         if model_type == 'svc':
@@ -176,13 +190,15 @@ class SVMModel:
             'all_scores': self.cv_auc_scores.tolist()
         }
 
-    def visualize_hyperparameter_tuning(self, output_path=None, save_json=True, json_output_path=None):
+    def visualize_hyperparameter_tuning(self, output_path=None, save_results=False,
+                                       results_output_path=None, export_format='csv'):
         """Visualize the hyperparameter tuning results using the HyperparameterTuner
 
         Args:
             output_path: Path to save the visualization
-            save_json: Whether to save the results as JSON
-            json_output_path: Path to save the JSON results
+            save_results: Whether to save the results
+            results_output_path: Path to save the results file
+            export_format: Format to export results ('csv' or 'json')
 
         Returns:
             Matplotlib figure object
@@ -193,7 +209,8 @@ class SVMModel:
         # Use the tuner's visualization method
         return self.tuner.visualize_tuning_results(
             output_path=output_path,
-            save_json=save_json,
-            json_output_path=json_output_path,
+            save_results=save_results,
+            results_output_path=results_output_path,
+            export_format=export_format,
             metric_name='AUC'
         )

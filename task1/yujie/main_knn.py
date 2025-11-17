@@ -52,7 +52,7 @@ def main():
         try:
             visualization_path = "../yujie/knn_hyperparameter_tuning.png"
             json_path = "../yujie/knn_hyperparameter_tuning_data.json"
-            knn_model.visualize_hyperparameter_tuning(visualization_path, json_output_path=json_path)
+            knn_model.visualize_hyperparameter_tuning(visualization_path, results_output_path=json_path)
             print(f"Hyperparameter tuning visualization generated and saved to {visualization_path}")
         except Exception as viz_error:
             print(f"Warning: Could not generate visualization: {str(viz_error)}")

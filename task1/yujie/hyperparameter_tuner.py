@@ -4,6 +4,7 @@ from itertools import product
 import json
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 from sklearn.model_selection import cross_val_score, StratifiedKFold
 
 class HyperparameterTuner:
@@ -23,7 +24,10 @@ class HyperparameterTuner:
                        cv_folds: int = 5,
                        scoring: str = 'roc_auc',
                        n_jobs: int = -1,
-                       random_state: int = 42) -> Tuple[Dict[str, Any], float]:
+                       random_state: int = 42,
+                       save_results: bool = False,
+                       results_file_path: Optional[str] = None,
+                       export_format: str = 'csv') -> Tuple[Dict[str, Any], float]:
         """
         Tune hyperparameters using cross-validation
 
@@ -95,6 +99,13 @@ class HyperparameterTuner:
         print(f"Best parameters: {self.best_params}")
         print(f"Best cross-validation {scoring}: {self.best_score:.4f}")
 
+        # Save results if requested
+        if save_results:
+            if export_format.lower() == 'csv':
+                self._save_tuning_results_to_csv(results_file_path)
+            else:
+                self._save_tuning_results(results_file_path)
+
         return self.best_params, self.best_score
         
     def _evaluate_model(self, X_train, y_train, model_constructor, model_params, 
@@ -161,16 +172,18 @@ class HyperparameterTuner:
 
     def visualize_tuning_results(self,
                                output_path: Optional[str] = None,
-                               save_json: bool = True,
-                               json_output_path: Optional[str] = None,
+                               save_results: bool = False,
+                               results_output_path: Optional[str] = None,
+                               export_format: str = 'csv',
                                metric_name: str = 'AUC') -> plt.Figure:
         """
         Visualize hyperparameter tuning results
 
         Args:
             output_path: Path to save the visualization
-            save_json: Whether to save the results as JSON
-            json_output_path: Path to save the JSON results
+            save_results: Whether to save the results
+            results_output_path: Path to save the results file
+            export_format: Format to export results ('csv' or 'json')
             metric_name: Name of the metric being visualized
 
         Returns:
@@ -179,9 +192,12 @@ class HyperparameterTuner:
         if not self.tuning_results:
             raise ValueError("No tuning results available. Run tune_parameters first.")
 
-        # Save tuning data as JSON if requested
-        if save_json:
-            self._save_tuning_results(json_output_path)
+        # Save tuning data if requested
+        if save_results:
+            if export_format.lower() == 'csv':
+                self._save_tuning_results_to_csv(results_output_path)
+            else:
+                self._save_tuning_results(results_output_path)
 
         # Create visualization
         fig = self._create_visualization(metric_name)
@@ -195,25 +211,96 @@ class HyperparameterTuner:
         return fig
 
     def _save_tuning_results(self, json_output_path: Optional[str] = None) -> None:
-        """Save tuning results as JSON"""
+        """Save tuning results as JSON with improved structure"""
         if json_output_path is None:
             json_output_path = "./hyperparameter_tuning_data.json"
 
-        # Prepare data for JSON serialization (convert numpy types)
-        json_serializable_results = {}
-        for param_key, k_results in self.tuning_results.items():
-            json_serializable_results[param_key] = {}
-            for k, metrics in k_results.items():
-                json_serializable_results[param_key][str(k)] = {
-                    'mean_score': float(metrics['mean_score']),
-                    'std_score': float(metrics['std_score']),
-                    'scores': [float(score) for score in metrics['scores']]
+        # Prepare data in the requested format
+        results_list = []
+        for param_key, sub_results in self.tuning_results.items():
+            for sub_key, metrics in sub_results.items():
+                # Create a complete parameter dictionary
+                params_dict = {}
+                # Parse the param_key string to extract parameter values
+                for param in param_key.split(', '):
+                    if '=' in param:
+                        name, value = param.split('=')
+                        # Convert to appropriate type
+                        try:
+                            if '.' in value:
+                                value = float(value)
+                            else:
+                                value = int(value)
+                        except ValueError:
+                            # Keep as string if conversion fails
+                            pass
+                        params_dict[name] = value
+                
+                # For KNN, add n_neighbors from sub_key
+                if isinstance(sub_key, (int, float)) or (isinstance(sub_key, str) and sub_key.isdigit()):
+                    params_dict['n_neighbors'] = int(sub_key)
+                
+                # Create a result entry with separate params and metrics
+                result_entry = {
+                    'parameters': params_dict,
+                    'metrics': {
+                        'mean_score': float(metrics['mean_score']),
+                        'std_score': float(metrics['std_score']),
+                        'scores': [float(score) for score in metrics['scores']]
+                    }
                 }
+                results_list.append(result_entry)
 
         # Save to JSON file
         with open(json_output_path, 'w') as json_file:
-            json.dump(json_serializable_results, json_file, indent=2)
+            json.dump(results_list, json_file, indent=2)
         print(f"Hyperparameter tuning data saved to {json_output_path}")
+        
+    def _save_tuning_results_to_csv(self, csv_output_path: Optional[str] = None) -> None:
+        """Save tuning results as CSV for easy pandas analysis"""
+        if csv_output_path is None:
+            csv_output_path = "./hyperparameter_tuning_data.csv"
+        
+        # Prepare data for CSV
+        data = []
+        for param_key, sub_results in self.tuning_results.items():
+            for sub_key, metrics in sub_results.items():
+                # Start with metrics
+                row = {
+                    'mean_score': float(metrics['mean_score']),
+                    'std_score': float(metrics['std_score'])
+                }
+                
+                # Add individual fold scores
+                for i, score in enumerate(metrics['scores']):
+                    row[f'fold_{i+1}_score'] = float(score)
+                
+                # Parse the param_key string to extract parameter values
+                for param in param_key.split(', '):
+                    if '=' in param:
+                        name, value = param.split('=')
+                        # Convert to appropriate type
+                        try:
+                            if '.' in value:
+                                value = float(value)
+                            else:
+                                value = int(value)
+                        except ValueError:
+                            # Keep as string if conversion fails
+                            pass
+                        row[f'param_{name}'] = value
+                
+                # For KNN, add n_neighbors from sub_key
+                if isinstance(sub_key, (int, float)) or (isinstance(sub_key, str) and sub_key.isdigit()):
+                    row['param_n_neighbors'] = int(sub_key)
+                
+                data.append(row)
+        
+        # Create DataFrame and save to CSV
+        df = pd.DataFrame(data)
+        df.to_csv(csv_output_path, index=False)
+        print(f"Hyperparameter tuning data saved to {csv_output_path}")
+        print(f"Data shape: {df.shape}")
 
     def _create_visualization(self, metric_name: str) -> plt.Figure:
         """Create the tuning results visualization"""
