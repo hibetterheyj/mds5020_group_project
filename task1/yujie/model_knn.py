@@ -50,10 +50,15 @@ class KNNModel:
 
         return best_k, best_weights, best_p
 
-    def train(self, X_train, y_train, cv_folds=5, save_results=False, 
+    def train(self, X_train, y_train, cv_folds=5, save_results=True, 
              results_file_path=None, export_format='csv'):
         """Train KNN model with best parameters"""
         print("Training KNN model...")
+
+        # Set default results file path if not provided
+        if save_results and results_file_path is None:
+            results_file_path = f"knn_tuning_results.{export_format}"
+            print(f"Using default results path: {results_file_path}")
 
         # Find best k, weights, and p
         best_k, best_weights, best_p = self.tune_hyperparameters(X_train, y_train, cv_folds,

@@ -35,7 +35,12 @@ def main():
 
         # 3. Train KNN model
         knn_model = KNNModel()
-        knn_model.train(X_train_processed, y_train, cv_folds=5)
+        # 设置保存结果的路径和格式
+        results_file_path = "../yujie/res/knn_tuning_results.json"
+        knn_model.train(X_train_processed, y_train, cv_folds=5,
+                      save_results=True,
+                      results_file_path=results_file_path,
+                      export_format='json')
 
         # 4. Generate predictions
         predictions = knn_model.predict_proba(X_test_processed)
@@ -50,8 +55,8 @@ def main():
 
         # 7. Generate and save hyperparameter tuning visualization
         try:
-            visualization_path = "../yujie/knn_hyperparameter_tuning.png"
-            json_path = "../yujie/knn_hyperparameter_tuning_data.json"
+            visualization_path = "../yujie/res/knn_hyperparameter_tuning.png"
+            json_path = "../yujie/res/knn_hyperparameter_tuning_data.json"
             knn_model.visualize_hyperparameter_tuning(visualization_path, results_output_path=json_path)
             print(f"Hyperparameter tuning visualization generated and saved to {visualization_path}")
         except Exception as viz_error:
