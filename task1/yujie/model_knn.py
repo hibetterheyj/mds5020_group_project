@@ -23,7 +23,6 @@ class KNNModel:
 
         # Define parameter grid
         param_grid = {
-            # List of k values to try
             'k_values': [i for i in range(3, 40, 2)],
             'weights': ['uniform', 'distance'],
             'p': [1, 2]  # p=1: Manhattan distance, p=2: Euclidean distance

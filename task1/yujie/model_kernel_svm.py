@@ -36,11 +36,12 @@ class KernelSVMModel:
 
         # Define parameter grid for SVC with RBF and Sigmoid kernels
         param_grid = {
-            'kernel': ['rbf', 'sigmoid'],
-            'C': [0.001, 0.01, 0.1, 1.0, 10],  # for fast test
-            'gamma': [0.00001, 0.001, 0.1, 10],  # for fast test
-            # 'C': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100, 500, 1000],
-            # 'gamma': [0.00001, 0.0005, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1.0],
+            'kernel': ['rbf', 'sigmoid'], # , 'poly'
+            # 'C': [0.001, 0.01, 0.1, 1.0, 10],  # for fast test
+            # 'gamma': [0.00001, 0.001, 0.1, 10],  # for fast test
+            'C': [0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100, 500, 1000],
+            'gamma': [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1.0],
+            # 'class_weight': ['balanced', None],
             'probability': [True]  # Enable probability estimates
         }
 

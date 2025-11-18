@@ -4,17 +4,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
-      "mean_score": 0.7046244678588198,
-      "std_score": 0.017291844723501,
+      "mean_score": 0.7702883995689487,
+      "std_score": 0.00810934803434761,
       "scores": [
-        0.6861927783783784,
-        0.7245590783090783,
-        0.684445945945946,
-        0.7233527373527373,
-        0.7045717993079585
+        0.7627948972972973,
+        0.7843393970893972,
+        0.7639636174636175,
+        0.765977130977131,
+        0.7743669550173009
       ]
     }
   },
@@ -23,17 +24,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
-      "mean_score": 0.6820052249409271,
-      "std_score": 0.014845270334434033,
+      "mean_score": 0.7689850208355813,
+      "std_score": 0.008281473938201672,
       "scores": [
-        0.6640065729729729,
-        0.7001235273735273,
-        0.6649608454608456,
-        0.6932917532917533,
-        0.6876434256055363
+        0.7615221621621622,
+        0.7833428620928621,
+        0.7632037422037421,
+        0.7635790020790021,
+        0.7732773356401383
       ]
     }
   },
@@ -42,17 +44,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
-      "mean_score": 0.6684873659591346,
-      "std_score": 0.009767172520816044,
+      "mean_score": 0.7696919430191331,
+      "std_score": 0.007410274531030883,
       "scores": [
-        0.6588571675675676,
-        0.6760417532917533,
-        0.6545415800415801,
-        0.6779726264726265,
-        0.6750237024221453
+        0.769952518918919,
+        0.7796349618849618,
+        0.7591971586971586,
+        0.7641171171171172,
+        0.7755579584775086
       ]
     }
   },
@@ -61,17 +64,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
-      "mean_score": 0.6567563594579726,
-      "std_score": 0.02955843182100722,
+      "mean_score": 0.7723770549847372,
+      "std_score": 0.008913586178355797,
       "scores": [
-        0.627872172972973,
-        0.6833577616077616,
-        0.6395925155925155,
-        0.6322532917532917,
-        0.7007060553633218
+        0.7736776648648649,
+        0.7829620582120582,
+        0.7583690228690229,
+        0.7669171864171863,
+        0.7799593425605537
       ]
     }
   },
@@ -80,17 +84,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
-      "mean_score": 0.6674658907740746,
-      "std_score": 0.025542794457274157,
+      "mean_score": 0.7719854503003403,
+      "std_score": 0.009358531612261878,
       "scores": [
-        0.6234150054054053,
-        0.7031668399168399,
-        0.667963270963271,
-        0.6685589050589051,
-        0.6742254325259516
+        0.7659641081081081,
+        0.7805341302841303,
+        0.7566670131670132,
+        0.7759199584199585,
+        0.7808420415224913
       ]
     }
   },
@@ -99,17 +104,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
-      "mean_score": 0.6057008062019965,
-      "std_score": 0.01698215717083986,
+      "mean_score": 0.769645113666789,
+      "std_score": 0.009207005224811392,
       "scores": [
-        0.5763199999999999,
-        0.6123314275814276,
-        0.6288225918225918,
-        0.6053083853083854,
-        0.6057216262975779
+        0.7682895567567568,
+        0.7810878378378378,
+        0.7578250173250174,
+        0.7618555093555094,
+        0.7791676470588236
       ]
     }
   },
@@ -118,17 +124,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
-      "mean_score": 0.6010805307773358,
-      "std_score": 0.05604016726677346,
+      "mean_score": 0.7707554187100596,
+      "std_score": 0.005676671080011263,
       "scores": [
-        0.49369876756756753,
-        0.6354807692307692,
-        0.6200589050589052,
-        0.6522681912681912,
-        0.6038960207612456
+        0.762150054054054,
+        0.779258316008316,
+        0.7698967428967429,
+        0.7686309771309771,
+        0.7738410034602076
       ]
     }
   },
@@ -137,17 +144,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
-      "mean_score": 0.6682327729978155,
-      "std_score": 0.011139293900465438,
+      "mean_score": 0.7648137582002124,
+      "std_score": 0.020679393658391308,
       "scores": [
-        0.6641715891891892,
-        0.664244455994456,
-        0.6620696465696465,
-        0.6603551628551628,
-        0.6903230103806228
+        0.766476454054054,
+        0.7789977477477477,
+        0.7252020097020098,
+        0.7702636867636868,
+        0.783128892733564
       ]
     }
   },
@@ -156,17 +164,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
-      "mean_score": 0.7099952797634685,
-      "std_score": 0.051741680490743375,
+      "mean_score": 0.7609643214544862,
+      "std_score": 0.014915433038178312,
       "scores": [
-        0.6120707459459459,
-        0.7499800762300762,
-        0.7033298683298683,
-        0.736524255024255,
-        0.7480714532871973
+        0.7821215135135136,
+        0.7464748787248787,
+        0.7617619542619543,
+        0.7718309078309078,
+        0.7426323529411765
       ]
     }
   },
@@ -175,17 +184,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 1
     },
     "metrics": {
-      "mean_score": 0.6693175599945327,
-      "std_score": 0.06424844295525285,
+      "mean_score": 0.7542154194635838,
+      "std_score": 0.019452589179372176,
       "scores": [
-        0.5926258162162161,
-        0.7316086278586279,
-        0.6003257103257104,
-        0.7473489258489258,
-        0.6746787197231834
+        0.7558102486486485,
+        0.7172953915453916,
+        0.762893277893278,
+        0.7606094941094941,
+        0.7744686851211073
       ]
     }
   },
@@ -194,17 +204,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 2
     },
     "metrics": {
-      "mean_score": 0.6782342582560842,
-      "std_score": 0.06390928493144384,
+      "mean_score": 0.7382468970601904,
+      "std_score": 0.03168619264141216,
       "scores": [
-        0.7340630486486487,
-        0.7198033610533611,
-        0.7046375606375607,
-        0.5562643797643798,
-        0.6764029411764705
+        0.6810056648648649,
+        0.7273473665973667,
+        0.7559656964656963,
+        0.759009702009702,
+        0.7679060553633217
       ]
     }
   },
@@ -213,17 +224,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 5
     },
     "metrics": {
-      "mean_score": 0.6861808062745098,
-      "std_score": 0.0511896766245327,
+      "mean_score": 0.6967317494523856,
+      "std_score": 0.03955395311732014,
       "scores": [
-        0.716652627027027,
-        0.7292219334719335,
-        0.6683295218295218,
-        0.5933381843381843,
-        0.7233617647058824
+        0.7379072,
+        0.6434991337491338,
+        0.6668014553014553,
+        0.6901923076923077,
+        0.7452586505190312
       ]
     }
   },
@@ -232,17 +244,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 10
     },
     "metrics": {
-      "mean_score": 0.7046313126898738,
-      "std_score": 0.04960467292034401,
+      "mean_score": 0.6775838782405936,
+      "std_score": 0.05320671534803671,
       "scores": [
-        0.6380409081081082,
-        0.6633629591129591,
-        0.702460498960499,
-        0.766987525987526,
-        0.7523046712802767
+        0.6034089513513514,
+        0.7413809771309771,
+        0.6568849618849619,
+        0.6502768537768538,
+        0.7359676470588236
       ]
     }
   },
@@ -251,17 +264,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 20
     },
     "metrics": {
-      "mean_score": 0.7263810107220875,
-      "std_score": 0.005763479581562396,
+      "mean_score": 0.6439701928521654,
+      "std_score": 0.0696512620842212,
       "scores": [
-        0.7229716756756758,
-        0.7310424462924463,
-        0.7184667359667359,
-        0.7346063756063755,
-        0.7248178200692041
+        0.6551199135135135,
+        0.7382323284823284,
+        0.5340315315315316,
+        0.6859203049203049,
+        0.6065468858131486
       ]
     }
   },
@@ -270,17 +284,18 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 50
     },
     "metrics": {
-      "mean_score": 0.6873190119699684,
-      "std_score": 0.05445682533008703,
+      "mean_score": 0.6773316342598441,
+      "std_score": 0.044965618216859495,
       "scores": [
-        0.6508471351351353,
-        0.7389579002079002,
-        0.6071115731115732,
-        0.6860561330561331,
-        0.7536223183391003
+        0.6468922810810811,
+        0.7372267844767845,
+        0.6085762300762301,
+        0.6900526680526682,
+        0.7039102076124567
       ]
     }
   },
@@ -289,6 +304,7 @@
       "penalty": "l2",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 100
     },
     "metrics": {
@@ -308,6 +324,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
@@ -327,6 +344,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
@@ -346,6 +364,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
@@ -365,6 +384,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
@@ -384,6 +404,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
@@ -403,6 +424,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
@@ -422,6 +444,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
@@ -441,6 +464,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
@@ -460,6 +484,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 0
     },
     "metrics": {
@@ -479,6 +504,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 1
     },
     "metrics": {
@@ -498,6 +524,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 2
     },
     "metrics": {
@@ -517,6 +544,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 5
     },
     "metrics": {
@@ -536,6 +564,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 10
     },
     "metrics": {
@@ -555,6 +584,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 20
     },
     "metrics": {
@@ -574,6 +604,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 50
     },
     "metrics": {
@@ -593,6 +624,7 @@
       "penalty": "l1",
       "loss": "hinge",
       "dual": "True",
+      "class_weight": "balanced",
       "n_neighbors": 100
     },
     "metrics": {
@@ -612,6 +644,1287 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7835673135999348,
+      "std_score": 0.007684303579737519,
+      "scores": [
+        0.7857691675675674,
+        0.7962569300069301,
+        0.7728205128205128,
+        0.7798693693693695,
+        0.7831205882352942
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7854448221913689,
+      "std_score": 0.00753905280238057,
+      "scores": [
+        0.7879437837837838,
+        0.7974059251559251,
+        0.7746285516285516,
+        0.7812519057519057,
+        0.7859939446366782
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7869992430092057,
+      "std_score": 0.00742735541583904,
+      "scores": [
+        0.7896873513513513,
+        0.7982448024948025,
+        0.7762141372141371,
+        0.7821950796950797,
+        0.7886548442906574
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7876430410677486,
+      "std_score": 0.007398612840538349,
+      "scores": [
+        0.7903519135135135,
+        0.7986034303534305,
+        0.7769837144837144,
+        0.7823911988911989,
+        0.7898849480968858
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7875253538837533,
+      "std_score": 0.007364411364933809,
+      "scores": [
+        0.7898060108108109,
+        0.7986231808731808,
+        0.777995841995842,
+        0.7808790713790713,
+        0.7903226643598615
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7839406114969055,
+      "std_score": 0.008876806520362057,
+      "scores": [
+        0.7824249081081082,
+        0.7985424462924463,
+        0.7747279972279972,
+        0.775442480942481,
+        0.7885652249134949
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7699272967749329,
+      "std_score": 0.0072259667506739305,
+      "scores": [
+        0.7741287783783785,
+        0.7583508316008315,
+        0.771103257103257,
+        0.7663631323631324,
+        0.7796904844290659
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7691909573087594,
+      "std_score": 0.015720534053388642,
+      "scores": [
+        0.7721894054054054,
+        0.7934305266805267,
+        0.7443316008316009,
+        0.7649757449757449,
+        0.7710275086505191
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7545584651288285,
+      "std_score": 0.05201304320270763,
+      "scores": [
+        0.7733545513513513,
+        0.7951152113652115,
+        0.6516905751905752,
+        0.7764861399861399,
+        0.776145847750865
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 1
+    },
+    "metrics": {
+      "mean_score": 0.7562464933583677,
+      "std_score": 0.01455317490170754,
+      "scores": [
+        0.7570857513513514,
+        0.7308788981288982,
+        0.7623683298683298,
+        0.7552546777546778,
+        0.7756448096885813
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 2
+    },
+    "metrics": {
+      "mean_score": 0.7381899073780834,
+      "std_score": 0.026086984238255343,
+      "scores": [
+        0.752403372972973,
+        0.7826782744282744,
+        0.7198565488565488,
+        0.7120686070686071,
+        0.7239427335640138
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 5
+    },
+    "metrics": {
+      "mean_score": 0.7146616137767579,
+      "std_score": 0.039824511238062056,
+      "scores": [
+        0.6982825513513513,
+        0.7693532571032571,
+        0.652443173943174,
+        0.742639986139986,
+        0.7105891003460209
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 10
+    },
+    "metrics": {
+      "mean_score": 0.6172044312983093,
+      "std_score": 0.08611684535879827,
+      "scores": [
+        0.6253765189189189,
+        0.6189170131670132,
+        0.5279012474012474,
+        0.5431548856548857,
+        0.7706724913494809
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 20
+    },
+    "metrics": {
+      "mean_score": 0.6351966063484618,
+      "std_score": 0.06414684931922837,
+      "scores": [
+        0.6409316324324323,
+        0.5562891545391546,
+        0.7315419265419265,
+        0.5748049203049204,
+        0.6724153979238753
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 50
+    },
+    "metrics": {
+      "mean_score": 0.6806353867815753,
+      "std_score": 0.0553327699545102,
+      "scores": [
+        0.697932454054054,
+        0.7394201316701317,
+        0.623358627858628,
+        0.7348579348579349,
+        0.607607785467128
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 100
+    },
+    "metrics": {
+      "mean_score": 0.6299275103902625,
+      "std_score": 0.08303870017388666,
+      "scores": [
+        0.4960179891891892,
+        0.7384014206514207,
+        0.6162571032571033,
+        0.6932255717255716,
+        0.6057354671280277
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 1
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 2
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 5
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 10
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 20
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 50
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "balanced",
+      "n_neighbors": 100
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7046244678588198,
+      "std_score": 0.017291844723501,
+      "scores": [
+        0.6861927783783784,
+        0.7245590783090783,
+        0.684445945945946,
+        0.7233527373527373,
+        0.7045717993079585
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6820052249409271,
+      "std_score": 0.014845270334434033,
+      "scores": [
+        0.6640065729729729,
+        0.7001235273735273,
+        0.6649608454608456,
+        0.6932917532917533,
+        0.6876434256055363
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6684873659591346,
+      "std_score": 0.009767172520816044,
+      "scores": [
+        0.6588571675675676,
+        0.6760417532917533,
+        0.6545415800415801,
+        0.6779726264726265,
+        0.6750237024221453
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6567563594579726,
+      "std_score": 0.02955843182100722,
+      "scores": [
+        0.627872172972973,
+        0.6833577616077616,
+        0.6395925155925155,
+        0.6322532917532917,
+        0.7007060553633218
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6674658907740746,
+      "std_score": 0.025542794457274157,
+      "scores": [
+        0.6234150054054053,
+        0.7031668399168399,
+        0.667963270963271,
+        0.6685589050589051,
+        0.6742254325259516
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6057008062019965,
+      "std_score": 0.01698215717083986,
+      "scores": [
+        0.5763199999999999,
+        0.6123314275814276,
+        0.6288225918225918,
+        0.6053083853083854,
+        0.6057216262975779
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6010805307773358,
+      "std_score": 0.05604016726677346,
+      "scores": [
+        0.49369876756756753,
+        0.6354807692307692,
+        0.6200589050589052,
+        0.6522681912681912,
+        0.6038960207612456
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.6682327729978155,
+      "std_score": 0.011139293900465438,
+      "scores": [
+        0.6641715891891892,
+        0.664244455994456,
+        0.6620696465696465,
+        0.6603551628551628,
+        0.6903230103806228
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": 0.7099952797634685,
+      "std_score": 0.051741680490743375,
+      "scores": [
+        0.6120707459459459,
+        0.7499800762300762,
+        0.7033298683298683,
+        0.736524255024255,
+        0.7480714532871973
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 1
+    },
+    "metrics": {
+      "mean_score": 0.6693175599945327,
+      "std_score": 0.06424844295525285,
+      "scores": [
+        0.5926258162162161,
+        0.7316086278586279,
+        0.6003257103257104,
+        0.7473489258489258,
+        0.6746787197231834
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 2
+    },
+    "metrics": {
+      "mean_score": 0.6782342582560842,
+      "std_score": 0.06390928493144384,
+      "scores": [
+        0.7340630486486487,
+        0.7198033610533611,
+        0.7046375606375607,
+        0.5562643797643798,
+        0.6764029411764705
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 5
+    },
+    "metrics": {
+      "mean_score": 0.6861808062745098,
+      "std_score": 0.0511896766245327,
+      "scores": [
+        0.716652627027027,
+        0.7292219334719335,
+        0.6683295218295218,
+        0.5933381843381843,
+        0.7233617647058824
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 10
+    },
+    "metrics": {
+      "mean_score": 0.7046313126898738,
+      "std_score": 0.04960467292034401,
+      "scores": [
+        0.6380409081081082,
+        0.6633629591129591,
+        0.702460498960499,
+        0.766987525987526,
+        0.7523046712802767
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 20
+    },
+    "metrics": {
+      "mean_score": 0.7263810107220875,
+      "std_score": 0.005763479581562396,
+      "scores": [
+        0.7229716756756758,
+        0.7310424462924463,
+        0.7184667359667359,
+        0.7346063756063755,
+        0.7248178200692041
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 50
+    },
+    "metrics": {
+      "mean_score": 0.6873190119699684,
+      "std_score": 0.05445682533008703,
+      "scores": [
+        0.6508471351351353,
+        0.7389579002079002,
+        0.6071115731115732,
+        0.6860561330561331,
+        0.7536223183391003
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 100
+    },
+    "metrics": {
+      "mean_score": 0.6773316342598441,
+      "std_score": 0.044965618216859495,
+      "scores": [
+        0.6468922810810811,
+        0.7372267844767845,
+        0.6085762300762301,
+        0.6900526680526682,
+        0.7039102076124567
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 0
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 1
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 2
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 5
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 10
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 20
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 50
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l1",
+      "loss": "hinge",
+      "dual": "True",
+      "class_weight": "None",
+      "n_neighbors": 100
+    },
+    "metrics": {
+      "mean_score": NaN,
+      "std_score": NaN,
+      "scores": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "penalty": "l2",
+      "loss": "squared_hinge",
+      "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -631,6 +1944,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -650,6 +1964,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -669,6 +1984,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -688,6 +2004,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -707,6 +2024,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -726,6 +2044,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -745,6 +2064,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -764,6 +2084,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -783,6 +2104,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 1
     },
     "metrics": {
@@ -802,6 +2124,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 2
     },
     "metrics": {
@@ -821,6 +2144,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 5
     },
     "metrics": {
@@ -840,6 +2164,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 10
     },
     "metrics": {
@@ -859,6 +2184,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 20
     },
     "metrics": {
@@ -878,6 +2204,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 50
     },
     "metrics": {
@@ -897,6 +2224,7 @@
       "penalty": "l2",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 100
     },
     "metrics": {
@@ -916,6 +2244,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -935,6 +2264,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -954,6 +2284,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -973,6 +2304,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -992,6 +2324,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -1011,6 +2344,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -1030,6 +2364,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -1049,6 +2384,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -1068,6 +2404,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 0
     },
     "metrics": {
@@ -1087,6 +2424,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 1
     },
     "metrics": {
@@ -1106,6 +2444,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 2
     },
     "metrics": {
@@ -1125,6 +2464,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 5
     },
     "metrics": {
@@ -1144,6 +2484,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 10
     },
     "metrics": {
@@ -1163,6 +2504,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 20
     },
     "metrics": {
@@ -1182,6 +2524,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 50
     },
     "metrics": {
@@ -1201,6 +2544,7 @@
       "penalty": "l1",
       "loss": "squared_hinge",
       "dual": "True",
+      "class_weight": "None",
       "n_neighbors": 100
     },
     "metrics": {
