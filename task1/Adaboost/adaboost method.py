@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 22 19:21:14 2025
-
-@author: asus
-"""
 
 import pandas as pd
 import numpy as np
@@ -18,8 +13,12 @@ import time
 import warnings
 import os
 warnings.filterwarnings('ignore')
+from sklearn.metrics import roc_curve, auc
+import matplotlib.pyplot as plt
+from pathlib import Path
 
-os.chdir('F:/CUHKSZ/data mining/group project/Group Project/resources/Task1')
+current_file_path = Path(__file__).resolve()
+os.chdir(current_file_path.parent.parent)
 print("Loading datasets...")
 train_df = pd.read_csv('bank_marketing_train.csv')
 test_df = pd.read_csv('bank_marketing_test.csv')
@@ -89,32 +88,28 @@ y_train = train_encoded['y'].map({'yes': 1, 'no': 0})
 print(f"Training data shape: {X_train.shape}")
 print(f"Class distribution: {y_train.value_counts().to_dict()}")
 
-# AdaBoost 参数分布 (修正版)
 adaboost_param_dist = {
     'n_estimators': randint(100, 500),
     'learning_rate': uniform(0.01, 1.0),
     'algorithm': ['SAMME', 'SAMME.R'],
-    'estimator': [
-        DecisionTreeClassifier(max_depth=3, random_state=42),
-        DecisionTreeClassifier(max_depth=5, random_state=42),
-        DecisionTreeClassifier(max_depth=7, random_state=42),
-        DecisionTreeClassifier(max_depth=10, random_state=42),
-        DecisionTreeClassifier(max_depth=15, random_state=42),
-        DecisionTreeClassifier(max_depth=None, random_state=42)  # 无限制深度
-    ]
+    'estimator__max_depth': randint(3, 15),
+    'estimator__min_samples_split': randint(2, 20),
+    'estimator__min_samples_leaf': randint(1, 10)
 }
 
-print("\nStarting AdaBoost Randomized Search...")
+print("\nStarting AdaBoost Randomized Search with ROC-AUC...")
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
 start_time = time.time()
 
+base_estimator = DecisionTreeClassifier(random_state=42)
+
 random_search = RandomizedSearchCV(
-    AdaBoostClassifier(random_state=42),  # 修正参数名
+    AdaBoostClassifier(estimator=base_estimator, random_state=42),
     adaboost_param_dist,
-    n_iter=50,
+    n_iter=100,
     cv=cv,
-    scoring='f1',
+    scoring='roc_auc',
     n_jobs=-1,
     random_state=42,
     verbose=1
@@ -124,17 +119,18 @@ random_search.fit(X_train, y_train)
 total_time = time.time() - start_time
 
 print(f"\nAdaBoost Best Parameters: {random_search.best_params_}")
-print(f"AdaBoost Best F1 Score: {random_search.best_score_:.4f}")
+print(f"AdaBoost Best ROC-AUC Score: {random_search.best_score_:.4f}")
 print(f"AdaBoost Total Time: {total_time:.2f} seconds")
 
-# Train final model with best parameters
-print("\nTraining final AdaBoost model with best parameters...")
+# Use best model directly
+print("\nUsing best AdaBoost model from RandomizedSearchCV...")
 final_model = random_search.best_estimator_
 
 print("Final AdaBoost model training completed!")
 
 # Evaluate final model performance
 scoring = {
+    'roc_auc': 'roc_auc',
     'f1': 'f1',
     'precision': 'precision',
     'recall': 'recall', 
@@ -143,13 +139,33 @@ scoring = {
 
 print("\nFinal AdaBoost Model Cross-Validation Performance:")
 cv_results = cross_validate(final_model, X_train, y_train, 
-                           cv=3, scoring=scoring, n_jobs=-1)
+                           cv=5, scoring=scoring, n_jobs=-1)
 
 for metric in scoring.keys():
     scores = cv_results[f'test_{metric}']
-    print(f"{metric.capitalize()}: {scores.mean():.4f} (+/- {scores.std() * 2:.4f})")
+    print(f"{metric.upper()}: {scores.mean():.4f} (+/- {scores.std() * 2:.4f})")
 
-# Save model
+# Plot ROC curve
+plt.figure(figsize=(8, 6))
+y_pred_proba = final_model.predict_proba(X_train)[:, 1]
+fpr, tpr, _ = roc_curve(y_train, y_pred_proba)
+roc_auc = auc(fpr, tpr)
+
+plt.plot(fpr, tpr, color='darkorange', lw=2, label=f'ROC curve (AUC = {roc_auc:.4f})')
+plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--', label='Random Classifier')
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.05])
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.title('ROC Curve - AdaBoost')
+plt.legend(loc="lower right")
+plt.grid(True)
+plt.savefig('adaboost_roc_curve.png', dpi=300, bbox_inches='tight')
+plt.show()
+
+print(f"Training ROC-AUC: {roc_auc:.4f}")
+
+# Save model and preprocessing objects
 joblib.dump({
     'model': final_model,
     'scaler': scaler,
@@ -219,3 +235,9 @@ print("AdaBoost prediction completed! Results saved to predictions_adaboost_fina
 print("\nAdaBoost Prediction Results Statistics:")
 print(f"Positive predictions: {predictions.sum()}/{len(predictions)}")
 print(f"Positive prediction ratio: {predictions.mean():.2%}")
+
+print("\n=== AdaBoost Training Summary ===")
+print(f"Best ROC-AUC: {random_search.best_score_:.4f}")
+print(f"Training ROC-AUC: {roc_auc:.4f}")
+print(f"Best Parameters: {random_search.best_params_}")
+print("Model saved: optimized_adaboost_final.pkl")
