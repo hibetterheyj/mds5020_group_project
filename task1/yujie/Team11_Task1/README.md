@@ -1,11 +1,11 @@
 # Team11 Final Project Task1
 
 ## Team Members
-- Zichang Lan (225040051)
-- He Yujie (225040114)
-- Mingyu LEI (225040082)
-- Runjin Zhang (225040050)
-- Luo Zitai (225040095)
+- LAN Zichang (225040051)
+- HE Yujie (225040114)
+- LEI Mingyu (225040082)
+- ZHANG Runjin (225040050)
+- LUO Zitai (225040095)
 
 ## Methodology
 We used the XGBoost algorithm to train a classification model on the banking marketing dataset. The following preprocessing steps were applied:
