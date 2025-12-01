@@ -1,18 +1,54 @@
-This is the Final Project Task1 file of Team11.
-The teammates in Team11 are: Zichang Lan 225040051  He Yujie 225040114  Mingyu LEI 225040082    Runjin Zhang 225040050  Luo Zitai 225040095.
+# Team11 Final Project Task1
 
+## Team Members
+- Zichang Lan (225040051)
+- He Yujie (225040114)
+- Mingyu LEI (225040082)
+- Runjin Zhang (225040050)
+- Luo Zitai (225040095)
 
-We use XGBoost method to train the banking training dataset.
-We first drop the duplicate rows of the training dataset and divide columns into 2 different groups: Categorical columns and Numerical columns
-For Categorical columns, we use one-hot encoding and for Numerical columns we use Standardscalar.
+## Methodology
+We used the XGBoost algorithm to train a classification model on the banking marketing dataset. The following preprocessing steps were applied:
+1. Removed duplicate rows from the training dataset
+2. Divided features into categorical and numerical columns
+3. Applied one-hot encoding to categorical columns
+4. Applied StandardScaler normalization to numerical columns
 
-After 5-fold CV, we get:
+## Performance Results
+
+### 5-Fold Cross-Validation Performance
+Based on the best_results.json file, the model achieved the following performance metrics:
+- Mean ROC-AUC Score: 0.8019
+- Standard Deviation of ROC-AUC: 0.0073
+- Individual Fold Scores:
+  - Fold 1: 0.7997
+  - Fold 2: 0.8141
+  - Fold 3: 0.7938
+  - Fold 4: 0.7963
+  - Fold 5: 0.8057
+
+### Best Hyperparameters
+```
 {
-    Best ROC-AUC: 0.8014
-    Training ROC-AUC: 0.8203
-    Best Parameters:{'colsample_bytree': 0.8404460046972835, 'gamma': 0.35403628889802274, 'learning_rate': 0.016175348288740735, 'max_depth': 4, 'min_child_weight': 8, 'n_estimators': 393, 'reg_alpha': 0.0007787658410143283, 'reg_lambda': 2.984423118582435, 'subsample': 0.8469926038510867}
+  "max_depth": 6,
+  "n_estimators": 280,
+  "subsample": 0.6944,
+  "colsample_bytree": 0.601,
+  "reg_alpha": 0.5366,
+  "reg_lambda": 2.848,
+  "min_child_weight": 4,
+  "gamma": 0.4342
 }
-Model saved in: optimized_xgboost_final.pkl
-ROC curve saved in: xgboost_roc_curve.png
+```
 
-Then we use this model to predict. The result file is saved in predictions_xgboost_final.csv, and we list predicted labels and the corresponding scores.
+### Test Dataset Results
+The trained model was applied to the test dataset, and the prediction scores are saved in bank_marketing_test_scores.csv. This file contains 8000 probability scores for the test samples.
+
+## File Descriptions
+- **bank_marketing_test_scores.csv**: Contains prediction scores for the test dataset (8000 rows of probability scores)
+- **best_results.json**: Contains the best hyperparameters and 5-fold CV performance metrics
+- **README.md**: This documentation file
+- **submit/**: Directory containing submission files
+  - **optimized_xgboost_final.pkl**: Serialized trained XGBoost model
+  - **xgboost_roc_curve.png**: Visualization of the model's ROC curve
+- **xgboost_predictor.py**: Python script used for making predictions with the trained model
