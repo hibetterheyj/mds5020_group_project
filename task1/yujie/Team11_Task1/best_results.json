@@ -1,0 +1,24 @@
+{
+    "parameters": {
+        "max_depth": 6,
+        "n_estimators": 280,
+        "subsample": 0.6944466,
+        "colsample_bytree": 0.601,
+        "reg_alpha": 0.5366,
+        "reg_lambda": 2.848,
+        "min_child_weight": 4,
+        "gamma": 0.43415,
+        "n_neighbors": 0
+    },
+    "metrics": {
+        "mean_score": 0.8019358658924242,
+        "std_score": 0.007288740874977043,
+        "scores": [
+            0.7997369081081082,
+            0.8141484753984756,
+            0.7937895010395011,
+            0.7963364518364519,
+            0.8056679930795848
+        ]
+    }
+}
