@@ -1,0 +1,30 @@
+{
+    "sentiment_analysis": {
+        "f1_scores_per_fold": [
+            0.7879661064901262,
+            0.8230643673332292,
+            0.8022484105489031,
+            0.8148966972835645,
+            0.7838882890365448
+        ],
+        "mean_weighted_f1_score": 0.8024127741384737,
+        "standard_deviation": 0.015061383790324021
+    },
+    "topic_classification": {
+        "f1_scores_per_fold": [
+            0.9847856824143206,
+            0.9799737925847893,
+            0.9842683034166785,
+            0.9819329018423097,
+            0.982304852516957
+        ],
+        "mean_weighted_f1_score": 0.982653106555011,
+        "standard_deviation": 0.001730632240072608
+    },
+    "cross_validation_configuration": {
+        "n_splits": 5,
+        "shuffle": true,
+        "random_state": 42
+    },
+    "timestamp": "2025-12-07T21:57:02.100518"
+}
