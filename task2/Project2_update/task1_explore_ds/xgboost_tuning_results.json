@@ -1,0 +1,2282 @@
+[
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7744130806116603,
+      "std_score": 0.019578763967149707,
+      "scores": [
+        0.7797800182750854,
+        0.7747031635848156,
+        0.7586045374563297,
+        0.8076518946438979,
+        0.7513257890981724
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7831881716449451,
+      "std_score": 0.014564044972319957,
+      "scores": [
+        0.7889399053761067,
+        0.7829813927076317,
+        0.775814156295063,
+        0.8061411115490738,
+        0.7620642922968506
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 3,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7704436456431167,
+      "std_score": 0.019202478276398153,
+      "scores": [
+        0.7811233510131919,
+        0.7673414711257839,
+        0.7574934910676161,
+        0.8008595195267094,
+        0.7454003954822822
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7724627773770288,
+      "std_score": 0.016868039320359116,
+      "scores": [
+        0.7845935697881982,
+        0.7736722836446817,
+        0.7568263776147558,
+        0.7962702816303203,
+        0.7509513742071883
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 500,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7764829794144136,
+      "std_score": 0.012891924245577417,
+      "scores": [
+        0.773961077682008,
+        0.7779362769238388,
+        0.782207915444021,
+        0.793889565679292,
+        0.754420061342908
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7672824150301608,
+      "std_score": 0.02028519987801197,
+      "scores": [
+        0.774836747872133,
+        0.7638319481509722,
+        0.7521815484743254,
+        0.8019354160283269,
+        0.7436264146250466
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7756798727367405,
+      "std_score": 0.020070715125644314,
+      "scores": [
+        0.7752530366548939,
+        0.778210260302516,
+        0.7641952752627934,
+        0.8106332854395091,
+        0.7501075060239901
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7673474289744922,
+      "std_score": 0.020723350637564922,
+      "scores": [
+        0.774836747872133,
+        0.7662325839745867,
+        0.7536081218261697,
+        0.8016408288083702,
+        0.7404188623912006
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7797242403694813,
+      "std_score": 0.011009725218415988,
+      "scores": [
+        0.7803396940171419,
+        0.7792741587474319,
+        0.7795463112942956,
+        0.7971296158919674,
+        0.76233142189657
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.785456104130569,
+      "std_score": 0.015884118691839852,
+      "scores": [
+        0.7953752913752914,
+        0.77438112671504,
+        0.7779362769238388,
+        0.811545921497528,
+        0.768041904141147
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 500,
+      "classifier__max_depth": 3,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7861487498060611,
+      "std_score": 0.014493915257229763,
+      "scores": [
+        0.7913113671134538,
+        0.7811233510131919,
+        0.7770857263653335,
+        0.811545921497528,
+        0.7696773830407985
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.01,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.733640087999722,
+      "std_score": 0.015055295093877567,
+      "scores": [
+        0.7254742037763816,
+        0.7457157371384916,
+        0.7325581395348837,
+        0.7536228816128794,
+        0.7108294779359733
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7723017470742883,
+      "std_score": 0.01949009862378029,
+      "scores": [
+        0.7763128752112841,
+        0.7638592744768093,
+        0.7621012621184745,
+        0.807909534466701,
+        0.7513257890981724
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7758863761114483,
+      "std_score": 0.018557924727580416,
+      "scores": [
+        0.7816733526740903,
+        0.781945793259945,
+        0.7621012621184745,
+        0.8038730319265427,
+        0.7498384405781896
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7842832937732606,
+      "std_score": 0.017699086524884215,
+      "scores": [
+        0.78216524669169,
+        0.7850980519362218,
+        0.7731605978602841,
+        0.8165752187868696,
+        0.764417353591237
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.01,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7548326095774086,
+      "std_score": 0.021170795779682998,
+      "scores": [
+        0.7547435691943035,
+        0.759065069985295,
+        0.7419697095761418,
+        0.7909698766756885,
+        0.7274148224556138
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7787519747112374,
+      "std_score": 0.01632122970361577,
+      "scores": [
+        0.781143236663535,
+        0.7848187235863304,
+        0.7621120054964818,
+        0.8049679208264621,
+        0.7607179869833769
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 3,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7674765856666836,
+      "std_score": 0.01857998162345946,
+      "scores": [
+        0.7733232709489147,
+        0.7698034661403259,
+        0.7507517504376093,
+        0.797926618828759,
+        0.7455778219778083
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7666193740785425,
+      "std_score": 0.01743776263553077,
+      "scores": [
+        0.7690386051662418,
+        0.7673414711257839,
+        0.7609998781713845,
+        0.7950554645412956,
+        0.7406614513880074
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.01,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7353523570120069,
+      "std_score": 0.01631915399392501,
+      "scores": [
+        0.7339853850760376,
+        0.7437295049520122,
+        0.7268591115852894,
+        0.760448498578828,
+        0.7117392848678672
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.01,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7387282675342882,
+      "std_score": 0.016517358330471573,
+      "scores": [
+        0.7383175128613254,
+        0.7482459288087555,
+        0.7268591115852894,
+        0.7638651195372358,
+        0.7163536648788354
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7739310635966394,
+      "std_score": 0.018378233808500948,
+      "scores": [
+        0.7806095754117461,
+        0.7712004369283075,
+        0.7540710578748119,
+        0.8055061938242036,
+        0.7582680539441286
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7796358282120426,
+      "std_score": 0.01604242958810019,
+      "scores": [
+        0.7862046877655332,
+        0.7743640836587593,
+        0.7739816632665106,
+        0.8060465116279071,
+        0.757582194741503
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7719419327246816,
+      "std_score": 0.020406872996028544,
+      "scores": [
+        0.7739076373103301,
+        0.7725997911429434,
+        0.7585359593896462,
+        0.8076650950297828,
+        0.7470011807507054
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7773094873956135,
+      "std_score": 0.020905368676280126,
+      "scores": [
+        0.788062638524126,
+        0.7830079929828276,
+        0.7571961335023605,
+        0.8076518946438979,
+        0.7506287773248553
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7719692115666913,
+      "std_score": 0.017934893899953258,
+      "scores": [
+        0.7630613585599789,
+        0.7773732425185288,
+        0.7690386051662418,
+        0.8023015443783427,
+        0.7480713072103643
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7667836645160424,
+      "std_score": 0.01986678574068528,
+      "scores": [
+        0.7737792723170369,
+        0.7630907726931733,
+        0.7546474037133869,
+        0.8005650867343002,
+        0.7418357871223149
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 3,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.745378373418836,
+      "std_score": 0.015261860026025536,
+      "scores": [
+        0.7429388943355011,
+        0.7490428161094692,
+        0.7400281960153957,
+        0.7709793486350253,
+        0.7239026119987886
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7799019374223416,
+      "std_score": 0.011751231503628942,
+      "scores": [
+        0.7858578630671654,
+        0.7903779873619908,
+        0.7765915365827759,
+        0.7883109516688643,
+        0.7583713484309115
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7861493472256349,
+      "std_score": 0.012169084596737727,
+      "scores": [
+        0.7995023689224708,
+        0.7763594822736669,
+        0.7776886006314163,
+        0.8024312732004565,
+        0.7747650111001639
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 300,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7879848599829378,
+      "std_score": 0.00966403164275438,
+      "scores": [
+        0.7895455436751775,
+        0.7856591236757977,
+        0.7808424747696358,
+        0.8056652919406737,
+        0.7782118658534045
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 400,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7866493428997201,
+      "std_score": 0.009300357150213063,
+      "scores": [
+        0.7912065513938509,
+        0.782207915444021,
+        0.7830072849700876,
+        0.8020599515904773,
+        0.7747650111001639
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 7,
+      "classifier__n_estimators": 300,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7843463982942636,
+      "std_score": 0.014329875462178012,
+      "scores": [
+        0.7977546484523229,
+        0.7744757708941152,
+        0.7789981042070679,
+        0.8042158142326697,
+        0.766287653685142
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 7,
+      "classifier__n_estimators": 400,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7831499416866736,
+      "std_score": 0.013172154522701197,
+      "scores": [
+        0.7933494720300615,
+        0.7830072849700876,
+        0.7678479977809896,
+        0.801828202211117,
+        0.7697167514411127
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 8,
+      "classifier__n_estimators": 300,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7835258506296967,
+      "std_score": 0.010496443766785388,
+      "scores": [
+        0.7851149180602474,
+        0.7782118658534045,
+        0.7790153313616265,
+        0.8029055658090182,
+        0.7723815720641869
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 8,
+      "classifier__n_estimators": 400,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7832848685661745,
+      "std_score": 0.009656983276609415,
+      "scores": [
+        0.7909604485853222,
+        0.7827273060386946,
+        0.7768892863465721,
+        0.7964494928102677,
+        0.7693978090500163
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 300,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7845850170700481,
+      "std_score": 0.015124259685105803,
+      "scores": [
+        0.7877510324283432,
+        0.7726346370020001,
+        0.780060458330725,
+        0.8122376401976775,
+        0.7702413173914947
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 400,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7848091843271155,
+      "std_score": 0.013196372631217779,
+      "scores": [
+        0.801435625953416,
+        0.7784835487399057,
+        0.7782117529869204,
+        0.7988302004966974,
+        0.7670847934586386
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 7,
+      "classifier__n_estimators": 300,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7869673022301921,
+      "std_score": 0.011087403585186506,
+      "scores": [
+        0.7959789730762771,
+        0.7798145958335158,
+        0.7763594822736669,
+        0.8042158142326697,
+        0.7784676457348312
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 7,
+      "classifier__n_estimators": 400,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7874934039601176,
+      "std_score": 0.010758988796386804,
+      "scores": [
+        0.8009828404959122,
+        0.7824114943082343,
+        0.781143236663535,
+        0.7992816564614756,
+        0.7736477918714308
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 8,
+      "classifier__n_estimators": 300,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7848790486284545,
+      "std_score": 0.010792514927691352,
+      "scores": [
+        0.7951421240128548,
+        0.780596572847276,
+        0.777952081995589,
+        0.7996751317301216,
+        0.7710293325564309
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 8,
+      "classifier__n_estimators": 400,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7841878952904093,
+      "std_score": 0.012875233104131545,
+      "scores": [
+        0.7981275189195398,
+        0.7802787363631538,
+        0.771848261027409,
+        0.8005794548562213,
+        0.7701055052857227
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 300,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7845850170700481,
+      "std_score": 0.015124259685105803,
+      "scores": [
+        0.7877510324283432,
+        0.7726346370020001,
+        0.780060458330725,
+        0.8122376401976775,
+        0.7702413173914947
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 400,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7848091843271155,
+      "std_score": 0.013196372631217779,
+      "scores": [
+        0.801435625953416,
+        0.7784835487399057,
+        0.7782117529869204,
+        0.7988302004966974,
+        0.7670847934586386
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 7,
+      "classifier__n_estimators": 300,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7869673022301921,
+      "std_score": 0.011087403585186506,
+      "scores": [
+        0.7959789730762771,
+        0.7798145958335158,
+        0.7763594822736669,
+        0.8042158142326697,
+        0.7784676457348312
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 7,
+      "classifier__n_estimators": 400,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7874934039601176,
+      "std_score": 0.010758988796386804,
+      "scores": [
+        0.8009828404959122,
+        0.7824114943082343,
+        0.781143236663535,
+        0.7992816564614756,
+        0.7736477918714308
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 8,
+      "classifier__n_estimators": 300,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7848790486284545,
+      "std_score": 0.010792514927691352,
+      "scores": [
+        0.7951421240128548,
+        0.780596572847276,
+        0.777952081995589,
+        0.7996751317301216,
+        0.7710293325564309
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 8,
+      "classifier__n_estimators": 400,
+      "features__text__tfidf__max_features": 2000,
+      "use_handcrafted": true
+    },
+    "metrics": {
+      "mean_score": 0.7841878952904093,
+      "std_score": 0.012875233104131545,
+      "scores": [
+        0.7981275189195398,
+        0.7802787363631538,
+        0.771848261027409,
+        0.8005794548562213,
+        0.7701055052857227
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7634746273811748,
+      "std_score": 0.012222450651060469,
+      "scores": [
+        0.7775342308115135,
+        0.7512375858226494,
+        0.7543079701095154,
+        0.779157678176333,
+        0.7551356719858632
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7830638717606456,
+      "std_score": 0.008422222506580866,
+      "scores": [
+        0.7946653661464586,
+        0.7773732425185288,
+        0.77438112671504,
+        0.7918138970578674,
+        0.7770857263653335
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 3,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7513991912382021,
+      "std_score": 0.008862273800828178,
+      "scores": [
+        0.7580404298492109,
+        0.7407153039058892,
+        0.7442117870782355,
+        0.7647515351522757,
+        0.7492769002053992
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7514446687215895,
+      "std_score": 0.015270371399421789,
+      "scores": [
+        0.7661268059276259,
+        0.7396764466868404,
+        0.7310428467813198,
+        0.7712049107397945,
+        0.7491723334723672
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 500,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7721792724633431,
+      "std_score": 0.004410468343188613,
+      "scores": [
+        0.773967605078733,
+        0.768041904141147,
+        0.7659328324332355,
+        0.777179182046162,
+        0.7757748386174378
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7463359942441465,
+      "std_score": 0.012636655159209484,
+      "scores": [
+        0.7653317997716805,
+        0.733378847973876,
+        0.733537906680566,
+        0.7561601253668844,
+        0.7432712914277255
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7504789783505053,
+      "std_score": 0.015508604055925253,
+      "scores": [
+        0.7645160456325955,
+        0.7286333160947102,
+        0.7421601406741462,
+        0.7713696522125824,
+        0.7457157371384916
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7444184972741036,
+      "std_score": 0.012486862486936097,
+      "scores": [
+        0.7502045324096982,
+        0.7270423163319238,
+        0.734088385948768,
+        0.7623513860809572,
+        0.7484058655991711
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7811031834082854,
+      "std_score": 0.008935149470245091,
+      "scores": [
+        0.7859269910534031,
+        0.784867880006556,
+        0.7677461394923031,
+        0.7927600556874228,
+        0.7742148508017415
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7875637868521287,
+      "std_score": 0.013820520201042226,
+      "scores": [
+        0.8075809679236852,
+        0.7758948158564937,
+        0.7752743215058482,
+        0.8009226488969552,
+        0.7781461800776612
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 500,
+      "classifier__max_depth": 3,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7861448980636614,
+      "std_score": 0.009417631759062961,
+      "scores": [
+        0.800866904087357,
+        0.7773905670753587,
+        0.776332122897834,
+        0.7928840970350404,
+        0.7832507992227166
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.01,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.6409363531924226,
+      "std_score": 0.014981452310696017,
+      "scores": [
+        0.6504553273485094,
+        0.6522398059139403,
+        0.6492657892047683,
+        0.6406703063559179,
+        0.6120505371389772
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7664795072953426,
+      "std_score": 0.014856129268987923,
+      "scores": [
+        0.7792692122748732,
+        0.7555330767906536,
+        0.7538639376240356,
+        0.7892286647132392,
+        0.7545026450739115
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.766402411348417,
+      "std_score": 0.012089486474589616,
+      "scores": [
+        0.7858827618313038,
+        0.760448498578828,
+        0.7501638074576574,
+        0.7726816593178099,
+        0.7628353295564857
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7797774470613085,
+      "std_score": 0.013155384615654759,
+      "scores": [
+        0.7960984514162662,
+        0.7739816632665106,
+        0.7603663058120498,
+        0.7928541270889751,
+        0.7755866877227409
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.01,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.6928805529624207,
+      "std_score": 0.007136566430461501,
+      "scores": [
+        0.7065108573611177,
+        0.6899661272983637,
+        0.6913908221422652,
+        0.6910597564397295,
+        0.6854752015706277
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7604261647411501,
+      "std_score": 0.01284764399211931,
+      "scores": [
+        0.7761275010550274,
+        0.7452934662236987,
+        0.7513874198541128,
+        0.7754363978228599,
+        0.7538860387500514
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 3,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7495495539018584,
+      "std_score": 0.012053766384324155,
+      "scores": [
+        0.7657318686568055,
+        0.7448120338285098,
+        0.7361175100495968,
+        0.7619396830233083,
+        0.7391466739510719
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7397521624618728,
+      "std_score": 0.01455805593522148,
+      "scores": [
+        0.7580404298492109,
+        0.7186359120500532,
+        0.7278675689133891,
+        0.750972042927882,
+        0.7432448585688285
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.01,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.6454246638073229,
+      "std_score": 0.017810248100909597,
+      "scores": [
+        0.6444877887432234,
+        0.658878090544931,
+        0.6568518717039854,
+        0.6556667365039459,
+        0.6112388315405286
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.01,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.6689406513346704,
+      "std_score": 0.007044972470364795,
+      "scores": [
+        0.6736485550509091,
+        0.6701506497280314,
+        0.6729323447579463,
+        0.6729160292056333,
+        0.6550556779308315
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.1,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7627365087989261,
+      "std_score": 0.016415146886709128,
+      "scores": [
+        0.7861988706575102,
+        0.7515523879483746,
+        0.7437346916015475,
+        0.7780992543176702,
+        0.7540973394695278
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.762651724022696,
+      "std_score": 0.01611119298803031,
+      "scores": [
+        0.7828332083020755,
+        0.7432410664968804,
+        0.7480110176149815,
+        0.7796675789683812,
+        0.7595057487311613
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7424114915362114,
+      "std_score": 0.012871850465110057,
+      "scores": [
+        0.7555330767906536,
+        0.723011810815145,
+        0.7345893598362393,
+        0.7571851118653259,
+        0.7417380983736941
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7672091027255219,
+      "std_score": 0.01446707767238032,
+      "scores": [
+        0.7842376665821241,
+        0.7601226349707274,
+        0.7478565082653164,
+        0.7839037225641304,
+        0.7599249812453114
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.6,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.8,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.774794491525368,
+      "std_score": 0.010136969467879144,
+      "scores": [
+        0.7843387827878978,
+        0.7610649810372709,
+        0.7655564543277227,
+        0.7869266620645492,
+        0.7760855774093993
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 200,
+      "classifier__max_depth": 5,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7489228222994405,
+      "std_score": 0.011795795132151806,
+      "scores": [
+        0.7620108971818785,
+        0.7302197131718721,
+        0.7422161886703835,
+        0.760265800319689,
+        0.7499015121533793
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 100,
+      "classifier__max_depth": 3,
+      "classifier__learning_rate": 0.05,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.6809719495078724,
+      "std_score": 0.006018730416900715,
+      "scores": [
+        0.6861542195725057,
+        0.6872465319237878,
+        0.6836976744186046,
+        0.6757376670885946,
+        0.6720236545358694
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__subsample": 0.8,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 10,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 1.0,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7788016482745939,
+      "std_score": 0.009926854523314476,
+      "scores": [
+        0.7824114943082343,
+        0.7891312542815001,
+        0.7604643768843014,
+        0.7846785006782897,
+        0.7773226152206439
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "text__tfidf__max_features": 2000,
+      "classifier__subsample": 1.0,
+      "classifier__n_estimators": 300,
+      "classifier__max_depth": 7,
+      "classifier__learning_rate": 0.2,
+      "classifier__colsample_bytree": 0.6,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7860677861988068,
+      "std_score": 0.010871690987821637,
+      "scores": [
+        0.8061411115490738,
+        0.7805576346420345,
+        0.7739076373103301,
+        0.7867252625225084,
+        0.7830072849700876
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 4,
+      "classifier__n_estimators": 300,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7793224625034254,
+      "std_score": 0.012883749495608695,
+      "scores": [
+        0.7966267400135394,
+        0.7715641729108311,
+        0.7652433043370116,
+        0.7930308223339826,
+        0.7701472729217621
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 4,
+      "classifier__n_estimators": 400,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7858063568584067,
+      "std_score": 0.012296700976452529,
+      "scores": [
+        0.8040975667098808,
+        0.7746367137044124,
+        0.7745290697674418,
+        0.7968536868939065,
+        0.7789147472163918
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 300,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7848182544847624,
+      "std_score": 0.013978628035000669,
+      "scores": [
+        0.7990342243275368,
+        0.7718715129632927,
+        0.7690947803101109,
+        0.8033504214713827,
+        0.7807403333514883
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 400,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7862818844254027,
+      "std_score": 0.013334945512972374,
+      "scores": [
+        0.800516542364279,
+        0.7740822826746735,
+        0.7731605978602841,
+        0.8041543888231497,
+        0.7794956104046272
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 300,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7815110064995403,
+      "std_score": 0.013244770987528178,
+      "scores": [
+        0.7970529781680115,
+        0.7717893780038269,
+        0.7655564543277227,
+        0.7974214964848526,
+        0.775734725513288
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.17,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 400,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7835460597372406,
+      "std_score": 0.009976731285372348,
+      "scores": [
+        0.7958134658434869,
+        0.780060458330725,
+        0.7675734171583308,
+        0.7923404103125627,
+        0.7819425470410968
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 4,
+      "classifier__n_estimators": 300,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7809407623340732,
+      "std_score": 0.01682935665233148,
+      "scores": [
+        0.7950263620282739,
+        0.7645538264265315,
+        0.7603663058120498,
+        0.8038730319265427,
+        0.7808842854769678
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 4,
+      "classifier__n_estimators": 400,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7875252806465637,
+      "std_score": 0.010944586385325753,
+      "scores": [
+        0.7981275189195398,
+        0.7761987453403841,
+        0.778317574603991,
+        0.8030770699249828,
+        0.7819054944439209
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 300,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.785507436428893,
+      "std_score": 0.010311514163475404,
+      "scores": [
+        0.7952469558622912,
+        0.7777037883003795,
+        0.7721046511627907,
+        0.7993186947200176,
+        0.7831630920989858
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 400,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7868101208806081,
+      "std_score": 0.0068886169327509765,
+      "scores": [
+        0.7965678331070527,
+        0.7789147472163918,
+        0.7829690892064078,
+        0.7934121408415463,
+        0.7821867940316417
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 300,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7840952943060657,
+      "std_score": 0.010495463628427891,
+      "scores": [
+        0.7959789730762771,
+        0.7786182183637314,
+        0.7724156376341988,
+        0.7974378165926472,
+        0.7760258258634739
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 400,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7849919614577862,
+      "std_score": 0.01202764108198027,
+      "scores": [
+        0.8050620086128755,
+        0.7749664667619722,
+        0.77438112671504,
+        0.792598123203454,
+        0.777952081995589
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 4,
+      "classifier__n_estimators": 300,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7809407623340732,
+      "std_score": 0.01682935665233148,
+      "scores": [
+        0.7950263620282739,
+        0.7645538264265315,
+        0.7603663058120498,
+        0.8038730319265427,
+        0.7808842854769678
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 4,
+      "classifier__n_estimators": 400,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7875252806465637,
+      "std_score": 0.010944586385325753,
+      "scores": [
+        0.7981275189195398,
+        0.7761987453403841,
+        0.778317574603991,
+        0.8030770699249828,
+        0.7819054944439209
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 300,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.785507436428893,
+      "std_score": 0.010311514163475404,
+      "scores": [
+        0.7952469558622912,
+        0.7777037883003795,
+        0.7721046511627907,
+        0.7993186947200176,
+        0.7831630920989858
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 400,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7868101208806081,
+      "std_score": 0.0068886169327509765,
+      "scores": [
+        0.7965678331070527,
+        0.7789147472163918,
+        0.7829690892064078,
+        0.7934121408415463,
+        0.7821867940316417
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 300,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7840952943060657,
+      "std_score": 0.010495463628427891,
+      "scores": [
+        0.7959789730762771,
+        0.7786182183637314,
+        0.7724156376341988,
+        0.7974378165926472,
+        0.7760258258634739
+      ]
+    }
+  },
+  {
+    "parameters": {
+      "classifier__learning_rate": 0.2,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 400,
+      "text__tfidf__max_features": 2000,
+      "use_handcrafted": false
+    },
+    "metrics": {
+      "mean_score": 0.7849919614577862,
+      "std_score": 0.01202764108198027,
+      "scores": [
+        0.8050620086128755,
+        0.7749664667619722,
+        0.77438112671504,
+        0.792598123203454,
+        0.777952081995589
+      ]
+    }
+  }
+]
