@@ -1,0 +1,2094 @@
+[
+  {
+    "classifier": "LinearSVC",
+    "use_handcrafted": true,
+    "best_params": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 5000,
+      "classifier__loss": "hinge",
+      "classifier__class_weight": "balanced",
+      "classifier__C": 1.0
+    },
+    "best_score": 0.8134247696591913,
+    "cv_results": {
+      "mean_fit_time": "[2.3072444  3.0286552  3.21233563 1.8402914  2.42079363 1.92236743\n 1.92559934 3.91780987 2.06802177 5.41266136 6.04692502 1.82159877\n 2.34172492 3.36082501 2.30498009 4.86082611 2.11003776 6.40679779\n 6.82075248 1.87026124 5.51809058 1.85812039 2.23845811 7.31171994\n 1.97373934 7.300383   2.43518038 3.76574378 1.9447206  1.84885054\n 2.78454418 2.29904356 4.5865716  6.93078876 2.21014905 3.59381995\n 2.77893767 2.42127643 7.14199204 2.09266276 3.1843924  3.24179506\n 4.4188684  1.98445697 1.80578856 1.93000727 1.80372386 2.40995822\n 3.54055266 3.48069983 7.76188879 3.40037847 2.61447988 2.5300725\n 3.75803242 4.62149396 3.33252339 1.9915554  1.94119096 1.81539855\n 1.87640157 2.12573543 2.05785193 4.97595778 3.4630167  3.07084394\n 1.91691556 3.32964282 2.05178003 1.780514   1.94181385 2.71525316\n 2.24475737 2.0389822  2.02743025 2.02713838 7.1322772  7.33069072\n 6.69588428 1.95665331 2.03444729 2.13760023 2.91006947 2.077349\n 2.41178164 1.81003079 1.86477923 2.89374509 2.09462581 6.45213985\n 5.84484243 2.01911383 6.9718276  3.50884924 2.17141824 2.43795323\n 2.31293859 2.03792911 4.50706372 2.27741084]",
+      "std_fit_time": "[0.02118026 0.37479547 0.14383854 0.05404234 0.29917037 0.0547127\n 0.03164858 0.15215566 0.01810544 0.06462113 0.10139492 0.08963743\n 0.07772344 0.27615823 0.18345468 0.09651327 0.0208554  0.07635095\n 0.12168591 0.02462884 0.06760259 0.02112171 0.03673423 0.09811736\n 0.03799575 0.05449569 0.12265238 0.16214269 0.09903263 0.04343485\n 0.43341849 0.07678433 0.44372889 0.09633214 0.30604643 0.03677717\n 0.45903182 0.03804803 0.16447728 0.04390685 0.24858295 0.04697613\n 0.69581863 0.08008386 0.02076044 0.0278972  0.02167616 0.39126208\n 0.03574021 0.23647787 0.12189613 0.09270311 0.3385028  0.3957324\n 0.46655637 0.50636156 0.03837805 0.121012   0.12248648 0.01118194\n 0.0347219  0.08208383 0.10102493 0.07677246 0.25954521 0.16473712\n 0.02221593 0.14634139 0.0235816  0.02430927 0.02900348 0.31913171\n 0.06584734 0.06412789 0.02804786 0.01072091 0.03968258 0.17131868\n 0.08605801 0.01887495 0.02794072 0.03186531 0.42282997 0.08332063\n 0.32517411 0.01744746 0.05791373 0.34973604 0.04028041 0.09433642\n 0.11679466 0.02321234 0.19799086 0.34422216 0.26545154 0.29993333\n 0.1664178  0.02256634 0.05474923 0.03258614]",
+      "mean_score_time": "[0.487993   0.45862927 0.45726981 0.47953963 0.46631994 0.44515233\n 0.45057292 0.46530218 0.47179937 0.45861602 0.45179715 0.44909124\n 0.48138185 0.46412687 0.47551327 0.46812978 0.48363409 0.47183065\n 0.45469379 0.46295748 0.4875412  0.48352542 0.48869858 0.45893688\n 0.46658077 0.47994547 0.48614445 0.45876203 0.44122577 0.46096163\n 0.49597521 0.47443242 0.48424773 0.49181585 0.45867615 0.44547276\n 0.44322772 0.48239837 0.47312365 0.50271907 0.46628542 0.49811521\n 0.47652659 0.4854342  0.45463367 0.45764561 0.45868731 0.46699543\n 0.45712614 0.47563782 0.50071959 0.47120981 0.47166944 0.45696754\n 0.45711827 0.46784005 0.46300335 0.46247315 0.45181365 0.45369501\n 0.44920559 0.52638288 0.46820736 0.47229848 0.4809051  0.46075945\n 0.47958269 0.47159996 0.48303275 0.43841305 0.45562692 0.47015595\n 0.513556   0.48171606 0.48922319 0.48617182 0.46629758 0.46435151\n 0.48613615 0.47559762 0.47316084 0.4577776  0.5057827  0.48049178\n 0.44847512 0.45866647 0.51761675 0.46662064 0.47006097 0.47813859\n 0.47509537 0.46417251 0.49423685 0.45701766 0.47443476 0.45886412\n 0.45056911 0.46763396 0.45767889 0.42440581]",
+      "std_score_time": "[0.01606261 0.01216131 0.01254304 0.03819434 0.01372045 0.02039828\n 0.00910931 0.01088445 0.00762066 0.01872767 0.01310626 0.01176476\n 0.02592937 0.01420826 0.00984214 0.02548817 0.00867101 0.01908918\n 0.0161656  0.02249586 0.02946659 0.0245655  0.0164015  0.01639905\n 0.01213549 0.01203061 0.02737095 0.02628607 0.01591078 0.02109443\n 0.02340684 0.01666022 0.00482748 0.00619513 0.00883023 0.01030754\n 0.01193729 0.01427495 0.02096814 0.02683483 0.01601271 0.0335578\n 0.01922704 0.0280044  0.00830575 0.01492192 0.01243069 0.00810317\n 0.0085184  0.01100475 0.02557022 0.01578948 0.0162729  0.01462803\n 0.02123696 0.01651027 0.02316577 0.02319633 0.00908818 0.01600062\n 0.03328305 0.03826919 0.02160014 0.01264763 0.01508098 0.01678402\n 0.03060697 0.01854055 0.00973224 0.00995224 0.02029278 0.01971871\n 0.01592748 0.02627211 0.02929769 0.02515565 0.02192193 0.0213671\n 0.00610178 0.02005499 0.03303337 0.00622955 0.04664331 0.03392292\n 0.00499268 0.02393224 0.0582662  0.02043812 0.00913045 0.01302005\n 0.02498919 0.01585017 0.03898342 0.00861204 0.00531264 0.01529306\n 0.01733759 0.01468321 0.03180779 0.0683457 ]",
+      "param_features__text__tfidf__ngram_range": "[(1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 3) (1, 1)\n (1, 1) (1, 1) (1, 3) (1, 1) (1, 3) (1, 1) (1, 3) (1, 3) (1, 1) (1, 1)\n (1, 1) (1, 1) (1, 3) (1, 2) (1, 2) (1, 2) (1, 3) (1, 1) (1, 1) (1, 1)\n (1, 3) (1, 3) (1, 2) (1, 3) (1, 1) (1, 1) (1, 1) (1, 3) (1, 2) (1, 1)\n (1, 1) (1, 3) (1, 3) (1, 1) (1, 1) (1, 2) (1, 1) (1, 3) (1, 1) (1, 3)\n (1, 3) (1, 2) (1, 2) (1, 1) (1, 3) (1, 3) (1, 2) (1, 1) (1, 1) (1, 1)\n (1, 1) (1, 2) (1, 2) (1, 3) (1, 3) (1, 1) (1, 2) (1, 2) (1, 3) (1, 1)\n (1, 2) (1, 3) (1, 3) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 3) (1, 2)\n (1, 2) (1, 2) (1, 3) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 3) (1, 2)\n (1, 2) (1, 2) (1, 1) (1, 1) (1, 2) (1, 2) (1, 1) (1, 3) (1, 2) (1, 3)]",
+      "param_features__text__tfidf__max_features": "[7000 2000 3000 5000 2000 7000 7000 3000 3000 3000 5000 7000 5000 3000\n 5000 2000 3000 5000 7000 3000 3000 2000 3000 7000 2000 7000 5000 3000\n 3000 2000 3000 3000 7000 5000 3000 2000 3000 7000 7000 7000 7000 2000\n 7000 2000 5000 7000 2000 2000 2000 7000 7000 2000 2000 3000 3000 7000\n 2000 5000 7000 5000 3000 5000 2000 2000 2000 3000 5000 3000 5000 3000\n 7000 2000 5000 2000 2000 3000 7000 7000 5000 5000 7000 7000 3000 2000\n 2000 5000 5000 3000 2000 5000 3000 3000 7000 5000 5000 3000 2000 2000\n 5000 7000]",
+      "param_classifier__loss": "['squared_hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'hinge' 'hinge' 'hinge' 'hinge'\n 'hinge' 'squared_hinge' 'squared_hinge' 'hinge' 'hinge' 'hinge' 'hinge'\n 'squared_hinge' 'hinge' 'hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'squared_hinge' 'hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'hinge' 'squared_hinge' 'hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'squared_hinge' 'squared_hinge' 'hinge' 'squared_hinge' 'hinge' 'hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge'\n 'hinge' 'hinge' 'hinge' 'hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'squared_hinge' 'hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge' 'hinge'\n 'hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge' 'hinge' 'hinge'\n 'squared_hinge' 'squared_hinge' 'hinge' 'squared_hinge']",
+      "param_classifier__class_weight": "['balanced' None None 'balanced' 'balanced' None 'balanced' 'balanced'\n 'balanced' None 'balanced' 'balanced' None 'balanced' None 'balanced'\n None 'balanced' 'balanced' 'balanced' 'balanced' 'balanced' None\n 'balanced' 'balanced' None 'balanced' None None None None 'balanced' None\n 'balanced' 'balanced' 'balanced' 'balanced' 'balanced' None None None\n None None 'balanced' 'balanced' None 'balanced' None None None 'balanced'\n None None None 'balanced' 'balanced' 'balanced' None 'balanced' None None\n 'balanced' 'balanced' None None None None 'balanced' 'balanced' None None\n None None None 'balanced' None None 'balanced' None None 'balanced' None\n None None None 'balanced' None 'balanced' 'balanced' 'balanced' None None\n 'balanced' 'balanced' None 'balanced' 'balanced' 'balanced' 'balanced'\n None]",
+      "param_classifier__C": "[0.001 1.0 100.0 0.001 1.0 0.001 0.001 1.0 0.01 10.0 10.0 0.001 0.1 100.0\n 0.01 10.0 0.001 10.0 10.0 0.01 100.0 0.01 0.1 100.0 0.01 100.0 0.1 1.0\n 0.1 0.01 0.1 1.0 1.0 10.0 1.0 1.0 10.0 0.1 10.0 0.1 1.0 100.0 1.0 0.1\n 0.001 0.001 0.001 1.0 1.0 1.0 10.0 100.0 0.1 10.0 1.0 1.0 100.0 0.001\n 0.01 0.01 0.01 0.01 0.001 10.0 1.0 100.0 0.001 100.0 0.01 0.001 0.001\n 10.0 0.01 0.1 0.001 0.001 10.0 100.0 100.0 0.01 0.01 0.1 10.0 0.1 10.0\n 0.01 0.001 10.0 0.01 10.0 100.0 0.1 100.0 1.0 0.01 0.1 10.0 0.001 1.0 0.1]",
+      "params": [
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        }
+      ],
+      "split0_test_score": "[0.72376105 0.81344316 0.76011357 0.72584749 0.81123855 0.73403682\n 0.72271791 0.81244294 0.74048132 0.78568418 0.76725856 0.73777242\n 0.76071799 0.76561949 0.7374508  0.78335667 0.73403682 0.79318342\n 0.79092065 0.74048132 0.75842106 0.76310932 0.7731606  0.78122305\n 0.74048132 0.78014635 0.79408302 0.80014477 0.76936161 0.72387712\n 0.74263954 0.8076962  0.80683031 0.79161326 0.80931542 0.80323768\n 0.77997155 0.79596484 0.79127308 0.76384195 0.80940448 0.75689586\n 0.80744049 0.80211267 0.73777242 0.72960052 0.73777242 0.81689126\n 0.80250992 0.80635872 0.79735256 0.76744186 0.74263954 0.78372548\n 0.81014163 0.81429857 0.76636992 0.73403682 0.75349862 0.72387712\n 0.72387712 0.74048132 0.73777242 0.78427665 0.80662063 0.76348197\n 0.72960052 0.75830361 0.74985965 0.72960052 0.73403682 0.78157632\n 0.7253128  0.77421715 0.72584749 0.72960052 0.78821565 0.78104759\n 0.78247284 0.7253128  0.74048132 0.76245491 0.78777237 0.78374721\n 0.76582328 0.75478681 0.72960052 0.78344546 0.75885644 0.79360522\n 0.75582323 0.77073451 0.77583186 0.80755774 0.7374508  0.74317998\n 0.7735649  0.72584749 0.81660542 0.76315964]",
+      "split1_test_score": "[0.75423477 0.78403493 0.75423037 0.75423477 0.79176935 0.73985227\n 0.75423477 0.79257554 0.74887442 0.76775745 0.77853777 0.75095137\n 0.78530101 0.74610838 0.75095137 0.76400526 0.73985227 0.77600954\n 0.77424081 0.74887442 0.73890769 0.77446486 0.79089287 0.77494807\n 0.74887442 0.78212378 0.80154213 0.78647174 0.78105254 0.74459413\n 0.75682638 0.78648119 0.80458667 0.7776432  0.79379472 0.80104949\n 0.75618838 0.80465116 0.78653405 0.77648613 0.79001136 0.74079846\n 0.80542224 0.80262869 0.75095137 0.74653324 0.75095137 0.79412375\n 0.78887093 0.80338061 0.79069767 0.7374142  0.75682638 0.76435529\n 0.7960942  0.80713135 0.73274601 0.73985227 0.77132144 0.74505181\n 0.74356667 0.74887442 0.75095137 0.77387541 0.80159305 0.74484015\n 0.74653324 0.74977336 0.77396108 0.74653324 0.73985227 0.77437307\n 0.74356667 0.78588276 0.75288303 0.74653324 0.77368776 0.78247284\n 0.75629091 0.74356667 0.74887442 0.78142567 0.76008406 0.78457544\n 0.75077311 0.77370351 0.74550366 0.76276665 0.77732262 0.77835399\n 0.76011357 0.79260104 0.77135464 0.79225755 0.75095137 0.75027312\n 0.74099726 0.75288303 0.80847112 0.78001502]",
+      "split2_test_score": "[0.74197436 0.81146277 0.7670668  0.74197436 0.80687418 0.73389677\n 0.74093747 0.81328607 0.73283348 0.77973477 0.78421377 0.7310234\n 0.7938304  0.7680147  0.73346865 0.77803819 0.73389677 0.79534884\n 0.78869659 0.73283348 0.76432265 0.77732262 0.79198791 0.79181776\n 0.73283348 0.79271092 0.81132824 0.80489272 0.78619887 0.73038122\n 0.73963228 0.80168894 0.80965143 0.7964318  0.80523916 0.81271972\n 0.78591137 0.80635138 0.80316212 0.77859245 0.79840021 0.75869067\n 0.81073374 0.815469   0.7310234  0.72585644 0.7310234  0.80331176\n 0.81068851 0.81108168 0.80573778 0.75539685 0.73963228 0.78452706\n 0.81423876 0.81451349 0.75201362 0.73389677 0.76920236 0.73038122\n 0.73038122 0.73283348 0.7310234  0.78761526 0.80811842 0.76570638\n 0.72585644 0.76582328 0.77052141 0.72585644 0.73389677 0.77833069\n 0.73038122 0.78985112 0.74334735 0.72585644 0.78604651 0.79144557\n 0.78462823 0.73038122 0.73283348 0.78619887 0.76474263 0.79313506\n 0.78388829 0.7681434  0.72585644 0.78048647 0.7770826  0.7946858\n 0.76954891 0.79305738 0.77781985 0.81110392 0.73346865 0.73283348\n 0.78313351 0.74471761 0.82024436 0.78757617]",
+      "split3_test_score": "[0.73290721 0.82306912 0.76529803 0.73290721 0.81040762 0.74118476\n 0.73264532 0.82154449 0.7522605  0.80129164 0.7995152  0.75435091\n 0.80955195 0.7759956  0.75330548 0.78482718 0.74118476 0.79667052\n 0.78973883 0.7522605  0.78627661 0.76902153 0.812742   0.80277603\n 0.7522605  0.79842854 0.82143842 0.82778604 0.80712586 0.75191378\n 0.75748987 0.81915065 0.8329023  0.79667052 0.81770143 0.81395365\n 0.79524162 0.82693173 0.80806427 0.80227368 0.81726335 0.76276665\n 0.83253677 0.81331799 0.75435091 0.74596695 0.75435091 0.83048396\n 0.82488687 0.83770506 0.80918706 0.77173047 0.75748987 0.79871037\n 0.82394951 0.81671913 0.77084037 0.74118476 0.76013375 0.75295238\n 0.75295238 0.7522605  0.75435091 0.80341128 0.82761203 0.78288804\n 0.74596695 0.76744186 0.76862827 0.74596695 0.74118476 0.79241123\n 0.75295238 0.80873229 0.73891684 0.74596695 0.79689984 0.80292058\n 0.7872866  0.75295238 0.7522605  0.80143667 0.78421377 0.81140793\n 0.78374534 0.76268256 0.74596695 0.78653405 0.76902153 0.80088613\n 0.76422621 0.8140736  0.77291615 0.80809552 0.75330548 0.75497616\n 0.77657677 0.73526045 0.82164819 0.80036124]",
+      "split4_test_score": "[0.70249995 0.77992539 0.74312314 0.70249995 0.78297297 0.69687844\n 0.70249995 0.79596484 0.70782994 0.75690586 0.77078044 0.71188788\n 0.76141222 0.74314068 0.71188788 0.76241334 0.69687844 0.75629595\n 0.77544387 0.70782994 0.74144982 0.7351468  0.76106498 0.76566918\n 0.70782994 0.76545477 0.78372548 0.78379338 0.76211201 0.71373468\n 0.71860044 0.78513226 0.78643413 0.76288915 0.79271092 0.78497449\n 0.7609552  0.78353533 0.77142337 0.75615382 0.78241149 0.74977336\n 0.78353511 0.77746333 0.71188788 0.70438935 0.71188788 0.78509069\n 0.77688929 0.79192356 0.76736503 0.74370324 0.71860044 0.75779359\n 0.79828342 0.80184958 0.74602267 0.69687844 0.7363237  0.7122722\n 0.7122722  0.70782994 0.71188788 0.77387541 0.77901533 0.74441649\n 0.70438935 0.74079846 0.74139686 0.70291238 0.69687844 0.75154435\n 0.71181054 0.76174509 0.70489915 0.70438935 0.77761878 0.77014568\n 0.75014593 0.71080626 0.70782994 0.75719613 0.74926603 0.76312699\n 0.74717038 0.73766982 0.70291238 0.75744038 0.7351468  0.76182642\n 0.73826946 0.75758219 0.76046512 0.79163324 0.71188788 0.70782994\n 0.74544782 0.70489915 0.80015476 0.75719613]",
+      "mean_test_score": "[0.73107547 0.80238707 0.75796638 0.73149276 0.80065253 0.72916981\n 0.73060709 0.80716278 0.73645593 0.77827478 0.78006115 0.7371972\n 0.78216271 0.75977577 0.73741284 0.77452813 0.72916981 0.78350165\n 0.78380815 0.73645593 0.75787556 0.76381302 0.78596967 0.78328682\n 0.73645593 0.78377287 0.80242346 0.80061773 0.78117017 0.73290019\n 0.7430377  0.80002985 0.80808097 0.78504959 0.80375233 0.80318701\n 0.77565362 0.80348689 0.79209138 0.77546961 0.79949818 0.753785\n 0.80793367 0.80219833 0.7371972  0.7304693  0.7371972  0.80598028\n 0.8007691  0.81008993 0.79406802 0.75513732 0.7430377  0.77782236\n 0.8085415  0.81090242 0.75359852 0.72916981 0.75809597 0.73290695\n 0.73260992 0.73645593 0.7371972  0.7846108  0.80459189 0.76026661\n 0.7304693  0.75642812 0.76087346 0.73017391 0.72916981 0.77564713\n 0.73280472 0.78408568 0.73317877 0.7304693  0.78449371 0.78560645\n 0.7721649  0.73260386 0.73645593 0.77774245 0.76921577 0.78719852\n 0.76628008 0.75939722 0.72996799 0.7741346  0.763486   0.78587151\n 0.75759628 0.78560974 0.77167753 0.80212959 0.73741284 0.73781853\n 0.76394405 0.73272154 0.81342477 0.77766164]",
+      "std_test_score": "[0.01748459 0.01716788 0.00866557 0.01732926 0.01129081 0.01641486\n 0.01744356 0.01104889 0.01582894 0.01519244 0.01138475 0.01524753\n 0.01890298 0.01287351 0.01485227 0.00952715 0.01641486 0.0155164\n 0.00736414 0.01582894 0.01719341 0.01513504 0.01767218 0.01293662\n 0.01582894 0.01136751 0.01312111 0.01574664 0.01550261 0.01380828\n 0.01419809 0.01290453 0.01483863 0.01306616 0.0094742  0.01042171\n 0.01484921 0.01423986 0.01293379 0.01573242 0.01262455 0.00773507\n 0.01558841 0.01350385 0.01524753 0.01549467 0.01524753 0.01614653\n 0.01670272 0.01518244 0.01483217 0.0132034  0.01419809 0.01482311\n 0.01032075 0.00556026 0.01382116 0.01641486 0.01263    0.01458099\n 0.01434376 0.01582894 0.01524753 0.01089123 0.01555399 0.01442817\n 0.01549467 0.0100166  0.01284638 0.01599505 0.01641486 0.01346075\n 0.01431437 0.01575065 0.01660161 0.01549467 0.00817569 0.01098647\n 0.01566571 0.01461151 0.01582894 0.0161391  0.01463336 0.01561774\n 0.01562651 0.01253232 0.01578841 0.01173637 0.01569398 0.0141253\n 0.01067546 0.01960282 0.00603893 0.00840507 0.01485227 0.01674761\n 0.01725716 0.01660226 0.00806077 0.01580034]",
+      "rank_test_score": "[90 14 61 89 18 97 91  7 77 40 39 73 37 58 71 47 97 35 33 77 62 54 25 36\n 77 34 13 19 38 84 68 20  5 29 10 12 44 11 23 46 21 66  6 15 73 92 73  8\n 17  3 22 65 68 41  4  2 67 97 60 83 87 77 73 30  9 57 92 64 56 95 97 45\n 85 32 82 92 31 28 49 88 77 42 51 24 52 59 96 48 55 26 63 27 50 16 71 70\n 53 86  1 43]",
+      "split0_train_score": "[0.73779821 0.95148437 0.99709245 0.73812799 0.95100983 0.72821987\n 0.73661579 0.92204859 0.73573837 0.98719411 0.99245908 0.73787538\n 0.84325545 0.99680572 0.74174586 0.97341529 0.72821987 0.99332857\n 0.99593493 0.73573837 0.99564581 0.79445604 0.84461286 0.99680511\n 0.73573837 0.99680076 0.89439475 0.91949853 0.84448703 0.73809947\n 0.7490836  0.96736061 0.9413229  0.99651566 0.96994267 0.91141212\n 0.99506525 0.8975108  0.99621908 0.83860166 0.98457007 0.99680076\n 0.93724466 0.88644061 0.73787538 0.73335023 0.73787538 0.95008225\n 0.90726174 0.98719154 0.99651566 0.99680201 0.74898994 0.99534609\n 0.9186085  0.94271732 0.99593493 0.72821987 0.78676349 0.73897711\n 0.73872083 0.73573837 0.73787538 0.97031362 0.90235607 0.99709131\n 0.73335023 0.99680572 0.78793997 0.73335023 0.72821987 0.99040416\n 0.73923344 0.84235619 0.7396967  0.73335023 0.99650957 0.99651566\n 0.99680076 0.73923344 0.73573837 0.83964926 0.99563825 0.84383537\n 0.99156563 0.78777405 0.73335023 0.99535509 0.79413904 0.99564581\n 0.99651095 0.84330658 0.99680572 0.97887861 0.74174586 0.74482792\n 0.99100807 0.73917375 0.93751747 0.84189407]",
+      "split1_train_score": "[0.73061883 0.95192432 0.99796571 0.73161894 0.95703155 0.72684499\n 0.73095235 0.92347029 0.7337049  0.98807319 0.99245768 0.73447224\n 0.84641969 0.997386   0.73542257 0.97255526 0.72684499 0.99419496\n 0.99651433 0.7337049  0.99680572 0.78456145 0.85119959 0.9979665\n 0.7337049  0.99767487 0.8903727  0.92249172 0.84884274 0.73665386\n 0.74532332 0.96537533 0.9399866  0.99709527 0.97024412 0.91405532\n 0.99506432 0.89294348 0.99680264 0.8435313  0.98663051 0.99767487\n 0.93848816 0.88532291 0.73447224 0.7294133  0.73447224 0.94720773\n 0.9112721  0.98836982 0.997386   0.99767442 0.74541377 0.99622056\n 0.92148453 0.94553863 0.99767622 0.72684499 0.77927625 0.73737748\n 0.73814666 0.7337049  0.73447224 0.96889838 0.90495316 0.99796492\n 0.72966817 0.99767622 0.77852681 0.72966817 0.72684499 0.99331199\n 0.73701577 0.850369   0.73325233 0.72966817 0.99680326 0.99767622\n 0.99796531 0.73773897 0.7337049  0.84123817 0.99593103 0.84768891\n 0.99244038 0.78119637 0.7294133  0.99622494 0.78772428 0.99593571\n 0.99767532 0.84902316 0.99738549 0.97916975 0.73542257 0.73852204\n 0.99042972 0.73325233 0.93897973 0.8438072 ]",
+      "split2_train_score": "[0.73655384 0.95478165 0.99767396 0.73655384 0.95650178 0.72832265\n 0.73655384 0.92553207 0.73766847 0.98924941 0.99303786 0.73913366\n 0.8492148  0.997386   0.74051383 0.97774038 0.72832265 0.99303786\n 0.99709527 0.73766847 0.99709527 0.78928214 0.8510193  0.99767622\n 0.73766847 0.99767396 0.89395069 0.9222619  0.84861407 0.73876497\n 0.74837364 0.96797474 0.94206822 0.997386   0.97401045 0.91667109\n 0.99593493 0.89647198 0.99709245 0.84199802 0.98719667 0.99738295\n 0.93821621 0.88399539 0.73913366 0.73396673 0.73913366 0.95356539\n 0.90996662 0.98807082 0.997386   0.99738347 0.74984289 0.99709245\n 0.92467481 0.94644753 0.99709527 0.72832265 0.77838276 0.74108509\n 0.73984922 0.73766847 0.73913366 0.9712349  0.90798516 0.99709188\n 0.73396673 0.99767622 0.78107059 0.73396673 0.72832265 0.99186205\n 0.74082803 0.85083388 0.73707361 0.73396673 0.99709245 0.99767622\n 0.99738244 0.74118869 0.73766847 0.84898575 0.99563911 0.85115729\n 0.99476642 0.77855453 0.73396673 0.99622565 0.79034372 0.99564499\n 0.99709188 0.84935677 0.99738549 0.98091546 0.74051383 0.73896004\n 0.99303657 0.73681371 0.94298404 0.84953889]",
+      "split3_train_score": "[0.73682105 0.94951985 0.99767487 0.73682105 0.94728361 0.72623536\n 0.73596901 0.92265686 0.73255793 0.9877907  0.99245768 0.73331395\n 0.84578867 0.99767622 0.73452616 0.97026853 0.72623536 0.99390528\n 0.99622494 0.73255793 0.99651566 0.78916859 0.84570746 0.99767622\n 0.73255793 0.99767351 0.89195822 0.91821177 0.84230556 0.73448181\n 0.74275771 0.96394696 0.94023206 0.997386   0.96710129 0.91004365\n 0.99477448 0.89315907 0.99680139 0.83882354 0.98544785 0.99767442\n 0.9370021  0.88109929 0.73331395 0.72875008 0.73331395 0.94868216\n 0.90576809 0.98865046 0.997386   0.99767396 0.74240559 0.9962213\n 0.92094284 0.94243371 0.99767622 0.72623536 0.78248804 0.73433647\n 0.73360545 0.73255793 0.73331395 0.96621858 0.9063772  0.99767442\n 0.72838353 0.99767622 0.78238991 0.72801675 0.72623536 0.98778107\n 0.73470165 0.84496065 0.7385256  0.72764976 0.99651095 0.99767622\n 0.99767532 0.73495717 0.73255793 0.84132601 0.99709302 0.84455539\n 0.9921504  0.78295029 0.72801675 0.99535597 0.78826984 0.99535597\n 0.99738448 0.84556158 0.99767622 0.97830744 0.73452616 0.74256876\n 0.98840709 0.73871913 0.9355352  0.84280604]",
+      "split4_train_score": "[0.74592104 0.95682831 0.99796452 0.74618162 0.95267202 0.73755344\n 0.74558228 0.92722618 0.74396752 0.98836753 0.9927471  0.74396759\n 0.84651877 0.997386   0.74647556 0.96882272 0.73755344 0.99419714\n 0.99680511 0.74396752 0.99622494 0.79116576 0.84838529 0.99767577\n 0.74396752 0.99767442 0.89434367 0.9181359  0.84635591 0.74634037\n 0.75201733 0.96621081 0.94059869 0.99767622 0.96997255 0.9180333\n 0.99506432 0.89836862 0.99738347 0.84258117 0.98224816 0.99709245\n 0.93788822 0.88883159 0.74396759 0.74134219 0.74396759 0.95156751\n 0.90744164 0.98982059 0.99767622 0.99709245 0.75253772 0.99563825\n 0.92977941 0.94725947 0.99738549 0.73755344 0.78235027 0.74731944\n 0.74721727 0.74396752 0.74396759 0.9726583  0.90474018 0.99796452\n 0.74134219 0.9979665  0.78574162 0.74134219 0.73755344 0.98981452\n 0.74695905 0.84709879 0.74711952 0.74134219 0.99651095 0.99767622\n 0.99709245 0.74747552 0.74396752 0.84401059 0.99738295 0.84797467\n 0.99156396 0.78470271 0.74134219 0.99709583 0.79057416 0.99506618\n 0.99767396 0.84801333 0.99738499 0.97801632 0.74647556 0.74809791\n 0.98840709 0.74711952 0.93870535 0.84466307]",
+      "mean_train_score": "[0.73754259 0.9529077  0.9976743  0.73786069 0.95289976 0.72943526\n 0.73713465 0.9241868  0.73672744 0.98813499 0.99263188 0.73775257\n 0.84623948 0.99732798 0.73973679 0.97256043 0.72943526 0.99373276\n 0.99651492 0.73672744 0.99645748 0.7897268  0.8481849  0.99755996\n 0.73672744 0.9974995  0.893004   0.92011996 0.84612106 0.7388681\n 0.74751112 0.96617369 0.94084169 0.99721183 0.97025422 0.9140431\n 0.99518066 0.89569079 0.9968598  0.84110714 0.98521865 0.99732509\n 0.93776787 0.88513796 0.73775257 0.73336451 0.73775257 0.95022101\n 0.90834204 0.98842064 0.99726997 0.99732526 0.74783798 0.99610373\n 0.92309802 0.94487933 0.99715363 0.72943526 0.78185216 0.73981912\n 0.73950788 0.73672744 0.73775257 0.96986476 0.90528235 0.99755741\n 0.73334217 0.99756017 0.78313378 0.73326881 0.72943526 0.99063476\n 0.73974759 0.8471237  0.73913355 0.73319542 0.99668543 0.99744411\n 0.99738326 0.74011876 0.73672744 0.84304196 0.99633687 0.84704233\n 0.99249736 0.78303559 0.73321784 0.9960515  0.79021021 0.99552973\n 0.99726732 0.84705228 0.99732758 0.97905752 0.73973679 0.74259534\n 0.99025771 0.73901569 0.93874436 0.84454186]",
+      "std_train_score": "[0.00489286 0.00258276 0.00031865 0.00471291 0.0036114  0.00413688\n 0.00472332 0.00192217 0.00402003 0.00067876 0.00023179 0.00376858\n 0.00190109 0.0002843  0.00437754 0.00305895 0.00413688 0.00047017\n 0.00041024 0.00402003 0.00049886 0.0032133  0.0026855  0.00039383\n 0.00402003 0.00034937 0.00159013 0.00190667 0.0024862  0.00401444\n 0.00319074 0.00143176 0.00076129 0.00039359 0.00220122 0.00302476\n 0.00039352 0.00223834 0.00038615 0.00201669 0.00174373 0.00033964\n 0.00056471 0.00256867 0.00376858 0.00449247 0.00376858 0.00221202\n 0.00199136 0.0008542  0.00039355 0.00033908 0.00354463 0.00059929\n 0.00386086 0.00196032 0.00064631 0.00413688 0.00294773 0.00434943\n 0.00440141 0.00402003 0.00376858 0.00219596 0.00186919 0.00039483\n 0.00452718 0.00039362 0.00334468 0.00460916 0.00413688 0.00187314\n 0.00415599 0.00321577 0.00454521 0.00469435 0.00023297 0.00046422\n 0.00041182 0.00420371 0.00402003 0.00328559 0.00074909 0.00263399\n 0.0011842  0.00312097 0.00464993 0.00065112 0.00225968 0.00029551\n 0.00043553 0.00229657 0.00028422 0.00101422 0.00437754 0.00360751\n 0.00174151 0.00455741 0.00244278 0.00266641]"
+    },
+    "n_iter": 100,
+    "cv_folds": 5,
+    "datetime": "2025-12-08T17:32:18.586510"
+  },
+  {
+    "classifier": "LinearSVC",
+    "use_handcrafted": false,
+    "best_params": {
+      "text__tfidf__ngram_range": [
+        1,
+        3
+      ],
+      "text__tfidf__max_features": 7000,
+      "classifier__loss": "squared_hinge",
+      "classifier__class_weight": "balanced",
+      "classifier__C": 0.1
+    },
+    "best_score": 0.8089901993815491,
+    "cv_results": {
+      "mean_fit_time": "[1.81281142 1.89316983 2.13068581 1.8143724  1.86100512 1.73469996\n 1.84594922 1.85583787 1.97001395 1.91261053 1.98797402 1.742172\n 1.96479506 2.12182789 2.02599282 1.99530478 2.02512279 2.18760014\n 1.93238487 1.78960662 2.70085144 1.7597744  2.01400619 2.93607545\n 1.9012804  2.12773571 2.01911874 1.80236478 1.76641908 1.77127681\n 1.99959641 2.00181885 1.94631763 2.16195874 1.79151735 1.7925272\n 1.78113093 1.9973618  2.25643401 1.85547976 1.90047936 2.1410872\n 2.08487129 1.78345847 1.76031203 1.89114242 1.79386129 2.04262657\n 1.81757092 1.98535566 2.08684411 2.0008038  1.97158208 1.79756036\n 2.004215   2.01512036 2.08923774 1.75786729 1.75820475 1.83453765\n 1.7628324  1.91517577 1.94433947 2.28900976 2.10823383 1.89596\n 1.95835605 2.3125596  2.05873237 1.80273404 1.93286338 2.06361904\n 1.98876667 1.76541839 1.90824671 1.94968519 1.86355505 2.11308179\n 2.87901955 1.99696541 1.92525411 1.88923945 2.09887547 1.9191195\n 1.81391473 1.78294902 1.81571956 1.93851943 2.02757087 1.98879719\n 2.25170698 1.89987721 2.99357643 1.88372574 1.95319037 1.93815899\n 1.90878191 2.04114709 1.94687104 1.78621988]",
+      "std_fit_time": "[0.01908338 0.07187503 0.0279654  0.06620509 0.01387844 0.01905791\n 0.03053346 0.01374916 0.03576449 0.03821335 0.03015952 0.02230045\n 0.01557416 0.02201625 0.03648646 0.03885417 0.02719231 0.06893443\n 0.02601154 0.04389543 0.11135655 0.02527576 0.01140884 0.14537882\n 0.00429179 0.09125317 0.02459571 0.02048306 0.01340337 0.01043968\n 0.01568758 0.02596865 0.08720611 0.02334292 0.0119323  0.02156713\n 0.02573901 0.02349375 0.1728283  0.04156601 0.0365324  0.01207377\n 0.0569441  0.03234945 0.0237796  0.01104083 0.01972577 0.04261727\n 0.04100986 0.01615767 0.02647121 0.03541047 0.05815596 0.03022447\n 0.03661891 0.02734352 0.02469469 0.02006362 0.02292119 0.06803743\n 0.01429111 0.04226022 0.0230949  0.31821965 0.0345129  0.02426957\n 0.07544413 0.04711316 0.02714237 0.01847776 0.04110458 0.01940933\n 0.02680547 0.00711124 0.08332787 0.05947565 0.01680991 0.09387875\n 0.08976205 0.0946425  0.02287365 0.04683293 0.02024676 0.02155409\n 0.04249919 0.02446332 0.04449953 0.03460955 0.01424716 0.04049843\n 0.04619953 0.02854603 0.10502622 0.06905088 0.02710917 0.04226488\n 0.02397725 0.03788119 0.03831409 0.12595497]",
+      "mean_score_time": "[0.44457846 0.45004373 0.43860908 0.43688779 0.4481318  0.43477149\n 0.44468956 0.44925861 0.45493226 0.4590229  0.43836217 0.43274446\n 0.45938125 0.43694715 0.46372581 0.43930721 0.45077505 0.60445819\n 0.43908215 0.44325876 0.4404253  0.45714793 0.45847802 0.45746679\n 0.44259973 0.4679184  0.46240087 0.43328891 0.43835683 0.45012593\n 0.45859914 0.45708132 0.46350255 0.46155186 0.44981036 0.44068937\n 0.44353008 0.50022974 0.4806139  0.46431088 0.45194659 0.47806139\n 0.45613341 0.440095   0.44340901 0.47364984 0.46019235 0.46171651\n 0.44547367 0.45485225 0.46108465 0.4680006  0.46169224 0.44243388\n 0.45186744 0.4513113  0.44530973 0.44573059 0.45495062 0.4348588\n 0.44381785 0.45996246 0.46828609 0.47154565 0.46928115 0.46183267\n 0.4594924  0.47072034 0.46987219 0.44363046 0.46964173 0.46633673\n 0.46586752 0.43595576 0.51777129 0.46193619 0.43258085 0.45510359\n 0.46552014 0.48215866 0.43973546 0.46134348 0.45063157 0.4645329\n 0.45202584 0.44460249 0.45504818 0.4672648  0.45965896 0.44743619\n 0.45969691 0.44948859 0.45015521 0.45820165 0.46582217 0.47730861\n 0.46659312 0.47382741 0.45651813 0.37727575]",
+      "std_score_time": "[0.01065213 0.02166975 0.02365021 0.00911453 0.01304839 0.00613245\n 0.00670795 0.00760646 0.02130125 0.01345922 0.0111856  0.01590912\n 0.01376613 0.01372468 0.02224705 0.01070252 0.01977877 0.10732089\n 0.01057517 0.01609162 0.01809871 0.01646821 0.01446281 0.02527912\n 0.02053349 0.01428332 0.01516072 0.00892841 0.02368605 0.01412287\n 0.01596877 0.00910936 0.02141116 0.01555634 0.02211924 0.01049428\n 0.00998319 0.06452116 0.01311221 0.03250508 0.01746102 0.02318473\n 0.01987617 0.02008894 0.01338143 0.01649167 0.01333242 0.0127555\n 0.0122961  0.01482866 0.02701029 0.01387032 0.01831338 0.0157495\n 0.01688859 0.01216101 0.00553657 0.02084424 0.01827785 0.01887215\n 0.02346044 0.01928585 0.03020853 0.02690935 0.01033506 0.00746434\n 0.00995777 0.01210993 0.0118495  0.01127469 0.01916969 0.01692836\n 0.02306742 0.01857695 0.07107843 0.01783095 0.01184487 0.01526803\n 0.01509064 0.02698158 0.01948771 0.02862697 0.01031671 0.00888613\n 0.01100116 0.02114043 0.03017516 0.01516086 0.02026658 0.01934316\n 0.01210091 0.01128292 0.01922917 0.01939634 0.01406268 0.02444046\n 0.01854312 0.01718891 0.00868421 0.0662729 ]",
+      "param_text__tfidf__ngram_range": "[(1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 3) (1, 1)\n (1, 1) (1, 1) (1, 3) (1, 1) (1, 3) (1, 1) (1, 3) (1, 3) (1, 1) (1, 1)\n (1, 1) (1, 1) (1, 3) (1, 2) (1, 2) (1, 2) (1, 3) (1, 1) (1, 1) (1, 1)\n (1, 3) (1, 3) (1, 2) (1, 3) (1, 1) (1, 1) (1, 1) (1, 3) (1, 2) (1, 1)\n (1, 1) (1, 3) (1, 3) (1, 1) (1, 1) (1, 2) (1, 1) (1, 3) (1, 1) (1, 3)\n (1, 3) (1, 2) (1, 2) (1, 1) (1, 3) (1, 3) (1, 2) (1, 1) (1, 1) (1, 1)\n (1, 1) (1, 2) (1, 2) (1, 3) (1, 3) (1, 1) (1, 2) (1, 2) (1, 3) (1, 1)\n (1, 2) (1, 3) (1, 3) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 3) (1, 2)\n (1, 2) (1, 2) (1, 3) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 3) (1, 2)\n (1, 2) (1, 2) (1, 1) (1, 1) (1, 2) (1, 2) (1, 1) (1, 3) (1, 2) (1, 3)]",
+      "param_text__tfidf__max_features": "[7000 2000 3000 5000 2000 7000 7000 3000 3000 3000 5000 7000 5000 3000\n 5000 2000 3000 5000 7000 3000 3000 2000 3000 7000 2000 7000 5000 3000\n 3000 2000 3000 3000 7000 5000 3000 2000 3000 7000 7000 7000 7000 2000\n 7000 2000 5000 7000 2000 2000 2000 7000 7000 2000 2000 3000 3000 7000\n 2000 5000 7000 5000 3000 5000 2000 2000 2000 3000 5000 3000 5000 3000\n 7000 2000 5000 2000 2000 3000 7000 7000 5000 5000 7000 7000 3000 2000\n 2000 5000 5000 3000 2000 5000 3000 3000 7000 5000 5000 3000 2000 2000\n 5000 7000]",
+      "param_classifier__loss": "['squared_hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'hinge' 'hinge' 'hinge' 'hinge'\n 'hinge' 'squared_hinge' 'squared_hinge' 'hinge' 'hinge' 'hinge' 'hinge'\n 'squared_hinge' 'hinge' 'hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'squared_hinge' 'hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'hinge' 'squared_hinge' 'hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'squared_hinge' 'squared_hinge' 'hinge' 'squared_hinge' 'hinge' 'hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge'\n 'hinge' 'hinge' 'hinge' 'hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'hinge' 'squared_hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'hinge' 'squared_hinge' 'squared_hinge' 'hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge'\n 'squared_hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge' 'hinge'\n 'hinge' 'squared_hinge' 'squared_hinge' 'squared_hinge' 'hinge' 'hinge'\n 'squared_hinge' 'squared_hinge' 'hinge' 'squared_hinge']",
+      "param_classifier__class_weight": "['balanced' None None 'balanced' 'balanced' None 'balanced' 'balanced'\n 'balanced' None 'balanced' 'balanced' None 'balanced' None 'balanced'\n None 'balanced' 'balanced' 'balanced' 'balanced' 'balanced' None\n 'balanced' 'balanced' None 'balanced' None None None None 'balanced' None\n 'balanced' 'balanced' 'balanced' 'balanced' 'balanced' None None None\n None None 'balanced' 'balanced' None 'balanced' None None None 'balanced'\n None None None 'balanced' 'balanced' 'balanced' None 'balanced' None None\n 'balanced' 'balanced' None None None None 'balanced' 'balanced' None None\n None None None 'balanced' None None 'balanced' None None 'balanced' None\n None None None 'balanced' None 'balanced' 'balanced' 'balanced' None None\n 'balanced' 'balanced' None 'balanced' 'balanced' 'balanced' 'balanced'\n None]",
+      "param_classifier__C": "[0.001 1.0 100.0 0.001 1.0 0.001 0.001 1.0 0.01 10.0 10.0 0.001 0.1 100.0\n 0.01 10.0 0.001 10.0 10.0 0.01 100.0 0.01 0.1 100.0 0.01 100.0 0.1 1.0\n 0.1 0.01 0.1 1.0 1.0 10.0 1.0 1.0 10.0 0.1 10.0 0.1 1.0 100.0 1.0 0.1\n 0.001 0.001 0.001 1.0 1.0 1.0 10.0 100.0 0.1 10.0 1.0 1.0 100.0 0.001\n 0.01 0.01 0.01 0.01 0.001 10.0 1.0 100.0 0.001 100.0 0.01 0.001 0.001\n 10.0 0.01 0.1 0.001 0.001 10.0 100.0 100.0 0.01 0.01 0.1 10.0 0.1 10.0\n 0.01 0.001 10.0 0.01 10.0 100.0 0.1 100.0 1.0 0.01 0.1 10.0 0.001 1.0 0.1]",
+      "params": [
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__loss": "hinge",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__loss": "squared_hinge",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        }
+      ],
+      "split0_test_score": "[0.76181404 0.79260923 0.75136496 0.7577442  0.78591137 0.51506636\n 0.76366723 0.79448442 0.75445839 0.777783   0.77709383 0.75688444\n 0.74475593 0.75115099 0.51506636 0.77630529 0.51506636 0.77316687\n 0.78480038 0.75349242 0.75667463 0.77490689 0.75123759 0.77462731\n 0.74970824 0.77504242 0.80616354 0.77927416 0.75142009 0.51506636\n 0.53291406 0.78669051 0.78300728 0.77871831 0.78553131 0.79656253\n 0.77651486 0.80373042 0.77758604 0.74891072 0.79252067 0.74903156\n 0.78407255 0.8076143  0.75454101 0.51506636 0.75118716 0.79345729\n 0.77821175 0.78454595 0.78012212 0.76328735 0.54312141 0.78082547\n 0.80093637 0.7872866  0.7613448  0.51506636 0.77006366 0.51506636\n 0.51506636 0.75454101 0.74970824 0.78314524 0.78459357 0.75432366\n 0.51506636 0.74938625 0.7747861  0.51506636 0.51506636 0.77437307\n 0.51506636 0.75777409 0.76412026 0.51506636 0.78125465 0.78207234\n 0.76921304 0.51506636 0.75573168 0.73658655 0.76822124 0.75492342\n 0.76851388 0.77140064 0.51506636 0.75832669 0.77994541 0.76182136\n 0.75153221 0.7583667  0.78031371 0.78911446 0.51506636 0.77223199\n 0.76739559 0.76750219 0.7960942  0.73764264]",
+      "split1_test_score": "[0.78545294 0.78419698 0.74763475 0.78885433 0.7795732  0.51506636\n 0.78308777 0.79064031 0.77257295 0.7609552  0.78388829 0.77679003\n 0.76228542 0.73761225 0.51506636 0.75555011 0.51506636 0.75248102\n 0.76565151 0.77659514 0.74950061 0.79748372 0.77312318 0.76629119\n 0.7701941  0.77242564 0.80429028 0.77302491 0.76253412 0.52832176\n 0.53092938 0.77803819 0.78374721 0.75885644 0.78669051 0.79815062\n 0.75423037 0.80878618 0.77690416 0.74840587 0.78442934 0.73837364\n 0.7832508  0.80251174 0.77887478 0.51506636 0.77188959 0.78702457\n 0.78239377 0.78182552 0.77531486 0.73867437 0.54375828 0.75395877\n 0.79051992 0.79898108 0.73887123 0.51506636 0.80124008 0.52041258\n 0.52306351 0.77858031 0.7701941  0.7609552  0.77543954 0.74569037\n 0.51506636 0.74442631 0.78566139 0.51506636 0.51506636 0.76608737\n 0.51506636 0.7682897  0.77562192 0.51506636 0.76832983 0.76969687\n 0.74208239 0.51506636 0.7764518  0.75718511 0.75735595 0.77730621\n 0.76172056 0.80030667 0.51506636 0.75547808 0.78506889 0.76649153\n 0.74352759 0.77015335 0.75707121 0.79241123 0.51506636 0.787834\n 0.75440719 0.77696175 0.80373042 0.76179981]",
+      "split2_test_score": "[0.78359689 0.79505317 0.74476897 0.78049658 0.79911231 0.51506636\n 0.7771039  0.79827577 0.77046502 0.76723282 0.77955625 0.76858033\n 0.77887223 0.76628085 0.51506636 0.77371272 0.51506636 0.78297297\n 0.78497449 0.7719641  0.75382981 0.79680326 0.78107496 0.77816695\n 0.77384818 0.77456808 0.81175096 0.80381364 0.78248093 0.51984096\n 0.52832176 0.79327253 0.81115848 0.77881327 0.79366493 0.80312328\n 0.77399916 0.81296663 0.78283712 0.76975727 0.80419649 0.74014703\n 0.81007567 0.81393807 0.76865177 0.51506636 0.77424446 0.80333923\n 0.80013401 0.81400323 0.7795732  0.73232108 0.5354864  0.77803819\n 0.7900105  0.80519203 0.73479493 0.51506636 0.78684398 0.51718303\n 0.51718303 0.77046502 0.77384818 0.77665348 0.80487507 0.76506011\n 0.51506636 0.74244869 0.79558233 0.51506636 0.51506636 0.77029208\n 0.51774692 0.78283321 0.77670805 0.51506636 0.77881327 0.77203497\n 0.7776432  0.51506636 0.77376062 0.77413853 0.75261173 0.78662691\n 0.78065183 0.79054031 0.51506636 0.76315442 0.7944942  0.78068711\n 0.74708926 0.78319739 0.7567241  0.80616354 0.51506636 0.78984237\n 0.77833082 0.77779411 0.81320338 0.77664811]",
+      "split3_test_score": "[0.79789214 0.80035241 0.77012047 0.79597035 0.80154839 0.51506636\n 0.79475434 0.82384714 0.77542032 0.80154213 0.80320141 0.77118663\n 0.76298344 0.78851346 0.51506636 0.76316557 0.51506636 0.78885433\n 0.7996581  0.77555628 0.78308777 0.79754227 0.77332688 0.80791167\n 0.77314032 0.80651195 0.81515502 0.82595005 0.77291321 0.52569985\n 0.52772754 0.81451349 0.82441763 0.78885433 0.8156227  0.80214359\n 0.79500343 0.82428023 0.80651195 0.77058824 0.81177213 0.75435977\n 0.81781578 0.82023213 0.77463022 0.51506636 0.78239213 0.80358933\n 0.80698438 0.81996297 0.80821411 0.75261173 0.54997913 0.80494768\n 0.81683038 0.81781565 0.74796594 0.51506636 0.80288661 0.52569985\n 0.52569985 0.77548965 0.7719641  0.7776432  0.81810771 0.78851346\n 0.51506636 0.77012047 0.80737802 0.51506636 0.51506636 0.78229989\n 0.51506636 0.77809925 0.79173112 0.51506636 0.79984237 0.80573778\n 0.78173055 0.51506636 0.7743155  0.76402816 0.78139535 0.7853233\n 0.77464549 0.80519203 0.51506636 0.77094628 0.8076143  0.80660637\n 0.7665491  0.77308455 0.76986803 0.81001311 0.51506636 0.80710651\n 0.7639782  0.79414947 0.81112676 0.76161824]",
+      "split4_test_score": "[0.76649153 0.78786887 0.7372093  0.76795164 0.78900909 0.51506636\n 0.76762182 0.78322368 0.77138411 0.7665195  0.76137657 0.77755502\n 0.7562886  0.74949164 0.51506636 0.76400526 0.51506636 0.76308925\n 0.78157632 0.77621646 0.74993157 0.77924073 0.76220833 0.75842106\n 0.76690488 0.75988832 0.80247854 0.78431538 0.75330631 0.52248425\n 0.53291406 0.78977805 0.78565912 0.76502066 0.80060166 0.78837111\n 0.76694618 0.79518754 0.7639541  0.75354044 0.78906565 0.73887123\n 0.78620469 0.8        0.77755502 0.51506636 0.76461964 0.79111575\n 0.77332327 0.79037799 0.76608737 0.73679125 0.53804498 0.76523678\n 0.79082479 0.79225755 0.74059595 0.51506636 0.77709383 0.51718303\n 0.51984096 0.77968202 0.76690488 0.77600954 0.78620469 0.75032398\n 0.51506636 0.73488372 0.77583186 0.51506636 0.51506636 0.75988832\n 0.51718303 0.76410025 0.76786468 0.51506636 0.78080087 0.75968906\n 0.75076694 0.51506636 0.77880518 0.74887055 0.75183284 0.7488888\n 0.75120726 0.78068711 0.51506636 0.75261173 0.78313351 0.76332588\n 0.7365765  0.75925586 0.75474653 0.7977541  0.51506636 0.77344211\n 0.75242185 0.77125433 0.79285478 0.75245354]",
+      "mean_test_score": "[0.77904951 0.79201613 0.75021969 0.77820342 0.79103087 0.51506636\n 0.77724701 0.79809426 0.76886016 0.77480653 0.78102327 0.77019929\n 0.76103712 0.75860984 0.51506636 0.76654779 0.51506636 0.77211289\n 0.78333216 0.77076488 0.75860488 0.78919537 0.76819419 0.77708363\n 0.76675914 0.77768728 0.80796767 0.79327563 0.76453093 0.52228264\n 0.53056136 0.79245855 0.79759795 0.7740526  0.79642222 0.79767022\n 0.7733388  0.8089902  0.78155867 0.75824051 0.79639686 0.74415665\n 0.7962839  0.80885925 0.77085056 0.51506636 0.76886659 0.79570524\n 0.78820944 0.79814313 0.78186233 0.74473716 0.54207804 0.77660138\n 0.79782439 0.80030658 0.74471457 0.51506636 0.78762563 0.51910897\n 0.52017074 0.7717516  0.7665239  0.77488133 0.79384411 0.76078232\n 0.51506636 0.74825309 0.78784794 0.51506636 0.51506636 0.77058814\n 0.51602581 0.7702193  0.77520921 0.51506636 0.7818082  0.7778462\n 0.76428722 0.51506636 0.77181296 0.75616178 0.76228342 0.77061373\n 0.7673478  0.78962535 0.51506636 0.76010344 0.79005126 0.77578645\n 0.74905493 0.76881157 0.76374472 0.79909129 0.51506636 0.7860914\n 0.76330673 0.77753237 0.80340191 0.75803247]",
+      "std_test_score": "[0.01320221 0.00561084 0.01098194 0.01384228 0.00821587 0.\n 0.01111482 0.01380558 0.00739158 0.01443293 0.01344369 0.00746225\n 0.01105498 0.01750854 0.         0.0075551  0.         0.0131618\n 0.01083584 0.00879142 0.01252241 0.00999503 0.01039144 0.0168662\n 0.00887161 0.01544069 0.00475142 0.01931366 0.01178421 0.00460924\n 0.00220237 0.01212836 0.01703203 0.01073334 0.01101859 0.00524744\n 0.01331073 0.00967282 0.01394036 0.00990917 0.01009184 0.00640819\n 0.01465881 0.00742245 0.00888212 0.         0.01050333 0.00666194\n 0.01303892 0.01574225 0.01410251 0.01149062 0.00502104 0.01711877\n 0.01033749 0.01064424 0.00934498 0.         0.01294761 0.00371215\n 0.00384783 0.00917993 0.00871347 0.00740636 0.01544711 0.01527203\n 0.         0.01188732 0.01233713 0.         0.         0.00756732\n 0.00118853 0.00913514 0.00951102 0.         0.01017043 0.01565672\n 0.0153803  0.         0.00823497 0.01282531 0.01120321 0.01572095\n 0.0102352  0.01240388 0.         0.00644286 0.01003003 0.01679624\n 0.01002307 0.00924573 0.00986731 0.00794042 0.         0.01273443\n 0.00938696 0.00912733 0.00800618 0.01280986]",
+      "rank_test_score": "[33 19 77 34 20 89 38  8 57 44 32 55 69 72 89 62 89 47 28 51 73 23 59 39\n 61 36  3 17 64 85 84 18 11 45 12 10 46  1 31 74 13 82 14  2 50 89 56 15\n 24  7 29 80 83 40  9  5 81 89 26 87 86 49 63 43 16 70 89 79 25 89 89 53\n 88 54 42 89 30 35 65 89 48 76 68 52 60 22 89 71 21 41 78 58 66  6 89 27\n 67 37  4 75]",
+      "split0_train_score": "[0.85116129 0.95237668 0.99680139 0.84774789 0.95132391 0.51506636\n 0.8571934  0.92634735 0.82729024 0.98662791 0.98985528 0.84165896\n 0.86757778 0.99651566 0.51506636 0.9702637  0.51506636 0.99332857\n 0.99593493 0.82798923 0.99593493 0.84956242 0.86445317 0.99651566\n 0.81898923 0.99651026 0.91885524 0.92146067 0.85950212 0.52620956\n 0.53994567 0.9711084  0.94530044 0.99622565 0.97283736 0.91658934\n 0.99448573 0.92685831 0.99563739 0.85987075 0.98602994 0.99563739\n 0.94080955 0.90251662 0.83621847 0.51506636 0.82222854 0.9476215\n 0.90699543 0.98747631 0.99651566 0.99593023 0.56047538 0.99476436\n 0.92464278 0.95041818 0.99651566 0.51506636 0.86425798 0.52093336\n 0.52225787 0.8368349  0.81869686 0.97030167 0.90449669 0.99680076\n 0.51506636 0.99680572 0.86352757 0.51506636 0.51506636 0.98836524\n 0.51573791 0.86211512 0.82693045 0.51506636 0.99621833 0.99651566\n 0.99680139 0.51573791 0.84514054 0.86712893 0.99505669 0.85742177\n 0.99098749 0.86340388 0.51506636 0.99506525 0.84366494 0.99477645\n 0.99651095 0.86675202 0.99680572 0.98119001 0.51506636 0.85229668\n 0.99042617 0.82871902 0.94125628 0.86868823]",
+      "split1_train_score": "[0.86068957 0.9541593  0.99767487 0.85789388 0.95705163 0.51506636\n 0.87433558 0.92637901 0.84527817 0.9874839  0.99129894 0.84797701\n 0.86678346 0.99709583 0.51506636 0.97255526 0.51506636 0.99361566\n 0.99593416 0.83710238 0.99651499 0.86412353 0.86553514 0.997386\n 0.8350469  0.99738398 0.9222276  0.92528462 0.86571971 0.52026974\n 0.53659067 0.96909877 0.94782569 0.99680511 0.97055    0.91865436\n 0.99419496 0.92802087 0.99680264 0.86513118 0.98808023 0.99738398\n 0.94595349 0.9081885  0.8427981  0.51506636 0.82992693 0.94708307\n 0.91064504 0.99010849 0.997386   0.99738347 0.54814445 0.99563825\n 0.92724692 0.95074042 0.997386   0.51506636 0.88296385 0.51693777\n 0.51893972 0.85544103 0.834754   0.96596494 0.90269488 0.99767396\n 0.51506636 0.997386   0.87764455 0.51506636 0.51506636 0.98924523\n 0.51506636 0.8613743  0.84417159 0.51506636 0.99651298 0.997386\n 0.99767487 0.51506636 0.8557902  0.86756153 0.99563996 0.86147186\n 0.99215193 0.88015476 0.51506636 0.99564499 0.85753702 0.99593571\n 0.99738398 0.8657677  0.99767622 0.98176878 0.51506636 0.86401108\n 0.98985157 0.84240859 0.94244214 0.86850609]",
+      "split2_train_score": "[0.85602029 0.95414947 0.99767396 0.85071299 0.95734973 0.51506636\n 0.8618732  0.92841734 0.83927281 0.98924313 0.99245908 0.84262467\n 0.86875232 0.997386   0.51506636 0.97457539 0.51506636 0.99361566\n 0.99680511 0.83434504 0.99709527 0.85938238 0.86463588 0.99767622\n 0.83329477 0.99767396 0.91995921 0.92894172 0.86308673 0.52372395\n 0.5338638  0.96997744 0.94832782 0.997386   0.97545632 0.91643472\n 0.99535509 0.92912998 0.99709245 0.86153458 0.99098749 0.99738398\n 0.94450457 0.90650241 0.83894028 0.51506636 0.82696701 0.95384251\n 0.91667192 0.99039846 0.997386   0.99709188 0.55158654 0.99621908\n 0.92752934 0.9501793  0.99680511 0.51506636 0.87234716 0.51841472\n 0.5190816  0.84563491 0.83328178 0.96772308 0.90635262 0.99738244\n 0.51506636 0.99767622 0.86958277 0.51506636 0.51506636 0.99040791\n 0.51573791 0.86018878 0.837091   0.51506636 0.99709245 0.99767622\n 0.99767396 0.51506636 0.85298561 0.86860507 0.9962213  0.86277278\n 0.99418262 0.8690077  0.51506636 0.99593571 0.85259738 0.99564499\n 0.99738295 0.86815564 0.997386   0.98351082 0.51506636 0.85639257\n 0.99216832 0.83920841 0.9467706  0.86921764]",
+      "split3_train_score": "[0.85853729 0.94709465 0.99738448 0.85569987 0.94759919 0.51506636\n 0.87030972 0.92675299 0.83442173 0.98749878 0.99216977 0.85013649\n 0.86592389 0.997386   0.51506636 0.9677041  0.51506636 0.99361446\n 0.99622565 0.83628811 0.99680572 0.85682463 0.85993569 0.997386\n 0.83130653 0.99738347 0.92054681 0.91832721 0.86130733 0.52474974\n 0.54423114 0.96710656 0.94502628 0.997386   0.96882777 0.91048058\n 0.99448573 0.92798852 0.99680201 0.85936375 0.9874889  0.99738499\n 0.94439793 0.90306412 0.84532191 0.51506636 0.82686235 0.94562724\n 0.90520915 0.98980836 0.997386   0.99738398 0.55204241 0.99564165\n 0.9221571  0.94675509 0.99709583 0.51506636 0.87604334 0.51827333\n 0.52026974 0.84840384 0.83130653 0.96068143 0.90336231 0.99738398\n 0.51506636 0.997386   0.87414462 0.51506636 0.51506636 0.98661737\n 0.51506636 0.85585127 0.83951693 0.51506636 0.9962213  0.997386\n 0.99738398 0.51506636 0.8557902  0.86722983 0.99651163 0.85818344\n 0.98954097 0.87173843 0.51506636 0.99535509 0.85559395 0.99506618\n 0.99738448 0.86265701 0.997386   0.97975535 0.51506636 0.85848892\n 0.98782745 0.83868749 0.93792579 0.86761153]",
+      "split4_train_score": "[0.86196661 0.95475292 0.99796492 0.85824733 0.95470301 0.51506636\n 0.86616819 0.92360876 0.84089299 0.98632235 0.99216977 0.84319384\n 0.86490039 0.99767622 0.51506636 0.97054033 0.51506636 0.99477645\n 0.99680511 0.83543959 0.99680572 0.85636153 0.86100373 0.99767622\n 0.83263093 0.99767442 0.92286117 0.92555154 0.86140718 0.52686502\n 0.54121993 0.96706904 0.945443   0.99767622 0.97025396 0.91018787\n 0.99506525 0.9268692  0.99680201 0.86064174 0.98778591 0.99709188\n 0.94597908 0.89972485 0.84145561 0.51506636 0.83021813 0.95006089\n 0.90993392 0.9915606  0.99767622 0.99709188 0.55158654 0.99534793\n 0.92100813 0.94872783 0.99738549 0.51506636 0.87847621 0.51827333\n 0.52357872 0.84952021 0.83261701 0.96915562 0.90742704 0.99796452\n 0.51506636 0.9979665  0.87261021 0.51506636 0.51506636 0.98690175\n 0.51573791 0.85813283 0.84006992 0.51506636 0.99651095 0.99767622\n 0.99796492 0.51573791 0.85382362 0.86790809 0.99709245 0.8592497\n 0.99098395 0.87334152 0.51506636 0.99622565 0.85430807 0.99535597\n 0.99767396 0.86293719 0.9979665  0.98061798 0.51506636 0.85391861\n 0.98754325 0.84196242 0.9404145  0.87007252]",
+      "mean_train_score": "[0.85767501 0.9525066  0.99749992 0.85406039 0.9536055  0.51506636\n 0.86597602 0.92630109 0.83743119 0.98743521 0.99159057 0.84511819\n 0.86678757 0.99721194 0.51506636 0.97112775 0.51506636 0.99379016\n 0.99634099 0.83423287 0.99663133 0.8572509  0.86311272 0.99732802\n 0.83025367 0.99732522 0.92089001 0.92391315 0.86220461 0.5243636\n 0.53917024 0.96887204 0.94638464 0.99709579 0.97158508 0.91446937\n 0.99471735 0.92777337 0.9966273  0.8613084  0.98807449 0.99697644\n 0.94432892 0.9039993  0.84094687 0.51506636 0.82724059 0.94884704\n 0.90989109 0.98987044 0.99726997 0.99697629 0.55276706 0.99552225\n 0.92451685 0.94936416 0.99703762 0.51506636 0.87481771 0.5185665\n 0.52082553 0.84716698 0.83013124 0.96676535 0.90486671 0.99744113\n 0.51506636 0.99744408 0.87150194 0.51506636 0.51506636 0.9883075\n 0.51546929 0.85953246 0.83755598 0.51506636 0.9965112  0.99732802\n 0.99749982 0.51533498 0.85270603 0.86768669 0.99610441 0.85981991\n 0.99156939 0.87152926 0.51506636 0.99564534 0.85274027 0.99535586\n 0.99726726 0.86525391 0.99744408 0.98136859 0.51506636 0.85702157\n 0.98956335 0.83819719 0.94176186 0.8688192 ]",
+      "std_train_score": "[0.00383186 0.00282072 0.00039456 0.00414649 0.00369814 0.\n 0.0060443  0.00154529 0.00614567 0.00101639 0.00095095 0.00332395\n 0.00132605 0.00039356 0.         0.00231245 0.         0.00050549\n 0.00039357 0.003253   0.00039359 0.00472994 0.00221478 0.00042641\n 0.0057597  0.00042768 0.00146963 0.00366249 0.00209182 0.00232304\n 0.00361186 0.00159011 0.00139713 0.00051903 0.00232382 0.00346735\n 0.00042613 0.00084886 0.00050756 0.00204733 0.00161815 0.00067904\n 0.00188594 0.00300529 0.00313723 0.         0.00287822 0.0028778\n 0.00392059 0.00133625 0.00039355 0.00053907 0.0041012  0.00047288\n 0.00262388 0.00147524 0.00033831 0.         0.00630647 0.00129998\n 0.00181869 0.00607662 0.00582411 0.00337019 0.00178215 0.00038599\n 0.         0.00038498 0.00475852 0.         0.         0.00142317\n 0.00032899 0.0022805  0.00578013 0.         0.00031865 0.00042641\n 0.00039459 0.00032899 0.00393924 0.0005344  0.00070273 0.00201011\n 0.00154688 0.00547919 0.         0.00041032 0.00481648 0.00040974\n 0.0003945  0.0021466  0.00038498 0.00126072 0.         0.00408301\n 0.00171508 0.00496007 0.00290987 0.0008128 ]"
+    },
+    "n_iter": 100,
+    "cv_folds": 5,
+    "datetime": "2025-12-08T17:36:25.424510"
+  }
+]

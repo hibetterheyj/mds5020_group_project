@@ -1,0 +1,2298 @@
+[
+  {
+    "classifier": "LogisticRegression",
+    "use_handcrafted": true,
+    "best_params": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 5000,
+      "classifier__solver": "liblinear",
+      "classifier__penalty": "l1",
+      "classifier__class_weight": "balanced",
+      "classifier__C": 10.0
+    },
+    "best_score": 0.8067442479703635,
+    "cv_results": {
+      "mean_fit_time": "[8.08900876 6.93534226 2.19944158 1.78702869 1.81723742 1.91829429\n 1.90658603 2.02526102 1.91940365 2.20492053 2.15952473 1.75450616\n 2.06795235 2.02737761 2.35913358 2.26390333 2.03087244 1.96425481\n 2.25739131 1.8593215  2.20800662 1.88361111 1.76254973 1.81001763\n 2.19968543 2.07679715 2.01412325 2.14732342 1.94459014 1.90364304\n 2.36468768 1.90672774 2.45178385 2.34468393 2.04843421 1.81695261\n 1.89973078 1.80024672 1.80877333 2.2276114  1.93389573 1.90612755\n 2.4092947  2.7102015  1.84963799 2.11191978 1.83909459 1.82712293\n 1.92637401 2.10328097 1.91868939 2.0336885  2.09964218 1.765275\n 1.98728657 2.16959481 2.12344618 2.08872776 2.11867108 2.06984963\n 1.80541635 1.97191048 1.94874887 2.02661223 1.7964952  2.3479116\n 1.89522319 1.9302628  2.03958569 2.27244339 2.22474995 2.58416123\n 2.11685224 1.96244898 1.9244678  1.85342641 2.37003727 1.88959336\n 1.78428583 2.02806888 1.79603958 1.99858346 2.04603219 1.98505406\n 2.6658546  2.14395642 1.7716783  1.75761743 2.47607908 1.94178314\n 1.77205563 1.91294188 2.61204662 1.79702353 1.95350962 1.90382361\n 2.05845723 2.02389617 2.00933938 2.01812477]",
+      "std_fit_time": "[0.09080125 2.50236591 0.05665214 0.05021313 0.03467443 0.02460081\n 0.03459382 0.02878243 0.03895962 0.03389285 0.0281481  0.018147\n 0.02471446 0.05140537 0.31208006 0.07823122 0.03366618 0.01690118\n 0.0366364  0.01705523 0.09323379 0.11015931 0.00994875 0.02457402\n 0.03579197 0.07972263 0.09554267 0.02733169 0.01595628 0.02593761\n 0.02581264 0.0155503  0.18535957 0.07816485 0.02690156 0.01696836\n 0.01024036 0.02231988 0.0280561  0.02530031 0.03644435 0.02590595\n 0.04385494 0.08484906 0.0314041  0.04909305 0.01520862 0.02068827\n 0.0126771  0.02366963 0.11304196 0.01564016 0.08922846 0.02811458\n 0.06507195 0.04986376 0.08984545 0.10203337 0.03274376 0.05279129\n 0.02700024 0.09156534 0.04228651 0.02160759 0.01642626 0.14951065\n 0.01631525 0.01102423 0.02098812 0.02661918 0.18219067 0.05480299\n 0.05169295 0.02109589 0.04343959 0.02068875 0.05505057 0.03590617\n 0.01956334 0.02285645 0.01554643 0.02301684 0.01944993 0.04013165\n 0.32128122 0.07019807 0.01912251 0.02623318 0.2029226  0.04113547\n 0.01775223 0.06917801 0.15952035 0.04441479 0.02549516 0.03869509\n 0.01890878 0.01844931 0.03763153 0.15569695]",
+      "mean_score_time": "[0.49253201 0.         0.48213501 0.         0.         0.\n 0.         0.4659452  0.45644264 0.48431149 0.47004066 0.\n 0.47378316 0.         0.50827737 0.         0.47529225 0.49949732\n 0.48440981 0.49597049 0.50253868 0.45616493 0.         0.45701804\n 0.46770625 0.49493155 0.45696392 0.47339745 0.46584849 0.48159919\n 0.46527958 0.47182326 0.45166893 0.47316828 0.47753625 0.45301313\n 0.46060576 0.45516949 0.44070687 0.47321553 0.         0.\n 0.49789333 0.48380017 0.         0.         0.         0.44869862\n 0.         0.46487331 0.46342306 0.46658945 0.44934859 0.44173799\n 0.45450158 0.44834342 0.46091948 0.         0.47987232 0.48184195\n 0.4383635  0.49994502 0.45978007 0.46913824 0.45393143 0.47748461\n 0.45689492 0.45895538 0.45112062 0.45300989 0.50611658 0.50377026\n 0.47924414 0.46820803 0.49700994 0.         0.46638122 0.\n 0.         0.46021056 0.43119826 0.         0.47934198 0.4485981\n 0.47496629 0.4742208  0.         0.44939551 0.44560041 0.4673697\n 0.         0.48666377 0.46975803 0.         0.46607852 0.\n 0.46102309 0.49771485 0.466538   0.38361073]",
+      "std_score_time": "[0.02950078 0.         0.02761897 0.         0.         0.\n 0.         0.01581867 0.026492   0.0186877  0.01821922 0.\n 0.01886058 0.         0.0310851  0.         0.01331091 0.01377632\n 0.00905756 0.09009619 0.09314317 0.00736424 0.         0.01711122\n 0.01743828 0.02920453 0.00597033 0.01702879 0.01600554 0.02208086\n 0.01203324 0.0175325  0.01641899 0.00992776 0.02068319 0.02257431\n 0.01283488 0.01323012 0.03526595 0.01563541 0.         0.\n 0.00814136 0.02369126 0.         0.         0.         0.01216218\n 0.         0.01411142 0.02075237 0.01958792 0.0075498  0.01337165\n 0.00769076 0.0212431  0.00903939 0.         0.02646777 0.02017727\n 0.0080935  0.04036361 0.02151319 0.02395233 0.02998469 0.02912188\n 0.01741365 0.0178809  0.02037995 0.00699064 0.04598362 0.01321336\n 0.02485454 0.00587354 0.03094912 0.         0.01817266 0.\n 0.         0.01604246 0.01416444 0.         0.0129453  0.02738195\n 0.01221978 0.03212064 0.         0.02319121 0.01349498 0.02307361\n 0.         0.074552   0.0080032  0.         0.01322145 0.\n 0.00716023 0.02766912 0.02672827 0.08715099]",
+      "param_features__text__tfidf__ngram_range": "[(1, 1) (1, 2) (1, 2) (1, 1) (1, 1) (1, 2) (1, 2) (1, 3) (1, 2) (1, 3)\n (1, 3) (1, 1) (1, 3) (1, 3) (1, 1) (1, 3) (1, 2) (1, 2) (1, 3) (1, 1)\n (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 3) (1, 2) (1, 3) (1, 2) (1, 2)\n (1, 3) (1, 1) (1, 2) (1, 3) (1, 3) (1, 1) (1, 2) (1, 1) (1, 1) (1, 3)\n (1, 2) (1, 2) (1, 3) (1, 3) (1, 1) (1, 3) (1, 1) (1, 1) (1, 2) (1, 2)\n (1, 1) (1, 1) (1, 1) (1, 1) (1, 2) (1, 1) (1, 3) (1, 2) (1, 3) (1, 3)\n (1, 1) (1, 2) (1, 1) (1, 3) (1, 1) (1, 2) (1, 2) (1, 2) (1, 2) (1, 2)\n (1, 2) (1, 3) (1, 3) (1, 2) (1, 2) (1, 1) (1, 2) (1, 2) (1, 1) (1, 3)\n (1, 1) (1, 3) (1, 3) (1, 1) (1, 3) (1, 2) (1, 1) (1, 1) (1, 3) (1, 2)\n (1, 1) (1, 1) (1, 3) (1, 1) (1, 1) (1, 2) (1, 3) (1, 3) (1, 3) (1, 1)]",
+      "param_features__text__tfidf__max_features": "[5000 7000 7000 5000 5000 3000 5000 3000 7000 5000 2000 3000 3000 5000\n 5000 7000 2000 5000 5000 7000 2000 5000 7000 2000 7000 5000 5000 3000\n 3000 2000 5000 2000 3000 7000 7000 7000 7000 5000 5000 5000 5000 5000\n 7000 2000 7000 2000 5000 3000 7000 5000 3000 5000 5000 5000 5000 2000\n 5000 5000 2000 7000 3000 5000 3000 2000 2000 5000 3000 2000 2000 7000\n 3000 5000 7000 3000 2000 7000 2000 5000 7000 2000 2000 7000 3000 2000\n 2000 7000 2000 7000 5000 7000 2000 2000 2000 3000 7000 2000 7000 3000\n 3000 5000]",
+      "param_classifier__solver": "['lbfgs' 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'liblinear'\n 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'liblinear' 'lbfgs'\n 'liblinear' 'liblinear' 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs'\n 'lbfgs' 'liblinear' 'liblinear' 'liblinear' 'lbfgs' 'liblinear'\n 'liblinear' 'liblinear' 'lbfgs' 'liblinear' 'liblinear' 'liblinear'\n 'liblinear' 'liblinear' 'liblinear' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs'\n 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs'\n 'liblinear' 'liblinear' 'liblinear' 'liblinear' 'lbfgs' 'liblinear'\n 'liblinear' 'lbfgs' 'lbfgs' 'liblinear' 'lbfgs' 'liblinear' 'liblinear'\n 'liblinear' 'liblinear' 'liblinear' 'liblinear' 'liblinear' 'lbfgs'\n 'liblinear' 'lbfgs' 'lbfgs' 'liblinear' 'liblinear' 'lbfgs' 'lbfgs'\n 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs'\n 'liblinear' 'liblinear' 'lbfgs' 'liblinear' 'liblinear' 'liblinear'\n 'lbfgs' 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'liblinear'\n 'lbfgs' 'liblinear']",
+      "param_classifier__penalty": "['l2' 'l1' 'l1' 'l1' 'l1' 'l1' 'l1' 'l2' 'l2' 'l2' 'l2' 'l1' 'l2' 'l1'\n 'l1' 'l1' 'l2' 'l1' 'l2' 'l1' 'l2' 'l2' 'l1' 'l2' 'l2' 'l2' 'l1' 'l2'\n 'l2' 'l2' 'l2' 'l2' 'l1' 'l1' 'l2' 'l2' 'l1' 'l2' 'l1' 'l2' 'l1' 'l1'\n 'l2' 'l1' 'l1' 'l1' 'l1' 'l1' 'l1' 'l2' 'l1' 'l2' 'l2' 'l2' 'l2' 'l2'\n 'l1' 'l1' 'l2' 'l2' 'l2' 'l2' 'l2' 'l1' 'l2' 'l1' 'l1' 'l1' 'l2' 'l2'\n 'l2' 'l2' 'l1' 'l2' 'l2' 'l1' 'l1' 'l1' 'l1' 'l2' 'l2' 'l1' 'l2' 'l2'\n 'l1' 'l1' 'l1' 'l1' 'l1' 'l2' 'l1' 'l2' 'l1' 'l1' 'l2' 'l1' 'l2' 'l1'\n 'l2' 'l2']",
+      "param_classifier__class_weight": "[None None 'balanced' None None None 'balanced' None 'balanced' 'balanced'\n 'balanced' 'balanced' 'balanced' 'balanced' 'balanced' 'balanced'\n 'balanced' 'balanced' None 'balanced' 'balanced' 'balanced' None None\n None 'balanced' 'balanced' None 'balanced' 'balanced' 'balanced' None\n 'balanced' 'balanced' None 'balanced' None 'balanced' None 'balanced'\n 'balanced' 'balanced' 'balanced' 'balanced' 'balanced' None None None\n 'balanced' 'balanced' None None None None None 'balanced' None None\n 'balanced' 'balanced' None 'balanced' 'balanced' None 'balanced'\n 'balanced' 'balanced' 'balanced' None 'balanced' 'balanced' None None\n 'balanced' 'balanced' None None None 'balanced' 'balanced' None None\n 'balanced' 'balanced' 'balanced' None 'balanced' None 'balanced'\n 'balanced' None 'balanced' None 'balanced' 'balanced' None 'balanced'\n None None 'balanced']",
+      "param_classifier__C": "[0.1 0.01 1.0 100.0 10.0 10.0 0.1 0.001 0.001 1.0 10.0 10.0 0.1 1.0 100.0\n 0.01 0.1 0.001 100.0 0.01 100.0 0.001 10.0 0.1 100.0 0.01 0.1 10.0 0.1\n 0.001 100.0 100.0 10.0 100.0 0.1 0.001 0.001 0.001 0.001 100.0 100.0 0.01\n 1.0 1.0 0.01 0.01 0.1 0.1 0.001 100.0 1.0 1.0 10.0 0.001 0.1 100.0 0.01\n 10.0 0.01 0.001 0.001 0.001 1.0 0.001 0.001 10.0 0.01 0.01 10.0 100.0\n 10.0 1.0 0.001 0.001 0.01 1.0 1.0 0.1 0.1 0.001 0.01 10.0 0.01 100.0 10.0\n 1.0 100.0 0.001 10.0 0.1 0.1 0.001 100.0 100.0 1.0 0.01 0.1 0.01 0.01\n 100.0]",
+      "params": [
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        }
+      ],
+      "split0_test_score": "[0.72447061        nan 0.77617523        nan        nan        nan\n        nan 0.73116566 0.70510404 0.79204939 0.81259241        nan\n 0.75988832        nan 0.78961669        nan 0.76027632 0.1793868\n 0.8027989  0.73715145 0.79596484 0.71986162        nan 0.72591234\n 0.79967919 0.71640733 0.71411641 0.8085227  0.75988832 0.70510404\n 0.80558332 0.79252275 0.80987632 0.8029338  0.72447061 0.70510404\n 0.1793868  0.70510404 0.1793868  0.80201112        nan        nan\n 0.79299687 0.78993641        nan        nan        nan 0.72056357\n        nan 0.8        0.78268342 0.77452907 0.79950237 0.73116566\n 0.72447061 0.77617523 0.69839357        nan 0.71801089 0.70510404\n 0.6997408  0.70510404 0.7997982  0.1793868  0.70510404 0.80400836\n 0.73715145 0.73715145 0.81433567 0.80493714 0.80456129 0.7710493\n 0.1793868  0.70510404 0.71905605        nan 0.78620469        nan\n        nan 0.71986162 0.71529103        nan 0.71645971 0.79241123\n 0.80074546 0.76894033        nan 0.1793868  0.80759809 0.75141877\n        nan 0.71986162 0.75662732        nan 0.79487972        nan\n 0.75141877 0.70141504 0.71529103 0.79918271]",
+      "split1_test_score": "[0.74413057        nan 0.79289597        nan        nan        nan\n        nan 0.74725418 0.74360216 0.80183295 0.80211267        nan\n 0.78446737        nan 0.77781985        nan 0.78446737 0.1793868\n 0.79967919 0.74880168 0.77781985 0.75375188        nan 0.74413057\n 0.79486712 0.75359675 0.74586855 0.80165702 0.78318218 0.74360216\n 0.78104759 0.77375532 0.79181776 0.79559282 0.74413057 0.74360216\n 0.1793868  0.74360216 0.1793868  0.7979289         nan        nan\n 0.79767442 0.79826951        nan        nan        nan 0.74814098\n        nan 0.81008651 0.77919114 0.77893307 0.79453093 0.74725418\n 0.74413057 0.76547644 0.73751639        nan 0.75436355 0.74360216\n 0.72184312 0.74360216 0.8        0.1793868  0.74360216 0.8036846\n 0.74880168 0.74880168 0.78595386 0.80325498 0.80045574 0.78283321\n 0.1793868  0.74360216 0.75302718        nan 0.78955502        nan\n        nan 0.75375188 0.74777382        nan 0.75436355 0.77906977\n 0.77803819 0.78056988        nan 0.1793868  0.7839124  0.78274393\n        nan 0.75375188 0.75242185        nan 0.79610515        nan\n 0.78296478 0.73751639 0.74626684 0.78264266]",
+      "split2_test_score": "[0.7299156         nan 0.79937102        nan        nan        nan\n        nan 0.72677482 0.7351468  0.81147944 0.80727272        nan\n 0.78318218        nan 0.7964318         nan 0.78381397 0.1793868\n 0.80424463 0.72854151 0.79318342 0.72693141        nan 0.7329669\n 0.81490546 0.74109612 0.73645805 0.80595572 0.78703174 0.7351468\n 0.79968184 0.79593737 0.79689984 0.81487866 0.73139847 0.7351468\n 0.1793868  0.7351468  0.1793868  0.79451254        nan        nan\n 0.80899896 0.80298201        nan        nan        nan 0.72092019\n        nan 0.80759809 0.77503776 0.79198791 0.80487507 0.72677482\n 0.73093202 0.78605822 0.72241326        nan 0.73944148 0.7351468\n 0.71503113 0.7351468  0.81191675 0.1793868  0.7351468  0.80767291\n 0.72854151 0.72854151 0.80439262 0.81504523 0.80959473 0.795492\n 0.1793868  0.7351468  0.73944148        nan 0.78225635        nan\n        nan 0.72693141 0.72596831        nan 0.73808945 0.7989154\n 0.783291   0.7684074         nan 0.1793868  0.79751495 0.77908817\n        nan 0.72693141 0.76172056        nan 0.81039076        nan\n 0.78038245 0.72241326 0.72596831 0.79054031]",
+      "split3_test_score": "[0.75075175        nan 0.80884313        nan        nan        nan\n        nan 0.7481401  0.73169167 0.82264342 0.81089725        nan\n 0.76547644        nan 0.80325498        nan 0.76830867 0.1793868\n 0.81537004 0.7523672  0.79225755 0.735285          nan 0.75218155\n 0.82299963 0.72913017 0.72373845 0.8301614  0.76440382 0.73169167\n 0.81451349 0.7984755  0.8083612  0.82243243 0.7511442  0.73169167\n 0.1793868  0.73169167 0.1793868  0.81256835        nan        nan\n 0.8306545  0.81786339        nan        nan        nan 0.74437917\n        nan 0.80850557 0.80949509 0.80523048 0.82124271 0.7481401\n 0.75075175 0.78648119 0.72443799        nan 0.73310325 0.73169167\n 0.7258515  0.73063733 0.81924184 0.1793868  0.73169167 0.83049287\n 0.7523672  0.7523672  0.82397934 0.82011129 0.81162674 0.80739068\n 0.1793868  0.73169167 0.73415469        nan 0.81165897        nan\n        nan 0.73424655 0.74022008        nan 0.73205184 0.7900918\n 0.80045574 0.80415236        nan 0.1793868  0.82037489 0.75637038\n        nan 0.73424655 0.77961236        nan 0.81902455        nan\n 0.75869067 0.72443799 0.74022008 0.79132767]",
+      "split4_test_score": "[0.70541703        nan 0.75523493        nan        nan        nan\n        nan 0.70742651 0.69951633 0.7839124  0.78128242        nan\n 0.73315288        nan 0.79448563        nan 0.73500087 0.1793868\n 0.78211183 0.71210818 0.77096536 0.70199004        nan 0.70442003\n 0.78358871 0.70459225 0.69668974 0.78191533 0.7321089  0.70189169\n 0.77738573 0.76714205 0.77617523 0.77992724 0.70442003 0.69951633\n 0.1793868  0.69951633 0.1793868  0.78187294        nan        nan\n 0.7839124  0.76775745        nan        nan        nan 0.70193617\n        nan 0.78553131 0.74716507 0.75896517 0.7792755  0.70742651\n 0.70442003 0.75261173 0.69148642        nan 0.70462353 0.69951633\n 0.66909486 0.69951633 0.78445401 0.1793868  0.70189169 0.78786249\n 0.71210818 0.71210818 0.78870918 0.78039322 0.78803543 0.76106498\n 0.1793868  0.70189169 0.70326184        nan 0.7526638         nan\n        nan 0.70199004 0.69994215        nan 0.70326184 0.77226938\n 0.7729425  0.74265611        nan 0.1793868  0.7989154  0.7321089\n        nan 0.70199004 0.76115174        nan 0.78176202        nan\n 0.73051343 0.69148642 0.69994215 0.77952749]",
+      "mean_test_score": "[0.73093711        nan 0.78650406        nan        nan        nan\n        nan 0.73215225 0.7230122  0.80238352 0.80283149        nan\n 0.76523344        nan 0.79232179        nan 0.76637344 0.1793868\n 0.80084092 0.735794   0.7860382  0.72756399        nan 0.73192228\n 0.80320802 0.72896453 0.72337424 0.80564243 0.76532299 0.72348727\n 0.79564239 0.7855666  0.79662607 0.80315299 0.73111278 0.7230122\n 0.1793868  0.7230122  0.1793868  0.79777877        nan        nan\n 0.80284743 0.79536175        nan        nan        nan 0.72718801\n        nan 0.8023443  0.7787145  0.78192914 0.79988532 0.73215225\n 0.730941   0.77336056 0.71484953        nan 0.72990854 0.7230122\n 0.70631228 0.72280133 0.80308216 0.1793868  0.72348727 0.80674425\n 0.735794   0.735794   0.80347414 0.80474837 0.80285479 0.78356603\n 0.1793868  0.72348727 0.72978825        nan 0.78446776        nan\n        nan 0.7273563  0.72583908        nan 0.72884528 0.78655151\n 0.78709458 0.77294521        nan 0.1793868  0.80166315 0.76034603\n        nan 0.7273563  0.76230677        nan 0.80043244        nan\n 0.76079402 0.71545382 0.72553768 0.78864417]",
+      "std_test_score": "[0.01587968        nan 0.01892032        nan        nan        nan\n        nan 0.01499955 0.0174315  0.01372209 0.01135725        nan\n 0.01870772        nan 0.00847033        nan 0.01820286 0.\n 0.01075772 0.01455561 0.00982857 0.01708317        nan 0.01645032\n 0.01411013 0.01735304 0.01717605 0.01541709 0.01961518 0.01680582\n 0.01426584 0.01266137 0.01228588 0.01487164 0.0162937  0.0174315\n 0.         0.0174315  0.         0.01000331        nan        nan\n 0.01608355 0.01651835        nan        nan        nan 0.01706099\n        nan 0.00909591 0.01986106 0.01571759 0.01367199 0.01499955\n 0.01619666 0.01291493 0.01720214        nan 0.01720475 0.0174315\n 0.02062681 0.01733132 0.01188678 0.         0.01680582 0.01369837\n 0.01455561 0.01455561 0.01458934 0.01369295 0.00837442 0.01657314\n 0.         0.01680582 0.01715301        nan 0.01889254        nan\n        nan 0.01699412 0.0171457         nan 0.01763425 0.00958845\n 0.01150334 0.01993029        nan 0.         0.01204325 0.01868567\n        nan 0.01699412 0.00928578        nan 0.01298443        nan\n 0.01941382 0.01665791 0.01676652 0.00694247]",
+      "rank_test_score": "[48 77 25 77 77 77 77 43 63 11 10 77 36 77 21 77 34 71 14 40 26 53 77 45\n  5 51 62  2 35 59 19 27 18  6 46 63 71 63 71 17 77 77  9 20 77 77 77 56\n 77 12 31 30 16 43 47 32 69 77 49 63 70 67  7 71 59  1 40 40  4  3  8 29\n 71 59 50 77 28 77 77 54 57 77 52 24 23 33 77 71 13 39 77 54 37 77 15 77\n 38 68 58 22]",
+      "split0_train_score": "[0.73783888        nan 0.83354314        nan        nan        nan\n        nan 0.73333676 0.72918651 0.89131514 0.94781973        nan\n 0.79949149        nan 0.99680572        nan 0.79782594 0.1793868\n 0.99301637 0.73671918 0.96451819 0.72931676        nan 0.73831751\n 0.99650957 0.73888692 0.73140113 0.96385176 0.79863857 0.72977142\n 0.99651566 0.9725973  0.99129894 0.99680572 0.73769446 0.72898348\n 0.1793868  0.72898348 0.1793868  0.99130055        nan        nan\n 0.89497183 0.84760838        nan        nan        nan 0.72889985\n        nan 0.99506618 0.82050091 0.84866175 0.97786735 0.73333676\n 0.73684762 0.99187599 0.7124304         nan 0.74114355 0.72918651\n 0.70950413 0.72918651 0.88823818 0.1793868  0.73009362 0.99506432\n 0.73671918 0.73671918 0.94707145 0.99651566 0.96824019 0.84907132\n 0.1793868  0.72983091 0.74088088        nan 0.82336095        nan\n        nan 0.72931676 0.72681886        nan 0.74003004 0.96936465\n 0.97916614 0.80618212        nan 0.1793868  0.99187751 0.78934112\n        nan 0.72931676 0.99680076        nan 0.8928307         nan\n 0.79073335 0.71450489 0.72644539 0.99535509]",
+      "split1_train_score": "[0.73481103        nan 0.83644815        nan        nan        nan\n        nan 0.72561343 0.72195869 0.89072153 0.94665827        nan\n 0.79281887        nan 0.997386          nan 0.79534884 0.1793868\n 0.99360214 0.73161206 0.97199134 0.72571988        nan 0.73656339\n 0.99738398 0.73179507 0.72434394 0.95889169 0.79290119 0.72261815\n 0.99709527 0.98256154 0.99129894 0.99767622 0.73725186 0.72169887\n 0.1793868  0.7220286  0.1793868  0.99216832        nan        nan\n 0.89414828 0.85191404        nan        nan        nan 0.72463233\n        nan 0.99535333 0.82357572 0.8511046  0.98138069 0.72535887\n 0.73594281 0.99100807 0.71513394        nan 0.73433361 0.72221851\n 0.70145767 0.72221851 0.88792466 0.1793868  0.72287811 0.99477547\n 0.73161206 0.73161206 0.94776909 0.99709583 0.96134809 0.85434404\n 0.1793868  0.72254838 0.73407246        nan 0.82955589        nan\n        nan 0.72597696 0.72285859        nan 0.73419699 0.96909877\n 0.9777366  0.8094128         nan 0.1793868  0.99274438 0.7871476\n        nan 0.72597696 0.99767487        nan 0.89054255        nan\n 0.78705855 0.71513394 0.72260583 0.99564416]",
+      "split2_train_score": "[0.73776419        nan 0.83544264        nan        nan        nan\n        nan 0.73215852 0.7258783  0.89230318 0.94838827        nan\n 0.79765856        nan 0.997386          nan 0.79876875 0.1793868\n 0.99418491 0.73857434 0.97254609 0.73147252        nan 0.73889688\n 0.99767396 0.73442163 0.73276556 0.96357903 0.79721368 0.72653798\n 0.997386   0.98196611 0.99014424 0.99767622 0.7389609  0.72620821\n 0.1793868  0.72620821 0.1793868  0.99303786        nan        nan\n 0.89515129 0.85121734        nan        nan        nan 0.73086688\n        nan 0.99129894 0.81576318 0.85244957 0.98020111 0.73215852\n 0.73776419 0.99303657 0.71690193        nan 0.7365949  0.7258783\n 0.70579894 0.72620821 0.88919302 0.1793868  0.72653798 0.99448365\n 0.73857434 0.73857434 0.95333768 0.99709583 0.96423256 0.85738021\n 0.1793868  0.72620821 0.73566731        nan 0.82234133        nan\n        nan 0.73147252 0.73095486        nan 0.73540705 0.97253683\n 0.9794679  0.79815629        nan 0.1793868  0.99245345 0.78990932\n        nan 0.73147252 0.99738398        nan 0.89459107        nan\n 0.79108137 0.71690193 0.73095486 0.99651499]",
+      "split3_train_score": "[0.73183229        nan 0.83062085        nan        nan        nan\n        nan 0.72784344 0.72686586 0.88973615 0.94268318        nan\n 0.79042741        nan 0.99767622        nan 0.7892771  0.1793868\n 0.99534517 0.73293025 0.96221043 0.72957472        nan 0.73454833\n 0.99767396 0.73502484 0.72761242 0.95743837 0.79108981 0.72739002\n 0.997386   0.97585547 0.99014424 0.99767622 0.73304853 0.72686586\n 0.1793868  0.72739002 0.1793868  0.99159284        nan        nan\n 0.89096742 0.84993888        nan        nan        nan 0.72548666\n        nan 0.99072058 0.81355476 0.8495862  0.98077563 0.72773697\n 0.7323417  0.98927166 0.70397899        nan 0.73898901 0.72660379\n 0.70194898 0.72739002 0.88601874 0.1793868  0.72739002 0.99303526\n 0.73293025 0.73293025 0.94426758 0.997386   0.95563421 0.85023361\n 0.1793868  0.72739002 0.73781196        nan 0.82386284        nan\n        nan 0.72957472 0.72402152        nan 0.73813821 0.96993251\n 0.97513226 0.80267477        nan 0.1793868  0.99390298 0.78816312\n        nan 0.72957472 0.99767532        nan 0.8883702         nan\n 0.78682761 0.70397899 0.72402152 0.99564416]",
+      "split4_train_score": "[0.74582345        nan 0.83803381        nan        nan        nan\n        nan 0.739589   0.73569851 0.89619175 0.95266439        nan\n 0.79619902        nan 0.997386          nan 0.80045781 0.1793868\n 0.9921504  0.74303754 0.9754151  0.73775432        nan 0.74535656\n 0.99738347 0.74514738 0.74365437 0.96590296 0.79783382 0.73603123\n 0.99767622 0.97381659 0.99188051 0.99767622 0.74582345 0.73569851\n 0.1793868  0.73569851 0.1793868  0.99390528        nan        nan\n 0.89851446 0.85815962        nan        nan        nan 0.73722213\n        nan 0.98869794 0.82128011 0.85359723 0.97875173 0.739589\n 0.74473623 0.98927363 0.72954193        nan 0.74739685 0.73569851\n 0.71691631 0.73603123 0.89337433 0.1793868  0.73603123 0.99535421\n 0.74303754 0.74303754 0.94747174 0.99767622 0.96507838 0.85410678\n 0.1793868  0.73603123 0.74680038        nan 0.83015711        nan\n        nan 0.73809851 0.73630431        nan 0.7464651  0.9702637\n 0.9797342  0.80449765        nan 0.1793868  0.99564416 0.79264588\n        nan 0.73775432 0.99709188        nan 0.89907531        nan\n 0.79446039 0.72954193 0.73667122 0.99651499]",
+      "mean_train_score": "[0.73761397        nan 0.83481772        nan        nan        nan\n        nan 0.73170823 0.72791757 0.89205355 0.94764277        nan\n 0.79531907        nan 0.99732798        nan 0.79633569 0.1793868\n 0.9936598  0.73657467 0.96933623 0.73076764        nan 0.73873653\n 0.99732499 0.73705517 0.73195548 0.96193276 0.79553541 0.72846976\n 0.99721183 0.9773594  0.99095337 0.99750212 0.73855584 0.72789099\n 0.1793868  0.72806176 0.1793868  0.99240097        nan        nan\n 0.89475065 0.85176765        nan        nan        nan 0.72942157\n        nan 0.99222739 0.81893494 0.85107987 0.9797953  0.73163602\n 0.73752651 0.99089319 0.71559744        nan 0.73969158 0.72791712\n 0.7071252  0.7282069  0.88894979 0.1793868  0.72858619 0.99454258\n 0.73657467 0.73657467 0.94798351 0.99715391 0.96290669 0.85302719\n 0.1793868  0.72840175 0.7390466         nan 0.82585562        nan\n        nan 0.73088789 0.72819163        nan 0.73884748 0.97023929\n 0.97824742 0.80418472        nan 0.1793868  0.9933245  0.78944141\n        nan 0.73081905 0.99732536        nan 0.89308196        nan\n 0.79003226 0.71601233 0.72813976 0.99593468]",
+      "std_train_score": "[0.00466375        nan 0.00255462        nan        nan        nan\n        nan 0.00483828 0.0045371  0.00223055 0.00320533        nan\n 0.00328134        nan 0.0002843         nan 0.00389692 0.\n 0.00107813 0.00409139 0.00506549 0.00395774        nan 0.00364114\n 0.00042787 0.00463822 0.00655172 0.00321257 0.00298099 0.00442739\n 0.00039359 0.00414186 0.00069395 0.0003482  0.00414138 0.00456894\n 0.         0.00445994 0.         0.00095778        nan        nan\n 0.00241045 0.00351641        nan        nan        nan 0.00450844\n        nan 0.00258533 0.00370123 0.00180511 0.00129963 0.00491977\n 0.00404692 0.00147143 0.00826298        nan 0.00447817 0.00448368\n 0.00569558 0.00453216 0.00244066 0.         0.0043797  0.00080755\n 0.00409139 0.00409139 0.00295347 0.00038491 0.00424826 0.00301003\n 0.         0.00447992 0.00449826        nan 0.00330876        nan\n        nan 0.00401609 0.00492274        nan 0.00432188 0.00121977\n 0.00170348 0.00374279        nan 0.         0.0013345  0.00186511\n        nan 0.00389297 0.00033994        nan 0.00365814        nan\n 0.00283948 0.00814477 0.00512183 0.00048544]"
+    },
+    "n_iter": 100,
+    "cv_folds": 5,
+    "datetime": "2025-12-08T17:23:21.932770"
+  },
+  {
+    "classifier": "LogisticRegression",
+    "use_handcrafted": false,
+    "best_params": {
+      "text__tfidf__ngram_range": [
+        1,
+        1
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__solver": "liblinear",
+      "classifier__penalty": "l2",
+      "classifier__class_weight": "balanced",
+      "classifier__C": 1.0
+    },
+    "best_score": 0.8135116543394657,
+    "cv_results": {
+      "mean_fit_time": "[1.95960393 2.0143651  1.89083495 1.75695014 1.76113348 1.84696956\n 1.84629087 1.96104493 1.88268561 1.98765211 2.04002934 1.75769739\n 1.96610456 1.97758093 1.86109481 1.97637687 1.87438464 1.87601337\n 2.03506031 1.77382102 1.94219174 1.79827104 1.77255588 1.75996332\n 1.91283174 2.01242442 1.87963142 2.15744371 1.97549262 2.17572336\n 2.12201838 1.85912561 1.93252268 2.14926457 2.02703075 1.83780947\n 1.99776497 1.81814103 1.8487947  2.08124561 1.8590354  1.93391171\n 2.01041222 1.98417282 1.74449563 1.96531949 1.8295949  1.82250428\n 1.89713879 1.94792118 1.77940016 1.76172404 1.7776207  1.77936792\n 1.88708668 1.77154031 1.97393336 1.86154661 1.97411318 2.08400507\n 1.79185681 1.90018015 1.7920249  2.00415363 1.75511217 1.95317521\n 1.90095687 1.88800502 1.90900202 1.98038621 1.9018692  2.04354186\n 1.98723302 1.874471   1.89748921 1.74775047 1.90354233 1.95744691\n 1.78861699 2.043922   1.80043941 2.05077653 2.03171515 1.78591061\n 2.03124294 1.89188647 1.74750118 1.73812447 2.11950278 1.95245838\n 1.77311811 1.77638874 2.13260031 2.09729424 2.31485767 2.15087104\n 2.28880601 2.18454456 2.30805683 1.74482641]",
+      "std_fit_time": "[0.0424012  0.08772687 0.02165765 0.01968587 0.01746196 0.03091493\n 0.02984823 0.00834123 0.01582295 0.04745473 0.03624301 0.01950064\n 0.01797375 0.02188254 0.00774812 0.02338962 0.03131994 0.0234489\n 0.01259512 0.04199776 0.03112999 0.02690173 0.05353445 0.0128521\n 0.01992661 0.01671301 0.02476854 0.08926317 0.07483005 0.04155416\n 0.02598674 0.04433785 0.02732272 0.03430588 0.03444862 0.08610687\n 0.09928852 0.0408632  0.02239218 0.04358229 0.03588666 0.02000246\n 0.02967895 0.01896582 0.01688584 0.02500088 0.02155075 0.04192318\n 0.00729481 0.01569423 0.02058098 0.01676643 0.02161336 0.0166129\n 0.02361413 0.01657293 0.00620542 0.02811202 0.02366696 0.07511337\n 0.01138938 0.02224304 0.02652457 0.05704067 0.00608284 0.01761707\n 0.01576581 0.01592413 0.01896781 0.02427216 0.03407483 0.01858646\n 0.04003329 0.05490218 0.04401289 0.03045334 0.01840191 0.09977125\n 0.03024474 0.0196207  0.02550242 0.00900149 0.0416532  0.00589819\n 0.03162748 0.02954963 0.01443644 0.01671785 0.11019773 0.0814176\n 0.01162718 0.02880298 0.08265412 0.20055029 0.03358324 0.115829\n 0.10838278 0.12422919 0.15574743 0.29269895]",
+      "mean_score_time": "[0.47254839 0.         0.44403811 0.         0.         0.\n 0.         0.45811362 0.45150056 0.5452961  0.47771459 0.\n 0.45292735 0.         0.42706504 0.         0.44360456 0.43468122\n 0.4568532  0.42435441 0.45320916 0.43694983 0.         0.43909283\n 0.46159983 0.46199183 0.4501873  0.46770816 0.50275536 0.47087655\n 0.47960572 0.45328641 0.46712708 0.46603866 0.47556696 0.45577259\n 0.46647782 0.4612175  0.45595818 0.45994973 0.         0.\n 0.46525378 0.44965982 0.         0.         0.         0.44924603\n 0.         0.44274945 0.45424762 0.44524031 0.44942493 0.4491334\n 0.45190973 0.42334619 0.46247559 0.         0.47171154 0.4858057\n 0.43620453 0.46333203 0.44379849 0.4640306  0.44650798 0.46042347\n 0.45515652 0.45539894 0.46029277 0.45586877 0.46580882 0.4643847\n 0.46854901 0.4692987  0.455548   0.         0.4710762  0.\n 0.         0.46615982 0.44533577 0.         0.463306   0.44250445\n 0.45357833 0.44765501 0.         0.44537954 0.4975883  0.46119819\n 0.         0.43901663 0.49416466 0.         0.48113852 0.\n 0.48955741 0.465488   0.47632794 0.38974705]",
+      "std_score_time": "[0.01609022 0.         0.0223801  0.         0.         0.\n 0.         0.01055067 0.03356923 0.02696871 0.01724678 0.\n 0.03607051 0.         0.01172958 0.         0.01781817 0.01525326\n 0.00981315 0.01607848 0.01749813 0.01344664 0.         0.01959254\n 0.01700808 0.01738376 0.02934438 0.02341582 0.12166794 0.01574275\n 0.02364218 0.02150053 0.01081194 0.00733498 0.02212998 0.02817871\n 0.02115653 0.01579361 0.02917752 0.00987291 0.         0.\n 0.0165925  0.00655758 0.         0.         0.         0.02183833\n 0.         0.00921342 0.02210512 0.01158337 0.00851003 0.00774414\n 0.0197856  0.0085243  0.01195039 0.         0.02302093 0.02338813\n 0.01046875 0.01831575 0.01218126 0.03693254 0.01380068 0.01375278\n 0.02579834 0.00903897 0.00726696 0.01915303 0.02557173 0.01417706\n 0.01961134 0.0148575  0.00939299 0.         0.07114788 0.\n 0.         0.01381501 0.01271973 0.         0.02130551 0.01804805\n 0.01862662 0.01241941 0.         0.01389134 0.04048982 0.02729456\n 0.         0.01231624 0.08001901 0.         0.02171405 0.\n 0.00953478 0.01196936 0.01815572 0.08444315]",
+      "param_text__tfidf__ngram_range": "[(1, 1) (1, 2) (1, 2) (1, 1) (1, 1) (1, 2) (1, 2) (1, 3) (1, 2) (1, 3)\n (1, 3) (1, 1) (1, 3) (1, 3) (1, 1) (1, 3) (1, 2) (1, 2) (1, 3) (1, 1)\n (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 3) (1, 2) (1, 3) (1, 2) (1, 2)\n (1, 3) (1, 1) (1, 2) (1, 3) (1, 3) (1, 1) (1, 2) (1, 1) (1, 1) (1, 3)\n (1, 2) (1, 2) (1, 3) (1, 3) (1, 1) (1, 3) (1, 1) (1, 1) (1, 2) (1, 2)\n (1, 1) (1, 1) (1, 1) (1, 1) (1, 2) (1, 1) (1, 3) (1, 2) (1, 3) (1, 3)\n (1, 1) (1, 2) (1, 1) (1, 3) (1, 1) (1, 2) (1, 2) (1, 2) (1, 2) (1, 2)\n (1, 2) (1, 3) (1, 3) (1, 2) (1, 2) (1, 1) (1, 2) (1, 2) (1, 1) (1, 3)\n (1, 1) (1, 3) (1, 3) (1, 1) (1, 3) (1, 2) (1, 1) (1, 1) (1, 3) (1, 2)\n (1, 1) (1, 1) (1, 3) (1, 1) (1, 1) (1, 2) (1, 3) (1, 3) (1, 3) (1, 1)]",
+      "param_text__tfidf__max_features": "[5000 7000 7000 5000 5000 3000 5000 3000 7000 5000 2000 3000 3000 5000\n 5000 7000 2000 5000 5000 7000 2000 5000 7000 2000 7000 5000 5000 3000\n 3000 2000 5000 2000 3000 7000 7000 7000 7000 5000 5000 5000 5000 5000\n 7000 2000 7000 2000 5000 3000 7000 5000 3000 5000 5000 5000 5000 2000\n 5000 5000 2000 7000 3000 5000 3000 2000 2000 5000 3000 2000 2000 7000\n 3000 5000 7000 3000 2000 7000 2000 5000 7000 2000 2000 7000 3000 2000\n 2000 7000 2000 7000 5000 7000 2000 2000 2000 3000 7000 2000 7000 3000\n 3000 5000]",
+      "param_classifier__solver": "['lbfgs' 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'liblinear'\n 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'liblinear' 'lbfgs'\n 'liblinear' 'liblinear' 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs'\n 'lbfgs' 'liblinear' 'liblinear' 'liblinear' 'lbfgs' 'liblinear'\n 'liblinear' 'liblinear' 'lbfgs' 'liblinear' 'liblinear' 'liblinear'\n 'liblinear' 'liblinear' 'liblinear' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs'\n 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs'\n 'liblinear' 'liblinear' 'liblinear' 'liblinear' 'lbfgs' 'liblinear'\n 'liblinear' 'lbfgs' 'lbfgs' 'liblinear' 'lbfgs' 'liblinear' 'liblinear'\n 'liblinear' 'liblinear' 'liblinear' 'liblinear' 'liblinear' 'lbfgs'\n 'liblinear' 'lbfgs' 'lbfgs' 'liblinear' 'liblinear' 'lbfgs' 'lbfgs'\n 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs'\n 'liblinear' 'liblinear' 'lbfgs' 'liblinear' 'liblinear' 'liblinear'\n 'lbfgs' 'lbfgs' 'liblinear' 'lbfgs' 'lbfgs' 'lbfgs' 'lbfgs' 'liblinear'\n 'lbfgs' 'liblinear']",
+      "param_classifier__penalty": "['l2' 'l1' 'l1' 'l1' 'l1' 'l1' 'l1' 'l2' 'l2' 'l2' 'l2' 'l1' 'l2' 'l1'\n 'l1' 'l1' 'l2' 'l1' 'l2' 'l1' 'l2' 'l2' 'l1' 'l2' 'l2' 'l2' 'l1' 'l2'\n 'l2' 'l2' 'l2' 'l2' 'l1' 'l1' 'l2' 'l2' 'l1' 'l2' 'l1' 'l2' 'l1' 'l1'\n 'l2' 'l1' 'l1' 'l1' 'l1' 'l1' 'l1' 'l2' 'l1' 'l2' 'l2' 'l2' 'l2' 'l2'\n 'l1' 'l1' 'l2' 'l2' 'l2' 'l2' 'l2' 'l1' 'l2' 'l1' 'l1' 'l1' 'l2' 'l2'\n 'l2' 'l2' 'l1' 'l2' 'l2' 'l1' 'l1' 'l1' 'l1' 'l2' 'l2' 'l1' 'l2' 'l2'\n 'l1' 'l1' 'l1' 'l1' 'l1' 'l2' 'l1' 'l2' 'l1' 'l1' 'l2' 'l1' 'l2' 'l1'\n 'l2' 'l2']",
+      "param_classifier__class_weight": "[None None 'balanced' None None None 'balanced' None 'balanced' 'balanced'\n 'balanced' 'balanced' 'balanced' 'balanced' 'balanced' 'balanced'\n 'balanced' 'balanced' None 'balanced' 'balanced' 'balanced' None None\n None 'balanced' 'balanced' None 'balanced' 'balanced' 'balanced' None\n 'balanced' 'balanced' None 'balanced' None 'balanced' None 'balanced'\n 'balanced' 'balanced' 'balanced' 'balanced' 'balanced' None None None\n 'balanced' 'balanced' None None None None None 'balanced' None None\n 'balanced' 'balanced' None 'balanced' 'balanced' None 'balanced'\n 'balanced' 'balanced' 'balanced' None 'balanced' 'balanced' None None\n 'balanced' 'balanced' None None None 'balanced' 'balanced' None None\n 'balanced' 'balanced' 'balanced' None 'balanced' None 'balanced'\n 'balanced' None 'balanced' None 'balanced' 'balanced' None 'balanced'\n None None 'balanced']",
+      "param_classifier__C": "[0.1 0.01 1.0 100.0 10.0 10.0 0.1 0.001 0.001 1.0 10.0 10.0 0.1 1.0 100.0\n 0.01 0.1 0.001 100.0 0.01 100.0 0.001 10.0 0.1 100.0 0.01 0.1 10.0 0.1\n 0.001 100.0 100.0 10.0 100.0 0.1 0.001 0.001 0.001 0.001 100.0 100.0 0.01\n 1.0 1.0 0.01 0.01 0.1 0.1 0.001 100.0 1.0 1.0 10.0 0.001 0.1 100.0 0.01\n 10.0 0.01 0.001 0.001 0.001 1.0 0.001 0.001 10.0 0.01 0.01 10.0 100.0\n 10.0 1.0 0.001 0.001 0.01 1.0 1.0 0.1 0.1 0.001 0.01 10.0 0.01 100.0 10.0\n 1.0 100.0 0.001 10.0 0.1 0.1 0.001 100.0 100.0 1.0 0.01 0.1 0.01 0.01\n 100.0]",
+      "params": [
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 10.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.001
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 7000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l1",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            3
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "lbfgs",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": null,
+          "classifier__C": 0.01
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__solver": "liblinear",
+          "classifier__penalty": "l2",
+          "classifier__class_weight": "balanced",
+          "classifier__C": 100.0
+        }
+      ],
+      "split0_test_score": "[0.52041258        nan 0.79225755        nan        nan        nan\n        nan 0.51506636 0.7605623  0.80847112 0.79581518        nan\n 0.78059056        nan 0.77816695        nan 0.7832248  0.1793868\n 0.79175736 0.1793868  0.7776432  0.75761575        nan 0.52832176\n 0.78786887 0.76607836 0.619166   0.79252067 0.77961608 0.75600159\n 0.79649601 0.76949438 0.79922099 0.79127308 0.51506636 0.7637004\n 0.1793868  0.76031889 0.1793868  0.7957666         nan        nan\n 0.80494768 0.79828342        nan        nan        nan 0.54554086\n        nan 0.79415688 0.79429419 0.75093342 0.79631996 0.51506636\n 0.51506636 0.768872   0.51506636        nan 0.76607836 0.76637247\n 0.51506636 0.75930313 0.805539   0.1793868  0.75135966 0.815469\n 0.1793868  0.1793868  0.79644949 0.79340837 0.79210094 0.74475593\n 0.1793868  0.7572553  0.76487346        nan 0.79674307        nan\n        nan 0.7654221  0.51506636        nan 0.76716738 0.76921695\n 0.7779933  0.78875827        nan 0.1793868  0.81395349 0.77413781\n        nan 0.75461161 0.7609552         nan 0.79815062        nan\n 0.77574942 0.51506636 0.51506636 0.79505317]",
+      "split1_test_score": "[0.52569985        nan 0.79132654        nan        nan        nan\n        nan 0.51506636 0.77765318 0.80429028 0.78987609        nan\n 0.78821794        nan 0.78068711        nan 0.77926111 0.1793868\n 0.77672547 0.1793868  0.77674419 0.78529412        nan 0.54121993\n 0.79218985 0.77983241 0.60164033 0.80013401 0.79027082 0.77404913\n 0.77173047 0.777783   0.78302022 0.79684763 0.51774692 0.78639123\n 0.1793868  0.78627661 0.1793868  0.77690416        nan        nan\n 0.80973687 0.79594565        nan        nan        nan 0.55803458\n        nan 0.78678424 0.77893599 0.75745464 0.78668221 0.51506636\n 0.51774692 0.76540018 0.51506636        nan 0.77901003 0.77416031\n 0.51506636 0.78082027 0.81721976 0.1793868  0.78541042 0.7972115\n 0.1793868  0.1793868  0.78954554 0.7839124  0.79024423 0.76926685\n 0.1793868  0.77404913 0.77549146        nan 0.78603091        nan\n        nan 0.77119306 0.51506636        nan 0.78091755 0.76771151\n 0.76723282 0.76637913        nan 0.1793868  0.78911446 0.78157948\n        nan 0.78497449 0.74351352        nan 0.80755774        nan\n 0.78539535 0.51506636 0.51506636 0.78236391]",
+      "split2_test_score": "[0.52248425        nan 0.78509069        nan        nan        nan\n        nan 0.51506636 0.77732041 0.81296663 0.80347131        nan\n 0.80167273        nan 0.79176935        nan 0.79475434 0.1793868\n 0.7957666  0.1793868  0.77725292 0.78157948        nan 0.53291406\n 0.80984179 0.77983241 0.61924145 0.79562702 0.79667052 0.77208343\n 0.78545294 0.78496734 0.79313612 0.80201112 0.51506636 0.77574942\n 0.1793868  0.77466239 0.1793868  0.78669051        nan        nan\n 0.81162674 0.78031371        nan        nan        nan 0.5323048\n        nan 0.79256197 0.76585318 0.78496686 0.80999794 0.51506636\n 0.51506636 0.78157948 0.51506636        nan 0.78308777 0.78082027\n 0.51506636 0.77961608 0.81175096 0.1793868  0.77404913 0.79659072\n 0.1793868  0.1793868  0.79340837 0.79783098 0.79462566 0.77893599\n 0.1793868  0.7728452  0.77644253        nan 0.77753423        nan\n        nan 0.76909795 0.51506636        nan 0.7887895  0.78822584\n 0.78576155 0.76323965        nan 0.1793868  0.80360221 0.78822584\n        nan 0.7838908  0.76400526        nan 0.80809552        nan\n 0.79680326 0.51506636 0.51506636 0.79340612]",
+      "split3_test_score": "[0.52511306        nan 0.7995184         nan        nan        nan\n        nan 0.51506636 0.79379647 0.8198938  0.80542593        nan\n 0.80859112        nan 0.79502328        nan 0.80531028 0.1793868\n 0.80333923 0.1793868  0.78403331 0.79693323        nan 0.53487003\n 0.82190858 0.79948969 0.61427222 0.81136613 0.80737802 0.78114368\n 0.80480233 0.78993641 0.800602   0.82488321 0.51774692 0.79260213\n 0.1793868  0.79608762 0.1793868  0.81162791        nan        nan\n 0.82416078 0.8049507         nan        nan        nan 0.53995962\n        nan 0.80973687 0.79028692 0.77584547 0.8154213  0.51506636\n 0.52306351 0.77874724 0.51506636        nan 0.7960942  0.79050366\n 0.51506636 0.79050366 0.82824623 0.1793868  0.79150531 0.82024436\n 0.1793868  0.1793868  0.80487507 0.81940741 0.81696385 0.76491072\n 0.1793868  0.78363493 0.79488026        nan 0.79699013        nan\n        nan 0.79524162 0.51506636        nan 0.80167273 0.78322368\n 0.79798465 0.78673433        nan 0.1793868  0.81532989 0.80482155\n        nan 0.79500343 0.77746333        nan 0.82878813        nan\n 0.80931542 0.51506636 0.51506636 0.80509631]",
+      "split4_test_score": "[0.51984096        nan 0.78403493        nan        nan        nan\n        nan 0.51506636 0.77804943 0.79984237 0.7939403         nan\n 0.78535334        nan 0.79467795        nan 0.78156451 0.1793868\n 0.77969152 0.1793868  0.7613448  0.76542335        nan 0.53032782\n 0.78549869 0.76976744 0.59317706 0.78300728 0.78320013 0.77127652\n 0.78207234 0.76417296 0.78768645 0.79153402 0.51984096 0.76585472\n 0.1793868  0.7680147  0.1793868  0.78636547        nan        nan\n 0.79751495 0.78509069        nan        nan        nan 0.54312141\n        nan 0.77845649 0.77043243 0.7549149  0.79152749 0.51506636\n 0.51984096 0.76101095 0.51506636        nan 0.76971006 0.77950062\n 0.51506636 0.77950062 0.80480233 0.1793868  0.76830531 0.8002629\n 0.1793868  0.1793868  0.78882034 0.78460964 0.79019368 0.75569675\n 0.1793868  0.77670805 0.76986803        nan 0.77507153        nan\n        nan 0.77125433 0.51506636        nan 0.7665491  0.76422621\n 0.78205335 0.77464535        nan 0.1793868  0.7972115  0.78139535\n        nan 0.76547644 0.7582155         nan 0.80108479        nan\n 0.78445401 0.51506636 0.51506636 0.77885501]",
+      "mean_test_score": "[0.52271014        nan 0.79044562        nan        nan        nan\n        nan 0.51506636 0.77747636 0.80909284 0.79770576        nan\n 0.79288514        nan 0.78806493        nan 0.78882301 0.1793868\n 0.78945604 0.1793868  0.77540368 0.77736919        nan 0.53353072\n 0.79946156 0.77900006 0.60949941 0.79653102 0.79142711 0.77091087\n 0.78811082 0.77727082 0.79273316 0.80130981 0.5170935  0.77685958\n 0.1793868  0.77707204 0.1793868  0.79147093        nan        nan\n 0.80959741 0.79291683        nan        nan        nan 0.54379225\n        nan 0.79233929 0.77996054 0.76482306 0.79998978 0.51506636\n 0.51815682 0.77112197 0.51506636        nan 0.77879608 0.77827147\n 0.51506636 0.77794875 0.81351165 0.1793868  0.77412597 0.8059557\n 0.1793868  0.1793868  0.79461976 0.79583376 0.79682567 0.76271325\n 0.1793868  0.77289852 0.77631115        nan 0.78647397        nan\n        nan 0.77444181 0.51506636        nan 0.78101925 0.77452084\n 0.78220513 0.77595135        nan 0.1793868  0.80384231 0.786032\n        nan 0.77679136 0.76083056        nan 0.80873536        nan\n 0.79034349 0.51506636 0.51506636 0.79095491]",
+      "std_test_score": "[0.002378          nan 0.00558832        nan        nan        nan\n        nan 0.         0.0105149  0.00693815 0.00586343        nan\n 0.01052204        nan 0.00718715        nan 0.0098231  0.\n 0.00995264 0.         0.00751472 0.01411513        nan 0.00444274\n 0.01409857 0.01160536 0.01038571 0.00930434 0.00990399 0.00822623\n 0.01149575 0.00950729 0.00669303 0.01242908 0.00182324 0.01126218\n 0.         0.01276578 0.         0.01171209        nan        nan\n 0.00876168 0.00897636        nan        nan        nan 0.00840241\n        nan 0.01029194 0.01098126 0.01321101 0.01095869 0.\n 0.00303914 0.00784268 0.                nan 0.01060175 0.00795137\n 0.         0.01018547 0.00864145 0.         0.01401122 0.00991202\n 0.         0.         0.0058201  0.01291269 0.01019812 0.01168463\n 0.         0.00866972 0.01017679        nan 0.00923228        nan\n        nan 0.01061375 0.                nan 0.01332826 0.00942384\n 0.01003568 0.01034611        nan 0.         0.00995123 0.01039861\n        nan 0.014622   0.0108946         nan 0.01071893        nan\n 0.01160878 0.         0.         0.00941272]",
+      "rank_test_score": "[58 77 22 77 77 77 77 61 37  3 10 77 16 77 27 77 25 68 24 68 45 38 77 57\n  9 33 55 12 20 51 26 39 17  7 60 41 68 40 68 19 77 77  2 15 77 77 77 56\n 77 18 32 52  8 61 59 50 61 77 34 35 61 36  1 68 48  5 68 68 14 13 11 53\n 68 49 43 77 28 77 77 47 61 77 31 46 30 44 77 68  6 29 77 42 54 77  4 77\n 23 61 61 21]",
+      "split0_train_score": "[0.52751959        nan 0.84300337        nan        nan        nan\n        nan 0.51506636 0.8500158  0.92085215 0.95419028        nan\n 0.85437862        nan 0.99651566        nan 0.84560124 0.1793868\n 0.99621982 0.1793868  0.98522836 0.84479082        nan 0.54201574\n 0.99621833 0.8487533  0.60722224 0.96967582 0.8562975  0.82295109\n 0.99651566 0.99040227 0.99043148 0.99651566 0.51707818 0.84362899\n 0.1793868  0.84220622 0.1793868  0.99622565        nan        nan\n 0.92830345 0.85750226        nan        nan        nan 0.55901498\n        nan 0.99622565 0.81979886 0.86876462 0.98194074 0.51506636\n 0.5190816  0.9910064  0.51506636        nan 0.82851583 0.8498211\n 0.51506636 0.84231418 0.91454524 0.1793868  0.83007405 0.99477547\n 0.1793868  0.1793868  0.95206889 0.99651566 0.97485377 0.87429038\n 0.1793868  0.83204894 0.82897295        nan 0.82560276        nan\n        nan 0.82812312 0.51506636        nan 0.84127723 0.98897866\n 0.97715051 0.80828005        nan 0.1793868  0.99303526 0.87598733\n        nan 0.83573192 0.99592944        nan 0.92885802        nan\n 0.87405677 0.51506636 0.51506636 0.99506525]",
+      "split1_train_score": "[0.52291875        nan 0.84562247        nan        nan        nan\n        nan 0.51506636 0.87053483 0.92453197 0.95130174        nan\n 0.8674341         nan 0.99709583        nan 0.85992793 0.1793868\n 0.99651026 0.1793868  0.99014062 0.85437862        nan 0.5362818\n 0.99709359 0.86652381 0.61166756 0.96938743 0.87313096 0.83886194\n 0.99709527 0.99214886 0.98927363 0.997386   0.51573791 0.85694904\n 0.1793868  0.85326965 0.1793868  0.99680511        nan        nan\n 0.93087939 0.86048012        nan        nan        nan 0.54779021\n        nan 0.99709583 0.82219001 0.87475046 0.98574032 0.51506636\n 0.51640851 0.99042972 0.51506636        nan 0.84402696 0.86890694\n 0.51506636 0.86259433 0.91880754 0.1793868  0.83693975 0.99361685\n 0.1793868  0.1793868  0.95646702 0.99709583 0.97225009 0.87535847\n 0.1793868  0.85248122 0.84519682        nan 0.82341969        nan\n        nan 0.83606556 0.51506636        nan 0.85622937 0.98956258\n 0.97772898 0.79859227        nan 0.1793868  0.99332358 0.88863367\n        nan 0.84202693 0.99738398        nan 0.93056515        nan\n 0.8868572  0.51506636 0.51506636 0.99535421]",
+      "split2_train_score": "[0.52423779        nan 0.84896227        nan        nan        nan\n        nan 0.51506636 0.86096968 0.92342555 0.95191436        nan\n 0.86363245        nan 0.997386          nan 0.85594697 0.1793868\n 0.99738398 0.1793868  0.98408663 0.84860065        nan 0.5391511\n 0.99767396 0.85735396 0.60726876 0.97112467 0.86500483 0.83539656\n 0.997386   0.99360214 0.98927559 0.99767622 0.51640851 0.84926531\n 0.1793868  0.84643797 0.1793868  0.997386          nan        nan\n 0.93171759 0.85982675        nan        nan        nan 0.52423779\n        nan 0.99709583 0.81151021 0.87394934 0.98603273 0.51506636\n 0.51841472 0.99245768 0.51506636        nan 0.84043052 0.86380048\n 0.51506636 0.85699566 0.91624719 0.1793868  0.83395928 0.99419496\n 0.1793868  0.1793868  0.95592996 0.997386   0.97227781 0.87676935\n 0.1793868  0.84427897 0.83753936        nan 0.82212173        nan\n        nan 0.83236649 0.51506636        nan 0.84885861 0.99245768\n 0.97658404 0.79722696        nan 0.1793868  0.99303526 0.8804331\n        nan 0.83506623 0.99738347        nan 0.93257679        nan\n 0.87867469 0.51506636 0.51506636 0.99651499]",
+      "split3_train_score": "[0.52525981        nan 0.84522695        nan        nan        nan\n        nan 0.51506636 0.86542614 0.92227405 0.94582264        nan\n 0.8635595         nan 0.997386          nan 0.85898263 0.1793868\n 0.99738244 0.1793868  0.98292033 0.85371662        nan 0.53820077\n 0.99738398 0.86185468 0.60852341 0.96878475 0.86615373 0.83553615\n 0.997386   0.98983052 0.98956638 0.997386   0.51640851 0.86077988\n 0.1793868  0.85539634 0.1793868  0.997386          nan        nan\n 0.93087939 0.85796159        nan        nan        nan 0.53804498\n        nan 0.99680572 0.81074561 0.86820275 0.98369832 0.51506636\n 0.52041258 0.98840498 0.51506636        nan 0.84138774 0.86384518\n 0.51506636 0.85807781 0.91454524 0.1793868  0.8357594  0.99361685\n 0.1793868  0.1793868  0.94913516 0.997386   0.97140915 0.87443721\n 0.1793868  0.84356165 0.84049273        nan 0.82470786        nan\n        nan 0.8386663  0.51506636        nan 0.85113684 0.98840286\n 0.97139969 0.80043809        nan 0.1793868  0.99303657 0.88467141\n        nan 0.84670789 0.99738448        nan 0.92743423        nan\n 0.88465493 0.51506636 0.51506636 0.99535509]",
+      "split4_train_score": "[0.52817325        nan 0.84764764        nan        nan        nan\n        nan 0.51506636 0.86349158 0.92630429 0.95412597        nan\n 0.86376272        nan 0.997386          nan 0.85666566 0.1793868\n 0.99738295 0.1793868  0.98898272 0.85554198        nan 0.54042619\n 0.99738347 0.86231604 0.61365584 0.97052893 0.86550587 0.83780679\n 0.99767622 0.9901124  0.99216832 0.99767622 0.51707818 0.8568031\n 0.1793868  0.8522889  0.1793868  0.997386          nan        nan\n 0.93085851 0.85952409        nan        nan        nan 0.53355844\n        nan 0.99767622 0.81932726 0.86885825 0.98311612 0.51506636\n 0.52107669 0.98869794 0.51506636        nan 0.84203816 0.86378536\n 0.51506636 0.85636101 0.9131003  0.1793868  0.83686761 0.99564416\n 0.1793868  0.1793868  0.95561444 0.99767622 0.97138533 0.87377147\n 0.1793868  0.84723829 0.84259074        nan 0.82266279        nan\n        nan 0.83908901 0.51506636        nan 0.85092515 0.98840709\n 0.97337895 0.79926097        nan 0.1793868  0.99564249 0.88303565\n        nan 0.83874273 0.99709188        nan 0.92822723        nan\n 0.88118614 0.51506636 0.51506636 0.99622494]",
+      "mean_train_score": "[0.52562184        nan 0.84609254        nan        nan        nan\n        nan 0.51506636 0.86208761 0.9234776  0.951471          nan\n 0.86255348        nan 0.99715389        nan 0.85542489 0.1793868\n 0.99697589 0.1793868  0.98627173 0.85140574        nan 0.53921512\n 0.99715066 0.85936036 0.60966756 0.96990032 0.86521858 0.83411051\n 0.99721183 0.99121924 0.99014308 0.99732802 0.51654226 0.85348526\n 0.1793868  0.84991982 0.1793868  0.99703775        nan        nan\n 0.93052767 0.85905896        nan        nan        nan 0.54052928\n        nan 0.99697985 0.81671439 0.87090508 0.98410565 0.51506636\n 0.51907882 0.99019935 0.51506636        nan 0.83927984 0.86203181\n 0.51506636 0.8552686  0.9154491  0.1793868  0.83472002 0.99436966\n 0.1793868  0.1793868  0.95384309 0.99721194 0.97243523 0.87492538\n 0.1793868  0.84392181 0.83895852        nan 0.82370297        nan\n        nan 0.8348621  0.51506636        nan 0.84968544 0.98956178\n 0.97524843 0.80075967        nan 0.1793868  0.99361463 0.88255223\n        nan 0.83965514 0.99703465        nan 0.92953228        nan\n 0.88108594 0.51506636 0.51506636 0.9957029 ]",
+      "std_train_score": "[0.00197304        nan 0.00205752        nan        nan        nan\n        nan 0.         0.00680369 0.00186794 0.00305197        nan\n 0.00434252        nan 0.00033833        nan 0.0051235  0.\n 0.00050714 0.         0.00280759 0.00407216        nan 0.00194667\n 0.000501   0.00604662 0.00256707 0.00083092 0.00535152 0.00573511\n 0.00039359 0.00143969 0.0010978  0.00042641 0.00050143 0.00618339\n 0.         0.00486722 0.         0.00046421        nan        nan\n 0.0011593  0.00113605        nan        nan        nan 0.01195508\n        nan 0.00047137 0.00466976 0.00283296 0.00156318 0.\n 0.00163352 0.0015019  0.                nan 0.00550953 0.00641655\n 0.         0.00683449 0.00195279 0.         0.0025606  0.0007685\n 0.         0.         0.00281745 0.00039356 0.00126992 0.00105459\n 0.         0.00671543 0.00558908        nan 0.00128698        nan\n        nan 0.0041335  0.                nan 0.00485486 0.00151014\n 0.00244387 0.00390085        nan 0.         0.00102004 0.00422604\n        nan 0.00430462 0.00056407        nan 0.00183823        nan\n 0.00450063 0.         0.         0.00056235]"
+    },
+    "n_iter": 100,
+    "cv_folds": 5,
+    "datetime": "2025-12-08T17:26:56.726276"
+  }
+]
