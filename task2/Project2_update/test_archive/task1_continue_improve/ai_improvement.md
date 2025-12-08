@@ -593,3 +593,26 @@ https://www.doubao.com/chat/32961012901834754
 # deepseek
 
 https://chat.deepseek.com/a/chat/s/98c5fc0e-521b-4243-81d1-786c03ebb112
+
+# Misc-DistilBERT Tiny
+
+> 如果在「资源约束」（容器内存≤900MB、镜像≤4GB）和「预测速度」（占 5% 评分），同时最大化「加权 F1 得分」（占 20% 评分）以及禁用GPU，仅用CPU的情况下运行会很慢吗
+
+都说还好不会很慢
+
+- https://www.doubao.com/chat/32961012901834754
+- https://chat.deepseek.com/a/chat/s/98c5fc0e-521b-4243-81d1-786c03ebb112
+
+---
+
+之后尝试，现有的基本上考虑包含中立在内的三种，所以需要重新训练：
+
+- https://www.google.com.hk/search?q=financial+title+sentiment+analysis+DistilBERT+github&amp;sca_esv=a78ec5d9f3c69526&amp;sxsrf=AE3TifOx8Ft_uTnR3PiorpGhV8WLpXjEVA%3A1765184044110&amp;ei=LJI2afe7Bu2B2roP0-fKyQk&amp;ved=0ahUKEwj3gab_zq2RAxXtgFYBHdOzMpkQ4dUDCBE&amp;uact=5&amp;oq=financial+title+sentiment+analysis+DistilBERT+github&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiNGZpbmFuY2lhbCB0aXRsZSBzZW50aW1lbnQgYW5hbHlzaXMgRGlzdGlsQkVSVCBnaXRodWIyBRAAGO8FMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBEilEFCuA1jhDHABeACQAQCYAYwBoAG8BqoBAzQuNLgBA8gBAPgBAZgCB6AClQXCAgsQABiABBiwAxiiBMICCBAAGLADGO8FwgIFECEYoAHCAgcQIRigARgKmAMAiAYBkAYFkgcDMy40oAeoG7IHAzIuNLgHkAXCBwMyLjXIBwqACAA&amp;sclient=gws-wiz-serp | financial title sentiment analysis DistilBERT github - Google 搜索
+- https://github.com/vedavyas0105/Financial-Sentiment-Distillation | vedavyas0105/Financial-Sentiment-Distillation: This project leverages knowledge distillation to create a lightweight yet powerful sentiment analysis model, tailored specifically for financial news data. Using a teacher-student approach, the project distills knowledge from a large FinBERT model into a compact DistilBERT-based student model, balancing performance and efficiency.
+- https://medium.com/@choudhary.man/fine-tuning-distilbert-for-financial-sentiment-analysis-a-practical-implementation-d6df80e8340f | Fine-Tuning DistilBERT for Financial Sentiment Analysis: A Practical Implementation | by Manish Bansilal Choudhary | Medium
+- https://huggingface.co/datasets/zeroshot/twitter-financial-news-sentiment | zeroshot/twitter-financial-news-sentiment &middot; Datasets at Hugging Face
+- https://github.com/Ramy-Abdulazziz/Financial-Sentiment-Analysis | Ramy-Abdulazziz/Financial-Sentiment-Analysis: LLM's trained and fine tuned for financial sentiment analysis
+- https://huggingface.co/AdityaAI9/distilbert_finance_sentiment_analysis#:~:text=A%20fine-tuned%20DistilBERT%20model%20for%20financial%20text%20sentiment,statements%20into%20three%20categories%3A%20positive%2C%20negative%2C%20and%20neutral. | AdityaAI9/distilbert_finance_sentiment_analysis &middot; Hugging Face
+
+
+
