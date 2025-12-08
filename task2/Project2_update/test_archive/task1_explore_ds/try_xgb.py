@@ -18,7 +18,7 @@ from xgboost import XGBClassifier
 
 # Local imports
 from handcrafted_features import create_sentiment_features
-from improved_sentiment_model import EnhancedTextPreprocessor
+from text_preprocessor import EnhancedTextPreprocessor
 
 class TextPreprocessorTransformer(BaseEstimator, TransformerMixin):
     """Transformer for text preprocessing using the EnhancedTextPreprocessor"""

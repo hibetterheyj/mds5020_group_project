@@ -8,17 +8,16 @@ from typing import Dict, List, Any, Tuple
 warnings.filterwarnings('ignore')
 
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import RandomizedSearchCV, GridSearchCV, StratifiedKFold, cross_val_score
-from sklearn.metrics import f1_score, make_scorer, classification_report
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import RandomizedSearchCV, StratifiedKFold
+from sklearn.metrics import f1_score, make_scorer
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.preprocessing import FunctionTransformer, StandardScaler
 from sklearn.base import BaseEstimator, TransformerMixin
 
-from lightgbm import LGBMClassifier
-
 # Local imports
 from handcrafted_features import create_sentiment_features
-from improved_sentiment_model import EnhancedTextPreprocessor
+from text_preprocessor import EnhancedTextPreprocessor
 
 class TextPreprocessorTransformer(BaseEstimator, TransformerMixin):
     """Transformer for text preprocessing using the EnhancedTextPreprocessor"""
@@ -34,6 +33,7 @@ class TextPreprocessorTransformer(BaseEstimator, TransformerMixin):
 
     def transform(self, X):
         return [self.preprocessor.preprocess(text) for text in X]
+
 
 def load_and_prepare_data(file_path: str, label_mapping: Dict[int, int] = {-1: 0, 1: 1}) -> Tuple[pd.DataFrame, pd.Series, pd.Series]:
     """Load and prepare data for training
@@ -61,8 +61,9 @@ def load_and_prepare_data(file_path: str, label_mapping: Dict[int, int] = {-1: 0
 
     return df, df['news_title'], df['sentiment']
 
-def create_lightgbm_pipeline(use_handcrafted: bool = True) -> Pipeline:
-    """Create LightGBM pipeline with or without handcrafted features
+
+def create_logregression_pipeline(use_handcrafted: bool = True) -> Pipeline:
+    """Create Logistic Regression pipeline with or without handcrafted features
 
     Args:
         use_handcrafted: Whether to include handcrafted features
@@ -76,8 +77,8 @@ def create_lightgbm_pipeline(use_handcrafted: bool = True) -> Pipeline:
         ('tfidf', TfidfVectorizer(
             max_features=3000,
             ngram_range=(1, 2),
-            min_df=1,  # Set to 1 to ensure terms are retained
-            max_df=1.0,  # Don't filter by document frequency
+            min_df=1,
+            max_df=1.0,
             use_idf=True
         ))
     ])
@@ -103,8 +104,8 @@ def create_lightgbm_pipeline(use_handcrafted: bool = True) -> Pipeline:
                 ('tfidf', TfidfVectorizer(
                     max_features=3000,
                     ngram_range=(1, 2),
-                    min_df=1,  # Set to 1 to ensure terms are retained
-                    max_df=1.0,  # Don't filter by document frequency
+                    min_df=1,
+                    max_df=1.0,
                     use_idf=True
                 ))
             ])),
@@ -114,29 +115,30 @@ def create_lightgbm_pipeline(use_handcrafted: bool = True) -> Pipeline:
             ]))
         ])
 
-        # Complete pipeline
+        # Complete pipeline with Logistic Regression
         pipeline = Pipeline([
             ('features', feature_union),
-            ('classifier', LGBMClassifier(random_state=42))
+            ('classifier', LogisticRegression(random_state=42))
         ])
     else:
         # Text-only pipeline
         pipeline = Pipeline([
             ('text', text_pipeline),
-            ('classifier', LGBMClassifier(random_state=42))
+            ('classifier', LogisticRegression(random_state=42))
         ])
 
     return pipeline
 
-def tune_lightgbm_hyperparameters(
+
+def tune_logregression_hyperparameters(
     df: pd.DataFrame,
     X: pd.Series,
     y: pd.Series,
-    n_iter: int = 50,
+    n_iter: int = 500,
     cv: int = 5,
     n_jobs: int = -2
 ) -> Dict[str, Any]:
-    """Tune LightGBM hyperparameters using RandomizedSearch and GridSearch
+    """Tune Logistic Regression hyperparameters using RandomizedSearchCV
 
     Args:
         df: Processed dataframe with handcrafted features
@@ -150,24 +152,12 @@ def tune_lightgbm_hyperparameters(
         Dictionary with tuning results
     """
     print("=" * 60)
-    print("Starting LightGBM Hyperparameter Tuning")
+    print("Starting Logistic Regression Hyperparameter Tuning")
     print("=" * 60)
 
     # Cross-validation settings
     skf = StratifiedKFold(n_splits=cv, shuffle=True, random_state=42)
     f1_scorer = make_scorer(f1_score, average='weighted')
-
-    # RandomizedSearchCV parameter space
-    random_param_grid = {
-            'features__text__tfidf__max_features': [2000, 3000],
-            'features__text__tfidf__ngram_range': [(1, 2)],
-            'classifier__n_estimators': [100, 200, 300, 500],
-            'classifier__max_depth': [3, 5, 7, 10],
-            'classifier__learning_rate': [0.01, 0.05, 0.1, 0.15],
-            'classifier__num_leaves': [15, 31, 63, 127],
-            'classifier__subsample': [0.7, 0.8, 0.9, 1.0],
-            'classifier__colsample_bytree': [0.7, 0.8, 0.9, 1.0]
-        }
 
     # Results container
     all_results = []
@@ -179,7 +169,7 @@ def tune_lightgbm_hyperparameters(
         print(f"{'=' * 40}")
 
         # Create pipeline
-        pipeline = create_lightgbm_pipeline(use_handcrafted=use_handcrafted)
+        pipeline = create_logregression_pipeline(use_handcrafted=use_handcrafted)
 
         # Prepare features
         if use_handcrafted:
@@ -187,33 +177,38 @@ def tune_lightgbm_hyperparameters(
         else:
             X_features = X.copy()   # Series with just the text data
 
-        # Adjust parameter grid based on whether we're using handcrafted features
-        if not use_handcrafted:
-            # Text-only pipeline uses different parameter names
+        # Parameter grid for Logistic Regression
+        param_grid = {
+            'classifier__C': np.logspace(-4, 4, 20),  # Inverse of regularization strength
+            'classifier__solver': ['liblinear', 'lbfgs'],  # Solvers compatible with both L1 and L2 penalties
+            'classifier__penalty': ['l1', 'l2'],  # Regularization type
+            'classifier__max_iter': [100, 200, 500, 1000],  # Maximum number of iterations
+            'classifier__class_weight': [None, 'balanced'],  # Class weights
+        }
+
+        # Adjust parameter names based on pipeline type
+        if use_handcrafted:
             param_grid = {
-                'text__tfidf__max_features': [2000, 3000],
-                'text__tfidf__ngram_range': [(1, 2)],
-                'classifier__n_estimators': [100, 200, 300, 500],
-                'classifier__max_depth': [3, 5, 7, 10],
-                'classifier__learning_rate': [0.01, 0.05, 0.1, 0.15],
-                'classifier__num_leaves': [15, 31, 63, 127],
-                'classifier__subsample': [0.7, 0.8, 0.9, 1.0],
-                'classifier__colsample_bytree': [0.7, 0.8, 0.9, 1.0]
+                'features__text__tfidf__max_features': [2000, 3000, 5000],
+                'features__text__tfidf__ngram_range': [(1, 1), (1, 2), (1, 3)],
+                'classifier__C': np.logspace(-4, 4, 20),
+                'classifier__solver': ['liblinear', 'lbfgs'],
+                'classifier__penalty': ['l1', 'l2'],
+                'classifier__max_iter': [100, 200, 500, 1000],
+                'classifier__class_weight': [None, 'balanced'],
             }
         else:
-            # Keep the original parameter names for the FeatureUnion pipeline
             param_grid = {
-                'features__text__tfidf__max_features': [2000, 3000],
-                'features__text__tfidf__ngram_range': [(1, 2)],
-                'classifier__n_estimators': [100, 200, 300, 500],
-                'classifier__max_depth': [3, 5, 7, 10],
-                'classifier__learning_rate': [0.01, 0.05, 0.1, 0.15],
-                'classifier__num_leaves': [15, 31, 63, 127],
-                'classifier__subsample': [0.7, 0.8, 0.9, 1.0],
-                'classifier__colsample_bytree': [0.7, 0.8, 0.9, 1.0]
+                'text__tfidf__max_features': [2000, 3000, 5000],
+                'text__tfidf__ngram_range': [(1, 1), (1, 2), (1, 3)],
+                'classifier__C': np.logspace(-4, 4, 20),
+                'classifier__solver': ['liblinear', 'lbfgs'],
+                'classifier__penalty': ['l1', 'l2'],
+                'classifier__max_iter': [100, 200, 500, 1000],
+                'classifier__class_weight': [None, 'balanced'],
             }
 
-        # 1. RandomizedSearchCV to find promising parameter combinations
+        # Run RandomizedSearchCV with 500 iterations
         print(f"\nRunning RandomizedSearchCV with {n_iter} iterations...")
         random_search = RandomizedSearchCV(
             estimator=pipeline,
@@ -222,8 +217,8 @@ def tune_lightgbm_hyperparameters(
             scoring=f1_scorer,
             cv=skf,
             n_jobs=n_jobs,
-            random_state=42,
-            verbose=1
+            verbose=1,
+            random_state=42
         )
         random_search.fit(X_features, y)
 
@@ -255,87 +250,26 @@ def tune_lightgbm_hyperparameters(
                 }
             })
 
-        # 2. GridSearchCV on promising parameters
-        print("\n2. Running GridSearchCV on promising parameters...")
-
-        # Refine parameter grid based on best results
-        best_params = random_search.best_params_
-
-        # Adjust grid search parameters based on pipeline type
-        if not use_handcrafted:
-            grid_param_grid = {
-                'text__tfidf__max_features': [best_params.get('text__tfidf__max_features', 3000)],
-                'classifier__n_estimators': [best_params.get('classifier__n_estimators', 200), best_params.get('classifier__n_estimators', 200) + 100],
-                'classifier__max_depth': [max(3, best_params.get('classifier__max_depth', 5) - 1), best_params.get('classifier__max_depth', 5), best_params.get('classifier__max_depth', 5) + 1],
-                'classifier__learning_rate': [max(0.01, best_params.get('classifier__learning_rate', 0.1) - 0.03), best_params.get('classifier__learning_rate', 0.1), min(0.2, best_params.get('classifier__learning_rate', 0.1) + 0.03)],
-                'classifier__num_leaves': [max(15, best_params.get('classifier__num_leaves', 63) - 32), best_params.get('classifier__num_leaves', 63), best_params.get('classifier__num_leaves', 63) + 32]
-            }
-        else:
-            grid_param_grid = {
-                'features__text__tfidf__max_features': [best_params.get('features__text__tfidf__max_features', 3000)],
-                'classifier__n_estimators': [best_params.get('classifier__n_estimators', 200), best_params.get('classifier__n_estimators', 200) + 100],
-                'classifier__max_depth': [max(3, best_params.get('classifier__max_depth', 5) - 1), best_params.get('classifier__max_depth', 5), best_params.get('classifier__max_depth', 5) + 1],
-                'classifier__learning_rate': [max(0.01, best_params.get('classifier__learning_rate', 0.1) - 0.03), best_params.get('classifier__learning_rate', 0.1), min(0.2, best_params.get('classifier__learning_rate', 0.1) + 0.03)],
-                'classifier__num_leaves': [max(15, best_params.get('classifier__num_leaves', 63) - 32), best_params.get('classifier__num_leaves', 63), best_params.get('classifier__num_leaves', 63) + 32]
-            }
-
-        grid_search = GridSearchCV(
-            estimator=pipeline,
-            param_grid=grid_param_grid,
-            scoring=f1_scorer,
-            cv=skf,
-            n_jobs=n_jobs,
-            verbose=1
-        )
-        grid_search.fit(X_features, y)
-
-        print(f"Best GridSearchCV score: {grid_search.best_score_:.4f}")
-        print(f"Best parameters: {grid_search.best_params_}")
-
-        # Extract results from GridSearchCV
-        for i, (params, mean_score, std_score) in enumerate(zip(
-            grid_search.cv_results_['params'],
-            grid_search.cv_results_['mean_test_score'],
-            grid_search.cv_results_['std_test_score']
-        )):
-            # Get individual fold scores
-            fold_scores = []
-            for j in range(cv):
-                fold_score = grid_search.cv_results_[f'split{j}_test_score'][i]
-                fold_scores.append(fold_score)
-
-            # Add use_handcrafted to parameters
-            params['use_handcrafted'] = use_handcrafted
-
-            # Store results
-            all_results.append({
-                'parameters': params,
-                'metrics': {
-                    'mean_score': float(mean_score),
-                    'std_score': float(std_score),
-                    'scores': [float(s) for s in fold_scores]
-                }
-            })
-
     return all_results
 
+
 def main():
-    """Main function to run LightGBM hyperparameter tuning"""
+    """Main function to run Logistic Regression hyperparameter tuning"""
     # File path
     data_path = '../../data/Subtask1-sentiment_analysis/training_news-sentiment.xlsx'
 
     # Load data
     df, X, y = load_and_prepare_data(data_path)
 
-    # Tune hyperparameters
-    tuning_results = tune_lightgbm_hyperparameters(df, X, y, n_iter=30, cv=5, n_jobs=-2)
+    # Tune hyperparameters with 500 iterations
+    tuning_results = tune_logregression_hyperparameters(df, X, y, n_iter=500, cv=5, n_jobs=-2)
 
     # Save results to JSON
-    with open('lightgbm_tuning_results.json', 'w') as f:
+    with open('logregression_tuning_results.json', 'w') as f:
         json.dump(tuning_results, f, indent=2)
 
     print(f"\n{'=' * 60}")
-    print(f"Tuning completed! Results saved to lightgbm_tuning_results.json")
+    print(f"Tuning completed! Results saved to logregression_tuning_results.json")
     print(f"Total results: {len(tuning_results)}")
 
     # Print best results
@@ -343,6 +277,19 @@ def main():
     print(f"\nBest result:")
     print(f"Mean F1 score: {best_result['metrics']['mean_score']:.4f}")
     print(f"Parameters: {best_result['parameters']}")
+
+    # Compare handcrafted vs non-handcrafted results
+    handcrafted_results = [r for r in tuning_results if r['parameters']['use_handcrafted']]
+    non_handcrafted_results = [r for r in tuning_results if not r['parameters']['use_handcrafted']]
+
+    best_handcrafted = max(handcrafted_results, key=lambda x: x['metrics']['mean_score'])
+    best_non_handcrafted = max(non_handcrafted_results, key=lambda x: x['metrics']['mean_score'])
+
+    print(f"\nComparison:")
+    print(f"Best with handcrafted features: {best_handcrafted['metrics']['mean_score']:.4f}")
+    print(f"Best without handcrafted features: {best_non_handcrafted['metrics']['mean_score']:.4f}")
+    print(f"Improvement: {best_handcrafted['metrics']['mean_score'] - best_non_handcrafted['metrics']['mean_score']:.4f}")
+
 
 if __name__ == "__main__":
     main()
