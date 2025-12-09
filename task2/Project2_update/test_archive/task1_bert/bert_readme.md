@@ -1,8 +1,29 @@
 ## bert readme
 
-### method
+### 模型方法核心对比表
+| 模型类型                    | 5折交叉 F1 性能         | 单样本耗时     | 核心特点                         |
+| --------------------------- | ----------------------- | -------------- | -------------------------------- |
+| 基线（Logistic Regression） | 0.8024                  | 0.001s         | 基础模型，效率高、性能一般       |
+| 单分类器（ExtraTrees）      | 0.8194                  | 0.001s左右     | 性能优于基线，效率持平           |
+| 集成学习（Voting/Stacking） | 0.8207-0.8246（未调参） | 高效（近基线） | 性能有提升空间，未达上限         |
+| DistilBERT（微调）          | 0.8711                  | 0.02s          | 精度显著领先，部署适配，耗时略增 |
+
+---
+
+### 核心选择方向
+1. 优先精度：选 DistilBERT（F1 0.8711），需接受单样本耗时从 0.001s 增至 0.02s。
+2. 优先效率：选集成学习（当前 0.82+），需确认调参后能否逼近 DistilBERT 精度。
+
+要不要我帮你整理一份**简化版决策投票表**，方便现场快速统计大家的选择倾向？
+
+### methods
+
+- https://huggingface.co/distilbert/distilbert-base-uncased/tree/main | distilbert/distilbert-base-uncased &middot; Hugging Face
+  - done with app_optimized.py and distilbert_baseline.py
 
 - https://huggingface.co/mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis | mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis &middot; Hugging Face
+  - done with distilroberta_baseline.py
+
 - https://huggingface.co/spaces/sway0604/news_sentiment | News Sentiment - a Hugging Face Space by sway0604
 - https://www.kaggle.com/code/dhaouadiibtihel98/fine-tuning-distilbert-for-sentiment-analysis | Fine-Tuning DistilBERT for Sentiment Analysis
 - https://www.kaggle.com/code/joshplnktt/sentiment-analysis-w-distilbert | Sentiment Analysis w/ DistilBERT

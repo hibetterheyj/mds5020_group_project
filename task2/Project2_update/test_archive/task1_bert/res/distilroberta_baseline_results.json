@@ -1,0 +1,21 @@
+[
+  {
+    "experiment_name": "DistilRoberta_Baseline",
+    "parameters": {
+      "model_name": "mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis",
+      "download_path": "./results/distilroberta",
+      "inference_only": true
+    },
+    "metrics": {
+      "mean_weighted_f1": 0.8401925775918251,
+      "std_weighted_f1": 0.00614641860636891,
+      "fold_scores": [
+        0.8374762008259075,
+        0.8495947422323952,
+        0.8338525329006671,
+        0.834878841777963,
+        0.8451605702221925
+      ]
+    }
+  }
+]
