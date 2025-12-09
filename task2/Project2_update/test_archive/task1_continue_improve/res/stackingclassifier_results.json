@@ -1,0 +1,26 @@
+{
+  "classifier": "StackingClassifier",
+  "base_estimators": [
+    "ExtraTreesClassifier_NoHandcrafted",
+    "LogisticRegression_NoHandcrafted",
+    "LinearSVC_WithHandcrafted",
+    "SGDClassifier_NoHandcrafted",
+    "SVC_Sigmoid_NoHandcrafted",
+    "ExtraTreesClassifier_WithHandcrafted",
+    "MLPClassifier_WithHandcrafted",
+    "SVC_Poly_WithHandcrafted",
+    "MultinomialNB_WithHandcrafted",
+    "BernoulliNB_WithHandcrafted"
+  ],
+  "cv_folds": 5,
+  "cv_scores": [
+    0.8235924597240536,
+    0.8107337389288453,
+    0.8229996313998599,
+    0.8381555028589445,
+    0.8081184237539591
+  ],
+  "average_score": 0.8207199513331325,
+  "n_jobs": 2,
+  "datetime": null
+}

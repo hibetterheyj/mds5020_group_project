@@ -1,0 +1,26 @@
+{
+  "classifier": "VotingClassifier_Hard",
+  "base_estimators": [
+    "ExtraTreesClassifier_NoHandcrafted",
+    "LogisticRegression_NoHandcrafted",
+    "LinearSVC_WithHandcrafted",
+    "SGDClassifier_NoHandcrafted",
+    "SVC_Sigmoid_NoHandcrafted",
+    "ExtraTreesClassifier_WithHandcrafted",
+    "MLPClassifier_WithHandcrafted",
+    "SVC_Poly_WithHandcrafted",
+    "MultinomialNB_WithHandcrafted",
+    "BernoulliNB_WithHandcrafted"
+  ],
+  "cv_folds": 5,
+  "cv_scores": [
+    0.8228190089028378,
+    0.8187970267162973,
+    0.8277713377328066,
+    0.8405084750179141,
+    0.8132755153853966
+  ],
+  "average_score": 0.8246342727510505,
+  "n_jobs": 2,
+  "datetime": null
+}
