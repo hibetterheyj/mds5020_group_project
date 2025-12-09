@@ -55,13 +55,15 @@ def predict_sentiment():
     title = request.json.get('title')
     if title:
         prediction, probabilities = predict_sentiment_bert(title, tokenizer, model, device)
-        probability_for_prediction = probabilities[prediction]
+        # Map 0 to -1 for negative sentiment to match dataset format
+        mapped_prediction = -1 if prediction == 0 else 1
+        probability_for_prediction = probabilities[0] if prediction == 0 else probabilities[1]
         return {
-            'prediction': int(prediction),
+            'prediction': mapped_prediction,
             'probability': f"{probability_for_prediction:.4f}"
         }
 
     return None
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5724)
+    app.run(host='0.0.0.0', port=5725)
