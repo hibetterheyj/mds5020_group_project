@@ -14,8 +14,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import RandomizedSearchCV, StratifiedKFold
 from sklearn.metrics import f1_score, make_scorer
 from sklearn.pipeline import Pipeline, FeatureUnion
-from sklearn.preprocessing import FunctionTransformer, StandardScaler
+from sklearn.preprocessing import FunctionTransformer, StandardScaler, MinMaxScaler
 from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.naive_bayes import MultinomialNB, BernoulliNB, CategoricalNB
+from sklearn.datasets import make_classification
+from sklearn.utils import resample
 
 # Local imports
 from handcrafted_features import create_sentiment_features
@@ -120,15 +123,33 @@ def create_text_pipeline(use_stemming: bool = False, use_lemmatization: bool = T
     ])
 
 
-def create_feature_union(text_pipeline: Pipeline) -> FeatureUnion:
-    """Create a feature union with text pipeline and handcrafted features"""
+def create_feature_union(text_pipeline: Pipeline, classifier: BaseEstimator) -> FeatureUnion:
+    """Create a feature union with text pipeline and handcrafted features
+
+    Args:
+        text_pipeline: Text processing pipeline
+        classifier: Classifier to determine scaling approach (Naive Bayes needs non-negative scaling)
+    """
+
+    # Use MinMaxScaler for Naive Bayes (requires non-negative inputs), otherwise StandardScaler
+    is_naive_bayes = isinstance(classifier, (MultinomialNB, BernoulliNB, CategoricalNB))
+    scaler = MinMaxScaler() if is_naive_bayes else StandardScaler()
+
     return FeatureUnion([
         ('text', text_pipeline),
         ('handcrafted', Pipeline([
             ('selector', FunctionTransformer(get_handcrafted_features, validate=False)),
-            ('scaler', StandardScaler())
+            ('scaler', scaler)
         ]))
     ])
+
+
+class SparseToDenseTransformer(BaseEstimator, TransformerMixin):
+    """Transformer to convert sparse matrices to dense numpy arrays"""
+    def fit(self, X, y=None):
+        return self
+    def transform(self, X):
+        return X.toarray() if hasattr(X, 'toarray') else X
 
 
 def create_pipeline(
@@ -151,17 +172,38 @@ def create_pipeline(
 
     if use_handcrafted:
         # Combined pipeline with both text and handcrafted features
-        feature_union = create_feature_union(text_pipeline)
-        pipeline = Pipeline([
-            ('features', feature_union),
-            ('classifier', classifier)
-        ])
+        # Pass classifier to determine scaling approach for handcrafted features
+        feature_union = create_feature_union(text_pipeline, classifier)
+
+        # Check if classifier needs dense data
+        needs_dense = isinstance(classifier, CategoricalNB)
+
+        pipeline_steps = [
+            ('features', feature_union)
+        ]
+
+        # Add sparse to dense transformer if needed
+        if needs_dense:
+            pipeline_steps.append(('to_dense', SparseToDenseTransformer()))
+
+        pipeline_steps.append(('classifier', classifier))
+
+        pipeline = Pipeline(pipeline_steps)
     else:
         # Text-only pipeline
-        pipeline = Pipeline([
-            ('text', text_pipeline),
-            ('classifier', classifier)
-        ])
+        needs_dense = isinstance(classifier, CategoricalNB)
+
+        pipeline_steps = [
+            ('text', text_pipeline)
+        ]
+
+        # Add sparse to dense transformer if needed
+        if needs_dense:
+            pipeline_steps.append(('to_dense', SparseToDenseTransformer()))
+
+        pipeline_steps.append(('classifier', classifier))
+
+        pipeline = Pipeline(pipeline_steps)
 
     return pipeline
 

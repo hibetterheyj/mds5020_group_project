@@ -1,0 +1,990 @@
+[
+  {
+    "classifier": "AdaBoostClassifier",
+    "use_handcrafted": true,
+    "best_params": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 5000,
+      "classifier__n_estimators": 200,
+      "classifier__learning_rate": 1.0
+    },
+    "best_score": 0.7381963466788993,
+    "cv_results": {
+      "mean_fit_time": "[ 8.80635481 16.69428282 16.1018971  16.12442579 11.49202785  9.63810825\n 18.21139855 27.11589494  9.02383356 16.46507063 16.68420959 11.24504142\n 11.29397583 10.93995404 26.139077   10.95967679  8.3027925  10.72125797\n 11.83065181 17.00074902 16.40605464 17.24055724 11.71797571 26.97695541\n 15.3099308   8.27794418 11.31671028 11.79979396  8.48481307 11.9605226\n 11.78396192 16.50742278 10.95894985 11.7487957  15.93660355  8.44213858\n  8.62865562  8.44980588  9.32441263  9.00001554 17.66047363  9.37216058\n 11.55793662 16.86048532 11.46178174  8.46860151 17.66223464  8.26758847\n 11.40224643 10.63744345]",
+      "std_fit_time": "[0.10847533 0.219546   0.21434848 0.09576194 0.33406004 0.3457085\n 0.23773348 1.37112486 0.20300138 0.23449009 0.32178558 0.08180423\n 0.08750498 0.0618815  1.07348095 0.34814608 0.24847595 0.22085586\n 0.14939567 0.16019998 0.0839814  0.12781557 0.12345478 0.9963662\n 0.19899007 0.11986224 0.199609   0.16802199 0.1107946  0.21651833\n 0.44118051 0.09966795 0.26329716 0.3012143  0.54420063 0.1671881\n 0.04464713 0.26372462 0.09416719 0.13932944 0.12070983 0.22322295\n 0.17946435 0.73683811 0.28940251 0.16333025 0.0852469  0.12271414\n 0.24038772 0.68715709]",
+      "mean_score_time": "[1.71623931 2.03336191 2.01241112 2.04143963 1.73314543 1.71642537\n 1.97033439 1.99697332 1.66608915 1.87361684 1.93578997 1.74704256\n 1.70700378 1.70987296 1.80461941 1.54255486 1.51779442 1.79163957\n 1.78410044 2.14060402 2.05217338 1.93160839 1.85711432 1.88681188\n 1.91137562 1.61378732 1.62441969 1.76737299 1.68047061 1.70601778\n 1.77708044 1.84851918 1.48905721 1.66309438 1.63150606 1.55860844\n 1.61012969 1.68079791 1.67086673 1.70151415 2.04935985 1.67423754\n 1.75170984 1.86365104 1.67197075 1.63112178 1.74077754 1.58395901\n 1.76995506 1.76029468]",
+      "std_score_time": "[0.05537432 0.11068057 0.03583559 0.16086338 0.05330159 0.06642507\n 0.02035557 0.07375104 0.04207963 0.08034408 0.10765366 0.12491653\n 0.1264241  0.03680832 0.1211895  0.13253305 0.10039156 0.06669602\n 0.12062613 0.12019287 0.08899376 0.09150966 0.15245734 0.22780515\n 0.08251495 0.03844519 0.11022414 0.08542726 0.08897161 0.09276714\n 0.09840873 0.16291604 0.06571548 0.10166051 0.13556691 0.04248326\n 0.09790722 0.07774492 0.03340853 0.11452969 0.02430553 0.04454199\n 0.06107693 0.0988668  0.07768874 0.07904157 0.11429599 0.06449639\n 0.08064853 0.27458986]",
+      "param_features__text__tfidf__ngram_range": "[(1, 2) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 1)\n (1, 2) (1, 1) (1, 1) (1, 1) (1, 1) (1, 1) (1, 2) (1, 1) (1, 2) (1, 2)\n (1, 1) (1, 2) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2)\n (1, 2) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 2)\n (1, 2) (1, 2) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1)]",
+      "param_features__text__tfidf__max_features": "[2000 2000 2000 2000 3000 5000 5000 5000 3000 3000 2000 3000 3000 2000\n 5000 5000 2000 2000 3000 3000 3000 3000 3000 5000 2000 2000 2000 5000\n 2000 5000 3000 2000 5000 5000 5000 2000 3000 3000 5000 3000 5000 5000\n 2000 5000 5000 2000 5000 3000 2000 2000]",
+      "param_classifier__n_estimators": "[50 200 200 200 100 50 200 200 50 200 200 100 100 100 200 50 50 100 100\n 200 200 200 100 200 200 50 100 100 50 100 100 200 50 100 100 50 50 50 50\n 50 200 50 100 100 50 50 200 50 100 100]",
+      "param_classifier__learning_rate": "[0.5 1.0 1.0 0.1 1.0 0.1 0.1 1.0 0.1 0.5 0.1 0.1 0.5 0.1 0.5 0.1 1.0 0.5\n 1.0 0.5 1.0 0.1 0.1 0.1 0.5 1.0 0.5 0.1 0.1 1.0 0.5 0.5 1.0 0.5 1.0 0.1\n 0.5 0.1 1.0 1.0 0.5 0.5 1.0 0.1 0.5 0.5 1.0 0.5 0.1 1.0]",
+      "params": [
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        }
+      ],
+      "split0_test_score": "[0.7310234  0.73859799 0.73129463 0.72936952 0.73389677 0.72936952\n 0.72936952 0.73333308 0.72936952 0.73574508 0.72936952 0.72936952\n 0.73409738 0.72936952 0.73574508 0.72936952 0.73533554 0.73307223\n 0.73636069 0.73533554 0.73129463 0.72936952 0.72936952 0.72936952\n 0.73389677 0.73185086 0.7332869  0.72936952 0.72936952 0.73568706\n 0.73512305 0.73636069 0.73512305 0.73512305 0.73492056 0.72936952\n 0.73307223 0.72936952 0.73533554 0.73431094 0.73820327 0.72999972\n 0.73552367 0.72936952 0.7310234  0.7310234  0.73627065 0.72795373\n 0.72936952 0.73492056]",
+      "split1_test_score": "[0.74088053 0.75051837 0.74698001 0.74396902 0.74871072 0.74396902\n 0.74396902 0.73991873 0.74396902 0.74664574 0.74396902 0.74396902\n 0.74088053 0.74396902 0.74706333 0.74396902 0.74492029 0.74088053\n 0.75077858 0.74871072 0.74653324 0.74396902 0.74396902 0.74396902\n 0.74974428 0.74603123 0.7419094  0.74396902 0.74396902 0.75077858\n 0.7419094  0.75181363 0.74499979 0.74088053 0.74458356 0.74396902\n 0.74088053 0.74396902 0.74664574 0.74561431 0.74974428 0.74088053\n 0.75077858 0.74396902 0.74088053 0.74088053 0.75077858 0.74088053\n 0.74396902 0.74871072]",
+      "split2_test_score": "[0.72925869 0.73656793 0.73853857 0.72925869 0.7375886  0.72925869\n 0.72925869 0.74011179 0.72925869 0.73602452 0.72925869 0.72925869\n 0.73287769 0.72925869 0.73853857 0.72925869 0.73751639 0.73435329\n 0.7375886  0.7395615  0.74011179 0.72925869 0.72925869 0.72925869\n 0.73249278 0.73806661 0.73695941 0.72925869 0.72925869 0.73710446\n 0.73798161 0.73751639 0.73751639 0.73241639 0.73908881 0.72925869\n 0.72925869 0.72925869 0.73404705 0.73751639 0.73602452 0.72925869\n 0.73506541 0.72925869 0.72925869 0.72925869 0.74113556 0.72925869\n 0.72925869 0.73908881]",
+      "split3_test_score": "[0.74088053 0.74579416 0.74639018 0.74088053 0.73787063 0.74088053\n 0.74088053 0.74048896 0.74088053 0.73831751 0.74088053 0.74088053\n 0.7375726  0.74088053 0.73831751 0.74088053 0.74579416 0.74107574\n 0.74992186 0.74785651 0.73900453 0.74088053 0.74088053 0.74088053\n 0.74682496 0.74639018 0.7419094  0.74088053 0.74088053 0.7488888\n 0.74458356 0.7462227  0.74124668 0.74458356 0.73787063 0.74088053\n 0.74088053 0.74088053 0.7462227  0.74828637 0.74785651 0.74088053\n 0.74579416 0.74088053 0.74088053 0.74088053 0.7488888  0.74088053\n 0.74088053 0.74639018]",
+      "split4_test_score": "[0.70139566 0.71287482 0.70741247 0.70139566 0.70591873 0.70139566\n 0.70139566 0.70841094 0.70139566 0.71038889 0.70139566 0.70139566\n 0.70390958 0.70139566 0.70838714 0.70139566 0.70342351 0.70390958\n 0.70886506 0.71139053 0.70841094 0.70139566 0.70139566 0.70139566\n 0.71038889 0.70442003 0.70386347 0.70139566 0.70139566 0.70741247\n 0.70586277 0.70986676 0.70392649 0.70486291 0.70492236 0.70139566\n 0.70286444 0.70139566 0.70591873 0.70293109 0.71038889 0.70086761\n 0.7069039  0.70139566 0.70086761 0.70286444 0.71390814 0.70086761\n 0.70139566 0.7064145 ]",
+      "mean_test_score": "[0.72868776 0.73687065 0.73412317 0.72897468 0.73279709 0.72897468\n 0.72897468 0.7324527  0.72897468 0.73342435 0.72897468 0.72897468\n 0.72986756 0.72897468 0.73361033 0.72897468 0.73339798 0.73065827\n 0.73670296 0.73657096 0.73307103 0.72897468 0.72897468 0.72897468\n 0.73466954 0.73335178 0.73158572 0.72897468 0.72897468 0.73597427\n 0.73309208 0.73635604 0.73256248 0.73157329 0.73227718 0.72897468\n 0.72939128 0.72897468 0.73363395 0.73373182 0.73644349 0.72837741\n 0.73481314 0.72897468 0.72858215 0.72898152 0.73819635 0.72796822\n 0.72897468 0.73510495]",
+      "std_test_score": "[0.01447734 0.01299819 0.01453778 0.01501611 0.014322   0.01501611\n 0.01501611 0.01231069 0.01501611 0.01217807 0.01501611 0.01501611\n 0.01327722 0.01501611 0.01317722 0.01501611 0.01552812 0.01376947\n 0.01515726 0.01355921 0.01324602 0.01501611 0.01501611 0.01501611\n 0.01392758 0.01544213 0.01423693 0.01501611 0.01501611 0.01551186\n 0.01399476 0.01441747 0.01470524 0.0140189  0.01403143 0.01501611\n 0.0140089  0.01501611 0.01482554 0.01622573 0.01406615 0.01464824\n 0.0151985  0.01501611 0.01467661 0.01392495 0.01322804 0.01462576\n 0.01501611 0.01517577]",
+      "rank_test_score": "[47  2 11 30 20 30 30 22 30 15 30 30 27 30 14 30 16 26  3  4 19 30 30 30\n 10 17 24 30 30  7 18  6 21 25 23 30 28 30 13 12  5 49  9 30 48 29  1 50\n 30  8]",
+      "split0_train_score": "[0.73167466 0.74536004 0.73635634 0.72887204 0.73622404 0.72887204\n 0.72887204 0.73812147 0.72887204 0.73769446 0.72887204 0.72887204\n 0.73386071 0.72887204 0.73769446 0.72887204 0.73564865 0.73232973\n 0.7360487  0.73568165 0.73547425 0.72887204 0.72887204 0.72887204\n 0.73673519 0.73352749 0.73590423 0.72887204 0.72887204 0.73866834\n 0.73371576 0.73860674 0.73411601 0.73346048 0.73633638 0.72887204\n 0.73243978 0.72887204 0.73502665 0.73451587 0.73791628 0.73116476\n 0.73426669 0.72887204 0.73156476 0.73156476 0.73874873 0.72876273\n 0.72887204 0.73710331]",
+      "split1_train_score": "[0.7282759  0.73791628 0.73948981 0.72527306 0.73834159 0.72527306\n 0.72527306 0.74351902 0.72527306 0.7351766  0.72527306 0.72527306\n 0.73159822 0.72527306 0.73501181 0.72527306 0.73247434 0.73190502\n 0.73809947 0.73915331 0.74058489 0.72599622 0.72527306 0.72671855\n 0.73802041 0.7331293  0.7332869  0.72527306 0.72527306 0.73915331\n 0.73297739 0.73951707 0.73219919 0.73154645 0.73552367 0.72527306\n 0.72853128 0.72527306 0.73588553 0.73545993 0.73864048 0.72750993\n 0.73893777 0.72527306 0.7282759  0.7282759  0.74184671 0.72750993\n 0.72527306 0.73765648]",
+      "split2_train_score": "[0.72892555 0.7415707  0.74261806 0.72892555 0.73974622 0.72892555\n 0.72892555 0.74058489 0.72892555 0.73827668 0.72892555 0.72892555\n 0.73045606 0.72892555 0.73842513 0.72892555 0.73517569 0.73020089\n 0.74014989 0.74062468 0.7415707  0.72892555 0.72892555 0.72892555\n 0.73718397 0.73696619 0.73330742 0.72892555 0.72892555 0.73918027\n 0.7340741  0.73886807 0.73375093 0.73173243 0.73908581 0.72892555\n 0.72892555 0.72892555 0.73674699 0.73532223 0.73955861 0.72892555\n 0.73916133 0.72892555 0.72892555 0.72892555 0.74341065 0.72892555\n 0.72892555 0.74058489]",
+      "split3_train_score": "[0.72603577 0.73707141 0.73970923 0.72603577 0.7321408  0.72603577\n 0.72603577 0.73758301 0.72603577 0.7328399  0.72603577 0.72603577\n 0.72821724 0.72603577 0.73232973 0.72603577 0.73253863 0.72974508\n 0.73710331 0.73491532 0.73695969 0.72603577 0.72603577 0.72603577\n 0.73564865 0.73596853 0.72883493 0.72603577 0.72603577 0.73553759\n 0.72963596 0.73250729 0.73185363 0.72949035 0.73323962 0.72603577\n 0.72603577 0.72603577 0.7320747  0.73287356 0.73502665 0.72603577\n 0.73378264 0.72603577 0.72603577 0.72603577 0.73780555 0.72603577\n 0.72603577 0.73707141]",
+      "split4_train_score": "[0.73805425 0.75558263 0.75200864 0.73589725 0.74354091 0.73589725\n 0.73589725 0.75528176 0.73589725 0.74623149 0.73589725 0.73589725\n 0.74288676 0.73589725 0.74705004 0.73589725 0.74184671 0.74350408\n 0.74756685 0.749387   0.75057019 0.73589725 0.73589725 0.73589725\n 0.74577052 0.7408639  0.74292124 0.73589725 0.73589725 0.74623476\n 0.74426814 0.74597336 0.74171989 0.74266351 0.74431301 0.73589725\n 0.7417321  0.73589725 0.74328363 0.74349558 0.7477248  0.73890052\n 0.74370616 0.73589725 0.73890052 0.74131567 0.75544058 0.73925611\n 0.73589725 0.7423609 ]",
+      "mean_train_score": "[0.73059322 0.74350021 0.74203642 0.72900073 0.73799871 0.72900073\n 0.72900073 0.74301803 0.72900073 0.73804383 0.72900073 0.72900073\n 0.7334038  0.72900073 0.73810224 0.72900073 0.73553681 0.73353696\n 0.73979364 0.73995239 0.74103194 0.72914536 0.72900073 0.72928983\n 0.73867175 0.73609108 0.73485094 0.72900073 0.72900073 0.73975485\n 0.73493427 0.73909451 0.73472793 0.73377864 0.7376997  0.72900073\n 0.73153289 0.72900073 0.7366035  0.73633343 0.73977336 0.73050731\n 0.73797092 0.72900073 0.7307405  0.73122353 0.74345044 0.73009802\n 0.72900073 0.7389554 ]",
+      "std_train_score": "[0.00414145 0.00671828 0.00536559 0.00374889 0.00377762 0.00374889\n 0.00374889 0.00648207 0.00374889 0.00452805 0.00374889 0.00374889\n 0.00507907 0.00374889 0.004964   0.00374889 0.00341542 0.00507882\n 0.0041154  0.00517134 0.00527142 0.0036138  0.00374889 0.00349759\n 0.00363097 0.00278944 0.00463163 0.00374889 0.00374889 0.00351133\n 0.00492437 0.00427031 0.00360202 0.00461738 0.00379851 0.00374889\n 0.00549313 0.00374889 0.00369206 0.00369746 0.00425523 0.00452458\n 0.00364713 0.00374889 0.00444451 0.00534509 0.00632942 0.00469528\n 0.00374889 0.00214101]"
+    },
+    "n_iter": 50,
+    "cv_folds": 5,
+    "datetime": "2025-12-09T02:27:34.877316"
+  },
+  {
+    "classifier": "AdaBoostClassifier",
+    "use_handcrafted": false,
+    "best_params": {
+      "text__tfidf__ngram_range": [
+        1,
+        1
+      ],
+      "text__tfidf__max_features": 5000,
+      "classifier__n_estimators": 200,
+      "classifier__learning_rate": 1.0
+    },
+    "best_score": 0.6752187715355252,
+    "cv_results": {
+      "mean_fit_time": "[ 7.27150874 12.60489163 12.31440401 12.74702377  9.73501296  8.35398169\n 15.28378515 13.93789005  8.22628255 13.43462954 14.00680227  9.60240107\n  9.82619944  9.57641687 14.11247306  7.83344355  8.33727822  9.62263131\n 10.49050612 14.69778833 13.62470837 14.28841138 10.6524859  14.00270319\n 12.25587215  6.97497034  9.23652306  9.94706283  7.19147658 10.50619588\n 10.30815392 13.87593894  7.61159925 10.59009094  9.97064018  8.37377448\n  8.40054016  7.60324016  8.31484838  8.09480066 15.30718246  8.48373117\n 10.16110702 10.01603327  7.88971682  7.33340521 15.4145556   8.10609584\n  9.95173407  9.08971376]",
+      "std_fit_time": "[0.07698069 0.32441188 0.25023156 0.12809157 0.12776678 0.09738637\n 0.11919573 0.15986092 0.10436799 0.18336593 0.28504815 0.16739285\n 0.12393284 0.06869053 0.23633961 0.04565992 0.21551698 0.1443934\n 0.10104954 0.11264436 0.21888717 0.39518232 0.27572914 0.10929789\n 0.22154582 0.06914091 0.06191802 0.11707193 0.16127018 0.28492453\n 0.09874703 0.12316497 0.26097144 0.05630339 0.25331652 0.21590771\n 0.16020132 0.13708826 0.09182658 0.06904449 0.22675051 0.38312751\n 0.10565631 0.21397814 0.16217801 0.04596719 0.17840055 0.35174867\n 0.12337045 0.5002681 ]",
+      "mean_score_time": "[1.46415205 1.63187723 1.73419456 1.76193027 1.56322303 1.55287251\n 1.86896935 1.73473592 1.51983943 1.75358868 1.82090182 1.58896017\n 1.60910239 1.67405496 1.79277492 1.60137467 1.66808639 1.65451741\n 1.64971223 1.82675366 1.65327649 1.9420742  1.67051973 1.67650161\n 1.71850319 1.40634947 1.50794978 1.59564748 1.42588377 1.6859941\n 1.64618101 1.65392656 1.51227956 1.67184081 1.74991183 1.65459075\n 1.56998796 1.54644437 1.55759029 1.47837315 1.83536344 1.75269899\n 1.58440185 1.65339022 1.4680932  1.44187946 1.91363187 1.51022029\n 1.6163774  1.48888159]",
+      "std_score_time": "[0.02353518 0.10031676 0.04349198 0.09899738 0.05781052 0.04524561\n 0.05937093 0.09420491 0.03980082 0.01833681 0.04337519 0.04143525\n 0.09170894 0.02492796 0.06431883 0.12349985 0.082733   0.07229886\n 0.06534557 0.14864107 0.08950241 0.08489317 0.07537846 0.05481418\n 0.08764463 0.02474751 0.06040049 0.05851429 0.06029618 0.11925459\n 0.06942948 0.04503333 0.07095641 0.06669807 0.06253414 0.04908446\n 0.08569456 0.06178457 0.05647861 0.0882345  0.05935563 0.11229156\n 0.04677267 0.02857612 0.06540946 0.1038166  0.08200801 0.04510299\n 0.02329208 0.06753558]",
+      "param_text__tfidf__ngram_range": "[(1, 2) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 1)\n (1, 2) (1, 1) (1, 1) (1, 1) (1, 1) (1, 1) (1, 2) (1, 1) (1, 2) (1, 2)\n (1, 1) (1, 2) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2)\n (1, 2) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 2)\n (1, 2) (1, 2) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1)]",
+      "param_text__tfidf__max_features": "[2000 2000 2000 2000 3000 5000 5000 5000 3000 3000 2000 3000 3000 2000\n 5000 5000 2000 2000 3000 3000 3000 3000 3000 5000 2000 2000 2000 5000\n 2000 5000 3000 2000 5000 5000 5000 2000 3000 3000 5000 3000 5000 5000\n 2000 5000 5000 2000 5000 3000 2000 2000]",
+      "param_classifier__n_estimators": "[50 200 200 200 100 50 200 200 50 200 200 100 100 100 200 50 50 100 100\n 200 200 200 100 200 200 50 100 100 50 100 100 200 50 100 100 50 50 50 50\n 50 200 50 100 100 50 50 200 50 100 100]",
+      "param_classifier__learning_rate": "[0.5 1.0 1.0 0.1 1.0 0.1 0.1 1.0 0.1 0.5 0.1 0.1 0.5 0.1 0.5 0.1 1.0 0.5\n 1.0 0.5 1.0 0.1 0.1 0.1 0.5 1.0 0.5 0.1 0.1 1.0 0.5 0.5 1.0 0.5 1.0 0.1\n 0.5 0.1 1.0 1.0 0.5 0.5 1.0 0.1 0.5 0.5 1.0 0.5 0.1 1.0]",
+      "params": [
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__n_estimators": 200,
+          "classifier__learning_rate": 1.0
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__n_estimators": 50,
+          "classifier__learning_rate": 0.5
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 0.1
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__n_estimators": 100,
+          "classifier__learning_rate": 1.0
+        }
+      ],
+      "split0_test_score": "[0.55397508 0.68600027 0.67551744 0.55290033 0.64078028 0.55706175\n 0.55706175 0.6781475  0.55706175 0.6245535  0.55465188 0.55465188\n 0.62251455 0.55290033 0.62658395 0.55706175 0.62503245 0.62213695\n 0.65134716 0.62503245 0.67730573 0.55706175 0.55706175 0.55706175\n 0.62419251 0.62419251 0.62503245 0.55706175 0.55290033 0.64837908\n 0.62587306 0.62503245 0.6245535  0.62587306 0.64853544 0.55465188\n 0.55637888 0.55465188 0.62587306 0.62587306 0.62827769 0.55637888\n 0.64660806 0.55706175 0.55706175 0.55290033 0.68180734 0.55397508\n 0.55465188 0.64764774]",
+      "split1_test_score": "[0.55424099 0.67109393 0.67933447 0.55424099 0.65595334 0.55424099\n 0.55424099 0.67849393 0.55491115 0.63520125 0.55424099 0.55424099\n 0.63520125 0.55424099 0.63520125 0.55424099 0.63489794 0.6254845\n 0.65787155 0.63520125 0.6729543  0.55491115 0.55491115 0.55424099\n 0.63232882 0.63232882 0.62877327 0.55424099 0.55424099 0.65877339\n 0.62961929 0.63520125 0.63520125 0.62997416 0.65402761 0.55424099\n 0.55491115 0.55424099 0.63575581 0.63489794 0.63606144 0.60426047\n 0.65595334 0.55424099 0.55424099 0.55424099 0.67199218 0.55424099\n 0.55424099 0.65707228]",
+      "split2_test_score": "[0.61756503 0.67471523 0.66924795 0.58503652 0.65987169 0.52306351\n 0.58273696 0.68097093 0.52306351 0.63747678 0.58503652 0.52306351\n 0.63115926 0.52306351 0.64253051 0.52306351 0.63520125 0.62587306\n 0.65987169 0.65797475 0.68002888 0.58503652 0.52306351 0.52306351\n 0.63434179 0.62792795 0.63115926 0.52306351 0.52306351 0.6560705\n 0.63201176 0.65797475 0.63634648 0.63115926 0.66085254 0.52306351\n 0.6154655  0.52306351 0.63318446 0.63201176 0.6560705  0.61335679\n 0.65987169 0.52306351 0.58503652 0.58503652 0.67471523 0.58273696\n 0.52306351 0.65987169]",
+      "split3_test_score": "[0.61335679 0.66830659 0.66738756 0.56562098 0.65595334 0.51774692\n 0.57035728 0.66738756 0.51774692 0.64516166 0.567995   0.567995\n 0.62090445 0.56562098 0.63115926 0.51774692 0.63404083 0.62297285\n 0.65877339 0.63404083 0.66364388 0.567995   0.567995   0.567995\n 0.63115926 0.63115926 0.62587306 0.57035728 0.51774692 0.65775129\n 0.62587306 0.63404083 0.62912558 0.62464661 0.65887809 0.51774692\n 0.61335679 0.51774692 0.63286499 0.63404083 0.63286499 0.57270793\n 0.65877339 0.567995   0.60830478 0.57035728 0.67109393 0.57035728\n 0.567995   0.65887809]",
+      "split4_test_score": "[0.59034656 0.64294552 0.66358172 0.56290374 0.62340373 0.51506636\n 0.56290374 0.67109393 0.51506636 0.60722481 0.56290374 0.51506636\n 0.60802461 0.51506636 0.62340373 0.51506636 0.6050551  0.60147165\n 0.62671435 0.61710692 0.66922655 0.56290374 0.51506636 0.56047538\n 0.61286281 0.600686   0.60585024 0.51506636 0.51506636 0.62671435\n 0.60585024 0.61710692 0.60722481 0.60366595 0.62340373 0.51506636\n 0.59034656 0.51506636 0.60366595 0.60287552 0.61580682 0.58809015\n 0.61710692 0.51506636 0.56221491 0.58582304 0.65978231 0.59259238\n 0.51506636 0.61921502]",
+      "mean_test_score": "[0.58589689 0.66861231 0.67101383 0.56414051 0.64719248 0.53343591\n 0.56546014 0.67521877 0.53356994 0.6299236  0.56496562 0.54300355\n 0.62356082 0.54217843 0.63177574 0.53343591 0.62684551 0.6195878\n 0.65091563 0.63387124 0.67263187 0.56558163 0.54361956 0.55256733\n 0.62697704 0.62325891 0.62333766 0.54395798 0.53260362 0.64953772\n 0.62384548 0.63387124 0.62649032 0.62306381 0.64913948 0.53295393\n 0.58609178 0.53295393 0.62626885 0.62593982 0.63381629 0.58695884\n 0.64766268 0.54348552 0.57337179 0.56967163 0.6718782  0.57078054\n 0.54300355 0.64853696]",
+      "std_test_score": "[0.02756017 0.01417479 0.00567485 0.01153002 0.01357416 0.01834232\n 0.01025093 0.00511339 0.01849567 0.01312384 0.01129301 0.02032057\n 0.00941021 0.01954719 0.00670559 0.01834232 0.01152859 0.00916981\n 0.01245976 0.01372548 0.00581455 0.01075115 0.02068908 0.01545333\n 0.00784012 0.01163518 0.00900926 0.02119281 0.01731718 0.01198071\n 0.00929598 0.01372548 0.01053452 0.00999963 0.01355451 0.01773685\n 0.02637949 0.01773685 0.01176762 0.01195583 0.01308597 0.02066737\n 0.01597504 0.02061755 0.02055656 0.01426043 0.00712145 0.01532887\n 0.02032057 0.01528943]",
+      "rank_test_score": "[30  5  4 37 11 46 35  1 45 16 36 42 23 44 15 46 18 27  6 12  2 34 40 38\n 17 25 24 39 50  7 22 12 19 26  8 48 29 48 20 21 14 28 10 41 31 33  3 32\n 42  9]",
+      "split0_train_score": "[0.56947186 0.69948471 0.6856953  0.56726904 0.65268299 0.56786513\n 0.56786513 0.68548236 0.56828414 0.62877327 0.56726904 0.56744463\n 0.62825936 0.56726904 0.6293757  0.56870168 0.62961929 0.62661864\n 0.65559476 0.62898471 0.68550539 0.56828414 0.56828414 0.56870168\n 0.6277449  0.62765131 0.62910438 0.56786513 0.56726904 0.65432541\n 0.62901119 0.62940772 0.62856187 0.62788087 0.65343231 0.56726904\n 0.57089163 0.56828414 0.62839902 0.62952716 0.62837784 0.56947186\n 0.65537071 0.56786513 0.56768917 0.56624948 0.68730514 0.56887837\n 0.56726904 0.65685187]",
+      "split1_train_score": "[0.57053539 0.66358172 0.67433653 0.56953238 0.65033243 0.56953238\n 0.57071351 0.67387874 0.56810782 0.62720408 0.56953238 0.56953238\n 0.62669088 0.56953238 0.62882766 0.56953238 0.62765131 0.6180461\n 0.65201486 0.62783712 0.66096151 0.56929481 0.56810782 0.56953238\n 0.62831712 0.62720408 0.62661864 0.56953238 0.56953238 0.6514862\n 0.62434241 0.62711236 0.62882766 0.62516438 0.65090238 0.56953238\n 0.56970979 0.56953238 0.62621313 0.62734577 0.6272299  0.60777758\n 0.65179225 0.56953238 0.57053539 0.57071351 0.67153063 0.57053539\n 0.56953238 0.65457578]",
+      "split2_train_score": "[0.60514506 0.6888315  0.68659335 0.5603196  0.65492279 0.51640851\n 0.56152609 0.69540532 0.51640851 0.63468359 0.56358253 0.51640851\n 0.62288138 0.51640851 0.6375714  0.51640851 0.62619824 0.61942145\n 0.65432541 0.65237585 0.69628336 0.56315679 0.51640851 0.5190816\n 0.6318861  0.62516438 0.62610147 0.51640851 0.51640851 0.65162026\n 0.62423815 0.65117608 0.62720408 0.62288213 0.65640249 0.51640851\n 0.60381709 0.51640851 0.623716   0.62611337 0.64987935 0.60202117\n 0.65462609 0.51640851 0.56442953 0.56358253 0.6868558  0.56255658\n 0.51640851 0.65443933]",
+      "split3_train_score": "[0.6062258  0.68033811 0.68144757 0.56410368 0.66358172 0.51774692\n 0.56572495 0.68031471 0.51774692 0.64346166 0.56530184 0.56512737\n 0.62505208 0.56410368 0.62844032 0.51774692 0.6277449  0.62556797\n 0.66096151 0.62783712 0.68100592 0.56410368 0.56410368 0.56512737\n 0.62874042 0.62720408 0.62381831 0.56572495 0.51774692 0.66023475\n 0.62443725 0.6277449  0.62822885 0.62443725 0.66618328 0.51774692\n 0.60636531 0.51774692 0.62783712 0.62732316 0.62783712 0.56632179\n 0.66236685 0.56512737 0.60683989 0.56572495 0.68260857 0.56572495\n 0.56530184 0.66454238]",
+      "split4_train_score": "[0.61303187 0.67179583 0.68887915 0.5675789  0.65309814 0.51841472\n 0.56817166 0.690885   0.51841472 0.63078133 0.56876369 0.51841472\n 0.62954978 0.51841472 0.64966688 0.51841472 0.63512736 0.62997416\n 0.65880116 0.64984485 0.68996613 0.56876369 0.51841472 0.5618705\n 0.64762028 0.63048436 0.63411801 0.51841472 0.51841472 0.65803876\n 0.63332044 0.65108379 0.63297048 0.63090941 0.65309814 0.51841472\n 0.61217553 0.51841472 0.63243828 0.63358769 0.64855241 0.60958601\n 0.65280142 0.51841472 0.56470314 0.60884938 0.68630308 0.60911153\n 0.51841472 0.65235531]",
+      "mean_train_score": "[0.592882   0.68080638 0.68339038 0.56576072 0.65492361 0.53799353\n 0.56680027 0.68519323 0.53779242 0.63298078 0.5668899  0.54738552\n 0.6264867  0.54714567 0.63477639 0.53816084 0.62926822 0.62392566\n 0.65633954 0.63737593 0.68274446 0.56672062 0.54706377 0.55686271\n 0.63286176 0.62754164 0.62795216 0.54758914 0.53787431 0.65514108\n 0.62706988 0.63730497 0.62915859 0.62625481 0.65600372 0.53787431\n 0.59259187 0.53807733 0.62772071 0.62877943 0.63637532 0.59103568\n 0.65539147 0.54746962 0.57483942 0.57502397 0.68292064 0.57536136\n 0.5473853  0.65655294]",
+      "std_train_score": "[0.01887783 0.01258078 0.00512728 0.00322979 0.00456935 0.02508458\n 0.00307576 0.00759716 0.02483287 0.00580792 0.00219537 0.02452145\n 0.00235044 0.0243472  0.00817605 0.02528525 0.0031245  0.00450313\n 0.00318548 0.01125044 0.01200497 0.00256103 0.02426532 0.01908652\n 0.00751781 0.00170593 0.00351105 0.02467755 0.02494334 0.00348602\n 0.00361183 0.01131295 0.00198397 0.00283468 0.00538258 0.02494334\n 0.01840502 0.02518473 0.00286495 0.00264433 0.01049895 0.0190833\n 0.00371227 0.02459072 0.0161542  0.01707108 0.00593262 0.01709512\n 0.02451822 0.00424069]"
+    },
+    "n_iter": 50,
+    "cv_folds": 5,
+    "datetime": "2025-12-09T02:36:36.300937"
+  }
+]

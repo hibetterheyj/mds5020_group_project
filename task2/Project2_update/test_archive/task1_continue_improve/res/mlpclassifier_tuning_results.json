@@ -1,0 +1,1034 @@
+[
+  {
+    "classifier": "MLPClassifier",
+    "use_handcrafted": true,
+    "best_params": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        2
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__solver": "adam",
+      "classifier__learning_rate_init": 0.005,
+      "classifier__hidden_layer_sizes": [
+        50
+      ],
+      "classifier__alpha": 0.001,
+      "classifier__activation": "relu"
+    },
+    "best_score": 0.8095264661461474,
+    "cv_results": {
+      "mean_fit_time": "[10.1284658  10.94292841 12.18830161 14.14563904 12.07798591 10.78443112\n 10.86118498 11.56480522 11.42626462  9.01821866 10.06036887 13.70190449\n  9.58441854  7.89334736 10.00793991 10.22659574 11.13975234 11.08452363\n 11.30015416 13.51179581 11.06809754  9.38019748 10.20157466 10.51451192\n 10.24270058  9.90181322 10.97415247 12.68670139  8.508286    8.27595515\n  9.22785144  8.82693338]",
+      "std_fit_time": "[0.83592037 1.23464513 0.74952251 2.9388009  0.91143245 1.12575051\n 0.45141    1.02243123 0.28632706 0.28270185 0.45115995 1.4602279\n 1.61518662 0.22566667 3.05797207 0.58039323 2.3795336  0.52815532\n 0.53035954 2.11698298 0.9049514  0.68586645 1.36065312 0.92105892\n 0.92995901 0.4843504  0.47603773 1.4189002  0.71471115 0.31642915\n 0.45803224 0.33183281]",
+      "mean_score_time": "[1.66677999 1.57292032 1.51377535 1.51482816 1.99572783 2.26233315\n 1.55679588 1.41648512 1.25458078 1.34586072 1.70999622 1.68036566\n 1.41307025 1.27408953 1.46856794 2.06975899 1.39282985 1.48123412\n 1.40522113 1.495052   1.37062387 1.44100032 1.38693924 1.38167481\n 1.42293792 1.49525876 1.38201084 1.42812943 1.409688   1.43242235\n 1.20045142 1.27843885]",
+      "std_score_time": "[0.1970581  0.12083144 0.15891483 0.18775463 0.11930809 0.34870479\n 0.24095678 0.11799999 0.07584856 0.05167516 0.83180611 0.23131067\n 0.22795126 0.06787663 0.24241053 0.87312927 0.14978638 0.19048276\n 0.11584831 0.06179998 0.08964308 0.06345981 0.05700829 0.05046824\n 0.0744261  0.05569325 0.07064145 0.12682147 0.13450207 0.08439547\n 0.08473411 0.04241287]",
+      "param_features__text__tfidf__ngram_range": "[(1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2)\n (1, 1) (1, 2)]",
+      "param_features__text__tfidf__max_features": "[2000 2000 3000 3000 2000 2000 3000 3000 2000 2000 3000 3000 2000 2000\n 3000 3000 2000 2000 3000 3000 2000 2000 3000 3000 2000 2000 3000 3000\n 2000 2000 3000 3000]",
+      "param_classifier__solver": "['adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam'\n 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam'\n 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam'\n 'adam' 'adam']",
+      "param_classifier__learning_rate_init": "[0.001 0.001 0.001 0.001 0.005 0.005 0.005 0.005 0.001 0.001 0.001 0.001\n 0.005 0.005 0.005 0.005 0.001 0.001 0.001 0.001 0.005 0.005 0.005 0.005\n 0.001 0.001 0.001 0.001 0.005 0.005 0.005 0.005]",
+      "param_classifier__hidden_layer_sizes": "[(50,) (50,) (50,) (50,) (50,) (50,) (50,) (50,) (50, 30) (50, 30)\n (50, 30) (50, 30) (50, 30) (50, 30) (50, 30) (50, 30) (50,) (50,) (50,)\n (50,) (50,) (50,) (50,) (50,) (50, 30) (50, 30) (50, 30) (50, 30)\n (50, 30) (50, 30) (50, 30) (50, 30)]",
+      "param_classifier__alpha": "[0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001\n 0.001 0.001 0.001 0.001 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01\n 0.01 0.01 0.01 0.01 0.01 0.01]",
+      "param_classifier__activation": "['relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu'\n 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu'\n 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu'\n 'relu' 'relu']",
+      "params": [
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        }
+      ],
+      "split0_test_score": "[0.79536725 0.79840021 0.80487507 0.79906703 0.80063656 0.80763767\n 0.81443937 0.80884313 0.79412375 0.79752419 0.79905761 0.78572802\n 0.80585766 0.78668221 0.795756   0.7977541  0.8056673  0.80369402\n 0.80055685 0.78699455 0.79840021 0.79516811 0.80134305 0.80899896\n 0.79412375 0.79621596 0.79667959 0.79455133 0.80527739 0.78938787\n 0.79556321 0.80171756]",
+      "split1_test_score": "[0.81007264 0.80574952 0.8118166  0.81354528 0.81400323 0.79233141\n 0.80604499 0.8130979  0.814318   0.80506201 0.80619166 0.81344316\n 0.80674934 0.80218896 0.78724745 0.81236382 0.80218896 0.80574952\n 0.81441015 0.81976891 0.79036867 0.79429014 0.80832212 0.80910667\n 0.814318   0.79824461 0.80597232 0.81235822 0.81984108 0.7964447\n 0.79090164 0.7975225 ]",
+      "split2_test_score": "[0.8079116  0.81028306 0.80943453 0.80228833 0.81157067 0.8050778\n 0.81216588 0.82690465 0.80550542 0.80190025 0.80574952 0.79920261\n 0.79559282 0.78885433 0.81201215 0.81147944 0.81580464 0.8079116\n 0.80489272 0.81110371 0.81177213 0.80143095 0.81344316 0.80993023\n 0.80250992 0.80676442 0.80434385 0.80243127 0.78858457 0.78637458\n 0.7989154  0.80993023]",
+      "split3_test_score": "[0.81611164 0.82834565 0.83527248 0.81925396 0.80081881 0.83003276\n 0.81413978 0.81110371 0.82303531 0.82809193 0.82743404 0.83636914\n 0.8267958  0.81962873 0.82525056 0.81955338 0.81631104 0.82834565\n 0.83089173 0.81816612 0.80749416 0.83064876 0.81365752 0.81291739\n 0.82488687 0.82958411 0.82725326 0.81980059 0.8297794  0.81962873\n 0.78821794 0.8       ]",
+      "split4_test_score": "[0.78716753 0.78692666 0.78536621 0.77662631 0.77732262 0.78084971\n 0.78052034 0.78768294 0.78419698 0.78810494 0.80338061 0.77783335\n 0.77625744 0.78296478 0.78703174 0.79865683 0.78454595 0.78585786\n 0.78668221 0.77529816 0.77315264 0.7826541  0.78003348 0.77388979\n 0.78419698 0.79066305 0.80338061 0.78018432 0.77862508 0.78125465\n 0.78998487 0.79442384]",
+      "mean_test_score": "[0.80332613 0.80594102 0.80935298 0.80215618 0.80087038 0.80318587\n 0.80546207 0.80952647 0.80423589 0.80413667 0.80836269 0.80251526\n 0.80225061 0.7960638  0.80145958 0.80796152 0.80490358 0.80631173\n 0.80748673 0.80226629 0.79623756 0.80083841 0.80335987 0.80296861\n 0.8040071  0.80429443 0.80752593 0.80186515 0.80442151 0.79461811\n 0.79271661 0.80071883]",
+      "std_test_score": "[0.01053048 0.01370596 0.01595815 0.01471992 0.01297322 0.01649774\n 0.01283172 0.01260834 0.01385996 0.01326992 0.00986574 0.02082059\n 0.01646625 0.01344915 0.01496693 0.00844862 0.01158748 0.01351727\n 0.01471943 0.01787597 0.01371181 0.01609167 0.01249421 0.01460863\n 0.01438501 0.01366269 0.0103589  0.01382502 0.01896198 0.01343697\n 0.00393758 0.00521934]",
+      "rank_test_score": "[17  8  2 23 26 18  9  1 13 14  3 20 22 30 25  4 10  7  6 21 29 27 16 19\n 15 12  5 24 11 31 32 28]",
+      "split0_train_score": "[0.94592547 0.95418853 0.92616901 0.90662675 0.92666593 0.96787197\n 0.93573008 0.93758915 0.93417574 0.93234464 0.97639436 0.9732294\n 0.97585067 0.92656939 0.97328671 0.968048   0.95975375 0.95624491\n 0.93704496 0.8805538  0.95534625 0.96032872 0.95998169 0.93440163\n 0.93267545 0.93232929 0.97638459 0.97788074 0.97527368 0.92613524\n 0.97405758 0.9654036 ]",
+      "split1_train_score": "[0.90292883 0.92155227 0.95307046 0.93770017 0.94759118 0.95609175\n 0.97670719 0.98078731 0.95875927 0.94620009 0.94666874 0.96715437\n 0.98018902 0.88400719 0.97008989 0.97992005 0.90118789 0.92061142\n 0.94422005 0.95338594 0.97965116 0.95224007 0.98080264 0.9808102\n 0.95906529 0.89033049 0.94545771 0.96716075 0.92447942 0.97846282\n 0.96950911 0.96856736]",
+      "split2_train_score": "[0.93334951 0.92412678 0.91817399 0.92085919 0.93567403 0.93196889\n 0.92183621 0.97933802 0.94961397 0.95050278 0.97083605 0.94919021\n 0.96362328 0.96252542 0.97582143 0.96897481 0.93984589 0.9210701\n 0.92947923 0.9647445  0.93011092 0.93017194 0.91764438 0.97876445\n 0.97668338 0.94845944 0.92456318 0.92829275 0.96394643 0.96310642\n 0.97907384 0.96895179]",
+      "split3_train_score": "[0.91665946 0.92612931 0.94494472 0.97438308 0.97818697 0.95610036\n 0.91220564 0.9726583  0.88892596 0.90735924 0.93114417 0.94066417\n 0.89141707 0.88589397 0.90542907 0.95232558 0.91428219 0.92262557\n 0.95000666 0.97933388 0.97847993 0.92625357 0.98108788 0.97640886\n 0.92379033 0.90676918 0.92994746 0.97905327 0.88236653 0.88645501\n 0.9626888  0.97004344]",
+      "split4_train_score": "[0.95012443 0.94087148 0.92392797 0.92342713 0.96151162 0.93924881\n 0.91464061 0.97060761 0.93904097 0.94781285 0.96244414 0.98020908\n 0.94990012 0.95200184 0.97906567 0.97788516 0.94656784 0.93764462\n 0.94040425 0.91922861 0.95712451 0.93659963 0.9143389  0.97588845\n 0.93786124 0.94721877 0.96187719 0.98021304 0.96714795 0.95315613\n 0.9781998  0.97849256]",
+      "mean_train_score": "[0.92979754 0.93337368 0.93325723 0.93259926 0.94992594 0.95025636\n 0.93222395 0.96819608 0.93410318 0.93684392 0.95749749 0.96208945\n 0.95219603 0.92219956 0.96073855 0.96943072 0.93232751 0.93163932\n 0.94023103 0.93944935 0.96014255 0.94111878 0.9507711  0.96925472\n 0.94601514 0.92502143 0.94764602 0.96652011 0.9426428  0.94146312\n 0.97270583 0.97029175]",
+      "std_train_score": "[0.0177789  0.01238715 0.01337119 0.02310167 0.01834399 0.01291597\n 0.02370174 0.01578096 0.02414073 0.01602504 0.01656042 0.01485602\n 0.03216546 0.03258895 0.02781158 0.00975919 0.02147939 0.01382801\n 0.00688851 0.03550328 0.01817062 0.01306855 0.02942965 0.01751508\n 0.01923134 0.02294373 0.01938699 0.01967426 0.03487767 0.0323573\n 0.00605182 0.00438128]"
+    },
+    "n_iter": 50,
+    "cv_folds": 5,
+    "datetime": "2025-12-09T01:14:34.169508"
+  },
+  {
+    "classifier": "MLPClassifier",
+    "use_handcrafted": false,
+    "best_params": {
+      "text__tfidf__ngram_range": [
+        1,
+        1
+      ],
+      "text__tfidf__max_features": 3000,
+      "classifier__solver": "adam",
+      "classifier__learning_rate_init": 0.005,
+      "classifier__hidden_layer_sizes": [
+        50
+      ],
+      "classifier__alpha": 0.01,
+      "classifier__activation": "relu"
+    },
+    "best_score": 0.7942588176016577,
+    "cv_results": {
+      "mean_fit_time": "[ 8.83809876  9.32035012  9.48337584  9.7436738   6.85840278  7.00610514\n  7.45636563  7.53085418  7.66069069  8.29870872  8.82893267  9.86613526\n  7.1728951   7.07551322  7.94361577  8.08919525  8.79405637  9.75377283\n 10.25751047  9.98632951  7.43006148  7.26941738  7.47228384  7.7038681\n  7.70836372  8.24901357  9.59741154  8.90530806  8.57426906  7.29816499\n  8.1979485   7.9973114 ]",
+      "std_fit_time": "[0.77044383 0.94012102 0.37834451 0.27677815 0.16151873 0.20926277\n 0.33830799 0.09978469 0.19313427 0.39307463 0.64586923 0.45406941\n 0.43636575 0.16859298 0.9272005  0.12327837 1.23226317 1.37085229\n 1.34106545 0.99780102 1.19023667 0.30464851 0.47208479 0.42870101\n 0.17515759 0.4795732  1.53720119 0.50713529 4.03990147 0.66694948\n 1.26322967 0.21460044]",
+      "mean_score_time": "[1.22468362 1.21828747 1.21861243 1.1572958  1.16324258 1.20882659\n 1.18076801 1.21560221 1.16403532 1.18090763 1.2485774  1.20986362\n 1.18770833 1.15709944 1.21974916 1.20817084 1.2308733  1.21405549\n 1.20091343 1.27373271 1.19579611 1.20786433 1.20119877 1.22490029\n 1.17868433 1.20141902 1.29715023 1.20350699 1.2127964  1.23396602\n 1.24458494 1.17111201]",
+      "std_score_time": "[0.10286109 0.04449568 0.07135589 0.06050316 0.04996162 0.06261052\n 0.06967834 0.04374517 0.06266323 0.08040645 0.12919541 0.04740386\n 0.05148523 0.03902078 0.04238858 0.02104521 0.04870727 0.06222094\n 0.05739194 0.12577079 0.0495949  0.09309374 0.08389262 0.0377025\n 0.06624303 0.05100579 0.09802353 0.04593059 0.07869665 0.04846416\n 0.05351108 0.06185362]",
+      "param_text__tfidf__ngram_range": "[(1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 1) (1, 2)\n (1, 1) (1, 2)]",
+      "param_text__tfidf__max_features": "[2000 2000 3000 3000 2000 2000 3000 3000 2000 2000 3000 3000 2000 2000\n 3000 3000 2000 2000 3000 3000 2000 2000 3000 3000 2000 2000 3000 3000\n 2000 2000 3000 3000]",
+      "param_classifier__solver": "['adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam'\n 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam'\n 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam' 'adam'\n 'adam' 'adam']",
+      "param_classifier__learning_rate_init": "[0.001 0.001 0.001 0.001 0.005 0.005 0.005 0.005 0.001 0.001 0.001 0.001\n 0.005 0.005 0.005 0.005 0.001 0.001 0.001 0.001 0.005 0.005 0.005 0.005\n 0.001 0.001 0.001 0.001 0.005 0.005 0.005 0.005]",
+      "param_classifier__hidden_layer_sizes": "[(50,) (50,) (50,) (50,) (50,) (50,) (50,) (50,) (50, 30) (50, 30)\n (50, 30) (50, 30) (50, 30) (50, 30) (50, 30) (50, 30) (50,) (50,) (50,)\n (50,) (50,) (50,) (50,) (50,) (50, 30) (50, 30) (50, 30) (50, 30)\n (50, 30) (50, 30) (50, 30) (50, 30)]",
+      "param_classifier__alpha": "[0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.001\n 0.001 0.001 0.001 0.001 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01\n 0.01 0.01 0.01 0.01 0.01 0.01]",
+      "param_classifier__activation": "['relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu'\n 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu'\n 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu' 'relu'\n 'relu' 'relu']",
+      "params": [
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.001,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.001,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__solver": "adam",
+          "classifier__learning_rate_init": 0.005,
+          "classifier__hidden_layer_sizes": [
+            50,
+            30
+          ],
+          "classifier__alpha": 0.01,
+          "classifier__activation": "relu"
+        }
+      ],
+      "split0_test_score": "[0.77502796 0.78870918 0.76819565 0.78167335 0.76757342 0.78809567\n 0.7731349  0.77921297 0.77608558 0.7665573  0.76293259 0.77450308\n 0.78480038 0.77316687 0.78609828 0.77765546 0.76894033 0.7897802\n 0.76924982 0.78006046 0.76993205 0.78419698 0.7723576  0.77921297\n 0.77502312 0.77573473 0.76563819 0.77344211 0.78802643 0.7744186\n 0.76707021 0.77129923]",
+      "split1_test_score": "[0.78407255 0.79345729 0.77529816 0.78673502 0.79111575 0.79691281\n 0.79108324 0.77890255 0.78182552 0.78082547 0.77753423 0.79896115\n 0.78031371 0.79023905 0.76924982 0.78857143 0.76980541 0.78700035\n 0.78114324 0.78964083 0.77334395 0.79213689 0.78786887 0.78253529\n 0.78134491 0.78082547 0.77331947 0.80111243 0.78138738 0.79175736\n 0.77012805 0.78993972]",
+      "split2_test_score": "[0.80419649 0.80331176 0.80920049 0.79899208 0.80099803 0.8018282\n 0.80201112 0.78656384 0.80171756 0.79901042 0.78910227 0.79276006\n 0.7838908  0.8007581  0.77525941 0.79218985 0.80379487 0.8050778\n 0.81136613 0.79739542 0.80802163 0.80444477 0.80223128 0.79467795\n 0.8027989  0.79991644 0.77459316 0.79597897 0.78403331 0.78742827\n 0.7779933  0.78860688]",
+      "split3_test_score": "[0.79987689 0.80369402 0.81394086 0.79764173 0.79664111 0.79829111\n 0.80999794 0.80098284 0.80242355 0.81092678 0.80791003 0.79077687\n 0.79161326 0.80291712 0.78875827 0.77926921 0.7975225  0.79991644\n 0.81265452 0.79739354 0.79791306 0.80153184 0.81108168 0.80574972\n 0.80350442 0.81092678 0.78788422 0.78864231 0.7946858  0.80035241\n 0.80095621 0.77926921]",
+      "split4_test_score": "[0.75583859 0.76546884 0.7710493  0.7792072  0.74855019 0.76819565\n 0.78273765 0.77129923 0.7614279  0.77625744 0.75568736 0.75618876\n 0.76018581 0.77921297 0.77255969 0.75479497 0.75826805 0.76410138\n 0.79215556 0.77785417 0.74715805 0.77740383 0.79775465 0.77129923\n 0.76037643 0.77495371 0.756728   0.75547582 0.76618738 0.77765546\n 0.7731349  0.74850972]",
+      "mean_test_score": "[0.78380249 0.79092822 0.78753689 0.78884988 0.7809757  0.79066469\n 0.79179297 0.78339229 0.78469602 0.78671548 0.77863329 0.78263798\n 0.78016079 0.78925882 0.77838509 0.77849618 0.77966623 0.78917523\n 0.79331385 0.78846888 0.77927375 0.79194286 0.79425882 0.78669503\n 0.78460956 0.78847142 0.77163261 0.78293033 0.78286406 0.78632242\n 0.77785654 0.77552495]",
+      "std_test_score": "[0.01751198 0.0139701  0.01981006 0.00811317 0.01990053 0.01211018\n 0.01316402 0.01003347 0.01567025 0.01604847 0.01865992 0.01549763\n 0.01063599 0.01165859 0.00767143 0.01305434 0.01772682 0.01415669\n 0.0169026  0.00829554 0.02157643 0.01019476 0.0132611  0.01214186\n 0.01659922 0.0144128  0.01033253 0.01659674 0.00946639 0.00942782\n 0.01209944 0.01510378]",
+      "rank_test_score": "[18  5 12  9 23  6  4 19 16 13 27 22 24  7 29 28 25  8  2 11 26  3  1 14\n 17 10 32 20 21 15 30 31]",
+      "split0_train_score": "[0.92233367 0.91904445 0.93468769 0.94002679 0.89695249 0.91598125\n 0.93845763 0.92020354 0.9541396  0.95089984 0.95145244 0.9562357\n 0.9282264  0.9162696  0.95378358 0.95054244 0.8938193  0.91751038\n 0.93492867 0.93968708 0.96240583 0.91596234 0.93753648 0.91958369\n 0.95442678 0.89581307 0.95086753 0.95477212 0.92790528 0.91657868\n 0.96391068 0.94725159]",
+      "split1_train_score": "[0.9174911  0.93962431 0.94891458 0.93718396 0.92607501 0.91639166\n 0.93802643 0.96134098 0.92980906 0.92565518 0.9323113  0.94747174\n 0.93228995 0.88502697 0.95431083 0.95375638 0.88813854 0.90203445\n 0.94711766 0.94928636 0.97850502 0.95559563 0.93682463 0.96189237\n 0.9286149  0.92502506 0.92960187 0.94419598 0.93228995 0.88474719\n 0.91909859 0.95256475]",
+      "split2_train_score": "[0.92729098 0.9150201  0.95122905 0.94532892 0.92529314 0.89571207\n 0.97326102 0.91703337 0.93031995 0.91807493 0.97353353 0.93056249\n 0.96459592 0.88692698 0.97760529 0.95228801 0.93020668 0.91439046\n 0.94740413 0.94883723 0.92229182 0.89571207 0.96300387 0.93953437\n 0.92943797 0.91807493 0.97702361 0.92754899 0.96460254 0.97704603\n 0.97789395 0.91859121]",
+      "split3_train_score": "[0.95104519 0.95121855 0.93767251 0.93323084 0.95458818 0.95162799\n 0.9541593  0.95452318 0.92017342 0.9207561  0.94735807 0.91640597\n 0.92650276 0.89104503 0.92172568 0.91798048 0.953663   0.96180717\n 0.93764462 0.93261458 0.95310896 0.94956214 0.95414947 0.95276426\n 0.92015704 0.91985739 0.92498448 0.92553661 0.92849698 0.89169892\n 0.96483585 0.91498676]",
+      "split4_train_score": "[0.90004665 0.9004781  0.92624715 0.92775931 0.89873861 0.89709818\n 0.94657925 0.91386385 0.92834057 0.94725159 0.91597084 0.92171655\n 0.94583325 0.92392167 0.95       0.9223691  0.89968835 0.8995325\n 0.9647445  0.92622948 0.90009849 0.91722601 0.96412459 0.91200484\n 0.92889399 0.94607475 0.91417283 0.91930253 0.97848416 0.92448899\n 0.9494186  0.91690367]",
+      "mean_train_score": "[0.92364152 0.9250771  0.9397502  0.93670596 0.92032949 0.91536223\n 0.95009673 0.93339298 0.93255652 0.93252753 0.94412523 0.93447849\n 0.93948965 0.90063805 0.95148508 0.93938728 0.91310318 0.91905499\n 0.94636791 0.93933094 0.94328202 0.92681164 0.95112781 0.93715591\n 0.93230614 0.92096904 0.93933007 0.93427125 0.94635578 0.91891196\n 0.95503153 0.9300596 ]",
+      "std_train_score": "[0.01649567 0.01809775 0.00925233 0.00596206 0.0211847  0.02018094\n 0.01301247 0.02025123 0.01139733 0.01377689 0.01929366 0.01514608\n 0.0142683  0.01618764 0.01779529 0.01578105 0.0249507  0.02246205\n 0.01045263 0.00901515 0.02831379 0.02246276 0.01190288 0.01898699\n 0.01157945 0.01605729 0.02230353 0.01314786 0.02108261 0.03263096\n 0.02010142 0.01633303]"
+    },
+    "n_iter": 50,
+    "cv_folds": 5,
+    "datetime": "2025-12-09T01:19:04.136701"
+  }
+]

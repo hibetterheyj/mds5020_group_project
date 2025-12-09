@@ -1,0 +1,1198 @@
+[
+  {
+    "classifier": "DecisionTreeClassifier",
+    "use_handcrafted": true,
+    "best_params": {
+      "features__text__tfidf__ngram_range": [
+        1,
+        1
+      ],
+      "features__text__tfidf__max_features": 3000,
+      "classifier__min_samples_split": 5,
+      "classifier__min_samples_leaf": 1,
+      "classifier__max_depth": 15,
+      "classifier__criterion": "gini"
+    },
+    "best_score": 0.7614348116268024,
+    "cv_results": {
+      "mean_fit_time": "[21.86290126 18.3292346   7.00868607  5.44809217  6.74769278  6.07108636\n  6.08801174  5.78588433  7.36404266  5.92862878  6.29875617  5.75250201\n  6.80902028  6.02323122  5.85137439  8.10481682  7.04825716  5.65138202\n  5.96448674  5.69141984  5.72111344  5.78563404  6.02880459  5.77770061\n  6.33563914  6.28772588  6.17860608  7.36001635  5.59805913  5.58373513\n  5.64164758  7.24998531  5.85102134  6.59041753  6.82364936  6.17424083\n  5.91399212  5.98292618  5.70527678  6.40338588  5.74360456  6.04299998\n  5.85201859  6.15800967  6.26030049  6.14855695  6.42513919  5.84236612\n  5.44966521  6.84402804]",
+      "std_fit_time": "[0.15694582 6.03850462 0.16836531 0.13915156 0.16119755 0.14760215\n 0.12162836 0.13709871 0.18816904 0.08115456 0.08761908 0.15607705\n 0.11749204 0.05009534 0.15453988 0.11478786 0.15137651 0.10416274\n 0.11620821 0.09842003 0.10661075 0.08655673 0.10727087 0.03786674\n 0.04713937 0.11296838 0.07746918 0.24849951 0.11708304 0.0713279\n 0.10934294 0.13858787 0.18607608 0.09996261 0.20371641 0.04425884\n 0.08757839 0.07497636 0.10187034 0.10580544 0.04858797 0.15041063\n 0.06859382 0.12041307 0.12930224 0.1251148  0.12351436 0.10695866\n 0.13318833 0.15435877]",
+      "mean_score_time": "[1.47121282 1.56176004 1.33770881 1.32198057 1.35828638 1.35491228\n 1.27415261 1.33291922 1.30426383 1.40966325 1.39142084 1.33055601\n 1.45067291 1.34461741 1.34874506 1.40022388 1.36282144 1.36525164\n 1.38591385 1.28961334 1.32950597 1.33695569 1.33142719 1.37503157\n 1.30473003 1.38388844 1.41048961 1.42801652 1.38823891 1.33996382\n 1.34641461 1.36022162 1.40199738 1.34939685 1.39369988 1.41621084\n 1.36633739 1.41590686 1.36407743 1.35628862 1.24406157 1.39772539\n 1.38007379 1.49312162 1.4499897  1.46058598 1.41793327 1.38255825\n 1.29394283 1.27155905]",
+      "std_score_time": "[0.10809768 0.06360964 0.02784962 0.06693295 0.01943029 0.09405518\n 0.04885491 0.03787722 0.04798421 0.04868131 0.04093949 0.03762201\n 0.0511552  0.08445035 0.07653333 0.04549452 0.07165406 0.04545904\n 0.05265091 0.03613286 0.0746544  0.08186464 0.05855961 0.07942399\n 0.05209175 0.06863489 0.02244919 0.0704947  0.02398909 0.0598337\n 0.04061257 0.0259854  0.13341473 0.03354285 0.06505425 0.04619319\n 0.02644887 0.08764818 0.03033802 0.07344314 0.09197955 0.10120146\n 0.02819141 0.10797086 0.07617568 0.0865213  0.01801138 0.05755732\n 0.01683568 0.04347491]",
+      "param_features__text__tfidf__ngram_range": "[(1, 1) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 1) (1, 1) (1, 2) (1, 1)\n (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 1) (1, 1) (1, 2) (1, 1)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 2) (1, 2) (1, 2) (1, 1) (1, 1)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 2) (1, 1) (1, 1) (1, 1) (1, 1)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 1) (1, 1) (1, 2)]",
+      "param_features__text__tfidf__max_features": "[5000 3000 2000 2000 3000 5000 2000 5000 3000 5000 3000 5000 2000 5000\n 3000 5000 5000 2000 3000 5000 5000 3000 2000 2000 2000 5000 2000 2000\n 5000 2000 2000 3000 5000 3000 2000 5000 3000 3000 5000 3000 5000 3000\n 2000 2000 3000 3000 5000 5000 2000 2000]",
+      "param_classifier__min_samples_split": "[5 2 2 10 10 2 2 5 10 2 5 10 2 5 2 5 2 2 5 5 10 5 10 2 2 5 10 10 10 10 2 2\n 10 2 10 2 10 10 10 10 5 5 5 2 10 5 5 2 10 2]",
+      "param_classifier__min_samples_leaf": "[4 2 2 2 1 1 4 4 2 4 4 1 4 1 4 1 1 2 1 1 1 1 4 1 1 1 4 1 2 4 2 2 2 4 4 2 4\n 2 4 4 2 2 2 2 2 1 2 2 2 1]",
+      "param_classifier__max_depth": "[None 10 None 5 None 10 None 15 None 15 15 10 None 15 5 None None 10 5 10\n 10 5 None 10 15 15 15 None 5 10 15 None 10 10 None 10 15 15 10 None 15 10\n 10 10 5 15 10 10 5 None]",
+      "param_classifier__criterion": "['entropy' 'gini' 'gini' 'gini' 'entropy' 'entropy' 'entropy' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'entropy' 'gini' 'gini' 'entropy'\n 'gini' 'gini' 'entropy' 'entropy' 'entropy' 'entropy' 'gini' 'entropy'\n 'entropy' 'gini' 'entropy' 'entropy' 'entropy' 'gini' 'entropy' 'entropy'\n 'gini' 'entropy' 'gini' 'entropy' 'gini' 'entropy' 'entropy' 'entropy'\n 'entropy' 'gini' 'gini' 'gini' 'gini' 'entropy' 'gini' 'entropy'\n 'entropy']",
+      "params": [
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": null,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": null,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "features__text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "features__text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        }
+      ],
+      "split0_test_score": "[0.70477369 0.75199069 0.75274936 0.75125239 0.73355497 0.74715805\n 0.7085994  0.74646399 0.73639294 0.74646399 0.74230928 0.74991262\n 0.72746725 0.76315964 0.74362641 0.7606165  0.7419364  0.74229571\n 0.7467299  0.74880168 0.74788238 0.73422642 0.69447658 0.74679962\n 0.76976399 0.75370788 0.75199069 0.78031798 0.74850897 0.73565496\n 0.7520204  0.71965349 0.74684894 0.75716866 0.73837364 0.75375188\n 0.73874311 0.75408999 0.74390025 0.73726235 0.75340912 0.73841273\n 0.74751165 0.74265611 0.7467299  0.76031009 0.73645467 0.7523672\n 0.74437917 0.77525941]",
+      "split1_test_score": "[0.72273253 0.76441735 0.73993427 0.75711326 0.74058322 0.74917695\n 0.70818346 0.745763   0.73943972 0.745763   0.74311964 0.76140733\n 0.74099726 0.76036034 0.75282586 0.74094648 0.74058322 0.75375188\n 0.75282586 0.75931391 0.76279323 0.74270601 0.70364448 0.75514583\n 0.75583468 0.7527093  0.74907144 0.72653687 0.73695941 0.74751165\n 0.76489127 0.7374142  0.76103015 0.75097965 0.70469835 0.75445157\n 0.74578343 0.76639253 0.75097965 0.70905921 0.7700919  0.75132579\n 0.76063314 0.76135826 0.75568736 0.76555645 0.74923424 0.76693383\n 0.7384409  0.72594702]",
+      "split2_test_score": "[0.73316756 0.75443413 0.75261173 0.74447486 0.73974829 0.74167801\n 0.70616341 0.75125239 0.74815581 0.75125239 0.76385927 0.75333023\n 0.73693614 0.7419094  0.7400282  0.75077311 0.7315554  0.75815516\n 0.73900453 0.7431325  0.74433063 0.73480364 0.72023563 0.74983844\n 0.73875867 0.75010751 0.74880168 0.74802348 0.74254    0.74518352\n 0.76699176 0.71208347 0.74519194 0.75199069 0.72978668 0.75321955\n 0.73714425 0.75786875 0.74603123 0.71203245 0.74493331 0.73389677\n 0.75568736 0.74917695 0.73900453 0.75386394 0.74270601 0.75058534\n 0.73889433 0.75561579]",
+      "split3_test_score": "[0.7107461  0.77578339 0.73710106 0.74105262 0.77269911 0.77527432\n 0.71503548 0.75579745 0.72663826 0.75579745 0.75651811 0.78771714\n 0.71396271 0.76515231 0.7519903  0.76288767 0.73106977 0.76490765\n 0.76054778 0.76700639 0.77156417 0.76585318 0.72291353 0.76804295\n 0.78296909 0.78481161 0.74493331 0.7522653  0.74747552 0.77609455\n 0.78025121 0.74385896 0.77292625 0.76595668 0.72448197 0.77146978\n 0.77831757 0.77997592 0.76734147 0.73404373 0.77030453 0.777483\n 0.7684074  0.7731606  0.7574242  0.7787633  0.77589482 0.77937791\n 0.74828637 0.75248102]",
+      "split4_test_score": "[0.69985224 0.73013984 0.73084728 0.72693141 0.74410809 0.72883565\n 0.71935879 0.73264823 0.72534742 0.73264823 0.73403682 0.7481401\n 0.69914272 0.72511283 0.72949098 0.71943462 0.73600745 0.73820327\n 0.72386699 0.73565496 0.73359855 0.7252775  0.71985142 0.73938873\n 0.74267126 0.72641454 0.73088953 0.71692559 0.72124244 0.73949576\n 0.73771324 0.724737   0.74022833 0.73191707 0.7181114  0.73949576\n 0.72069322 0.74747552 0.73912197 0.71710627 0.71758419 0.73129793\n 0.73820327 0.73449462 0.7252775  0.74868028 0.72817387 0.74531662\n 0.72706489 0.74651163]",
+      "mean_test_score": "[0.71425442 0.75535308 0.74264874 0.74416491 0.74613874 0.7484246\n 0.71146811 0.74638501 0.73519483 0.74638501 0.74796863 0.76010148\n 0.72370122 0.7511389  0.74359235 0.74693167 0.73623045 0.75146273\n 0.74459501 0.75078189 0.75203379 0.74057335 0.71222433 0.75184311\n 0.75799954 0.75355017 0.74513733 0.74481384 0.73934527 0.74878809\n 0.76037358 0.72754942 0.75324512 0.75160255 0.72309041 0.75447771\n 0.74413632 0.76116054 0.74947491 0.7219008  0.75126461 0.74648324\n 0.75408856 0.75216931 0.7448247  0.76143481 0.74649272 0.75891618\n 0.73941313 0.75116297]",
+      "std_test_score": "[0.01215895 0.0151487  0.00870291 0.01024371 0.01370861 0.01518105\n 0.00494261 0.00776373 0.00845728 0.00776373 0.01072607 0.01454006\n 0.01540427 0.01541719 0.0085713  0.01580212 0.0044731  0.00990598\n 0.01255149 0.01120079 0.01351764 0.01379242 0.01118221 0.00956985\n 0.01656342 0.01858066 0.0074688  0.02208245 0.00993666 0.01427649\n 0.0144402  0.01159971 0.01202626 0.01118105 0.01134383 0.01015184\n 0.01896642 0.01122052 0.00971182 0.01156465 0.01947326 0.0169622\n 0.01045003 0.01368883 0.0118012  0.01037811 0.01626457 0.01249164\n 0.00717063 0.01587251]",
+      "rank_test_score": "[48  7 38 35 30 23 50 28 43 28 24  4 45 19 37 25 42 16 34 20 13 39 49 14\n  6 10 31 33 41 22  3 44 11 15 46  8 36  2 21 47 17 27  9 12 32  1 26  5\n 40 18]",
+      "split0_train_score": "[0.90664101 0.82046723 0.94803679 0.76838798 0.9598306  0.80479796\n 0.90301974 0.82041749 0.9233871  0.82041749 0.81735463 0.81401716\n 0.8902843  0.8415688  0.76592356 0.98492095 0.99709583 0.81523733\n 0.76897424 0.81137814 0.80755799 0.75229976 0.89736121 0.82416213\n 0.8443426  0.83621347 0.81837485 0.96516977 0.75834642 0.79419232\n 0.84153298 0.96133578 0.8033416  0.80587798 0.90346973 0.81269042\n 0.8152341  0.83411395 0.79375354 0.90831479 0.83390151 0.80706972\n 0.81427318 0.81855842 0.7688083  0.84556987 0.79978895 0.81387841\n 0.75615992 0.99709583]",
+      "split1_train_score": "[0.90614114 0.81954887 0.94603781 0.77249615 0.96300636 0.8128698\n 0.90785872 0.82561294 0.92568415 0.82561294 0.83075938 0.81837789\n 0.88811777 0.84963433 0.77127213 0.98694234 0.9979665  0.81280529\n 0.77408962 0.81237836 0.80901134 0.76960235 0.90492278 0.82013462\n 0.84445963 0.83960145 0.82471501 0.96783842 0.7598059  0.79242174\n 0.8398769  0.95681252 0.80408865 0.81273945 0.9073889  0.81583868\n 0.81982102 0.83728745 0.79575992 0.90685537 0.84024114 0.80976075\n 0.81050512 0.81279971 0.77258836 0.85220193 0.80442181 0.81996045\n 0.76223311 0.9979665 ]",
+      "split2_train_score": "[0.91200265 0.8042282  0.95143602 0.76548169 0.96962519 0.80210086\n 0.90963628 0.818587   0.92144309 0.818587   0.81932639 0.80996009\n 0.89358921 0.83613919 0.76356777 0.98549555 0.99767622 0.80840684\n 0.76601953 0.80146054 0.79674124 0.76131122 0.90418017 0.80901814\n 0.82444261 0.83019082 0.81378219 0.95896707 0.76040574 0.78646507\n 0.83432188 0.96244716 0.7939846  0.79634884 0.90062939 0.80989679\n 0.80188645 0.83011492 0.78918608 0.91345893 0.82902885 0.79299424\n 0.80854395 0.80220853 0.76506745 0.8401504  0.79760488 0.8084093\n 0.76105009 0.99767622]",
+      "split3_train_score": "[0.9107175  0.80084682 0.94515131 0.75095569 0.96989081 0.80163434\n 0.90805014 0.82264892 0.92366911 0.82264892 0.81823565 0.80090793\n 0.89187267 0.83719721 0.75591896 0.98666816 0.99767622 0.80088699\n 0.75706225 0.79688541 0.79345993 0.75528176 0.90269155 0.80567496\n 0.83744393 0.83170046 0.81504044 0.95958501 0.75161186 0.79126491\n 0.8330824  0.95850879 0.79099745 0.79540116 0.90573392 0.7992955\n 0.81781671 0.82510053 0.78635318 0.90723469 0.83368058 0.79856361\n 0.80081023 0.80075607 0.75607232 0.83626182 0.79665738 0.80088115\n 0.74763949 0.99767622]",
+      "split4_train_score": "[0.90605414 0.81255396 0.94719968 0.77837059 0.96644016 0.81983805\n 0.90380715 0.82975827 0.92690152 0.82975827 0.82849091 0.81185855\n 0.88786304 0.84053833 0.77749702 0.9866559  0.9979665  0.81596789\n 0.7808351  0.80725755 0.80489137 0.77996035 0.90183332 0.81746852\n 0.83960145 0.84461405 0.82301744 0.96275744 0.77005326 0.8057506\n 0.84880284 0.95874879 0.80321794 0.80469332 0.91111214 0.8153458\n 0.81539034 0.83844046 0.79729278 0.90209799 0.83437212 0.81019597\n 0.81393955 0.81380951 0.77890034 0.8528622  0.81395012 0.81246279\n 0.77773401 0.9979665 ]",
+      "mean_train_score": "[0.90831129 0.81152901 0.94757232 0.76713842 0.96575862 0.8082482\n 0.90647441 0.82340492 0.92421699 0.82340492 0.82283339 0.81102432\n 0.8903454  0.84101557 0.76683589 0.98613658 0.99767625 0.81066087\n 0.76939615 0.805872   0.80233237 0.76369109 0.90219781 0.81529167\n 0.83805804 0.83646405 0.81898598 0.96286354 0.76004464 0.79401893\n 0.8395234  0.95957061 0.79912605 0.80301215 0.90566682 0.81061344\n 0.81402972 0.83301146 0.7924691  0.90759235 0.83424484 0.80371686\n 0.80961441 0.80962645 0.76828735 0.84540925 0.80248463 0.81111842\n 0.76096332 0.99767625]",
+      "std_train_score": "[0.00253022 0.00790786 0.00216789 0.00917664 0.0038783  0.00705862\n 0.00258634 0.00394839 0.00189962 0.00394839 0.00562644 0.00578276\n 0.00219012 0.00475764 0.0072668  0.00078616 0.00031792 0.00555547\n 0.00795717 0.00591253 0.00613914 0.01005758 0.00265045 0.00690965\n 0.0073296  0.00526068 0.00429173 0.00334696 0.00590518 0.00640091\n 0.00563584 0.00203962 0.00550727 0.0064496  0.0035447  0.00604353\n 0.00630304 0.00489789 0.00409707 0.00362761 0.00356692 0.00680117\n 0.0048962  0.00694344 0.00762864 0.00652754 0.00632844 0.00632056\n 0.00983334 0.00031792]"
+    },
+    "n_iter": 50,
+    "cv_folds": 5,
+    "datetime": "2025-12-09T01:37:07.247518"
+  },
+  {
+    "classifier": "DecisionTreeClassifier",
+    "use_handcrafted": false,
+    "best_params": {
+      "text__tfidf__ngram_range": [
+        1,
+        1
+      ],
+      "text__tfidf__max_features": 5000,
+      "classifier__min_samples_split": 2,
+      "classifier__min_samples_leaf": 1,
+      "classifier__max_depth": null,
+      "classifier__criterion": "entropy"
+    },
+    "best_score": 0.7584061040722655,
+    "cv_results": {
+      "mean_fit_time": "[7.88983254 6.85213547 7.9866632  5.78772507 7.81742244 6.93675256\n 7.12482905 5.78176894 8.18097129 5.66494312 5.66138802 5.25682178\n 6.94547796 5.37868819 5.51566377 8.90461731 8.11556759 5.62107139\n 6.01581254 5.72437658 5.78191733 5.86935997 6.72006917 5.89311371\n 6.20519519 6.54701467 6.05362597 7.99351683 5.78059373 5.82122059\n 5.768852   7.64115977 5.70539379 6.37007303 7.24507174 6.1043354\n 6.08190975 6.1465342  5.99942451 6.87773561 5.85957847 6.23397403\n 5.65754952 6.16904659 6.19807897 6.01434107 6.25189123 5.88622074\n 5.69786944 7.98548851]",
+      "std_fit_time": "[0.06713621 0.2210267  0.2778757  0.14088013 0.08741214 0.47047718\n 0.18239144 0.03855619 0.18758288 0.12124895 0.13503959 0.05130345\n 0.16567856 0.0889056  0.07958709 0.29915035 0.09236108 0.14640226\n 0.12492233 0.09378257 0.11115539 0.12334306 0.08266613 0.05948702\n 0.05515614 0.12218464 0.04637988 0.10818794 0.09997516 0.08357361\n 0.12618762 0.06519243 0.20772812 0.087941   0.22198051 0.06761127\n 0.1762081  0.15587451 0.17270327 0.08601254 0.06349805 0.23475939\n 0.09533529 0.05888142 0.08485896 0.04715727 0.06429306 0.10918678\n 0.16321856 0.2889941 ]",
+      "mean_score_time": "[1.39668398 1.38252783 1.40510173 1.42868285 1.41923013 1.38186564\n 1.40646434 1.35900469 1.36826854 1.28017774 1.2885654  1.27326994\n 1.29746695 1.31449122 1.35419726 1.38670788 1.38772573 1.46480885\n 1.37527189 1.39301033 1.38770947 1.35427289 1.35315437 1.34429212\n 1.49181247 1.43125219 1.35733576 1.45908866 1.39673629 1.3776444\n 1.39564853 1.3964129  1.38043423 1.39917741 1.4940793  1.44181442\n 1.38511457 1.47524223 1.33946815 1.41251807 1.39532199 1.44345546\n 1.44573178 1.4290576  1.4688767  1.43167653 1.43694639 1.38078837\n 1.39267831 1.28931503]",
+      "std_score_time": "[0.01558973 0.08932807 0.04029285 0.04501408 0.02997094 0.03341815\n 0.03031813 0.07623898 0.03124756 0.04262227 0.04195884 0.05460735\n 0.03704121 0.01375975 0.10055758 0.05884242 0.03267246 0.0565827\n 0.06024505 0.06736553 0.06583823 0.05893707 0.01729129 0.03483539\n 0.09002866 0.08547253 0.0506953  0.07271143 0.03876557 0.08222487\n 0.03025005 0.10426266 0.04310586 0.08682597 0.05511557 0.07621185\n 0.09812307 0.04713296 0.02354268 0.05370784 0.0391795  0.04643787\n 0.05881195 0.04432757 0.06945943 0.07499505 0.03181377 0.05209148\n 0.09230781 0.12161024]",
+      "param_text__tfidf__ngram_range": "[(1, 1) (1, 2) (1, 1) (1, 1) (1, 1) (1, 2) (1, 1) (1, 1) (1, 2) (1, 1)\n (1, 2) (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 1) (1, 1) (1, 2) (1, 1)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 2) (1, 2) (1, 2) (1, 1) (1, 1)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 2) (1, 1) (1, 1) (1, 1) (1, 1)\n (1, 1) (1, 2) (1, 1) (1, 2) (1, 2) (1, 1) (1, 2) (1, 1) (1, 1) (1, 2)]",
+      "param_text__tfidf__max_features": "[5000 3000 2000 2000 3000 5000 2000 5000 3000 5000 3000 5000 2000 5000\n 3000 5000 5000 2000 3000 5000 5000 3000 2000 2000 2000 5000 2000 2000\n 5000 2000 2000 3000 5000 3000 2000 5000 3000 3000 5000 3000 5000 3000\n 2000 2000 3000 3000 5000 5000 2000 2000]",
+      "param_classifier__min_samples_split": "[5 2 2 10 10 2 2 5 10 2 5 10 2 5 2 5 2 2 5 5 10 5 10 2 2 5 10 10 10 10 2 2\n 10 2 10 2 10 10 10 10 5 5 5 2 10 5 5 2 10 2]",
+      "param_classifier__min_samples_leaf": "[4 2 2 2 1 1 4 4 2 4 4 1 4 1 4 1 1 2 1 1 1 1 4 1 1 1 4 1 2 4 2 2 2 4 4 2 4\n 2 4 4 2 2 2 2 2 1 2 2 2 1]",
+      "param_classifier__max_depth": "[None 10 None 5 None 10 None 15 None 15 15 10 None 15 5 None None 10 5 10\n 10 5 None 10 15 15 15 None 5 10 15 None 10 10 None 10 15 15 10 None 15 10\n 10 10 5 15 10 10 5 None]",
+      "param_classifier__criterion": "['entropy' 'gini' 'gini' 'gini' 'entropy' 'entropy' 'entropy' 'gini'\n 'gini' 'gini' 'gini' 'gini' 'gini' 'entropy' 'gini' 'gini' 'entropy'\n 'gini' 'gini' 'entropy' 'entropy' 'entropy' 'entropy' 'gini' 'entropy'\n 'entropy' 'gini' 'entropy' 'entropy' 'entropy' 'gini' 'entropy' 'entropy'\n 'gini' 'entropy' 'gini' 'entropy' 'gini' 'entropy' 'entropy' 'entropy'\n 'entropy' 'gini' 'gini' 'gini' 'gini' 'entropy' 'gini' 'entropy'\n 'entropy']",
+      "params": [
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": null,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": null,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 4,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 3000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": 15,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 5,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 5000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 10,
+          "classifier__criterion": "gini"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            1
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 10,
+          "classifier__min_samples_leaf": 2,
+          "classifier__max_depth": 5,
+          "classifier__criterion": "entropy"
+        },
+        {
+          "text__tfidf__ngram_range": [
+            1,
+            2
+          ],
+          "text__tfidf__max_features": 2000,
+          "classifier__min_samples_split": 2,
+          "classifier__min_samples_leaf": 1,
+          "classifier__max_depth": null,
+          "classifier__criterion": "entropy"
+        }
+      ],
+      "split0_test_score": "[0.73787257 0.68407865 0.74401945 0.65541726 0.75260506 0.69782325\n 0.7388009  0.69999651 0.75329408 0.69999651 0.71187955 0.68433803\n 0.77341398 0.69909122 0.66091061 0.76440382 0.75116279 0.68554365\n 0.6563211  0.68721471 0.68554365 0.66189209 0.74047936 0.68338057\n 0.69876876 0.70396369 0.70490474 0.77924073 0.65727808 0.68504877\n 0.69747159 0.76231958 0.68554365 0.69287899 0.76570638 0.69549279\n 0.70104635 0.70490474 0.69009815 0.75029296 0.69227797 0.68458626\n 0.68554365 0.68338057 0.65813119 0.7042793  0.69685459 0.69094457\n 0.65727808 0.75690496]",
+      "split1_test_score": "[0.74708926 0.69427092 0.72980341 0.67200421 0.73551925 0.69268572\n 0.71386047 0.71250989 0.72695535 0.71250989 0.72163075 0.68534574\n 0.73355497 0.70438244 0.66925592 0.74564305 0.76226168 0.6923499\n 0.6738614  0.68380266 0.68380266 0.67295073 0.7198915  0.69697649\n 0.70291809 0.68805827 0.72084288 0.73887123 0.67017228 0.68981482\n 0.71448943 0.71879169 0.68559179 0.69330992 0.74370324 0.6940861\n 0.68908825 0.71378936 0.69794194 0.75354334 0.70705771 0.69283531\n 0.6923499  0.69968205 0.67202365 0.70922656 0.69268572 0.68885979\n 0.64820463 0.74206127]",
+      "split2_test_score": "[0.72054928 0.68002888 0.71150958 0.65526987 0.74723989 0.66925592\n 0.75016229 0.70190315 0.71134926 0.70190315 0.70259865 0.68020526\n 0.73742013 0.69292746 0.6560705  0.75416483 0.74863925 0.67364856\n 0.65326292 0.67658197 0.67476048 0.64572373 0.75109065 0.67824419\n 0.68464425 0.68642442 0.70463345 0.74425088 0.64764774 0.67107699\n 0.69685459 0.73511679 0.67476048 0.68002888 0.76328735 0.68724653\n 0.70230842 0.69370137 0.67564814 0.72804957 0.67603285 0.66833362\n 0.67364856 0.67730573 0.65326292 0.69130415 0.66833362 0.67926585\n 0.64778457 0.72330025]",
+      "split3_test_score": "[0.74959321 0.6952329  0.7430168  0.65492279 0.75654895 0.69504858\n 0.73267852 0.70824229 0.73355881 0.70824229 0.71216416 0.69427092\n 0.75350876 0.69043269 0.66631917 0.76668841 0.76515274 0.70120024\n 0.65298609 0.67918355 0.67824419 0.64908954 0.73161383 0.69601204\n 0.68947547 0.71416191 0.70022566 0.74727463 0.64406086 0.68002888\n 0.7098524  0.72823612 0.67465585 0.70141627 0.75842106 0.69890842\n 0.69060781 0.70886862 0.68275204 0.73674496 0.67458257 0.70022957\n 0.70120024 0.69427092 0.65298609 0.71185799 0.69540532 0.69348335\n 0.64516166 0.7437791 ]",
+      "split4_test_score": "[0.75009717 0.67729474 0.71805506 0.64340677 0.77625744 0.66176138\n 0.75102018 0.71151526 0.72959565 0.71151526 0.70788579 0.69187791\n 0.73817251 0.68805827 0.63147389 0.74031496 0.76481406 0.68710578\n 0.64143809 0.66176138 0.66176138 0.63548401 0.74459822 0.67634983\n 0.69757279 0.69806276 0.69976333 0.76491672 0.63946145 0.66924887\n 0.7004856  0.75183083 0.66364388 0.67307563 0.75939588 0.68250146\n 0.68981482 0.69732342 0.67017093 0.75205261 0.69252386 0.66832774\n 0.68710578 0.6780554  0.64231155 0.70438244 0.66364388 0.69187791\n 0.63747678 0.7274493 ]",
+      "mean_test_score": "[0.7410403  0.68618122 0.72928086 0.65620418 0.75363412 0.68331497\n 0.73730447 0.70683342 0.73095063 0.70683342 0.71123178 0.68720757\n 0.74721407 0.69497842 0.65680602 0.75424301 0.7584061  0.68796963\n 0.65557392 0.67770885 0.67682247 0.65302802 0.73753471 0.68619262\n 0.69467587 0.69813421 0.70607401 0.75491084 0.65172408 0.67904367\n 0.70383072 0.739259   0.67683913 0.68814194 0.75810278 0.69164706\n 0.69457313 0.7037175  0.68332224 0.74413669 0.68849499 0.6828625\n 0.68796963 0.68653893 0.65574308 0.70421009 0.68338463 0.68888629\n 0.64718115 0.73869898]",
+      "std_test_score": "[0.01115065 0.00732963 0.01302315 0.00912742 0.0133447  0.01482021\n 0.01361399 0.00504337 0.01347623 0.00504337 0.00624746 0.00514657\n 0.01476686 0.0059684  0.01345069 0.01025754 0.00706118 0.00901067\n 0.01045801 0.00877795 0.0084604  0.01305483 0.01085051 0.00872558\n 0.00664463 0.01029096 0.00768882 0.01497516 0.01092609 0.00790513\n 0.00707338 0.01579502 0.00819243 0.01018009 0.0076657  0.00594092\n 0.00583415 0.00735653 0.00991789 0.01002476 0.0120331  0.01285605\n 0.00901067 0.00894117 0.0096428  0.00707465 0.01434348 0.00503731\n 0.00635    0.01210162]",
+      "rank_test_score": "[ 8 35 14 45  5 38 12 16 13 16 15 32  6 23 44  4  1 30 47 41 43 48 11 34\n 24 22 18  3 49 40 20  9 42 29  2 26 25 21 37  7 28 39 30 33 46 19 36 27\n 50 10]",
+      "split0_train_score": "[0.89309435 0.72052926 0.93549557 0.66921855 0.95977557 0.72395856\n 0.89195976 0.75174636 0.913223   0.75174636 0.74891018 0.72427526\n 0.88280926 0.75993684 0.66734078 0.98494006 0.99680572 0.72125895\n 0.67059044 0.71713337 0.71490674 0.67036948 0.88955277 0.72718391\n 0.75995665 0.75963106 0.74732491 0.96151857 0.66806052 0.70785794\n 0.76070872 0.94457698 0.71194669 0.71639372 0.89450937 0.72419684\n 0.74270291 0.75280699 0.708103   0.89047571 0.75182016 0.71808222\n 0.7205889  0.72210186 0.66778695 0.76232432 0.71979481 0.72094988\n 0.66922655 0.99680572]",
+      "split1_train_score": "[0.90680937 0.71777808 0.93918824 0.67086309 0.9641503  0.7051198\n 0.89270895 0.7441273  0.9229282  0.7441273  0.74669465 0.71926637\n 0.883521   0.74267159 0.66519516 0.98522836 0.99767622 0.72022244\n 0.66805094 0.71245924 0.71000745 0.66752991 0.89188449 0.72382069\n 0.74808567 0.74405486 0.74939644 0.96216142 0.6675443  0.6973724\n 0.75665737 0.94800899 0.70658449 0.71092779 0.89317156 0.71844067\n 0.71943885 0.75041416 0.70181415 0.89149507 0.73701561 0.69825181\n 0.72004289 0.71954583 0.66711155 0.7634397  0.69949518 0.71807825\n 0.65192297 0.99767622]",
+      "split2_train_score": "[0.88902471 0.711702   0.93856688 0.66994618 0.96452381 0.7009084\n 0.89004838 0.74569767 0.91650055 0.74569767 0.74167707 0.71289942\n 0.88425756 0.7452808  0.67037784 0.98493737 0.99767622 0.71518364\n 0.67200006 0.7077016  0.70471052 0.66656578 0.88827175 0.7193313\n 0.73544477 0.73230988 0.74131436 0.96068097 0.66566857 0.69273313\n 0.74878169 0.94200407 0.70183965 0.70924827 0.89605621 0.71740056\n 0.73058357 0.74697549 0.69825436 0.88830494 0.73636431 0.69784332\n 0.71425875 0.71363396 0.66966962 0.76031752 0.69591255 0.71028343\n 0.66547051 0.997386  ]",
+      "split3_train_score": "[0.89770664 0.70409178 0.93688542 0.66006801 0.96727651 0.69787895\n 0.89250529 0.72937511 0.91598003 0.72937511 0.72595474 0.70741124\n 0.8798392  0.73401085 0.65887685 0.98723608 0.997386   0.70034839\n 0.65997013 0.69681062 0.6942641  0.64961903 0.89059972 0.70883083\n 0.73855816 0.73777477 0.72922186 0.96527084 0.64752421 0.6895458\n 0.7394562  0.94573288 0.69094669 0.7002285  0.89653179 0.70437981\n 0.71515386 0.73344712 0.6884129  0.89383461 0.72769723 0.69204803\n 0.69917896 0.70448633 0.65858424 0.74226391 0.69362398 0.7049731\n 0.64834928 0.997386  ]",
+      "split4_train_score": "[0.89189171 0.72702262 0.93806423 0.67480139 0.9713409  0.70515944\n 0.89508425 0.74544115 0.92281322 0.74544115 0.74652681 0.72904836\n 0.88387338 0.74907349 0.67318653 0.98695916 0.9979665  0.72661936\n 0.67712057 0.70523975 0.70301222 0.67759569 0.89176723 0.73070347\n 0.75393886 0.74856835 0.7462968  0.96050444 0.67433653 0.69461662\n 0.75344327 0.94802297 0.6996619  0.72101594 0.9020221  0.72061522\n 0.73036502 0.75038693 0.69172069 0.89940659 0.74301922 0.70916494\n 0.72645066 0.72576747 0.67457538 0.76055604 0.69853004 0.72720611\n 0.67504011 0.99767622]",
+      "mean_train_score": "[0.89570536 0.71622475 0.93764007 0.66897944 0.96541342 0.70660503\n 0.89246133 0.74327752 0.918289   0.74327752 0.74195269 0.71858013\n 0.88286008 0.74619472 0.66699543 0.98586021 0.99750213 0.71672656\n 0.66954643 0.70786892 0.7053802  0.66633598 0.89041519 0.72197404\n 0.74719682 0.74446778 0.74271087 0.96202725 0.66462683 0.69642517\n 0.75180945 0.94566918 0.70219588 0.71156285 0.89645821 0.71700662\n 0.72764884 0.74680614 0.69766102 0.89270339 0.73918331 0.70307806\n 0.71610403 0.71710709 0.66754555 0.7577803  0.70147131 0.71629815\n 0.66200188 0.99738603]",
+      "std_train_score": "[0.00621766 0.00781281 0.0013118  0.00485487 0.00381519 0.00909986\n 0.0016135  0.00743315 0.00390346 0.00743315 0.00834057 0.00773956\n 0.00158397 0.00847145 0.00487938 0.00101963 0.00039363 0.00895831\n 0.00562885 0.00687208 0.00695399 0.00920853 0.00136814 0.00756946\n 0.00918472 0.00937573 0.00724912 0.00172795 0.0090351  0.00625833\n 0.00730943 0.00226473 0.00703463 0.00702747 0.00302404 0.00672859\n 0.00965551 0.00693314 0.00703492 0.00379425 0.00798724 0.00932236\n 0.00930102 0.00744639 0.00518617 0.00784318 0.00938922 0.00785143\n 0.0102196  0.00031786]"
+    },
+    "n_iter": 50,
+    "cv_folds": 5,
+    "datetime": "2025-12-09T01:43:44.394032"
+  }
+]
