@@ -1,0 +1,20 @@
+[
+  {
+    "configuration": {
+      "optimization_method": "baseline",
+      "sequence_length": 512
+    },
+    "performance": {
+      "accuracy": 0.96,
+      "total_prediction_time": 7.420099973678589,
+      "average_prediction_time": 0.07420099973678589,
+      "min_prediction_time": 0.06447505950927734,
+      "max_prediction_time": 0.2524149417877197,
+      "median_prediction_time": 0.06945919990539551,
+      "memory_usage_mb": 366.4375,
+      "samples_processed": 100,
+      "samples_failed": 0
+    },
+    "timestamp": "20251209_151713"
+  }
+]

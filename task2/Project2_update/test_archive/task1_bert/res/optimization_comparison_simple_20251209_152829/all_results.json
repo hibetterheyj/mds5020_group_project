@@ -1,0 +1,110 @@
+[
+  {
+    "config": {
+      "method": "baseline",
+      "seq_len": 512,
+      "description": "Baseline model with default sequence length"
+    },
+    "metrics": {
+      "accuracy": 0.96,
+      "avg_pred_time": 0.07614509344100952,
+      "total_time": 7.614509344100952,
+      "min_time": 0.06382012367248535,
+      "max_time": 0.5054619312286377,
+      "median_time": 0.06987524032592773,
+      "memory_mb": 423.390625,
+      "samples_processed": 100
+    },
+    "timestamp": "20251209_152829"
+  },
+  {
+    "config": {
+      "method": "baseline",
+      "seq_len": 256,
+      "description": "Baseline model with reduced sequence length (256)"
+    },
+    "metrics": {
+      "accuracy": 0.96,
+      "avg_pred_time": 0.034826481342315675,
+      "total_time": 3.4826481342315674,
+      "min_time": 0.03192305564880371,
+      "max_time": 0.07584261894226074,
+      "median_time": 0.033891916275024414,
+      "memory_mb": 423.734375,
+      "samples_processed": 100
+    },
+    "timestamp": "20251209_152829"
+  },
+  {
+    "config": {
+      "method": "baseline",
+      "seq_len": 128,
+      "description": "Baseline model with reduced sequence length (128)"
+    },
+    "metrics": {
+      "accuracy": 0.96,
+      "avg_pred_time": 0.021214821338653565,
+      "total_time": 2.1214821338653564,
+      "min_time": 0.018934011459350586,
+      "max_time": 0.061882972717285156,
+      "median_time": 0.020450472831726074,
+      "memory_mb": 423.4375,
+      "samples_processed": 100
+    },
+    "timestamp": "20251209_152829"
+  },
+  {
+    "config": {
+      "method": "dynamic_quant",
+      "seq_len": 512,
+      "description": "Dynamic quantization with default sequence length"
+    },
+    "metrics": {
+      "accuracy": 0.96,
+      "avg_pred_time": 0.13722472190856932,
+      "total_time": 13.722472190856934,
+      "min_time": 0.12816405296325684,
+      "max_time": 0.2239222526550293,
+      "median_time": 0.13439548015594482,
+      "memory_mb": 455.921875,
+      "samples_processed": 100
+    },
+    "timestamp": "20251209_152829"
+  },
+  {
+    "config": {
+      "method": "dynamic_quant",
+      "seq_len": 256,
+      "description": "Dynamic quantization with reduced sequence length (256)"
+    },
+    "metrics": {
+      "accuracy": 0.96,
+      "avg_pred_time": 0.06756640672683716,
+      "total_time": 6.756640672683716,
+      "min_time": 0.0638730525970459,
+      "max_time": 0.15819907188415527,
+      "median_time": 0.0658113956451416,
+      "memory_mb": 445.828125,
+      "samples_processed": 100
+    },
+    "timestamp": "20251209_152829"
+  },
+  {
+    "config": {
+      "method": "dynamic_quant",
+      "seq_len": 128,
+      "description": "Dynamic quantization with reduced sequence length (128)"
+    },
+    "metrics": {
+      "accuracy": 0.96,
+      "avg_pred_time": 0.03638875961303711,
+      "total_time": 3.638875961303711,
+      "min_time": 0.03311800956726074,
+      "max_time": 0.12346887588500977,
+      "median_time": 0.03404700756072998,
+      "memory_mb": 717.0,
+      "samples_processed": 100
+    },
+    "timestamp": "20251209_152829"
+  }
+]

@@ -35,7 +35,7 @@ def tokenize_function(examples, tokenizer):
 def predict_sentiment_bert(text, tokenizer, model, device):
     """Predict sentiment using the BERT model"""
     # Direct tokenization without using Dataset
-    inputs = tokenizer(text, padding='max_length', truncation=True, return_tensors="pt")
+    inputs = tokenizer(text, padding='max_length', truncation=True, return_tensors="pt", max_length=128)
 
     # Get input tensors
     input_ids = inputs['input_ids'].to(device)
@@ -43,12 +43,12 @@ def predict_sentiment_bert(text, tokenizer, model, device):
 
     # Make prediction
     with torch.no_grad():
-        outputs = model(input_ids, attention_mask=attention_mask)
+        outputs = model(input_ids, attention_mask)
         logits = outputs.logits
-        probabilities = torch.softmax(logits, dim=1).cpu().numpy()[0]
-        prediction = torch.argmax(logits, dim=1).cpu().numpy()[0]
+        probabilities = torch.nn.functional.softmax(logits, dim=1)
+        predicted_class = torch.argmax(probabilities, dim=1).item()
 
-    return prediction, probabilities
+    return predicted_class, probabilities.tolist()[0]
 
 @app.route('/predict_sentiment', methods=['POST'])
 def predict_sentiment():

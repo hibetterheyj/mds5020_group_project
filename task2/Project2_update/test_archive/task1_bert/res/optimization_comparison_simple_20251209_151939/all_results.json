@@ -1,0 +1,20 @@
+[
+  {
+    "config": {
+      "method": "baseline",
+      "seq_len": 512,
+      "description": "Baseline model with default sequence length"
+    },
+    "metrics": {
+      "accuracy": 0.96,
+      "avg_pred_time": 0.0747910737991333,
+      "total_time": 7.47910737991333,
+      "min_time": 0.06503701210021973,
+      "max_time": 0.59486985206604,
+      "median_time": 0.06850504875183105,
+      "memory_mb": 394.25,
+      "samples_processed": 100
+    },
+    "timestamp": "20251209_151939"
+  }
+]

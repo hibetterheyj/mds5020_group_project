@@ -15,7 +15,7 @@ NUM_SAMPLES = 500
 
 # Create timestamped directory
 current_time = datetime.now().strftime('%Y%m%d_%H%M%S')
-results_dir = f'./res/comparison_{current_time}'
+results_dir = f'./res/logreg_bert_comparison_{current_time}'
 os.makedirs(results_dir, exist_ok=True)
 
 def load_test_data(num_samples=NUM_SAMPLES):

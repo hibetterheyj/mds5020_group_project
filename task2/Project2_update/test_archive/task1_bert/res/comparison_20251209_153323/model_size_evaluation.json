@@ -1,0 +1,9 @@
+{
+  "model_directory": "/Users/heyujie/Documents/cuhksz-all-sync/code/mds5020_group_project/task2/Project2_update/test_archive/task1_bert/results/checkpoint-645",
+  "total_size_mb": 766.59,
+  "total_size_gb": 0.75,
+  "meets_file_size_requirement": true,
+  "max_allowed_file_size_gb": 4,
+  "max_allowed_memory_mb": 900,
+  "notes": "Memory usage will depend on runtime environment and implementation details"
+}

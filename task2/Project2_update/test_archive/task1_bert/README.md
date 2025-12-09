@@ -1,6 +1,6 @@
 # BERT Sentiment Analysis API
 
-This API uses a pre-trained DistilBERT model for sentiment analysis of financial news titles.
+This API uses a fine-tuned DistilBERT model for sentiment analysis of financial news titles.
 
 ## Files
 
@@ -51,7 +51,7 @@ Predicts the sentiment of a financial news title.
 }
 ```
 
-- `prediction`: Sentiment label (0 = negative, 1 = positive)
+- `prediction`: Sentiment label (-1 = negative, 1 = positive)
 - `probability`: Confidence score for the prediction
 
 ## Testing

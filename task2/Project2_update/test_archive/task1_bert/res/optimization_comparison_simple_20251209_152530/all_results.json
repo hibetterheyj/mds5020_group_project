@@ -1,0 +1,38 @@
+[
+  {
+    "config": {
+      "method": "baseline",
+      "seq_len": 512,
+      "description": "Baseline model with default sequence length"
+    },
+    "metrics": {
+      "accuracy": 0.96,
+      "avg_pred_time": 0.08028838396072388,
+      "total_time": 8.028838396072388,
+      "min_time": 0.06457901000976562,
+      "max_time": 0.5241420269012451,
+      "median_time": 0.07470142841339111,
+      "memory_mb": 268.53125,
+      "samples_processed": 100
+    },
+    "timestamp": "20251209_152530"
+  },
+  {
+    "config": {
+      "method": "dynamic_quant",
+      "seq_len": 512,
+      "description": "Dynamic quantization with default sequence length"
+    },
+    "metrics": {
+      "accuracy": 0.96,
+      "avg_pred_time": 0.14478889465332032,
+      "total_time": 14.478889465332031,
+      "min_time": 0.1330890655517578,
+      "max_time": 0.28957414627075195,
+      "median_time": 0.14001905918121338,
+      "memory_mb": 418.015625,
+      "samples_processed": 100
+    },
+    "timestamp": "20251209_152530"
+  }
+]
