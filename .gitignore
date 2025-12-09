@@ -1,5 +1,6 @@
 *.lnk
 *.bin
+archive/
 tests/
 chroma_db/
 .vscode

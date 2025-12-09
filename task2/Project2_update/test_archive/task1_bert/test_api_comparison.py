@@ -11,6 +11,7 @@ LOGREG_API_URL = 'http://localhost:5724/predict_sentiment'
 BERT_API_URL = 'http://localhost:5725/predict_sentiment'
 # Use CSV file extension instead of XLSX since we're reading with csv module
 DATA_FILE = '../../../data/Subtask1-sentiment_analysis/training_news-sentiment.csv'
+EXTERNAL_DATA_FILE = '../../../data/external/zeroshot/twitter-financial-news-sentiment/cleaned_valid.csv'
 NUM_SAMPLES = 500
 
 # Create timestamped directory
@@ -31,6 +32,28 @@ def load_test_data(num_samples=NUM_SAMPLES):
         for i, row in enumerate(reader):
             if i >= num_samples:
                 break
+            try:
+                test_data.append({
+                    'doc_id': row[header[0]],
+                    'news_title': row[header[1]],
+                    'sentiment': int(row[header[2]])
+                })
+            except (ValueError, KeyError) as e:
+                print(f"Error parsing row {i+1}: {e}")
+                continue
+    return test_data
+
+def load_external_test_data():
+    """Load all samples from the external cleaned_valid.csv dataset"""
+    test_data = []
+    with open(EXTERNAL_DATA_FILE, 'r', encoding='utf-8') as csvfile:
+        # Read and clean the header
+        header = csvfile.readline().strip().split(',')
+        # Remove any potential BOM or invisible characters
+        header = [h.strip('"\ufeff') for h in header]
+
+        reader = csv.DictReader(csvfile, fieldnames=header)
+        for i, row in enumerate(reader):
             try:
                 test_data.append({
                     'doc_id': row[header[0]],
@@ -91,7 +114,7 @@ def save_predictions(predictions, filename):
         writer.writeheader()
         writer.writerows(predictions)
 
-def save_comparison(logreg_preds, bert_preds, logreg_time, bert_time):
+def save_comparison(logreg_preds, bert_preds, logreg_time, bert_time, num_samples):
     """Save comparison results to JSON"""
     logreg_accuracy = calculate_accuracy(logreg_preds)
     bert_accuracy = calculate_accuracy(bert_preds)
@@ -106,7 +129,7 @@ def save_comparison(logreg_preds, bert_preds, logreg_time, bert_time):
 
     comparison = {
         'timestamp': current_time,
-        'num_samples': NUM_SAMPLES,
+        'num_samples': num_samples,
         'logreg': {
             'accuracy': logreg_accuracy,
             'total_prediction_time': logreg_time,
@@ -168,8 +191,10 @@ def evaluate_model_size():
     return evaluation
 
 def main():
-    print("Loading test data...")
-    test_data = load_test_data(NUM_SAMPLES)
+    print("Loading external test data...")
+    # Use external dataset instead of original 500 samples
+    # test_data = load_test_data(NUM_SAMPLES)
+    test_data = load_external_test_data()
     print(f"Loaded {len(test_data)} samples")
 
     print("\nTesting Logistic Regression API...")
@@ -185,7 +210,7 @@ def main():
     save_predictions(bert_preds, os.path.join(results_dir, 'bert_predictions.csv'))
 
     print("\nCalculating comparison...")
-    comparison = save_comparison(logreg_preds, bert_preds, logreg_total_time, bert_total_time)
+    comparison = save_comparison(logreg_preds, bert_preds, logreg_total_time, bert_total_time, len(test_data))
 
     print("\nEvaluating model size...")
     model_evaluation = evaluate_model_size()
