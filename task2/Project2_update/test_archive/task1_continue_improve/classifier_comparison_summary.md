@@ -6,7 +6,6 @@ Generated on: 2025-12-09 03:33:50
 
 - [AdaBoostClassifier](#adaboostclassifier)
 - [BernoulliNB](#bernoullinb)
-- [CategoricalNB](#categoricalnb)
 - [DecisionTreeClassifier](#decisiontreeclassifier)
 - [ExtraTreesClassifier](#extratreesclassifier)
 - [LightGBM](#lightgbm)
@@ -96,42 +95,6 @@ Generated on: 2025-12-09 03:33:50
   "text__tfidf__max_features": 2000,
   "classifier__binarize": 0.1,
   "classifier__alpha": 1.0
-}
-```
-
-## CategoricalNB
-
-### With Handcrafted Features
-
-**Best Weighted F1 Score:** nan
-
-**Best Parameters:**
-
-```json
-{
-  "features__text__tfidf__ngram_range": [
-    1,
-    1
-  ],
-  "features__text__tfidf__max_features": 2000,
-  "classifier__alpha": 0.001
-}
-```
-
-### Without Handcrafted Features
-
-**Best Weighted F1 Score:** nan
-
-**Best Parameters:**
-
-```json
-{
-  "text__tfidf__ngram_range": [
-    1,
-    1
-  ],
-  "text__tfidf__max_features": 2000,
-  "classifier__alpha": 0.001
 }
 ```
 
@@ -695,8 +658,6 @@ Generated on: 2025-12-09 03:33:50
 | AdaBoostClassifier | No | 0.6752 |
 | BernoulliNB | Yes | 0.8059 |
 | BernoulliNB | No | 0.7965 |
-| CategoricalNB | Yes | nan |
-| CategoricalNB | No | nan |
 | DecisionTreeClassifier | Yes | 0.7614 |
 | DecisionTreeClassifier | No | 0.7584 |
 | ExtraTreesClassifier | Yes | 0.8100 |
@@ -728,7 +689,6 @@ Generated on: 2025-12-09 03:33:50
 
 - **AdaBoostClassifier:** +6.30% improvement (from 0.6752 to 0.7382)
 - **BernoulliNB:** +0.94% improvement (from 0.7965 to 0.8059)
-- **CategoricalNB:** +nan% improvement (from nan to nan)
 - **DecisionTreeClassifier:** +0.30% improvement (from 0.7584 to 0.7614)
 - **ExtraTreesClassifier:** -0.94% improvement (from 0.8194 to 0.8100)
 - **LightGBM:** +1.59% improvement (from 0.7597 to 0.7756)
