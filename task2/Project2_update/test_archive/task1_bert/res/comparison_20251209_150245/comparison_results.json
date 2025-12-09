@@ -1,0 +1,22 @@
+{
+  "timestamp": "20251209_150245",
+  "num_samples": 500,
+  "logreg": {
+    "accuracy": 0.924,
+    "total_prediction_time": 0.5139353275299072,
+    "average_prediction_time": 0.0010278706550598145,
+    "min_prediction_time": 0.0007681846618652344,
+    "max_prediction_time": 0.010869979858398438,
+    "median_prediction_time": 0.0009598731994628906
+  },
+  "bert": {
+    "accuracy": 0.958,
+    "total_prediction_time": 36.06129264831543,
+    "average_prediction_time": 0.07212258529663086,
+    "min_prediction_time": 0.06426095962524414,
+    "max_prediction_time": 0.16572904586791992,
+    "median_prediction_time": 0.06946110725402832
+  },
+  "accuracy_difference": 0.03399999999999992,
+  "time_ratio_bert_vs_logreg": 70.16698544860574
+}
