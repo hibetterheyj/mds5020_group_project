@@ -1,6 +1,6 @@
 # BERT Sentiment Analysis API
 
-This API uses a fine-tuned DistilBERT model for sentiment analysis of financial news titles.
+This API uses a fine-tuned DistilBERT model for sentiment analysis of financial news texts.
 
 ## Files
 
@@ -26,19 +26,19 @@ The API uses a fine-tuned DistilBERT model from the checkpoint located at:
    python app.py
    ```
 
-The server will start on port 5724.
+The server will start on port 5725.
 
 ## API Endpoints
 
 ### POST /predict_sentiment
 
-Predicts the sentiment of a financial news title.
+Predicts the sentiment of a financial news text.
 
 #### Request
 
 ```json
 {
-  "title": "Company reports strong quarterly earnings"
+  "news_text": "Company reports strong quarterly earnings"
 }
 ```
 
@@ -46,12 +46,12 @@ Predicts the sentiment of a financial news title.
 
 ```json
 {
-  "prediction": 1,
+  "sentiment": "1",
   "probability": "0.9947"
 }
 ```
 
-- `prediction`: Sentiment label (-1 = negative, 1 = positive)
+- `sentiment`: Sentiment label (-1 = negative, 1 = positive)
 - `probability`: Confidence score for the prediction
 
 ## Testing
@@ -59,7 +59,7 @@ Predicts the sentiment of a financial news title.
 You can test the API using curl:
 
 ```bash
-curl -X POST http://localhost:5724/predict_sentiment -H 'Content-Type: application/json' -d '{"title": "Company reports strong quarterly earnings"}'
+curl -X POST http://localhost:5725/predict_sentiment -H 'Content-Type: application/json' -d '{"news_text": "Company reports strong quarterly earnings"}'
 ```
 
 ## Results

@@ -52,14 +52,14 @@ def predict_sentiment_bert(text, tokenizer, model, device):
 
 @app.route('/predict_sentiment', methods=['POST'])
 def predict_sentiment():
-    title = request.json.get('title')
-    if title:
-        prediction, probabilities = predict_sentiment_bert(title, tokenizer, model, device)
+    news_text = request.json.get('news_text')
+    if news_text:
+        prediction, probabilities = predict_sentiment_bert(news_text, tokenizer, model, device)
         # Map 0 to -1 for negative sentiment to match dataset format
         mapped_prediction = -1 if prediction == 0 else 1
         probability_for_prediction = probabilities[0] if prediction == 0 else probabilities[1]
         return {
-            'prediction': mapped_prediction,
+            'sentiment': str(mapped_prediction),
             'probability': f"{probability_for_prediction:.4f}"
         }
 

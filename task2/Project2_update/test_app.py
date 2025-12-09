@@ -25,12 +25,12 @@ def load_test_data() -> Dict[str, List[Dict[str, Any]]]:
     }
 
 
-def test_sentiment_prediction(title: str) -> Dict[str, Any]:
+def test_sentiment_prediction(news_text: str) -> Dict[str, Any]:
     """
     Test the sentiment prediction endpoint and return the result.
     """
     url = "http://localhost:5724/predict_sentiment"
-    payload = {"title": title}
+    payload = {"news_text": news_text}
     headers = {"Content-Type": "application/json"}
 
     try:
@@ -40,7 +40,7 @@ def test_sentiment_prediction(title: str) -> Dict[str, Any]:
         result = response.json()
         return {
             'success': True,
-            'prediction': result['prediction'],
+            'prediction': result['sentiment'],
             'probability': result['probability']
         }
     except requests.exceptions.RequestException as e:
@@ -55,12 +55,12 @@ def test_sentiment_prediction(title: str) -> Dict[str, Any]:
         }
 
 
-def test_topic_prediction(title: str) -> Dict[str, Any]:
+def test_topic_prediction(news_text: str) -> Dict[str, Any]:
     """
     Test the topic classification endpoint and return the result.
     """
     url = "http://localhost:5724/predict_topic"
-    payload = {"title": title}
+    payload = {"news_text": news_text}
     headers = {"Content-Type": "application/json"}
 
     try:

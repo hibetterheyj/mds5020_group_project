@@ -20,9 +20,44 @@ docker pull crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz
 
 ## 2) How to Test
 
+### API Endpoints
+
+#### Sentiment Analysis
+- **Endpoint**: `/predict_sentiment`
+- **Method**: POST
+- **Input**: `news_text` (string)
+- **Output**: JSON string
+  ```json
+  {
+    "sentiment": "-1",
+    "probability": "0.98"
+  }
+  ```
+  - `sentiment`: Sentiment label (-1 = negative, 1 = positive)
+  - `probability`: Confidence score for the prediction
+
+#### Topic Classification
+- **Endpoint**: `/predict_topic`
+- **Method**: POST
+- **Input**: `news_text` (string)
+- **Output**: JSON string
+  ```json
+  {
+    "topic": "12",
+    "probability": "0.63"
+  }
+  ```
+  - `topic`: Topic label (1-18)
+  - `probability`: Confidence score for the prediction
+
 ### Send a Request
 
-Use a client (e.g., Postman or run command in cmd) to send a request that includes a "title" field. Or you can refer to our test code in [`test_app.py`](./test_app.py)
+Use a client (e.g., Postman or run command in cmd) to send a request that includes a "news_text" field. Or you can refer to our test code in [`test_app.py`](./test_app.py)
+
+Example using curl:
+```bash
+curl -X POST http://localhost:5724/predict_sentiment -H 'Content-Type: application/json' -d '{"news_text": "Company reports strong quarterly earnings"}'
+```
 
 ![Test request example](api_test.png)
 

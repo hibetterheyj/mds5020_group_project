@@ -51,7 +51,7 @@ def test_api(api_url, test_data, model_name):
         start_time = time.time()
 
         try:
-            response = requests.post(api_url, json={'title': sample['news_title']}, timeout=10)
+            response = requests.post(api_url, json={'news_text': sample['news_title']}, timeout=10)
             if response.status_code == 200:
                 result = response.json()
                 pred_time = time.time() - start_time
@@ -61,7 +61,7 @@ def test_api(api_url, test_data, model_name):
                     'doc_id': sample['doc_id'],
                     'news_title': sample['news_title'],
                     'actual': sample['sentiment'],
-                    'predicted': result['prediction'],
+                    'predicted': int(result['sentiment']),
                     'probability': float(result['probability']),
                     'prediction_time': pred_time
                 })
