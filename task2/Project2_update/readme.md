@@ -13,10 +13,11 @@ crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining
 To pull the Docker image, use the following command:
 
 ```shell
+# on win
 docker pull crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining:v1.0
 docker run -p 5724:5724 crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining:v1.0
 
-# on macos without intel with "Use Rosetta for x86/amd64 emulation on Apple Silicon"
+# on macos without native amd64 support, so pull and run with "Use Rosetta for x86/amd64 emulation on Apple Silicon"
 docker pull --platform linux/amd64 crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining:v1.0
 docker run --platform linux/amd64 -p 5724:5724 crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining:v1.0
 ```
@@ -68,10 +69,12 @@ Use a client (e.g., Postman or run command in cmd) to send a request that includ
 Example using curl:
 
 ```bash
+# on win
+curl -X POST http://localhost:5724/predict_sentiment -H "Content-Type: application/json" -d "{\"news_text\": \"Company reports strong quarterly earnings"\"}"
+
+# on macos
 curl -X POST http://localhost:5724/predict_sentiment -H 'Content-Type: application/json' -d '{"news_text": "Company reports strong quarterly earnings"}'
 ```
-
-![Test request example](api_test.png)
 
 ### Running Container
 
