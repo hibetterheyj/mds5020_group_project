@@ -699,7 +699,7 @@ def create_enhanced_features(df):
    ```python
    from imblearn.over_sampling import RandomOverSampler
    from imblearn.under_sampling import RandomUnderSampler
-
+   
    # 或使用class_weight参数
    model = LogisticRegression(class_weight='balanced')
    ```
@@ -718,7 +718,7 @@ def create_enhanced_features(df):
 2. **缓存机制**：
    ```python
    from functools import lru_cache
-
+   
    @lru_cache(maxsize=1000)
    def predict_cached(text):
        return model.predict([text])[0]
@@ -781,3 +781,69 @@ print(predictions)
 ```
 
 建议你先用这个简单脚本测试FastText的基线性能，然后决定后续方向。
+
+---
+
+## 同义词数据增强
+
+```
+def augment_text(text):
+    # 同义词替换（使用轻量级库）
+    synonyms = {
+        'profit': ['earnings', 'gain', 'income'],
+        'loss': ['deficit', 'shortfall', 'decline'],
+        'pct': ['percent', 'percentage', '%'],
+    }
+    # 简单数据增强
+    return text
+```
+
+3. **文本数据增强**：对训练集进行同义词替换（如“rise”→“increase”，用`nltk.wordnet`），避免修改金融术语（如“eur”“eps”），代码示例：
+```python
+from nltk.corpus import wordnet
+import random
+
+def augment_text(text):
+    words = text.split()
+    augmented_words = []
+    for word in words:
+        # 仅替换情感词，不替换金融术语
+        if word in positive_words or word in negative_words:
+            synonyms = [syn.lemma() for syn in wordnet.synsets(word) if syn.pos() == 'v']
+            if synonyms and random.random() < 0.3:  # 30%概率替换
+                augmented_words.append(random.choice(synonyms))
+            else:
+                augmented_words.append(word)
+        else:
+            augmented_words.append(word)
+    return ' '.join(augmented_words)
+
+# 对训练集应用增强（扩大数据量）
+df_train['augmented_title'] = df_train['news_title'].apply(augment_text)
+df_augmented = df_train.copy()
+df_augmented['news_title'] = df_augmented['augmented_title']
+df_train = pd.concat([df_train, df_augmented], ignore_index=True)  # 数据量翻倍
+```
+
+## distilbert trials
+
+### baseline
+
+- https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/blob/main/config.json | config.json &middot; distilbert/distilbert-base-uncased-finetuned-sst-2-english at main
+
+### method
+
+- https://huggingface.co/mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis | mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis &middot; Hugging Face
+- https://huggingface.co/spaces/sway0604/news_sentiment | News Sentiment - a Hugging Face Space by sway0604
+- https://www.kaggle.com/code/dhaouadiibtihel98/fine-tuning-distilbert-for-sentiment-analysis | Fine-Tuning DistilBERT for Sentiment Analysis
+- https://www.kaggle.com/code/joshplnktt/sentiment-analysis-w-distilbert | Sentiment Analysis w/ DistilBERT
+- https://www.kaggle.com/code/ocanaydin/financial-sentiment-bert | financial_sentiment_BERT
+- https://github.com/vedavyas0105/Financial-Sentiment-Distillation | vedavyas0105/Financial-Sentiment-Distillation: This project leverages knowledge distillation to create a lightweight yet powerful sentiment analysis model, tailored specifically for financial news data. Using a teacher-student approach, the project distills knowledge from a large FinBERT model into a compact DistilBERT-based student model, balancing performance and efficiency.
+- https://medium.com/@choudhary.man/fine-tuning-distilbert-for-financial-sentiment-analysis-a-practical-implementation-d6df80e8340f | Fine-Tuning DistilBERT for Financial Sentiment Analysis: A Practical Implementation | by Manish Bansilal Choudhary | Medium
+- https://github.com/Ramy-Abdulazziz/Financial-Sentiment-Analysis | Ramy-Abdulazziz/Financial-Sentiment-Analysis: LLM's trained and fine tuned for financial sentiment analysis
+- https://huggingface.co/AdityaAI9/distilbert_finance_sentiment_analysis#:~:text=A%20fine-tuned%20DistilBERT%20model%20for%20financial%20text%20sentiment,statements%20into%20three%20categories%3A%20positive%2C%20negative%2C%20and%20neutral. | AdityaAI9/distilbert_finance_sentiment_analysis &middot; Hugging Face
+
+## dataset
+
+- https://huggingface.co/datasets/takala/financial_phrasebank | takala/financial_phrasebank &middot; Datasets at Hugging Face
+- https://huggingface.co/datasets/zeroshot/twitter-financial-news-sentiment | zeroshot/twitter-financial-news-sentiment &middot; Datasets at Hugging Face

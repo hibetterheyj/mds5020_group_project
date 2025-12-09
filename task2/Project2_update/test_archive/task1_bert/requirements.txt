@@ -1,0 +1,6 @@
+flask
+transformers
+datasets
+torch
+numpy
+pandas

@@ -1,0 +1,21 @@
+[
+  {
+    "experiment_name": "DistilBert_Baseline",
+    "parameters": {
+      "model_name": "distilbert-base-uncased",
+      "epochs": 3,
+      "batch_size": 16
+    },
+    "metrics": {
+      "mean_weighted_f1": 0.8711706811161637,
+      "std_weighted_f1": 0.009948639064743945,
+      "fold_scores": [
+        0.8630010876089839,
+        0.863860344931194,
+        0.8624602986212339,
+        0.8814998448639166,
+        0.8850318295554901
+      ]
+    }
+  }
+]
