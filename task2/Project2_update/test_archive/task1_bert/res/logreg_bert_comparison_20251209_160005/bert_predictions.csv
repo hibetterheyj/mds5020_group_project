@@ -1,0 +1,501 @@
+doc_id,news_title,actual,predicted,probability,prediction_time
+1,"Fiskars has a strong portfolio of international brands , which include Fiskars , Iittala , Gerber , Silva and Buster .",1,1,0.9956,0.465533971786499
+2,"METALS-Zinc surges 12 pct after Glencore cuts output, fuelling metals rally",1,1,0.9859,0.021658897399902344
+3,"According to Scanfil , demand for telecommunications network products has fluctuated significantly in the third quarter of 2006 , and the situation is expected to remain unstable for the rest of the year .",-1,-1,0.9715,0.022492170333862305
+4,dbs launches new banking api developer platform; india holds greatest promise for fintech partnerships,1,1,0.997,0.024064064025878906
+5,"Theodosopoulos said Tellabs could be of value to Nokia Siemens or Nortel given its `` leading supply status '' with Verizon , along with high-growth products .",1,1,0.9968,0.022555112838745117
+6,1 November 2010 - Finnish textile and clothing company Marimekko Oyj ( HEL : MMO1V ) announced on Friday the opening of its first concept store in Seoul in cooperation with Japanese sector player Look Inc ( TYO : 8029 ) .,1,1,0.9967,0.022357940673828125
+7,"As part of the reorganisation measures that will take place in spring 2006 , Tamglass Finton will start personnel negotiations that will affect its entire staff of 33 .",-1,-1,0.9758,0.02176499366760254
+8,tenaga 's 3q net profit soars 192% on lower icpt costs,1,1,0.9955,0.023746013641357422
+9,toyota seeking to halve japan car models as domestic market shrinks,-1,-1,0.9119,0.02456498146057129
+10,"JP Morgan expects that Scala will lower Nobel Biocare 's growth forecast for 2007 from the current guidance of 23-25 pct , as well as the operating margin target from the current 34-35 pct .",-1,-1,0.9799,0.023598194122314453
+11,"According to A-Rehu 's Managing Director , Jouko Lahtinen , the project will stabilise costs and improve supply security .",1,1,0.9961,0.02116084098815918
+12,"tabung haji denies deficit claim, says able to return all deposits",1,1,0.9955,0.02297496795654297
+13,UPDATE 3-Ex-Barclays director accused by US of illegal tips to plumber,-1,-1,0.9802,0.025754928588867188
+14,"Under a memorandum of understanding MoU the parties will collaborate in preparing and implementing joint projects in the fields of combined power and heat generation , environmental protection and energy efficient technologies .",1,1,0.994,0.02477574348449707
+15,higher sales sees concrete engineering products posting rm7.92m profit in 1q,1,1,0.9957,0.022227048873901367
+16,The repurchases shall decrease the distributable capital and reserves .,-1,-1,0.9753,0.022505998611450195
+17,"Glaston , headquartered in Tampere , Finland , is a growing , international glass technology company .",1,1,0.996,0.023375988006591797
+18,mrcb disposes of 40% interest in jvs to ekovest for rm8.5m,1,1,0.9942,0.02227187156677246
+19,customs cancel plan to extend gst to over 60 food items,1,1,0.9955,0.021687984466552734
+20,three-a resources' shares rise 6.6% following surge in 1q net profit,1,1,0.9953,0.020696640014648438
+21,"Finnair 's Tallinn-based subsidiary , Aero AS , carried 23,335 passengers , a decline of 60.8 % , on routes between Helsinki and the Baltic capitals and within Southern Finland .",-1,-1,0.9721,0.02210402488708496
+22,"Operating loss of the Pulp & Paper Machinery unit was over EUR 3mn in September 2007 - August 2008 , compared to a profit of EUR 3.7 mn a year earlier .",-1,-1,0.9599,0.020660877227783203
+23,united engineers ' fy17 earnings fall 36% to s$89.6 mil on discontinued operations,-1,-1,0.9745,0.02146601676940918
+24,fitch revises malaysian banks' outlook in 2016 to negative amid challenges,-1,-1,0.9807,0.021708965301513672
+25,Kone said in court papers that the union action delayed repairs to elevators at the federal courthouse on Jan. 21 and the Saltonstall state office building on Jan. 23 .,-1,-1,0.9779,0.021595001220703125
+26,"edra 's sale to foreign firms can lead to higher electricity tariff, says pkr",1,1,0.9956,0.020300865173339844
+27,plaza premium lounge named world 's best independent airport lounge for 2017,1,1,0.993,0.02031731605529785
+28,"bimb 's 4q net profit climbs 5.17% y-o-y, revenue up 16.12%",1,1,0.9944,0.020827054977416992
+29,"these 5 s ' pore-listed stocks could benefit from surprise delay in gst hike, says credit suisse",1,1,0.996,0.020843029022216797
+30,"Jobs will not be transferred from Finland , however .",1,1,0.9703,0.01968097686767578
+31,"tech stocks touch record highs, dollar steadies as trade fears ebb",-1,-1,0.972,0.02083301544189453
+32,lower liability cost could improve singapore banks ' net interest margins,1,1,0.9931,0.019804000854492188
+33,The social plan negotiations were part of the three year turn-around program which is expected to ensure Salomon 's future competitiveness .,1,1,0.9961,0.020212173461914062
+34,Shire in talks with Baxalta shareholders,1,1,0.9823,0.02096104621887207
+35,unusual says mulling ' corporate exercise ' in response to sgx query,1,1,0.9897,0.020905017852783203
+36,"pentamaster 's 2q net profit doubles on higher revenue, better product mix",1,1,0.9957,0.02279806137084961
+37,capitaland mall trust kept at ' buy ' in the face of new retail supply,1,1,0.9898,0.02118992805480957
+38,zecon to raise about rm6.5 mil from private placement for working capital,1,1,0.9962,0.020485877990722656
+39,TeliaSonera has secured deliveries for 4G modems with support for 3G and 2G during the second quarter 2010 .,1,1,0.997,0.021808147430419922
+40,roxy-pacific 's 4q earnings drop 39% to s$7.27m; declares final dividend of 0.771 s ' pore cents,-1,-1,0.9766,0.022402048110961914
+41,klci seen opening higher in line with global equities ' rally,1,1,0.9954,0.020487070083618164
+42,opus goodwill impairment drags uem edgenta into the red in 2q,1,1,0.9885,0.02031087875366211
+43,"hartalega, mahb shares surge as they join klci list, but fall of oil price hits dialog shares",1,1,0.9924,0.019816875457763672
+44,mrcb fixes issue price at rm1.09 for first tranche private placement shares,1,1,0.9955,0.020349979400634766
+45,pavilion reit to participate in ownership of pavilion bukit jalil mall,1,1,0.9959,0.020946979522705078
+46,airbus raises base prices of commercial planes by an average 2%,-1,-1,0.9406,0.02145099639892578
+47,csc 's fy18 seen to be weighed down mainly by weaker margins,-1,-1,0.9806,0.024116039276123047
+48,bank negara to cooperate with rci on central bank forex probe,-1,-1,0.9643,0.02312493324279785
+49,ytl power 's gas service agreement seen to be inked soon,1,1,0.9943,0.02156805992126465
+50,prg inks strategic agreement with china firm to undertake construction jobs,1,1,0.9967,0.02059006690979004
+51,Those will be partially offset by a 186 mln eur gain on the sale of its Celbi pulp plant in Portugal .,1,1,0.9935,0.021010875701904297
+52,"with china 's help, cambodia strongman set to extend 33-year rule",1,1,0.9957,0.020580768585205078
+53,rhb strategy for 2017: singapore medical group 's expansion into vietnam market is just the beginning,1,1,0.9959,0.020105838775634766
+54,pm najib: bukit bintang city centre ' significant national-level development ',1,1,0.9945,0.021072864532470703
+55,chew 's group shares down 3 s' pore cents on news of thunderstorm damage,-1,-1,0.979,0.02091217041015625
+56,external factors to hurt airasia 's earnings in fy17 to fy18 - cimb research,-1,-1,0.981,0.020807981491088867
+57,cover story: ' we took a negative final investment decision ',-1,-1,0.9786,0.01994609832763672
+58,emas offshore narrows 1q net loss on higher finance and other income,-1,-1,0.9705,0.019740819931030273
+59,"gadang 's 4q net profit climbs 20% on better margins, higher revenue",1,1,0.9953,0.02015376091003418
+60,"We also strengthen our existing partnership with Cybercom '' , says Teleste CTO Esko Myllyla .",1,1,0.997,0.021006107330322266
+61,"Earlier today , Geberit 's Finnish rival Uponor OYJ cut its full-year sales growth forecast to 6 pct from 10 pct , blaming tough conditions in Germany and the US , as well as currency factors .",-1,-1,0.9757,0.02054762840270996
+62,Sainsbury sales slip again as price pressures take a toll,-1,-1,0.9777,0.020708084106445312
+63,"hong kong home prices hit another record, but could face headwinds",-1,-1,0.9669,0.01999187469482422
+64,"FTSE 100 falls as China devaluation hits Burberry, mining stocks",-1,-1,0.9732,0.02077317237854004
+65,hong leong bank 4q net profit down 14% on year at rm483m,-1,1,0.989,0.02043890953063965
+66,"The offer , deemed too low by Finnlines ' board , stands until 4 pm tomorrow .",-1,-1,0.98,0.01988077163696289
+67,: Lietuvos Respublikos sveikatos apsaugos ministerija has awarded contract to UAB `` AFFECTO LIETUVA '' for financial systems software package .,1,1,0.9971,0.021586179733276367
+68,"fgv 's cfo ahmad tifli has replied to show-cause letter, remains on leave of absence",-1,-1,0.9798,0.020481109619140625
+69,"The number of permanent reductions of clerical workers is 22 employees , of which 19 in Finland .",-1,-1,0.9363,0.020051240921020508
+70,"bermaz auto sees strong start to fy19, pays 2.5 sen dividend",1,1,0.9968,0.021793127059936523
+71,11 August 2010 - Finnish measuring equipment maker Vaisala Oyj HEL : VAIAS said today that its net loss widened to EUR4 .8 m in the first half of 2010 from EUR2 .3 m in the corresponding period a year earlier .,-1,-1,0.9396,0.0211179256439209
+72,"poh huat 's 2q net profit falls 14.3%, declares 2 sen dividend",-1,-1,0.9691,0.020364046096801758
+73,"In addition to Russia , we now seek additional growth in Ukraine .",1,1,0.9968,0.020121097564697266
+74,marc assigns stable outlook to serba dinamik 's islamic commercial papers,1,1,0.9958,0.02075791358947754
+75,malaysia airlines to pass on psc savings to passengers on asean travel,1,1,0.9917,0.020240068435668945
+76,Layoffs will also take place at the Suomussalmi and Kuhmo plants this autumn as a result of codetermination negotiations held there .,-1,-1,0.9796,0.02101421356201172
+77,fbm klci up before erasing gains as financial reporting season nears conclusion,1,-1,0.896,0.020014047622680664
+78,Tesco leads leap in FTSE 100; Marks & Spencer drops,-1,1,0.985,0.019865751266479492
+79,singapore 's 3q gdp up 0.6% on year in advance estimates,1,1,0.9907,0.019598007202148438
+80,"Jawad Williams scored 23 points in an impressive debut for Jerusalem , with Jason Rich adding 18 and Yuval Naimi chipping in with 16 points for Hapoel , which visits the yellow-and-blue next week .",1,1,0.9914,0.02126288414001465
+81,hong kong 's fwd to buy hsbc 's stake in malaysian insurance venture - sources,1,1,0.9934,0.019626140594482422
+82,` Very recommendable ' is the Nokian Z G2 according to the ` ADAC judgement ' in the latest summer tyre test of the German automobile association ADAC .,1,1,0.9944,0.02068495750427246
+83,myix announces lower port fee to support local isps and others,1,1,0.9962,0.019902944564819336
+84,Legal & General arm buys 50 pct stake in MediaCityUK in Manchester,1,1,0.9944,0.020685195922851562
+85,Fewer multi-buys hurt Sainsbury's market share,-1,-1,0.9744,0.019723892211914062
+86,gas malaysia 's profit jumps in 2q on higher volume of natural gas sold,1,1,0.996,0.01976919174194336
+87,"midf research upgrades sunway construction to buy, raises target to rm1.32",1,1,0.9958,0.02188277244567871
+88,asia ex-japan may see a less bountiful 2018 after record year of bond transactions: debtwire,-1,-1,0.9794,0.021220922470092773
+89,"Outokumpu 's steel mill in Tornio , in Finland , is the suspected source .",-1,-1,0.9623,0.02059006690979004
+90,"Wartsila won the contract in October 2007 and the plant will be installed at Manturovo in the Kostroma region of Russia , about 600 km northeast of Moscow , Russia .",1,1,0.9959,0.021158933639526367
+91,thailand holds key rate as it keeps watch on volatile baht,1,1,0.9944,0.02074599266052246
+92,"MD Henning Bahr of Stockmann Gruppen praises the trend , since the chains become stronger and their decision-making processes more clear .",1,1,0.9961,0.020729780197143555
+93,cimb says it has zero tolerance for staff who misuse information or position,1,-1,0.9688,0.020078182220458984
+94,Aggreko 2015 Profit Declines - Quick Facts,-1,-1,0.9773,0.019848108291625977
+95,"The Finnish national carrier said net loss in April through June was euro26 million , down from a net profit of euro13 million a year earlier .",-1,-1,0.9643,0.021748065948486328
+96,"Finnish Ahlstrom Corporation will double its investments in a new specialty glassfiber reinforcement plant in South Carolina , in the US .",1,1,0.9962,0.021229982376098633
+97,sgx signs moi with imda to lower barriers for tech companies to access capital markets,1,1,0.9914,0.01948404312133789
+98,"( ADPnews ) - Nov 9 , 2009 - Four companies have agreed to buy for a combined SEK 5.9 billion ( USD 854m-EUR 571.8 m ) all drug stores offered for sale as part of the restructuring of Swedish stated-owned pharmacy monopoly Apoteket AB , t",1,1,0.9956,0.02041769027709961
+99,"nam cheong swings back to profitability in 1h18 post debt restructuring, resumes trading today",1,1,0.9952,0.02031087875366211
+100,"Profit for the period was EUR 9.8 mn , up from EUR 6.0 mn in 2004 .",1,1,0.9963,0.01950383186340332
+101,klci to remain lacklustre in line with overnight fall at global markets,-1,-1,0.9815,0.01997232437133789
+102,The main strength of the cooperation project lies in merging the know-how of two large companies .,1,1,0.9966,0.019427776336669922
+103,"manulife us reit placement ' well over-subscribed ', raises gross proceeds of us$80.5 mil",1,1,0.823,0.02074599266052246
+104,ytl power to develop rm8.42b jordan power plant with china 's yudean group,1,1,0.9961,0.019583940505981445
+105,airasia denies claims tony fernandes will resign to enter the financial technology sector,1,1,0.9607,0.02024388313293457
+106,"bright packaging 's 1q net loss widens on lower sales volume, forex losses",-1,-1,0.9692,0.020459890365600586
+107,"Elisa said mobile subscriptions grew 7 percent during 2007 , mainly because of customers adopting so-called third generation mobile technology .",1,1,0.9959,0.02015209197998047
+108,tasco venturing into cold chain logistics via rm188m buy of gold cold,-1,-1,0.9774,0.021349191665649414
+109,10 February 2011 - Finnish media company Sanoma Oyj HEL : SAA1V said yesterday its 2010 net profit almost tripled to EUR297 .3 m from EUR107 .1 m for 2009 and announced a proposal for a raised payout .,1,1,0.9961,0.021385908126831055
+110,"`` With this agreement , we can continue our good cooperationand at the same time release capital that has been tied up in ourmachinery operation .",1,1,0.9966,0.020073890686035156
+111,Finnish pharmaceuticals company Orion 's net sales rose to EUR 190mn in the first quarter of 2009 from EUR 180mn in the first quarter of 2008 .,1,1,0.9962,0.019977807998657227
+112,"Citigroup , Inc ( NYSE : C ) has announced that its Global Transaction Services ( GTS ) business has been awarded a new mandate by Finland-based Pohjola Bank Group .",1,1,0.9966,0.020128965377807617
+113,china jinjiang environment an opportunity to tap on fast-growing waste-to-energy market,1,1,0.9963,0.020043134689331055
+114,Finnair said that the cancellation of flights would cause daily losses of  x20ac 2.5 million US$ 3 million .,-1,-1,0.9724,0.02035999298095703
+115,"hlib research upgrades brahim ' s, raises target to 98 sen",1,1,0.9954,0.021561145782470703
+116,marc affirms sime darby plantation 's aaa rating with stable outlook,1,1,0.9956,0.021158695220947266
+117,Finnish automation solutions developer Cencorp Corporation ( OMX Helsinki : CNC1V ) said on Friday ( 27 June ) that it has completed employee negotiations regarding a reorganisation of its operations .,1,1,0.9946,0.022150039672851562
+118,"global airline share prices rose by 3.6% in october, says iata",1,1,0.9933,0.020801067352294922
+119,- Net sales for the period are expected to fall well below that of last year and the result after non-recurring items is expected to be in the red .,-1,-1,0.9763,0.02132701873779297
+120,hap seng plantations warns of lower fy18 earnings as 2q profit slumps 85%,-1,-1,0.9805,0.02263665199279785
+121,"likely special dividend by airasia from aac stake sale, says cimb research",1,1,0.9949,0.02395486831665039
+122,"Via the Satlan acquisition , Teleste plans to further expand its market presence as a video services partner for cable operators , broadcasters and IPTV service providers .",1,1,0.9965,0.02194809913635254
+123,"pricing, asset quality and cost-cutting the keys in mbsb-muamalat merger talks",1,1,0.9873,0.02432703971862793
+124,"ambank, rhb bank fall after moody 's report on proposed merger",-1,-1,0.98,0.020592212677001953
+125,Unilever Continues to Battle Soft Demand,-1,-1,0.972,0.021078109741210938
+126,banking sector seen on track for 5% loan growth in 2018,1,1,0.9955,0.01992201805114746
+127,"indonesia may need to keep hiking rates, but no crisis brewing - bank ceo",1,1,0.9899,0.019780874252319336
+128,"As a result , the company has decided it will implement fixed-term temporary lay-offs .",-1,-1,0.9778,0.020956993103027344
+129,parkway life reit posts 3.7% drop in 2q dpu to 3.19 cents on absence of one-off gains,-1,-1,0.9818,0.020783185958862305
+130,"how does helping a client sabotage an economy, asks lawyer in sosma case",1,1,0.9775,0.019469022750854492
+131,"UPDATE 1-Norway's Statoil shakes up top management, replaces CFO",-1,-1,0.9726,0.021232128143310547
+132,ram: local shippers to see keener competition following cabotage policy relaxation,-1,1,0.7723,0.02108597755432129
+133,dr m to bring in chinese car parts makers to improve local talent,1,1,0.9968,0.019643068313598633
+134,versatile creative terminated as main contractor for us$69.3m halal vaccine project,1,1,0.988,0.02179408073425293
+135,apple to start india manufacturing in coming months with iphone se - source,1,1,0.996,0.020114898681640625
+136,"`` Uncommonly weak snow conditions in nearly every market have affected our first quarter result , '' Chief Executive Roger Talermo said .",-1,-1,0.9766,0.019830942153930664
+137,affin hwang am cautions investors against ' chasing the market ' amid market rally,-1,-1,0.9748,0.02089667320251465
+138,"At the same time , sales development in Russia was boosted by the opening of Stockmann Nevsky Centre in St Petersburg .",1,1,0.9969,0.020544052124023438
+139,th heavy slumps 13.33% after auditor casts concern on future operations,-1,-1,0.98,0.019996166229248047
+140,The company also expects to sell its products in other Russian region .,1,1,0.9962,0.019961118698120117
+141,"It projected revenue of $ 2.2 billion to $ 2.3 billion , slightly higher than analyst estimates of $ 2.19 billion .",1,1,0.9933,0.0195770263671875
+142,"` Our strategic cooperation with Rentakran brings us new customers and already-working relationships with the authorities of the new territories , ' said Jarmo Laasanen , a senior manager at Cramo .",1,1,0.997,0.020632028579711914
+143,sgx refines surveillance system to allow greater unusual share trading movement,1,1,0.9932,0.021900177001953125
+144,yuan 's record weekly losing streak puts specter of 7 in play,-1,-1,0.9758,0.02239203453063965
+145,kps ups stake to 51% in firm awarded rm174m infrastructure job,1,1,0.9959,0.022026777267456055
+146,hap seng plantations to acquire smaller rival kretam for rm1.18b or 92 sen per share,1,1,0.995,0.02071404457092285
+147,f&n 3q net profit jumps 51% on higher contribution from malaysia and thailand,1,1,0.9961,0.020092248916625977
+148,"Therefore , the company 's 2005 result will remain weaker than that of 2004 .",-1,-1,0.9778,0.019449949264526367
+149,Barclays poaches new chief operating officer Paul Compton from JP Morgan Chase,1,1,0.9843,0.020130157470703125
+150,"hiring woes largely due to lack of online presence, suggests survey",-1,-1,0.9811,0.020129919052124023
+151,petronas slashes 2016 dividend by 38.5% to rm16b after sharp profit fall,-1,-1,0.9778,0.020272254943847656
+152,`` We 've been feeling quite positive about the region as a whole .,1,1,0.9938,0.019610881805419922
+153,"Lifetree was founded in 2000 , and its revenues have risen on an average by 40 % with margins in late 30s .",1,1,0.9959,0.019984960556030273
+154,"The apartment block will be well-located , in easy reach of the city center and close to both a school and kindergarten .",1,1,0.9948,0.019746065139770508
+155,"`` This vessel order will help Aspo secure the long-term competitiveness of its fleet , both in terms of technology and pricing .",1,1,0.9972,0.01956772804260254
+156,"Foundries division reports its sales increased by 9.7 % to EUR 63.1 mn from EUR 57.5 mn in the corresponding period in 2006 , and sales of the Machine Shop division increased by 16.4 % to EUR 41.2 mn from EUR 35.4 mn in the corresponding period in 2006 .",1,1,0.995,0.02080392837524414
+157,"According to Finnish Aktia Bank 's Managing Director Jussi Laitinen , the bank 's aim is to triple the number of its customers in Finland in the next five years .",1,1,0.9958,0.020355701446533203
+158,lotte chemical 2q net profit at rm315.03m vs rm113.62m on revenue of rm2.27b vs rm1.78b a year ago,1,1,0.9938,0.020666122436523438
+159,Operating profit was EUR 1.6 mn in 2005 compared to EUR 5.9 mn in 2004 .,-1,1,0.584,0.021648883819580078
+160,"In Finland , snow storms brought trees down on power lines , cutting off electricity for some 2,000 households .",-1,-1,0.9724,0.02102208137512207
+161,"Coca-Cola was the market leader of manufacturers with a market share of 36.9 % , down 2.2 % from the corresponding period in 2004-2005 .",-1,-1,0.9712,0.020606040954589844
+162,Operating profit in the fourth quarter fell to EUR33m from EUR39m a year earlier .,-1,-1,0.9727,0.02074909210205078
+163,"For the full 2010 the company expects its net sales and operating result to improve from the previous year , saying that a positive operating result and its amount will depend on the order intake by the end of the summer .",1,1,0.9964,0.020277976989746094
+164,Britain cuts Lloyds Banking Group stake to below 17 pct,-1,-1,0.9772,0.020360231399536133
+165,"Finnish Sampo Bank , of Danish Danske Bank group , reports profit before taxes of EUR 152.3 mn in 2010 , up from EUR 32.7 mn in 2009 .",1,1,0.9953,0.021108150482177734
+166,"sinmah capital to go into property development, forms jv with encorp",1,1,0.9961,0.020754098892211914
+167,Nokia - the world 's largest mobile phone manufacturer - and China Postel - China 's largest mobile phone distributor - have a long-standing partnership that continues to grow stronger over time .,1,1,0.9964,0.02205491065979004
+168,bumi armada reports rm124m 3q net profit on better fpso businesses,1,1,0.996,0.020250797271728516
+169,gic in talks to buy stake in us clinical trials firm: sources,1,1,0.9941,0.019423961639404297
+170,bertam alliance unit served notice of demand for payment of rm4.57m and continuing interest,1,1,0.9968,0.020930051803588867
+171,malaysia drops four spots to 23rd place in global ip protection,-1,-1,0.9792,0.019987106323242188
+172,"`` BasWare 's product sales grew strongly in the financial period , by 24 percent .",1,1,0.996,0.02028489112854004
+173,"macc to record  statements from fgv 's mohd isa, senior management",-1,-1,0.9426,0.02048802375793457
+174,Activist Fund TCI Backs German Takeover of London Stock Exchange,1,1,0.991,0.020242929458618164
+175,guocoland 1q net profit down 99% on absence of fair value gain,1,1,0.9942,0.020387887954711914
+176,most se asian stocks fall; indonesian shares slide as rupiah slumps,-1,-1,0.9764,0.01963520050048828
+177,"Operating margin , however , slipped to 14.4 % from 15.1 % , dragged down by a poor performance in enterprise solutions .",-1,-1,0.976,0.02150726318359375
+178,"The subscriptions increase Cargotec 's share capital by 36,780 euros .",1,1,0.9961,0.020756006240844727
+179,Small investors have voiced fears that the shares will end up with risk investors .,-1,-1,0.9808,0.01918315887451172
+180,mk land unit slapped with irb lawsuit over rm26.98m tax claim,-1,-1,0.9817,0.020310163497924805
+181,"`` They would invest not only in the physical infrastructure , but would also provide know-how for managing and developing science and technology parks , '' said Sunrise Valley director Andrius Bagdonas .",1,1,0.9967,0.021383047103881836
+182,GlaxoSmithKline set to complete $20 billion Novartis asset swap next week,1,1,0.9897,0.02194976806640625
+183,AstraZeneca profit down as sales of stalwarts fade,-1,-1,0.9714,0.022145748138427734
+184,"higher oil price may boost knm momentum, says public ib research",1,1,0.9957,0.026852130889892578
+185,malaysia airlines converts 737 max 8s order for 10 737 max 10s,1,1,0.9952,0.03377795219421387
+186,oil speculators bet rally 's over as doubts grow on output freeze,-1,-1,0.9815,0.02296304702758789
+187,"klci halts ascend, tracks regional markets on u.s.-china trade war woes",-1,-1,0.9792,0.022937297821044922
+188,cimb niaga 's loan growth is targeted to pick up this year,1,1,0.9965,0.020609140396118164
+189,hong leong ib: george kent in ' prime position ' for kl-singapore hsr bid,1,1,0.9966,0.021317005157470703
+190,informatics education reports 24% fall in 3q earnings to s$0.8 mil,-1,-1,0.9746,0.020920753479003906
+191,CompaniesLord Livingston joins Dixons Carphone,1,1,0.9929,0.020700931549072266
+192,"Comparable net sales are expected to increase more than 10 % in 2008 , in line with group target .",1,1,0.9964,0.019895076751708984
+193,"As a result , the distribution companies will start to distribute , in addition to their current product offering , Shimano reels , rods and other Shimano fishing tackle products on an exclusive basis .",1,1,0.9964,0.02072310447692871
+194,klci falls 13.92 points as local stocks catch up with regional decline,-1,-1,0.9718,0.01982903480529785
+195,federal court rules statements recorded by sc are protected from disclosure,1,1,0.988,0.019780874252319336
+196,gd express 3q net profit up 9.28% on higher courier services demand,1,1,0.9951,0.01959514617919922
+197,"As a result , the Russia 's import restrictions on Finnish dairy companies will be canceled on 6 August 2010 .",1,-1,0.9741,0.019891977310180664
+198,china to pull approval for facebook 's planned venture - nyt,1,1,0.996,0.01976919174194336
+199,Both loans will be used to finance strategic investments such as shopping center redevelopment projects and refinancing of maturing debt .,1,1,0.9961,0.020163774490356445
+200,bain files for china antitrust approval on us$18b toshiba chips deal - source,-1,-1,0.9725,0.019429922103881836
+201,CompaniesG4S claims 'positive' start to the year,1,1,0.9967,0.01963210105895996
+202,ecoworld to hand over aurora and basalta @ eco sky by this year-end,-1,-1,0.8926,0.019623756408691406
+203,"bison 's 2q net profit at rm4m, declares 1.5 sen dividend",1,1,0.9939,0.01982903480529785
+204,"Systeemitiimi 's sales and project resources will also be strengthened , director Paul Skogberg said .",1,1,0.9966,0.019996166229248047
+205,"`` The change will optimize the operational efficiencies of our growing business , '' said Julia Prohaska , director of marketing communications for Fiskars .",1,1,0.9961,0.020084857940673828
+206,advance synergy 's unit completes investment in vietnam 's top mobile service provider,1,1,0.9965,0.020087718963623047
+207,"' foreign buying loses traction, falls to lowest this year '",-1,-1,0.972,0.019936084747314453
+208,rubberex 2q net profit down 36% on higher costs of production,-1,1,0.9859,0.01985788345336914
+209,ccm duopharma 's gearing to rise to 0.87 times on rm280m financial facilities,-1,1,0.9915,0.020470142364501953
+210,mudajaya signs 21-year ppa with tnb to build solar plant in perak,1,1,0.996,0.020002126693725586
+211,sin hee yang property group launches four new projects in bandar baru salak tinggi,1,1,0.9966,0.01976299285888672
+212,"from anime to m&a, how netflix plans to spend us$8 bil in 2018",1,1,0.9955,0.019661903381347656
+213,UPDATE 1-Seattle flotilla protests Shell's Arctic drilling plans,-1,-1,0.9789,0.020496129989624023
+214,"Finnish electronics manufacturing services EMS company Elcoteq SE posted a net loss of 66.4 mln euro $ 91.2 mln for the first half of 2007 , compared to a net profit of 7.1 mln euro $ 9.8 mln for the same period of 2006 .",-1,-1,0.9582,0.020769119262695312
+215,Barclays in $13.75 million US settlement over mutual funds,-1,-1,0.9735,0.0198972225189209
+216,"Net sales rose by 25.5 % year-on-year to EUR59 .6 m , as the number of chargers delivered went up by 41 % to 65.9 million pieces .",1,1,0.9957,0.019731998443603516
+217,GSK joins China trade push as UK trumpets healthcare deals,1,1,0.9957,0.020032167434692383
+218,Smith & Nephew recalls hip-replacement components,-1,-1,0.9748,0.019778013229370117
+219,Currency causes full-year headaches for SABMiller,-1,-1,0.9785,0.019887924194335938
+220,Lloyds Banking Group to cut 640 jobs and close 23 branches,1,-1,0.94,0.019433021545410156
+221,"impairment loss pulls misc 4q net profit down 87%, pays nine sen dividend",-1,-1,0.973,0.0428469181060791
+222,"sc ticks multi sports off for submitting false, misleading financial statements",-1,-1,0.9775,0.09325170516967773
+223,"aax active, falls 1.30% after mahb starts legal action for airport fees",1,-1,0.9764,0.07649707794189453
+224,"samchem 1q earnings up 38% on higher sales, higher profit margin",1,1,0.9925,0.05651211738586426
+225,china 's home prices rise in fewer cities as curbs on buyers bite,1,1,0.9851,0.03492307662963867
+226,"analysts still see upside for tnb, as share price approaches record high",-1,1,0.9734,0.029642105102539062
+227,"falcon bank: singapore branch shutdown regrettable, but confidence in future remains",-1,-1,0.9738,0.02476215362548828
+228,"Both operating profit and net sales for the three-month period increased , respectively from EUR16 .0 m and EUR139m , as compared to the corresponding quarter in 2006 .",1,1,0.9961,0.024930953979492188
+229,British American Tobacco drops and sues PwC over pollution scandal,-1,-1,0.9803,0.021830081939697266
+230,"immediate hurdle for ideal jacobs at 29.5 sen, says alliancedbs research",-1,-1,0.9787,0.023218870162963867
+231,cwk group banks on mrt for wisma aman elite in cheras,1,1,0.9947,0.02295088768005371
+232,The parties have also agreed on options that allow UH to extensively implement later on also functionalities of human resources management .,1,1,0.9966,0.0224459171295166
+233,The Coca-Cola Company and Coca-Cola FEMSA to Acquire AdeS Soy-Based Beverage Business From Unilever,1,1,0.9949,0.023194074630737305
+234,"2010 16 July 2010 - Finnish steel maker Rautaruukki Oyj HEL : RTRKS , or Ruukki , said today it turned to a net profit of EUR20m in the second quarter of 2010 from a net loss of EUR94m in the corresponding period last year .",1,1,0.9961,0.026671171188354492
+235,"klci rises 0.5%, continues to climb toward next resistance of 1,727",1,1,0.9928,0.022430896759033203
+236,"unless i am completely absent from cimb, the bank cannot operate at its highest level of integrity, says nazir",-1,-1,0.9751,0.023415088653564453
+237,Industry NewsHammerson joint venture buys Dublin loan portfolio,1,1,0.996,0.030060768127441406
+238,The contract was signed in August with Papua New Guinea-based Lihir Gold Ltd ASX : LGL .,1,1,0.9954,0.023461103439331055
+239,"`` Several growth initiatives in the chosen geographic areas are already ongoing , '' it continued , noting Lindex opened its first store in the Czech Republic this autumn in Brno .",1,1,0.9969,0.03000807762145996
+240,fbm klci continues to pare gains but remains in positive territory,1,1,0.9932,0.022434711456298828
+241,cityneon signs term sheet for running of marvel 's avengers exhibitions in australia,-1,-1,0.9344,0.022057056427001953
+242,Exxon Beaumont CDU overhaul to be slowed by accident: sources,-1,-1,0.9787,0.023374080657958984
+243,china aviation oil posts 4.7% rise in 1q earnings to s$35.4 mil,1,1,0.9946,0.02172398567199707
+244,This is the first time Finnair has been awarded an agreement with the UK government .,1,1,0.9963,0.021027088165283203
+245,"According to Arokarhu , some of the purchases that had been scanned into the cash register computer disappeared when the total sum key was pressed .",-1,-1,0.969,0.022092103958129883
+246,Tullow Oil eyes lower earnings as output falls,-1,-1,0.9811,0.021485090255737305
+247,mulpha international 's 3q net profit falls 16% on lower sales,-1,-1,0.9694,0.02048492431640625
+248,"Global sports equipment maker Amer Sports Corp. , whose brands include Atomic , Salomon and Wilson , saw a 64 percent increase in third-quarter net profit to EURO 47.4 million $ 65 million on strong sales and cost cuts .",1,1,0.9964,0.021239042282104492
+249,"immediate support for eg industries at 83 sen, says alliancedbs research",1,1,0.9966,0.02207183837890625
+250,Cuadrilla files to delay application to frack in Lancashire,-1,-1,0.9828,0.021345138549804688
+251,The rebuilds are designed to improve the machines ' performance and product quality .,1,1,0.9958,0.022356033325195312
+252,important for ph to win big in sg kandis - syed saddiq,1,1,0.9951,0.023407697677612305
+253,Asian traffic declined by 3.4 per cent .,-1,-1,0.9772,0.0236361026763916
+254,"malaysia headline inflation to pick up to 3.5% in 2017, says rhb research",-1,1,0.9899,0.024638891220092773
+255,"no gaming tax hike; tobacco tax boost unlikely, says ambank research",1,1,0.9929,0.02351999282836914
+256,Kalmar has been awarded a new 5-year contract to supply its Rough Terrain Container Handler RTCH .,1,1,0.9965,0.024158239364624023
+257,"lower revenue, higher operating costs keep bintai kinden in the red in 1q",-1,-1,0.9753,0.022135019302368164
+258,"oldtown 's 3q earnings fall 23% on lower revenue, higher expenses; pays 3 sen dividend",-1,-1,0.9783,0.021099090576171875
+259,"Due to market conditions , the company will also temporarily lay off about 3,200 people at different sites .",-1,-1,0.9781,0.02178192138671875
+260,ram puts rm845m mrcb southern link sukuk on negative rating watch,-1,-1,0.9811,0.02165079116821289
+261,"aeon credit 's 2q net profit up 29%, declares 21.13 sen dividend per share",1,1,0.993,0.02261972427368164
+262,eco world bags aon best of the best employer in malaysia,1,1,0.9958,0.021336078643798828
+263,"press metal 1q net profit up 56.6%, pays 1.5 sen dividend",1,1,0.9939,0.02058696746826172
+264,"wheat falls for 2nd day on ample world supplies, soybeans dip",-1,-1,0.9761,0.0210721492767334
+265,uob : potential m&a deals to anchor earnings for malaysian telcos,1,1,0.9966,0.02064800262451172
+266,"Finnish pharmaceuticals company Orion reports profit before taxes of EUR 70.0 mn in the third quarter of 2010 , up from EUR 54.9 mn in the corresponding period in 2009 .",1,1,0.9958,0.021007776260375977
+267,"proton sale: dr m laments ' my child is lost, and soon my country '",-1,-1,0.9682,0.02228403091430664
+268,BP Judge Urged to Impose $11.7 Billion-Plus Spill Fine,-1,-1,0.9803,0.020516157150268555
+269,straits trading buys stake in sydney office building for s$122.7 mil,1,1,0.9949,0.019787073135375977
+270,"( ADP News ) - Jan 27 , 2009 - Finnish industrial machinery company Vaahto Group Ltd Oyj ( HEL : WAT1S ) said today that its subsidiary Vaahto Ltd would cut 15 jobs in Finland .",-1,-1,0.973,0.02036595344543457
+271,caring pharmacy 's 4q net profit jumped 59.2% on higher sales,1,1,0.9953,0.020831823348999023
+272,buildtech yangon synergises the development of a green network in myanmar,1,1,0.997,0.020416975021362305
+273,"petgas' 3q slides 27.14% on forex loss, pays 15 sen dividend",-1,-1,0.9768,0.0199282169342041
+274,ja solar to begin exporting solar cells from malaysia next month,1,1,0.9962,0.020126819610595703
+275,aax inks instructor services agreement with asian aviation centre of excellence,1,1,0.9963,0.021290063858032227
+276,synergies seen from mmc corp 's full acquisition of penang ports,1,1,0.9953,0.022207260131835938
+277,"Last month , Outokumpu sold more than 80 percent of its technology unit , Outokumpu Technology Oyj , to further its strategic goal of becoming the world 's largest stainless steel maker .",1,1,0.9947,0.020663022994995117
+278,Royal Dutch Shell Posts Rise in Earnings Despite Lower Oil Prices,1,1,0.9929,0.020454883575439453
+279,"felda global active, falls 10% on report of proposed steering committee",-1,-1,0.9794,0.021476030349731445
+280,right time for tiong nam to go for warehouse reit listing,1,1,0.9951,0.01929783821105957
+281,"ivory properties eyes 40-45% gross profit from penang times square 's phases four, five",1,1,0.9933,0.019826173782348633
+282,"hlib downgrades mbm to hold, cuts fy15 earnings forecast by 34.8%",-1,-1,0.9812,0.02043437957763672
+283,Full-year operating result for 2008 was 3.6 million negative .,-1,-1,0.9743,0.020439863204956055
+284,"world stocks slip for third day as trade, emerging market worries bite",-1,-1,0.9824,0.0198361873626709
+285,Trading ExpertBROKER RECOMMENDATIONSUBS ups RBS to 'buy' as it re-initiates coverage on UK banks,1,1,0.9928,0.019526958465576172
+286,Domino's Pizza worker sacked after crude slur aimed at customer on order screen,-1,-1,0.9786,0.019894838333129883
+287,"attack only serves to strengthen bursa 's resolve to uphold transparency, corporate governance",-1,-1,0.9605,0.020124197006225586
+288,HELSINKI AFX - KCI Konecranes said it has won an order for four hot metal ladle cranes from Indian steel producer Bhushan Steel and Strips Ltd. .,1,1,0.9967,0.0203857421875
+289,"The company 's annual loss amounted to EEK 18mn , compared to a profit of EEK 7.3 mn in 2008 .",-1,-1,0.9538,0.019642114639282227
+290,Royal Dutch Shell profit rises; dividend up 4%,1,1,0.9955,0.019613027572631836
+291,"It provides customers with industry-leading elevators , escalators and innovative solutions for maintenance and modernization .",1,1,0.9967,0.02029585838317871
+292,"klci expected to stay below 1,720-level as bears remain in control",1,1,0.9887,0.019395828247070312
+293,"top glove 3q net profit forecast to be weaker q-o-q, says affinhwang capital",1,-1,0.8852,0.01988816261291504
+294,"UPDATE 3-BP settles oil spill-related claims with Halliburton, Transocean",-1,-1,0.8896,0.020285844802856445
+295,"UPDATE 2-AB InBev launches SAB bid, to sell MillerCoors stake",-1,1,0.9904,0.019731760025024414
+296,"lower loan impairment allowance, higher loan recovery push affin 's 1q profit up by 284%",1,1,0.9955,0.01983499526977539
+297,"`` P&O Ferries now has a very efficient and powerful vessel for its Dover to Calais route , '' head of the shipbuilder 's Rauma yard , Timo Suistio , said .",1,1,0.9963,0.020346879959106445
+298,A memorandum of understanding on cooperation between the Finnish Global Chemical Company KEMIRA and Vietnam National Chemicals Group ( Vinachem ) was signed on this occasion .,1,1,0.9942,0.020370960235595703
+299,"hong leong bank, public bank among top gainers after malaysia rate hike",1,1,0.9942,0.019472122192382812
+300,wall street 's bet on global currencies is bloodied with the dollar soaring,-1,-1,0.9543,0.019912242889404297
+301,"ipic says ' will make a written demand' to recover money from malaysia 's mof inc, 1mdb",1,1,0.9946,0.020374774932861328
+302,"Buffett's Berkshire builds Deere stake, dumps Exxon",-1,-1,0.9694,0.020298004150390625
+303,"ekovest gets unanimous shareholders' approval for proposed duke disposal, share split",1,1,0.9966,0.019613981246948242
+304,Johnson Matthey raises prospect of investor payout,1,1,0.9962,0.02029585838317871
+305,uob: ringgit to fluctuate at usd/myr 4.1 to 4.4 but stronger towards year end,1,1,0.9898,0.01904606819152832
+306,priceworth says price tag for logging concession is 67% less than market value,-1,-1,0.9345,0.019545793533325195
+307,Persimmon shares nudge higher as housebuilder sees strong 2014,1,1,0.9962,0.02077317237854004
+308,ringgit weakens 0.32% against us dollar as oil falls below us$30 per barrel,-1,-1,0.972,0.02237987518310547
+309,mrcb bags rm3.1b contract to build commercial project in kwasa damansara,1,1,0.9961,0.057901859283447266
+310,"singapore private home sales rise 7.9% to 1,121 in may from a year ago",1,1,0.9952,0.028474807739257812
+311,"forest city residential units offered in exchange for investments in china, says azmin",1,1,0.9962,0.02915787696838379
+312,"don' t blame proton for high car prices, says dr mahathir",1,1,0.9931,0.03863978385925293
+313,Johnson Matthey profit lifted by metals unit sale,1,1,0.9956,0.06361007690429688
+314,"klci to start final week of 2015 on positive note, tight 1,660-1770 band seen",1,1,0.9859,0.06527924537658691
+315,"econpile bags rm570m job from malton, reports 29% rise in 2q profit",1,1,0.9959,0.02914285659790039
+316,`` Those uncertainties cloud the long-term outlook . '',-1,-1,0.9789,0.02656698226928711
+317,external auditors express uncertainty over hb global 's ability to continue as going concern,-1,-1,0.9805,0.0422060489654541
+318,Sales of security and system packaging increased slightly .,1,1,0.9922,0.04197883605957031
+319,Applying for summer work is seen as laborious and stressful .,-1,-1,0.9786,0.1087801456451416
+320,"1mdb agrees to arbitration request filed by ipic, aabar over us$6.5b claim",-1,-1,0.978,0.06062579154968262
+321,600 workers were not fired to offset minimum wage hike - hartalega,1,-1,0.773,0.026515960693359375
+322,ahmad zaki 's 4q net profit grows 38% on stronger construction income,1,1,0.9963,0.02390766143798828
+323,oue says group approached to purchase ue shares but is not in talks,1,1,0.9779,0.025272130966186523
+324,thai premier sees elections early next year to end military rule,1,1,0.9773,0.023060083389282227
+325,"Dealers said the share was largely hit by investor disappointment about a refining margin of just 9.48 usd per barrel for the quarter and the performance of its shipping unit , which saw EBIT drop to 5 mln eur from 20 mln eur a year amid a fall in volumes and tanker rates .",-1,-1,0.9766,0.02408909797668457
+326,"Finnish software and hardware developer Elektrobit Oyj HEL : EBG1V , or EB , said today it will temporarily lay off up to 200 people for a maximum of 90 day in Finland , aiming to achieve cost savings of EUR 1.7 million USD 2m in the second half of 2010 .",-1,-1,0.9718,0.021610021591186523
+327,"capitaland 2q npi down slightly at rm59.8m, declares 2.06 sen dpu",-1,-1,0.9793,0.02263784408569336
+328,raffles education stays in the red in 9m ended march on challenging business environment,1,1,0.9916,0.02200603485107422
+329,"The Baltimore Police and Fire Pension , which has about $ 1.5 billion , lost about $ 3.5 million in Madoff Ponzi scheme .",-1,-1,0.9742,0.022708892822265625
+330,al-salam reit to buy mydin hypermarket in terengganu for rm155 mil,1,1,0.9957,0.021892786026000977
+331,jho low family dealt setback in move to claim assets in 1mdb probe,-1,-1,0.9807,0.02484297752380371
+332,hong kong stocks fall to near 7-month low as yuan 's slide adds to china growth fears,-1,-1,0.9756,0.023378849029541016
+333,LONDON MORNING BRIEFING: HSBC And Standard Chartered Shares Rise,1,1,0.9935,0.022011995315551758
+334,"jho low used 1mdb money to gift us$325,000 ferrari for kim kardashian - report",1,1,0.9948,0.02174997329711914
+335,"westports 3q net profit up 16% on higher cargo volume, revised tariff",1,1,0.9947,0.02314615249633789
+336,hlfg 's 2q net profit up 12% on higher commercial banking contributions,1,1,0.9949,0.021973848342895508
+337,"all outstanding aes summonses worth rm435m to be cancelled, govt to take over system -- mot",1,1,0.9697,0.023401975631713867
+338,"Additionally , the company will terminate a maximum nine salaried and senior salaried employees ' employment contracts .",-1,-1,0.9723,0.0236968994140625
+339,"Cuts equivalent to the costs of about 35-45 employees are the target , the company said .",-1,-1,0.9756,0.021755218505859375
+340,"stop blame game, just fix lopsided concessions, ku li tells putrajaya",1,1,0.9885,0.022652864456176758
+341,Net sales revenue per passenger is expected to increase .,1,1,0.9962,0.021631956100463867
+342,UK's FTSE hits new record highs as CRH climbs,1,1,0.9875,0.022886037826538086
+343,"three sgx-listed hotel, restaurant & leisure stocks worthy of the global stage",1,1,0.9938,0.024989843368530273
+344,sasbadi eyeing one acquisition per year to strengthen its dominant position,1,1,0.9965,0.024994850158691406
+345,"According to Nordic financial group Nordea 's analyst Sami Sarkamies , this makes Nokia 's portfolio competitive again .",1,1,0.9948,0.023663997650146484
+346,Asahi could be about to snap up more of SABMiller's beers ahead of AB InBev sale,1,1,0.9861,0.022565126419067383
+347,saudi minister says current oil price to soon spur demand growth,1,1,0.9941,0.022593021392822266
+348,"Quarterly diluted EPS on continuing operations came in at 0.21 eur , compared with last year 's 0.12 eur .",1,1,0.9847,0.022138118743896484
+349,"luxchem 's 4q net profit more than doubles, proposes 4.5 sen dividend",1,1,0.9948,0.021878957748413086
+350,malaysia gst will not be raised after ge14 - dpm zahid,-1,-1,0.9639,0.0217893123626709
+351,capitaland raises s$2 bil to establish third raffles city china private equity vehicle,1,1,0.9965,0.021960020065307617
+352,utusan melayu 2q net loss down 34% on lower total costs,-1,-1,0.9705,0.022553682327270508
+353,knight frank: malaysia home price growth 5th fastest in asia pacific from 2012-17,-1,1,0.9922,0.021682024002075195
+354,Sophos aims to raise $100m in London IPO,1,1,0.996,0.021816253662109375
+355,"agreement with SHB 30 December 2009 - Finnish financial services group Aktia HEL : AKTAV has concluded a market making agreement with Svenska Handelsbanken STO : SHB A , or SHB , the two parties said today .",1,1,0.9963,0.022518157958984375
+356,"Israeli cable network operator HOT Telecom has chosen Teleste , an international technology group , as its exclusive provider of FTTx equipment in Israel , according to Teleste today .",1,1,0.9967,0.02220916748046875
+357,"igb reit 's latest results above expectations, profit rises 8.3% y-o-y",1,1,0.9958,0.022318124771118164
+358,hot weekend demand for hong kong units as market yet to cool,1,1,0.991,0.02147507667541504
+359,i-bhd 's 3q net profit slips 12.7%; stays confident of commendable fy17 results,-1,-1,0.9305,0.022738933563232422
+360,"challenge accepted: singtel launches first mobile plans with unlimited data, talktime and sms",1,1,0.9966,0.022172927856445312
+361,"mpi 's 1q net profit surges 136%, pays eight sen dividend",1,1,0.9943,0.02216792106628418
+362,Operating profit rose to EUR2 .4 m from EUR1 .6 m year earlier .,1,1,0.9964,0.02154684066772461
+363,singapore property prices tick up but developers may face difficulty raising prices by much,-1,-1,0.9773,0.021319866180419922
+364,"The decision to sell a share in Lenenergo was reached in line with Fortum 's strategic plans to invest mainly in generating assets in Russia , while Lenenergo is a grid company , the press release said .",1,1,0.9959,0.02176690101623535
+365,velesto 's successful claim against frontier seen to lower finance costs,-1,-1,0.9603,0.021836042404174805
+366,"fitch downgrades petronas long-term credit ratings to ' a-', after m'sia 's downgrade",-1,-1,0.9812,0.02230215072631836
+367,"Valeant, AstraZeneca strike psoriasis drug deal",1,1,0.9935,0.02273106575012207
+368,stocks rise after sell-off; yields up on comments by fed chair,1,1,0.9931,0.02063298225402832
+369,skittish start for klci ahead of bank negara mpc meet on friday,1,1,0.7193,0.02171492576599121
+370,Nokia and Elisa will work together to bring a superior mobile gaming experience for Elisa customers .,1,1,0.997,0.021695852279663086
+371,united plantations' 2q net profit up 3.8% on lower tax expenses,1,1,0.9929,0.021025657653808594
+372,"Biohit said that it will reduce the number of leased personnel by 10 , and lay off 10 of its own personnel .",-1,-1,0.9746,0.021990060806274414
+373,"china 's overseas property purchases, investments slump as capital controls bite",-1,-1,0.9802,0.020636796951293945
+374,"The Ministry of Water in Tanzania has awarded Poyry a water and sanitation engineering assignment for the rehabilitation and extension of water supply and sanitation infrastructure in Bukoba and Musoma , situated at Lake Victoria in northern Tanzania .",1,1,0.9965,0.02250385284423828
+375,"batu kawan 's 1q net profit triples on higher revenue, land disposal",1,1,0.9952,0.0760047435760498
+376,multi sports holdings aims to issue outstanding financial reports by june 30,1,1,0.9958,0.040146827697753906
+377,"The period 's sales dropped to EUR30 .6 m from EUR38 .3 m , according to the interim report , released today .",-1,-1,0.9745,0.03731417655944824
+378,aax soars as much as 6.76% after fernandes said 2018 will be a huge year,1,1,0.9956,0.026646137237548828
+379,Expense ratio was 102.6 % compared to 92.9 % in the corresponding period in 2005 .,-1,-1,0.9737,0.02252483367919922
+380,shahrir samad confident of local act protecting citizens' data from tpp,1,1,0.9954,0.022322893142700195
+381,china galaxy becomes joint shareholder of cimb 's int ' l stockbroking business for rm515m,1,1,0.995,0.025573253631591797
+382,"Belarus OAO Lidskoe Pivo brewery , based in the Grodno Region , reported a 1.1 % decrease in output to 1.045 million decaliters in January-March 2010 , a representative in the administration of the company told .",-1,-1,0.9742,0.024686098098754883
+383,"those who suffer from critical illness will likely face it again, how to protect yourself from this?",1,-1,0.6857,0.024302005767822266
+384,goldman 's call turns cathay into hong kong 's hottest stock,1,1,0.9891,0.0234832763671875
+385,hwang capital 's 4q net profit falls 17.3% on lower contribution from all businesses,1,-1,0.967,0.023843050003051758
+386,"Vaahto Pulp & Paper , of Finnish Vaahto Group , has been awarded an order to renovate Finnish-Swedish forest industry company Stora Enso 's paperboard machine at the Ingerois Board Mill in Finland .",1,1,0.9959,0.023268938064575195
+387,The company 's previous estimate was for a lower revenue than the year-ago EUR 93.9 million .,-1,-1,0.9771,0.023808956146240234
+388,BP to pay investors $175m over Gulf spill claims,-1,-1,0.9814,0.025979995727539062
+389,"klci to trade range bound with upside bias, hover above 1,790 level",1,1,0.9842,0.026463985443115234
+390,"macc probes felda 's fic again, this time over a kuching hotel buy",-1,-1,0.9802,0.026386022567749023
+391,Warren Buffett defends Berkshire Hathaway's conglomerate structure,1,1,0.989,0.030292034149169922
+392,Acquisitions have been made and businesses have been well integrated .,1,1,0.9963,0.030189037322998047
+393,afg expects loans to grow by mid-single digit in fy18 - ceo,1,1,0.9965,0.027025938034057617
+394,uk recoups taxpayer funds in us$15b bradford & bingley loans sale,1,1,0.9896,0.024160146713256836
+395,AstraZeneca chases Acerta to secure next cancer drug winner,1,1,0.9928,0.02475905418395996
+396,poh kong 's 2q net profit falls 77% on weak jewellery demand,-1,-1,0.9696,0.02147817611694336
+397,sarawak plantation 's 4qfy15 earnings down 87.7% on impairment loss reversal,-1,-1,0.978,0.025089740753173828
+398,The Finnish company previously said its operating result will be lower than the break-even posted a year earlier .,-1,-1,0.9803,0.025022029876708984
+399,"Biohit and VWR have been in close cooperation for a number of years in the US , where Biohit is one of VWR 's focus suppliers .",1,1,0.9963,0.023118019104003906
+400,hb global 's auditor casts doubt on group 's ability to continue as going concern,-1,-1,0.9794,0.02272486686706543
+401,"as trump 's cue cheers markets, north korea missile tests sentiment",1,1,0.9875,0.02278900146484375
+402,Glencore raises $2.5bn through share placing to help cut debt load,1,1,0.9955,0.022485017776489258
+403,Morrisons helps FTSE edge higher energy shares slip,1,1,0.9961,0.023344755172729492
+404,ARM swings to profit in fourth quarter,1,1,0.995,0.023301124572753906
+405,AstraZeneca Acquires ZS Pharma in $2.7 Billion Deal,1,1,0.9952,0.024129867553710938
+406,"Sales in Latin America increased by 42 % to EUR 432mn , and a total of 8.7 mn mobile devices were sold in the area , representing an increase of 32 % from the corresponding period in 2009 .",1,1,0.9957,0.022945165634155273
+407,economic report 2016/17: close to half a million malaysians need debt counselling,-1,-1,0.9815,0.02192521095275879
+408,tiong nam 1q net profit jumps on growth in logistics and warehousing services,1,1,0.9963,0.0220491886138916
+409,capitaland got a boost from its china properties in 4q but will it last?,1,1,0.9959,0.021485090255737305
+410,UPDATE 1-Shire takes Q2 earnings pain for long-term gain,-1,-1,0.9768,0.02143573760986328
+411,The estimated synergy benefits are at least EUR7m annually .,1,1,0.9963,0.021654129028320312
+412,We look forward to helping the company develop its operational services and further digitalize its services for its customers . '',1,1,0.9966,0.021105051040649414
+413,vallianz says swiber developments have impact on business but ' situation is manageable',1,1,0.9948,0.022703886032104492
+414,"Finnish forest machinery and equipment maker Ponsse Oyj said on October 5 , 2007 it will deliver a total of 67 cut-to-length method forest machines and 44 harvester heads to Brazilian paper maker Bahia Pulp and to unnamed Uruguayan wood harvesting contractors .",1,1,0.996,0.022844791412353516
+415,appasia in big data venture with pm 's son nazifuddin and china firm,1,1,0.9959,0.023867130279541016
+416,"Glencore 2014 profit in line, takes $1.1 billion charge on commodity prices",1,1,0.9955,0.022432804107666016
+417,"Kai Tulonen , Chief Technology Officer , SysOpen Digia says : `` We have been using Corporate Phonebook inside SysOpen Digia extensively since last fall , and we have been very satisfied with the results .",1,1,0.9948,0.025413990020751953
+418,newsbreak: ' national bank of abu dhabi malaysia to close this year',-1,-1,0.9689,0.023718833923339844
+419,"Can Standard Chartered PLC, BP plc & Burberry Group plc Keep Charging?",1,1,0.9176,0.02376389503479004
+420,"mrcb 4q net profit at rm27m, full-year profit up at rm330m",1,1,0.9951,0.024758100509643555
+421,"Sharm el-Sheikh travel disruption: British Airways, EasyJet, Thomson and ...",-1,-1,0.9804,0.024970054626464844
+422,The company also said that in Poland a profitability program has been launched at the Oborniki steel frame and sandwich panel plant .,1,1,0.9971,0.02521491050720215
+423,"osk ventures 2q net profit jumps by over 12 times on higher income, net fair value gain",1,1,0.996,0.025493621826171875
+424,LONDON MIDDAY BRIEFING: Kingfisher's French Expansion Hits The Rocks,-1,-1,0.9621,0.027053117752075195
+425,"china 's investment, retail sales miss expectations; july industrial output growth steady",-1,-1,0.7654,0.024194002151489258
+426,propnex merges with dennis wee group to form singapore 's largest property agency,1,1,0.9919,0.02344512939453125
+427,courts asia sinks into the red in 1q on lower revenue,-1,-1,0.9787,0.022243976593017578
+428,"bsn not rejecting loan applications by oil and gas workers, says report",1,1,0.8205,0.02203226089477539
+429,"bank negara 's foreign reserves up 0.7% to us$98b as at may 31, 2017",1,1,0.9884,0.02136993408203125
+430,"klci pares loss but seen staying in the red, tracking region",-1,-1,0.9704,0.02098679542541504
+431,troubled pknp units will not be shut down - perak mb,-1,-1,0.9799,0.021931886672973633
+432,"It rose by 15.7 % and by 24.8 % in Finland and abroad , respectively , to EUR 7 million and EUR 4.2 million , due to a 40 % growth in Russia .",1,1,0.9951,0.021322011947631836
+433,Morrisons store closures: 900 jobs to go as 11 branches are closed due to ...,-1,-1,0.9814,0.02057480812072754
+434,Shell to buy BG Group in $69.7 billion takeover,1,1,0.9909,0.021544933319091797
+435,bursa malaysia starts fy18 on firm footing; 1q net profit up 12.6%,1,1,0.9961,0.0210568904876709
+436,former isr capital chairman 's bankruptcy annulled less than 6 months after order,-1,-1,0.9746,0.02245187759399414
+437,ock unit 's buy helps tap into vietnam 's telecom industry,1,1,0.9969,0.020647048950195312
+438,syarikat takaful 's 4q net profit rises 22.3% on higher wakalah fee income,1,1,0.996,0.022268056869506836
+439,"Based on strong customer interest and feedback , using RPM mobile phone manufacturers , operators , enterprises and developer forums can significantly increase their product and service quality , user-experience and cost-efficiency '' , Tulonen continues .",1,1,0.9966,0.02203679084777832
+440,trump nails obamacare with decision to cut off billions in subsidies,-1,-1,0.976,0.023273944854736328
+441,"sime darby property 4q net profit drops 86%, declares 3 sen dividend",-1,-1,0.9715,0.021207094192504883
+442,"TietoEnator itself uses Nokia 's Intellisync Mobile Suite 's wireless email , calendar , and device management capabilities , and the company will now extend these services to its customers .",1,1,0.9964,0.022874116897583008
+443,"macc, police must respond to src 's denial on ' donation' to najib, says pas",1,1,0.9492,0.02227497100830078
+444,WPP's Sir Martin Sorrell is highest-paid FTSE 100 chief executive,1,1,0.9942,0.023877859115600586
+445,Britain facing winter of blackouts as National Grid warns of tightest power ...,-1,-1,0.9826,0.023119211196899414
+446,"At 1.33 pm , the OMX Helsinki 25 was 0.30 pct lower at 2,463.67 and the OMX Helsinki was down 0.37 pct at 8,537.42 on volume of 256 mln eur .",-1,-1,0.9767,0.022248029708862305
+447,"About Marubeni Marubeni Corporation TSE : 8002 ; ADR : MARUY was established in 1858 , and is a core company of Marubeni Group , one of Japan 's leading general trading houses .",1,1,0.9935,0.022084712982177734
+448,nordic group sells 42 tech park crescent property for s$3.4 mil,1,1,0.9833,0.022047996520996094
+449,"palm oil producers report better numbers, but improvements may not be sustainable",-1,-1,0.582,0.021824121475219727
+450,"xox gets uma query about sharp rise in share price, volume",1,1,0.9945,0.0221707820892334
+451,"semicon sector to see 8% net profit growth in 2018, says cimb research",1,1,0.9961,0.022545814514160156
+452,"china mulls radical output cuts, port coal ban in war on smog - document",-1,-1,0.975,0.02256298065185547
+453,"malaysia airports hit record 96.54 million in 2017, driven by international traffic",1,1,0.9861,0.021540164947509766
+454,"Britain's FTSE outperforms Europe, Royal Mail and Tesco rise",1,1,0.9883,0.022578954696655273
+455,"tony fernandes bags 4th pillar award for contribution towards asean growth, us-asean ties",1,1,0.9964,0.0221560001373291
+456,UPDATE 5-Barclays Chairman McFarlane axes CEO to speed up strategic change,-1,-1,0.5955,0.025448083877563477
+457,"Operating profit of Kauppalehti group rose to EUR 1.5 mn from EUR 1.3 mn , and that of Marketplaces to EUR 1.3 mn from EUR 1.0 mn in the third quarter of 2006 .",1,1,0.9965,0.02184295654296875
+458,world class global 's 1q earnings tumble 82% to s$0.3m on forex loss,-1,-1,0.9737,0.021310091018676758
+459,"Operating profit totalled EUR 21.1 mn , up from EUR 18.6 mn in 2007 , representing 9.7 % of net sales .",1,1,0.9953,0.02245807647705078
+460,mk land shares surge as investors embrace perak mb inc jv news,1,1,0.9958,0.024035930633544922
+461,sarawak oil palms 3q earnings double on higher palm product prices,-1,1,0.7391,0.020804166793823242
+462,Royal Bank of Scotland becomes Facebook customer,1,1,0.9933,0.022212982177734375
+463,astro rises 1.67% in early trade despite recording flat 2q earnings,1,1,0.9953,0.021386146545410156
+464,"berjaya land wins judicial review, to proceed with construction of new selangor turf club",1,1,0.9966,0.02137279510498047
+465,food empire posts 27% increase in 3q earnings to us$7.4 mil on lower expenses,1,1,0.995,0.02143692970275879
+466,Clydesdale and Yorkshire moves closer to independence,1,1,0.9935,0.02102208137512207
+467,ctos campaign shows 57% of malaysians need to improve credit standing,1,1,0.9964,0.021152019500732422
+468,key alliance fixes placement shares' price at 5 sen to raise rm2.9m,1,1,0.9966,0.020526885986328125
+469,"We warmly welcome him to Satama '' , states Jussi Lansio , chairman of the Board .",1,1,0.993,0.02130413055419922
+470,Shire proposes $30 bln all-share tie-up with Baxalta,1,1,0.9953,0.020643949508666992
+471,"At the end of the review period , Nordic Aluminium 's order book stood at EUR 8.77 mn compared to EUR 7.04 in 2005 .",1,1,0.9805,0.020667314529418945
+472,"EXCLUSIVE-BP, China's CNPC to unveil oil alliance - sources",1,1,0.9938,0.02204108238220215
+473,schroders says the worst may have passed for indonesia 's markets,-1,-1,0.9786,0.02137899398803711
+474,"tough for foreign probes into 1mdb without malaysia 's help, says the economist",-1,-1,0.9678,0.020885944366455078
+475,"freight management 4q net profit falls 29%, pays 3.5 sen dividend",-1,-1,0.9684,0.02421712875366211
+476,talentcorp: malaysian 's abroad look at job opportunities when considering returning,1,1,0.9952,0.023478031158447266
+477,EuroChem Head of Corporate Finance Alexander Gavrilov said : `` I am pleased that we have once again confirmed that EuroChem is able to attract long-term funds at attractive rates .,1,1,0.9968,0.020922183990478516
+478,MarketsUS industrials lag as Barclays dims view,-1,-1,0.98,0.021976709365844727
+479,genting 1q net profit down 10% on absence of disposal gain,1,1,0.9938,0.02361893653869629
+480,perisai slides 3.3% as it seeks more time for debt repayment,-1,-1,0.9796,0.021028757095336914
+481,The acquisition is part of Ramirent 's strategy to strengthen its position in selected locations .,1,1,0.9963,0.021826982498168945
+482,myhsr and sghsr call off ongoing int' l joint tender for assetsco on project deferment,1,1,0.9957,0.021205902099609375
+483,uob signs mous in support of chinese companies expanding through belt & road initiative,1,1,0.9966,0.01989912986755371
+484,hsbc: m'sian govt must cut expenditure to achieve 3.1% deficit goal,-1,-1,0.9797,0.021825790405273438
+485,"Profit for the period totalled EUR 1.1 mn , down from EUR 1.6 mn in the third quarter of 2008 .",-1,-1,0.9776,0.023398160934448242
+486,Finnish Outotec has been awarded a contract to supply a new zinc roaster with gas cleaning and sulphuric acid plant for the OZK Kardzhali zinc smelter in Bulgaria .,1,1,0.9968,0.021687030792236328
+487,teo seng rises 3.3% on the back of rebound in egg prices,1,1,0.9955,0.020908832550048828
+488,"trump baffles sweden with crime comment, says it was based on tv report",-1,-1,0.9783,0.021419048309326172
+489,seismic fiscal measures and sweeping governance place malaysia in riveting spot - dbs,1,1,0.9953,0.021631240844726562
+490,airbnb says committed to engage with local authorities to develop framework,1,1,0.9967,0.02090907096862793
+491,"Svyturys-Utenos Alus , which is controlled by the Nordic group Baltic Beverages Holding ( BBH ) , posted a 4.7-per-cent growth in beer sales for January-May to 46.22 million litres .",1,1,0.9962,0.02199721336364746
+492,"CEOs of BPM, UBI meet Italy econ minister as M&A talk heats up",1,1,0.9713,0.021441936492919922
+493,BP cuts capex for third time this year to deal with weak oil,-1,-1,0.977,0.02085399627685547
+494,remainder 11 tpp countries agree to move ahead by suspending 20 provisions,-1,-1,0.976,0.021065950393676758
+495,Rivals say Qualcomm has fewer patents on 3G phones than on earlier versions and should lower its rates .,-1,-1,0.8959,0.02186274528503418
+496,"there ' re sufficient facts for fgv to initiate disciplinary actions against ceo, cfo, 2 others over alleged improprieties involving delima oil",-1,-1,0.9784,0.02133488655090332
+497,amprop to pump ???15 mil more into jv with grosvenor group in spain,1,1,0.9903,0.02391791343688965
+498,these 4 asean postal companies get nomura 's stamp of approval,1,1,0.996,0.02069711685180664
+499,"Compared with the FTSE 100 index , which rose 36.7 points ( or 0.6 % ) on the day , this was a relative price change of -0.2 % .",-1,1,0.7962,0.021387100219726562
+500,Whitbread buys 49% stake in Pure food chain,1,1,0.9945,0.0200650691986084

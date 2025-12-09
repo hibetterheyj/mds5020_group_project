@@ -18,7 +18,7 @@ CHECKPOINT_PATH = './results/checkpoint-645'
 
 # Optimization parameters (can be set via environment variables)
 OPTIMIZATION_METHOD = os.environ.get('OPTIMIZATION_METHOD', 'baseline')  # baseline, torchscript, dynamic_quant, static_quant
-REDUCE_SEQ_LENGTH = int(os.environ.get('REDUCE_SEQ_LENGTH', 512))  # Reduce sequence length for faster processing
+REDUCE_SEQ_LENGTH = int(os.environ.get('REDUCE_SEQ_LENGTH', 128))  # Default to optimized sequence length (128)
 
 
 def load_model_with_optimization(optimization_method='baseline', seq_length=512):
