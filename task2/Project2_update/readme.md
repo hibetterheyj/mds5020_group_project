@@ -4,16 +4,21 @@
 
 ### Image URL
 
-```
+```shell
 crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining:v1.0
 ```
 
-### Pull Command
+### Pull & run Command
 
 To pull the Docker image, use the following command:
 
-```bash
+```shell
 docker pull crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining:v1.0
+docker run -p 5724:5724 crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining:v1.0
+
+# on macos without intel with "Use Rosetta for x86/amd64 emulation on Apple Silicon"
+docker pull --platform linux/amd64 crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining:v1.0
+docker run --platform linux/amd64 -p 5724:5724 crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz/data_mining:v1.0
 ```
 
 ![Image successfully pulled](docker_img_pull.png)
@@ -23,30 +28,36 @@ docker pull crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz
 ### API Endpoints
 
 #### Sentiment Analysis
+
 - **Endpoint**: `/predict_sentiment`
 - **Method**: POST
 - **Input**: `news_text` (string)
 - **Output**: JSON string
+
   ```json
   {
     "sentiment": "-1",
     "probability": "0.98"
   }
   ```
+
   - `sentiment`: Sentiment label (-1 = negative, 1 = positive)
   - `probability`: Confidence score for the prediction
 
 #### Topic Classification
+
 - **Endpoint**: `/predict_topic`
 - **Method**: POST
 - **Input**: `news_text` (string)
 - **Output**: JSON string
+
   ```json
   {
     "topic": "12",
     "probability": "0.63"
   }
   ```
+
   - `topic`: Topic label (1-18)
   - `probability`: Confidence score for the prediction
 
@@ -55,6 +66,7 @@ docker pull crpi-9vcwd7dr6qcdahci.cn-shenzhen.personal.cr.aliyuncs.com/goldfishz
 Use a client (e.g., Postman or run command in cmd) to send a request that includes a "news_text" field. Or you can refer to our test code in [`test_app.py`](./test_app.py)
 
 Example using curl:
+
 ```bash
 curl -X POST http://localhost:5724/predict_sentiment -H 'Content-Type: application/json' -d '{"news_text": "Company reports strong quarterly earnings"}'
 ```
@@ -74,7 +86,6 @@ The following image shows the container in its running state.
   - **Sentiment Analysis**: 0.8024127741384737 (standard deviation: 0.015061383790324021)
 
   - **Topic Classification**: 0.982653106555011 (standard deviation: 0.001730632240072608)
-
 
 ## 4) Code Structure
 
