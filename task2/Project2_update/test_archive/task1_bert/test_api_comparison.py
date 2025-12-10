@@ -9,6 +9,7 @@ import numpy as np
 # Configuration
 LOGREG_API_URL = 'http://localhost:5724/predict_sentiment'
 BERT_API_URL = 'http://localhost:5725/predict_sentiment'
+VOTING_API_URL = 'http://localhost:5726/predict_sentiment'  # Voting API URL
 # Use CSV file extension instead of XLSX since we're reading with csv module
 DATA_FILE = '../../../data/Subtask1-sentiment_analysis/training_news-sentiment.csv'
 EXTERNAL_DATA_FILE = '../../../data/external/zeroshot/twitter-financial-news-sentiment/cleaned_valid.csv'
@@ -16,7 +17,7 @@ NUM_SAMPLES = 500
 
 # Create timestamped directory
 current_time = datetime.now().strftime('%Y%m%d_%H%M%S')
-results_dir = f'./res/logreg_bert_comparison_{current_time}'
+results_dir = f'./res/logreg_bert_voting_comparison_{current_time}'
 os.makedirs(results_dir, exist_ok=True)
 
 def load_test_data(num_samples=NUM_SAMPLES):
@@ -65,7 +66,7 @@ def load_external_test_data():
                 continue
     return test_data
 
-def test_api(api_url, test_data, model_name):
+def test_api(api_url, test_data, model_name, input_field='news_text'):
     """Test an API with the given test data and return predictions and timing"""
     predictions = []
     total_time = 0
@@ -74,18 +75,28 @@ def test_api(api_url, test_data, model_name):
         start_time = time.time()
 
         try:
-            response = requests.post(api_url, json={'news_text': sample['news_title']}, timeout=10)
+            response = requests.post(api_url, json={input_field: sample['news_title']}, timeout=10)
             if response.status_code == 200:
                 result = response.json()
                 pred_time = time.time() - start_time
                 total_time += pred_time
 
+                # Handle different response formats
+                predicted = int(result['sentiment'])
+                # Check if the response has 'probability' or 'confidence'
+                if 'probability' in result:
+                    prob = float(result['probability'])
+                elif 'confidence' in result:
+                    prob = float(result['confidence'])
+                else:
+                    prob = 0.0  # Default if neither is present
+
                 predictions.append({
                     'doc_id': sample['doc_id'],
                     'news_title': sample['news_title'],
                     'actual': sample['sentiment'],
-                    'predicted': int(result['sentiment']),
-                    'probability': float(result['probability']),
+                    'predicted': predicted,
+                    'probability': prob,
                     'prediction_time': pred_time
                 })
             else:
@@ -114,18 +125,21 @@ def save_predictions(predictions, filename):
         writer.writeheader()
         writer.writerows(predictions)
 
-def save_comparison(logreg_preds, bert_preds, logreg_time, bert_time, num_samples):
+def save_comparison(logreg_preds, bert_preds, voting_preds, logreg_time, bert_time, voting_time, num_samples):
     """Save comparison results to JSON"""
     logreg_accuracy = calculate_accuracy(logreg_preds)
     bert_accuracy = calculate_accuracy(bert_preds)
+    voting_accuracy = calculate_accuracy(voting_preds)
 
     # Calculate average prediction times
     logreg_avg_time = logreg_time / len(logreg_preds) if logreg_preds else 0
     bert_avg_time = bert_time / len(bert_preds) if bert_preds else 0
+    voting_avg_time = voting_time / len(voting_preds) if voting_preds else 0
 
     # Calculate prediction time distributions
     logreg_times = [p['prediction_time'] for p in logreg_preds]
     bert_times = [p['prediction_time'] for p in bert_preds]
+    voting_times = [p['prediction_time'] for p in voting_preds]
 
     comparison = {
         'timestamp': current_time,
@@ -146,8 +160,24 @@ def save_comparison(logreg_preds, bert_preds, logreg_time, bert_time, num_sample
             'max_prediction_time': max(bert_times) if bert_times else 0,
             'median_prediction_time': np.median(bert_times) if bert_times else 0
         },
-        'accuracy_difference': bert_accuracy - logreg_accuracy,
-        'time_ratio_bert_vs_logreg': bert_avg_time / logreg_avg_time if logreg_avg_time > 0 else float('inf')
+        'voting': {
+            'accuracy': voting_accuracy,
+            'total_prediction_time': voting_time,
+            'average_prediction_time': voting_avg_time,
+            'min_prediction_time': min(voting_times) if voting_times else 0,
+            'max_prediction_time': max(voting_times) if voting_times else 0,
+            'median_prediction_time': np.median(voting_times) if voting_times else 0
+        },
+        'accuracy_differences': {
+            'bert_vs_logreg': bert_accuracy - logreg_accuracy,
+            'voting_vs_logreg': voting_accuracy - logreg_accuracy,
+            'voting_vs_bert': voting_accuracy - bert_accuracy
+        },
+        'time_ratios': {
+            'bert_vs_logreg': bert_avg_time / logreg_avg_time if logreg_avg_time > 0 else float('inf'),
+            'voting_vs_logreg': voting_avg_time / logreg_avg_time if logreg_avg_time > 0 else float('inf'),
+            'bert_vs_voting': bert_avg_time / voting_avg_time if voting_avg_time > 0 else float('inf')
+        }
     }
 
     with open(os.path.join(results_dir, 'comparison_results.json'), 'w', encoding='utf-8') as f:
@@ -205,12 +235,17 @@ def main():
     bert_preds, bert_total_time = test_api(BERT_API_URL, test_data, 'BERT')
     print(f"BERT: {len(bert_preds)}/{len(test_data)} predictions successful")
 
+    print("\nTesting Voting Classifier API...")
+    voting_preds, voting_total_time = test_api(VOTING_API_URL, test_data, 'Voting Classifier', input_field='text')
+    print(f"Voting Classifier: {len(voting_preds)}/{len(test_data)} predictions successful")
+
     print("\nSaving predictions...")
     save_predictions(logreg_preds, os.path.join(results_dir, 'logreg_predictions.csv'))
     save_predictions(bert_preds, os.path.join(results_dir, 'bert_predictions.csv'))
+    save_predictions(voting_preds, os.path.join(results_dir, 'voting_predictions.csv'))
 
     print("\nCalculating comparison...")
-    comparison = save_comparison(logreg_preds, bert_preds, logreg_total_time, bert_total_time, len(test_data))
+    comparison = save_comparison(logreg_preds, bert_preds, voting_preds, logreg_total_time, bert_total_time, voting_total_time, len(test_data))
 
     print("\nEvaluating model size...")
     model_evaluation = evaluate_model_size()
@@ -218,11 +253,21 @@ def main():
     print("\n=== Comparison Results ===")
     print(f"Logistic Regression Accuracy: {comparison['logreg']['accuracy']:.4f}")
     print(f"BERT Accuracy: {comparison['bert']['accuracy']:.4f}")
-    print(f"Accuracy Difference (BERT - LogReg): {comparison['accuracy_difference']:.4f}")
+    print(f"Voting Classifier Accuracy: {comparison['voting']['accuracy']:.4f}")
 
     print(f"\nLogistic Regression Avg Prediction Time: {comparison['logreg']['average_prediction_time']:.4f} seconds")
     print(f"BERT Avg Prediction Time: {comparison['bert']['average_prediction_time']:.4f} seconds")
-    print(f"Time Ratio (BERT vs LogReg): {comparison['time_ratio_bert_vs_logreg']:.2f}x")
+    print(f"Voting Classifier Avg Prediction Time: {comparison['voting']['average_prediction_time']:.4f} seconds")
+
+    print(f"\nAccuracy Differences:")
+    print(f"  BERT - LogReg: {comparison['accuracy_differences']['bert_vs_logreg']:.4f}")
+    print(f"  Voting - LogReg: {comparison['accuracy_differences']['voting_vs_logreg']:.4f}")
+    print(f"  Voting - BERT: {comparison['accuracy_differences']['voting_vs_bert']:.4f}")
+
+    print(f"\nTime Ratios:")
+    print(f"  BERT vs LogReg: {comparison['time_ratios']['bert_vs_logreg']:.2f}x")
+    print(f"  Voting vs LogReg: {comparison['time_ratios']['voting_vs_logreg']:.2f}x")
+    print(f"  BERT vs Voting: {comparison['time_ratios']['bert_vs_voting']:.2f}x")
 
     print("\n=== Model Size Evaluation ===")
     print(f"BERT Model Size: {model_evaluation['total_size_gb']:.2f} GB")

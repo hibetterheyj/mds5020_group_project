@@ -1,0 +1,38 @@
+{
+  "timestamp": "20251210_222743",
+  "num_samples": 822,
+  "logreg": {
+    "accuracy": 0.7420924574209246,
+    "total_prediction_time": 0.9060027599334717,
+    "average_prediction_time": 0.0011021931386051968,
+    "min_prediction_time": 0.0007250308990478516,
+    "max_prediction_time": 0.013909101486206055,
+    "median_prediction_time": 0.001024007797241211
+  },
+  "bert": {
+    "accuracy": 0.8600973236009732,
+    "total_prediction_time": 21.190842866897583,
+    "average_prediction_time": 0.02577961419330606,
+    "min_prediction_time": 0.022552013397216797,
+    "max_prediction_time": 0.3868589401245117,
+    "median_prediction_time": 0.02481532096862793
+  },
+  "voting": {
+    "accuracy": 0.7749391727493917,
+    "total_prediction_time": 9.064931869506836,
+    "average_prediction_time": 0.01102789765146817,
+    "min_prediction_time": 0.009262800216674805,
+    "max_prediction_time": 0.3715059757232666,
+    "median_prediction_time": 0.010351181030273438
+  },
+  "accuracy_differences": {
+    "bert_vs_logreg": 0.11800486618004868,
+    "voting_vs_logreg": 0.03284671532846717,
+    "voting_vs_bert": -0.08515815085158152
+  },
+  "time_ratios": {
+    "bert_vs_logreg": 23.38938003726792,
+    "voting_vs_logreg": 10.005413085245433,
+    "bert_vs_voting": 2.3376726016199436
+  }
+}

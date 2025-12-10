@@ -1,0 +1,823 @@
+doc_id,news_title,actual,predicted,probability,prediction_time
+1,Ally Financial pulls outlook,-1,-1,0.7525,0.3868589401245117
+2,"Dell, HPE targets trimmed on compute headwinds",-1,-1,0.5233,0.02686476707458496
+3,Moodys turns negative on Party City,-1,-1,0.9797,0.027209043502807617
+4,Deutsche Bank cuts to Hold,-1,-1,0.9793,0.028551816940307617
+5,Compass Point cuts to Sell,-1,-1,0.9773,0.027876853942871094
+6,Barclays cools on Molson Coors,-1,1,0.9674,0.026704788208007812
+7,Barclays cuts to Equal Weight,-1,-1,0.9721,0.026426076889038086
+8,Analysts Eviscerate Musks Cybertruck: 0% Of Responses Felt It Will Be A Success,-1,1,0.9811,0.028683900833129883
+9,Barclays assigns only a 20% chance that studies on a Gilead antiviral drug being done in China will succeed against…,-1,1,0.9873,0.02817511558532715
+10,BTIG points to breakfast pressure for Dunkin Brands,-1,-1,0.9669,0.02683877944946289
+11,"Childrens Place downgraded to neutral from outperform at Wedbush, price target slashed to 60 from 130",-1,-1,0.9831,0.03056502342224121
+12,Clovis Oncology downgraded to in line from outperform at Evercore,-1,-1,0.9809,0.029268980026245117
+13,Downgrades 4/7: AAN BDN BECN BTE CDEV CHK COOP CPE CVA DAN DOC DRH EPR ESRT ETM FAST FBM GM GMS…,-1,-1,0.9805,0.02947402000427246
+14,Goldman pulls Progressive from Goldmans conviction list; shares -2.7%,-1,1,0.9842,0.02702784538269043
+15,Hanesbrands downgraded to underperform vs. neutral at BofA Merrill Lynch,-1,-1,0.9827,0.026839017868041992
+16,Intelsat cut to Market Perform at Raymond James,-1,-1,0.9675,0.02731800079345703
+17,LendingTree price target cut to 350 from 400 at SunTrust Robinson Humphrey,-1,-1,0.9737,0.02719593048095703
+18,Mizuho cuts XLNX target on near-term headwinds,-1,-1,0.9705,0.02622509002685547
+19,MPLX cut at Credit Suisse on potential dilution from Marathon strategic review,-1,-1,0.9808,0.026661157608032227
+20,Netflix downgraded to underperform at Wells Fargo,-1,-1,0.9806,0.024666786193847656
+21,NortonLifeLock stock price target cut to 18 from 25 at Deutsche Bank,-1,-1,0.9692,0.02616405487060547
+22,Norwegian Cruise stock price target cut to 48 from 55 at,-1,-1,0.9753,0.027431011199951172
+23,Novus Therapeutics stock price target cut to 2.50 from 3.75 at Ascendiant Capital,-1,-1,0.9531,0.026445627212524414
+24,Nutrien stock price target cut to 54 vs. 55 at BofA Merrill Lynch,-1,-1,0.971,0.028875112533569336
+25,Okta -2% on valuation downgrade,-1,-1,0.9824,0.029638051986694336
+26,Solarworlds stock price target cut to 23 vs. 24 at Instinet,-1,-1,0.9773,0.02720189094543457
+27,Trendforce cuts iPhone estimate after Foxconn delay,-1,-1,0.9804,0.02890181541442871
+28,"Wayfair price target lowered to 110 from 120 at Stifel, buy rating maintained",-1,-1,0.9781,0.02666187286376953
+29,WWE stock price target cut to 58 from 92 at MKM Partners,-1,-1,0.9758,0.02871108055114746
+30,"ABEO as expected, keeps going higher. Cantor doubled its price target this morning to 4",1,1,0.9924,0.02959299087524414
+31,CACI gains a bull on growth acceleration,1,1,0.9967,0.026511669158935547
+32,CNH Industrial upped to Buy at Deutsche Bank on valuation,1,1,0.9899,0.02678513526916504
+33,"Devon Energy, Hess upgraded at J.P. Morgan on improved E&P outlook",1,1,0.9962,0.02598404884338379
+34,Energizer shakes off JPMorgans bear call,1,-1,0.8925,0.027572154998779297
+35,Baird bullish on beat-up Canada Goose,1,-1,0.978,0.026140213012695312
+36,BMO Capital joins Nike bull camp,1,1,0.9931,0.025969982147216797
+37,"Buy oil service firms, Bernstein says after seven-year bearish view",1,-1,0.9476,0.024214982986450195
+38,Goldman ups view on Henry Schein in premarket analyst action,1,1,0.666,0.027505159378051758
+39,Alliance Global Partners starts at Buy,1,1,0.9958,0.026646137237548828
+40,Urban Outfitters stands out in mall sector - BofA,1,1,0.9944,0.02491021156311035
+41,H.C. Wainwright starts at Buy,1,1,0.9904,0.025505781173706055
+42,Adobe price target raised to 350 vs. 320 at Canaccord,1,1,0.9931,0.023663043975830078
+43,AM Best Revises Outlooks to Positive for Pacífico Compañía de Seguros y Reaseguros S.A.,1,1,0.9964,0.027734994888305664
+44,AMD +1.3% after Cowens target lift,1,1,0.9833,0.02473902702331543
+45,"Applied Materials, Inc. Reported Earnings Last Week And Analysts Are Already Upgrading Their Estimates",1,-1,0.9767,0.02551412582397461
+46,"Arch Coal rated Buy at Benchmark, seeing opportunity after selloff",1,1,0.9957,0.024186134338378906
+47,Autodesk stock price target raised to 162 from 149 at Wedbush,1,1,0.9888,0.025744915008544922
+48,Avnet stock price target raised to 37 vs. 35 at SunTrust Robinson Humphrey,1,1,0.9865,0.025422096252441406
+49,Boeing started at buy with 375 stock price target at Benchmark,1,1,0.9942,0.025216102600097656
+50,BofA sees solid demand backdrop for D.R. Horton in 2020,1,1,0.9962,0.024836301803588867
+51,Broadcom stock price target raised to 361 vs. 322 at SunTrust Robinson Humphrey,1,1,0.9881,0.028090238571166992
+52,Cantor sees 19% upside in J&J in premarket analyst action,1,1,0.9782,0.031152009963989258
+53,Champions Oncology started at speculative buy with 11 stock price target at Benchmark,1,1,0.9949,0.028927087783813477
+54,Citi raises Alphabet on margin potential,1,1,0.9951,0.02494978904724121
+55,Citigroup stock price target raised to 127 from 124 at Oppenheimer,1,1,0.9886,0.02553534507751465
+56,"ETF assets to surge tenfold in 10 years to 50 trillion, Bank of America predicts",1,1,0.9942,0.024642229080200195
+57,GE upgraded from Sell by longtime bear,1,1,0.9901,0.02408599853515625
+58,Goldman Sachs stock price target raised to 367 from 358 at Oppenheimer,1,1,0.9874,0.02612781524658203
+59,GrubHub stock price target raised to 50 from 40 at Stifel Nicolaus,1,1,0.9898,0.024303197860717773
+60,Halliburton started at buy with 26 stock price target at Deutsche Bank,1,1,0.995,0.026239871978759766
+61,Helen of Troy started at outperform with 210 stock price target at Oppenheimer,1,1,0.9928,0.026658058166503906
+62,Highlight: Edward Jones Sr. Equity Analyst Jennifer Roland on ExxonMobil reducing 2020 Capex by 30%: “Definitely a…,1,-1,0.944,0.025122642517089844
+63,Humana stock price target raised to 370 from 350 at SunTrust,1,1,0.9903,0.024975061416625977
+64,JMP Securities upgrades snap to outperform with 20 pt,1,1,0.9959,0.024798154830932617
+65,Liberty Global PLC maintained as buy with 32 price target at Benchmark,1,1,0.993,0.02434825897216797
+66,Lululemon Athletica price target raised to 255 from 220 at,1,1,0.9886,0.025469303131103516
+67,Lumentum initiated as positive at Susquehanna,1,1,0.9946,0.025142192840576172
+68,Markel Corporation Beat Analyst Estimates: See What The Consensus Is Forecasting For Next Year,1,1,0.7073,0.02450728416442871
+69,"Mednax upgraded to buy from hold at Stifel, price target raised to 33 from 25",1,1,0.9959,0.02562117576599121
+70,"Model N upgraded to overweight from neutral at JPMorgan, price target raised to 36 from 30",1,1,0.9913,0.023624181747436523
+71,Morgan Stanley sees GM doubling in bull case scenario,1,1,0.8642,0.024998188018798828
+72,Motorola Solutions stock fair value estimate raised to 192 from 167 at MKM Partners,1,1,0.9933,0.024709224700927734
+73,New for subscribers: Analysts continue to upgrade stocks like Tesla and eBay on hopes the rebound is for real…,1,1,0.9953,0.025488853454589844
+74,Omnicell stock price target raised to 96 vs. 90 at Benchmark,1,1,0.9909,0.024563074111938477
+75,Peloton bulls defend the upside case,1,1,0.6845,0.024147987365722656
+76,Piper Jaffray analyst Erinn Murphy reiterated an Overweight rating and 44.00 price target on Crocs (NASDAQ: CROX)…,1,1,0.5093,0.026048898696899414
+77,Progyny started at overweight with 26 stock price target at J.P. Morgan,1,-1,0.849,0.025304794311523438
+78,Snap Analyst Projects 37% Revenue Growth In 2020,1,1,0.9954,0.02414679527282715
+79,Spirit Airlines stock price target raised to 55 from 49 at Deutsche Bank,1,1,0.9869,0.024287939071655273
+80,State Street stock price target raised to 84 from 73 at Buckingham,1,1,0.9891,0.02434706687927246
+81,Stock Market Update: AMDs price target raised to 47 at Cowen,1,1,0.9752,0.025207996368408203
+82,Synaptics stock price target raised to 76 from 60 at Susquehanna,1,1,0.9888,0.025458812713623047
+83,TechnipFMC started at buy with 33 stock price target at Deutsche Bank,1,1,0.9951,0.02572798728942871
+84,Tesla stock price target raised to 290 from 260 at Deutsche Bank,1,1,0.9904,0.024180889129638672
+85,TJX stock price target raised to 70 from 62 at MKM Partners,1,1,0.9904,0.02457404136657715
+86,Twitter upgraded to positive from neutral at Susquehanna,1,1,0.996,0.023962020874023438
+87,Uber stock price target raised to 42 from 31 at Susquehanna,1,1,0.9899,0.0241391658782959
+88,Uber stock price target raised to 48 from 46 at HSBC Global,1,1,0.9917,0.024303913116455078
+89,"UBS Upgrades Hasbro As Stock Price Bakes In Tariffs, Slow Holiday",1,-1,0.9461,0.025022029876708984
+90,UnitedHealth stock price target raised to 335 from 310 at SunTrust,1,1,0.9851,0.023860931396484375
+91,Vertex Pharmaceuticals stock price target raised to 245 from 235 at BofA Merrill Lynch,1,1,0.9929,0.025933265686035156
+92,Xilinx stock price target raised to 97 vs. 94 at SunTrust Robinson Humphrey,1,1,0.9857,0.024454355239868164
+93,"Central bank collateral damage is skewing financial markets, one economist says",-1,-1,0.9765,0.02835822105407715
+94,China central bank warns high financial risks amid rising economic headwinds - Reuters,-1,-1,0.9792,0.028994083404541016
+95,ECB data show eurozone banks had weak profits before coronavirus,-1,-1,0.98,0.02670598030090332
+96,Feds Williams says U.S. economy is clearly facing several challenges,-1,-1,0.9744,0.023505210876464844
+97,"Former Federal Reserve Chairman Ben Bernanke says he doesnt see a quick, sharp rebound in the economy after its pr…",-1,1,0.9868,0.025581836700439453
+98,Jerome Powell comes close to acknowledging that the Federal Reserve may not have the firepower to fight the next re…,-1,-1,0.9757,0.0241091251373291
+99,"No, The Fed Wont Save The Market - Heres Why",-1,1,0.883,0.025013208389282227
+100,"There is every reason to believe that the economic rebound, when it comes, can be robust, Fed Chair Jerome Powell…",1,1,0.9949,0.024399280548095703
+101,Bank of America sees demand surge for paycheck protection loans,-1,1,0.9955,0.025205135345458984
+102,Honeywell says MAX production freeze to hurt 2020 sales growth,-1,-1,0.9824,0.025160789489746094
+103,Africa retailer Jumia suspends e-commerce in Cameroon,-1,-1,0.9764,0.025397777557373047
+104,Amazon blames holiday delivery delays on winter storms and high demand,-1,-1,0.9798,0.02506113052368164
+105,Beckhams’ business empire sees revenues drop 18%,-1,-1,0.9762,0.024792909622192383
+106,FDA issues ban on some fruit and mint flavored vaping products,-1,-1,0.9788,0.024775028228759766
+107,Bristol-Myers says trial of Opdivo plus Yervoy in melanoma treatment failed to meet main goal,-1,-1,0.9621,0.026002883911132812
+108,Casino Operator Wynn Resorts Is Losing Up To 2.6 Million Per Day From Coronavirus Shutdown,-1,-1,0.9671,0.02540421485900879
+109,"China Solar Group Flags Raw Material, Labor Shortages on Virus",-1,-1,0.9802,0.024329185485839844
+110,Fiat Chrysler Relies on Ram Growth as Europe Losses Mount,-1,-1,0.861,0.024729251861572266
+111,"Ford recalls 262,000 pickup trucks with defective tailgate latches",-1,-1,0.9785,0.02573394775390625
+112,Fox says cable ad revenue was hurt by impeachment coverage last quarter,-1,-1,0.9782,0.02491307258605957
+113,Transport for London said Uber UBER was not fit and proper to hold an operating license in London after a…,-1,-1,0.9798,0.024901866912841797
+114,Jetstar to cut capacity by 10% in January as pilots take industrial action,-1,-1,0.9803,0.024419069290161133
+115,Lowes to shut 34 Canadian stores as it reports revenue miss,-1,-1,0.982,0.025571823120117188
+116,Macys says temporary issue with e-commerce business also impacted Q3 performance,-1,-1,0.9792,0.02364206314086914
+117,Mahindra Says Coronavirus May Jeopardize India Emissions Rollout,-1,-1,0.8881,0.024603843688964844
+118,Major blockchain developer ConsenSys announces job losses,-1,-1,0.9736,0.025409936904907227
+119,"NTSB cites Uber, driver in fatal crash",-1,-1,0.978,0.024538040161132812
+120,NVIDIAs New Cloud Service Could Spell Doom for Googles Stadia,-1,-1,0.705,0.024496793746948242
+121,"Oaktree Strategic Income NII misses by 0.01, misses on total investment income",-1,-1,0.9789,0.023778915405273438
+122,PG&E Loses Half of Financial Backing for Bankruptcy in New Pacts,-1,-1,0.9725,0.02529168128967285
+123,"Stock Market Live Updates: Home Depot faults tariffs, lumber prices for grim quarter - Yahoo Finance",-1,-1,0.9826,0.02460312843322754
+124,"Trans Mountain Costs to Increase 70% to 9.5 Billion, CBC Says",-1,1,0.9946,0.02468395233154297
+125,"Transport for London has decided not to extend Uber’s license to operate in the city. In a statement, transit offic…",-1,-1,0.8813,0.023652076721191406
+126,Tuna maker Bumble Bee Foods has filed for Chapter 11 bankruptcy protection.,-1,-1,0.9634,0.023619890213012695
+127,WeWork Could Leave Thousands Without Jobs,-1,-1,0.9662,0.024856090545654297
+128,Exxon is cutting billions of dollars in investments to keep its financial footing during the worst oil-price rout i…,-1,-1,0.9779,0.02408599853515625
+129,Intercept Pharma reports publication of positive results from Phase 3 REGENERATE,1,1,0.9966,0.025070905685424805
+130,Infrastructure and Energy Alternatives secures two wind construction project awards totaling 115M,1,1,0.9963,0.023819923400878906
+131,Kratos Defense and Security awarded a 39 million sole-source contract for Geolocation Global Support Servic…,1,1,0.9962,0.035604000091552734
+132,Magenta up 15% on promising data on ADC conditioning agent,1,1,0.9949,0.02454233169555664
+133,Genentech nabs accelerated review status for risdiplam,1,1,0.992,0.026610136032104492
+134,Sage Therapeutics to advance Huntingtons candidate SAGE-718; shares up 2%,1,1,0.9969,0.024409055709838867
+135,SRNE UPDATE 1-Sorrento Therapeutics rejects all-cash takeout proposal; shares jump,1,1,0.6778,0.02655315399169922
+136,FDA OKs Zogenixs Fintepla for Dravet syndrome,1,-1,0.9587,0.028562068939208984
+137,5 Reasons To Love Wendys On Its 50th Birthday,1,1,0.9767,0.024250268936157227
+138,AT&T says it will continue investing in Mexico: Mexican president,1,1,0.9951,0.025587081909179688
+139,BancorpSouth Bank boosts share repurchase program,1,1,0.9964,0.025104999542236328
+140,Boeing : Deliveries 24 Jets in November,1,1,0.8967,0.025238990783691406
+141,"Boeing 737 Max Net Orders Rise to -73 YTD in Nov. From -93 Oct. Yes, negative",1,1,0.9927,0.023489952087402344
+142,Canadas TD Beats Its U.S. Banking Competitors on Their Own Turf,1,1,0.7843,0.025267839431762695
+143,Congratulations to Phreesia (NYSE: PHR) who was just named 2020 Best in KLAS for Patient Intake Management Read...,1,1,0.9931,0.024159908294677734
+144,FDA Approves First Drug for Peanut Allergy,1,1,0.996,0.025595903396606445
+145,Fortune Brands Home & Security (NYSE:FBHS) Shareholders Booked A 47% Gain In The Last Year,1,1,0.9926,0.02386474609375
+146,Hastings Technology Metals : Bulk Ore Sorting Trial Shows Outstanding Results …,1,1,0.9948,0.0241241455078125
+147,J.P. Morgan: Bausch to better weather the market than other specialty drugmakers,1,1,0.994,0.023592233657836914
+148,Mediaset CEO upbeat on reaching accord with Vivendi,1,1,0.995,0.02451491355895996
+149,Microfinance Loan Portfolio Jumps 48% In September Quarter,1,1,0.9953,0.024180889129638672
+150,"Microsoft Could Win Next Phase Of Cloud Battle, Wedbush Says",1,1,0.9928,0.024866104125976562
+151,GPU-Powered Semi Simulation Snags Coveted Research Award …,1,1,0.9948,0.02429795265197754
+152,Pershing Square Holdings announces new 100M share buyback program,1,1,0.9959,0.023784875869750977
+153,Publicis Signals Worst May Be Over for Struggling Ad Group,1,-1,0.9791,0.024923324584960938
+154,Sales of grounded Boeing 737 MAX gather pace at Dubai Airshow,1,1,0.9281,0.02439117431640625
+155,Sales of grounded Boeing 737 MAX pick up steam at Dubai Airshow,1,-1,0.8147,0.023976802825927734
+156,SourceDay Announces Record Growth as One of Austin’s Fastest-Growing Companies,1,1,0.996,0.023871898651123047
+157,"Tezos rallies into the top ten cryptocurrencies, ousting Stellar",1,1,0.9788,0.02518916130065918
+158,This chart shows how Vanguard’s explosive growth has ‘taken on a life of its own’,1,1,0.9939,0.024707794189453125
+159,UPDATE 1-Keystone operator TC Energy sees EBITDA exceeding C10 bln in 2022,1,1,0.9762,0.02703094482421875
+160,UPDATE 1-Qualcomm expects 5G phone sales to double in 2021,1,1,0.9935,0.024584054946899414
+161,Why Walmart and Target are still winning with consumers by,1,1,0.9891,0.02639007568359375
+162,Chevron ramps output at key Venezuela oil project as U.S. weighs sanctions,1,-1,0.9786,0.025124073028564453
+163,BP expects to keep Azeri ACG oil output stable as Shah Deniz gas powers ahead,1,1,0.9937,0.02437281608581543
+164,Hackers Breach Ring Home Security Cameras,-1,-1,0.9779,0.024264097213745117
+165,"Press release: cyber attack - update January 31, 2020",-1,-1,0.9737,0.025376081466674805
+166,Mobile said a hacker gained access to limited information contained in prepaid accounts,-1,1,0.5386,0.024958133697509766
+167,10Y Yield LOD 1.7620%,-1,1,0.9913,0.024497032165527344
+168,30-year Treasury yield plumbs key 2% support level,-1,1,0.9924,0.025591135025024414
+169,Diversified Royalty cuts dividend by 14%,-1,-1,0.9704,0.025193214416503906
+170,"CAE temporarily suspends dividend and share repurchase plan; lays off 2,600 of its 10,500 employees; to...",-1,-1,0.9811,0.025033235549926758
+171,Boeing supplier Spirit cuts dividend due to 737 MAX crisis,-1,-1,0.9782,0.024888038635253906
+172,Jack Henry increases quarterly dividend to 0.43/share from 0.40/share,1,1,0.9955,0.023880958557128906
+173,"AT&T to raise quarterly dividend by 2% to 52 cents a share, retire 100 million of stock in Q1",1,1,0.9397,0.02970290184020996
+174,International Bancshares Corporations (NASDAQ:IBOC) 2.6% Dividend Yield Looks Pretty Interesting,1,1,0.9944,0.029676198959350586
+175,Suncors dividend boost reassures analysts amid weak Q4,1,1,0.9855,0.02539801597595215
+176,Dish TV India Limited Just Missed Earnings With A Surprise Loss - Here Are Analysts Latest Forecasts,-1,-1,0.9748,0.02496194839477539
+177,Legacy Housing Corporation Earnings Missed Analyst Estimates: Heres What Analysts Are Forecasting Now,-1,-1,0.9695,0.029065847396850586
+178,Playtech warns it will miss earnings expectations,-1,-1,0.9779,0.036910057067871094
+179,Was Five Star Senior Living Inc.s (NASDAQ:FVE) Earnings Decline Part Of A Broader Industry Downturn?,-1,-1,0.9803,0.024146080017089844
+180,Why Home Depot Stumbled on Earnings,-1,-1,0.9573,0.02533721923828125
+181,"After Intel And AMD, Nvidia Q4 Earnings Release Most Likely Beats.",1,1,0.9391,0.023600101470947266
+182,Adobe Hits New Highs on Earnings - Here’s What the Charts Say - TheStreet,1,1,0.9934,0.025835037231445312
+183,Amazon rejoins 1tn club on back of blockbuster earnings,1,1,0.9916,0.024351835250854492
+184,Cineplex Inc. Just Beat Earnings Expectations: Heres What Analysts Think Will Happen Next,1,1,0.9486,0.024419069290161133
+185,CrowdStrike strikes gain with another blow out report (CRWD),1,1,0.7313,0.02689385414123535
+186,Pharma ETFs Gain on Healthy Q4 Earnings,1,1,0.9955,0.027138233184814453
+187,Sonos Sounds Good After Earnings Beat,1,1,0.9947,0.02420186996459961
+188,Why Pinterest Earnings Were So Inspiring,1,1,0.9834,0.024637222290039062
+189,TOPS The world could soon run out of space to store oil. That may plunge prices below zero,-1,-1,0.974,0.024646282196044922
+190,"Almost 40% of oil and natural gas producers face insolvency within the year if the oil rout persists, a new Federal…",-1,-1,0.9791,0.024786949157714844
+191,Can West Texas Intermediate crude fall beneath 50 cents a barrel? Someone thinks so,-1,-1,0.9787,0.02911686897277832
+192,Fracking Blows Up Investors Again: Phase 2 Of The Great American Shale Oil & Gas Bust,-1,-1,0.9737,0.024408817291259766
+193,"Hurricane-force headwinds pull oil lower, but the losses arent built to last",-1,-1,0.9761,0.024441957473754883
+194,"Largest coal plant in the West shuts down, dealing financial losses to Native American tribes",-1,-1,0.9781,0.02422189712524414
+195,Oil companies warn Kansas City Fed there could be widespread insolvencies,-1,-1,0.9812,0.024173974990844727
+196,Oil Slumps as Market Catches up with Empty Trade-Deal Talk,-1,-1,0.9759,0.02411508560180664
+197,OPEC+ Weighs Emergency Response as Oil Slumps on Virus Panic,-1,-1,0.9798,0.024728059768676758
+198,Saudis Slash Oil Prices in Asia as Virus Causes Demand Shock,-1,-1,0.9751,0.0245208740234375
+199,"The U.S. cut its oil output forecast by more than 1 million barrels a day, days before OPEC and other producers mee…",-1,-1,0.9743,0.02410101890563965
+200,U.K. Flash PMIs - Uncertainty Driving Economy Into Recessionary Territory. Subscribe to Seeking Alpha for more:…,-1,-1,0.9793,0.024888992309570312
+201,U.S. Shale Producers Slash Spending Once Again,-1,-1,0.9789,0.024537086486816406
+202,"Coronavirus slowing oil product demand into China, Ardmore says",-1,-1,0.9636,0.025166988372802734
+203,Waning Pricing Power Could Stymie Oil States.,-1,-1,0.9737,0.02622699737548828
+204,Oil slides again as traders await news on OPEC+ cuts,-1,-1,0.9794,0.024946212768554688
+205,"Damned if they do, damned if they dont: Investors are punishing major oil companies for new crude reserves-and cle…",-1,-1,0.9701,0.024857044219970703
+206,Empty LNG tankers are idling off Qatar as China slows imports amid the virus outbreak,-1,-1,0.9795,0.02541804313659668
+207,Energy Down After Coronavirus-Case Estimate Revision -- Energy Roundup …,-1,-1,0.9795,0.023489952087402344
+208,Gasoline futures tumbled 17%to touch 50 cents a gallon for the first time since 2001,-1,-1,0.9723,0.024929046630859375
+209,GlobalData : Pemex in no position to maintain output profitably regardless of OPEC+ reques... …,-1,-1,0.9708,0.02414679527282715
+210,"Natural Gas UNG sharp sell-off past month seeing over 15,000 April 17 ITM calls open into weakness today",-1,-1,0.9784,0.024728059768676758
+211,Natural Gas Finally Starting To Buckle Against The Broader Market Liquidation.,-1,-1,0.9588,0.023895740509033203
+212,Oil drops 5%,-1,-1,0.9766,0.023627042770385742
+213,Oil drops,-1,-1,0.9767,0.02421712875366211
+214,Oil expert: Were looking at a worst case scenario of a 41 a barrel by,-1,-1,0.9805,0.025651931762695312
+215,Oil futures fall below 50 a barrel to settle at lowest in more than a year,-1,-1,0.9792,0.024159908294677734
+216,Oil Prices Hard Landing Initializing Descent. Continue reading,-1,-1,0.9755,0.025491952896118164
+217,"Oil spikes, U.S. stock futures sink after Iranian general killed in airstrike",-1,-1,0.9783,0.02617192268371582
+218,Saudi Arabia tanker power play could backfire as oil demand shrinks,-1,-1,0.9725,0.02453303337097168
+219,"WTI Extends Losses After Unexpected Crude Inventory Rise, Huge Product Build",-1,-1,0.945,0.025950908660888672
+220,Equinor Boosts Climate Targets as Oil Output Hits Record,1,1,0.9928,0.02569293975830078
+221,"Exxon: Shale Production Growth is Through the Roof, and Its Just Getting Started",1,1,0.9952,0.027590036392211914
+222,Lumber futures rally as producers cut output,1,-1,0.966,0.02310490608215332
+223,Oil - The Shale Treadmill Is Going To Be A Thing Of Beauty.,1,1,0.9912,0.025547027587890625
+224,Oil kicks off week with gains on fresh hopes for U.S.-China trade talks …,1,1,0.9947,0.02564215660095215
+225,"Oil nears three-month high as trade hopes, UK election lift sentiment",1,1,0.9717,0.02427816390991211
+226,Oil pared losses amid signs that Saudi Arabia and Russia are making progress toward an agreement to curb crude outp…,1,-1,0.9737,0.024923086166381836
+227,Oil rises for a second day as OPEC+ weighs coronavirus action,1,1,0.9887,0.024807214736938477
+228,"Qatar, the world’s biggest supplier of liquefied natural gas, plans to boost output capacity by almost two thirds",1,1,0.9967,0.024920940399169922
+229,U.S. Oil Prices Edge Up as Traders Look to OPEC+ Meeting …,1,-1,0.9554,0.024400949478149414
+230,"Futures for Brent crude, a global benchmark, jumped 3.3% to 68.44 per barrel during Asian trading hours on Friday,…",1,1,0.9889,0.024315834045410156
+231,Guyana is set to become a top oil producer with a newly-discovered offshore oil field. Insights,1,1,0.996,0.02533102035522461
+232,Investment in Canadas oil-sands is forecast to grow for the first time since prices crashed in 2014,1,1,0.9953,0.023853063583374023
+233,Oil Price Dynamics Report Oil prices rose over the past week owing to decreased supply.…,1,1,0.9806,0.024495840072631836
+234,Natural Gas And The Electric Power Sector: Mostly Bullish Signals.,1,-1,0.9677,0.02376389503479004
+235,Oil held near 50 a barrel in New York on signs that OPEC and its allies probably wont go ahead with a much-touted…,1,-1,0.88,0.025483131408691406
+236,"Oil prices soar after a U.S. air strike in Baghdad killed the head of Irans elite Quds Force, raising concerns tha…",1,-1,0.9743,0.025677919387817383
+237,"Oil prices surge after the U.S. kills Irans top commander in an airstrike, Brent crude nears 70 a barrel.…",1,1,0.9708,0.02623891830444336
+238,Oil rises for third day as coronavirus impact may spur output cuts,1,1,0.8944,0.025248050689697266
+239,U.S. oil firms vented or flared record amount of gas in 2018,1,-1,0.7883,0.024148941040039062
+240,Bipartisan Group Of US Lawmakers Introduce Bill Providing 3B To Buy Oil To Fill Strategic Petroleum Reserve SPY…,1,1,0.9671,0.02461075782775879
+241,"Hologic sees Q2 below consensus, withdraws FY 20 guidance",-1,-1,0.9631,0.09488725662231445
+242,Integra LifeSciences sees drop in Q1 revenue amid COVID-19,-1,-1,0.9773,0.04067087173461914
+243,NanoString Q1 top line shy of guidance amid COVID-19,-1,-1,0.9815,0.026124000549316406
+244,"Perceptron EPS misses by 0.02, misses on revenue",-1,-1,0.982,0.02400994300842285
+245,Pixelworks reports prelim Q1 revs below consensus,-1,1,0.8702,0.024524927139282227
+246,"Radiant Logistics EPS misses by 0.04, misses on revenue",-1,-1,0.9811,0.024407148361206055
+247,Silicom Limited sees Q1 revs below consensus,-1,1,0.9444,0.02543473243713379
+248,SeaSpine reports prelim Q1 revs below consensus; withdraws FY20 guidance,-1,-1,0.9633,0.0247650146484375
+249,"Affimed EPS misses by €0.03, misses on revenue",-1,-1,0.9815,0.024833202362060547
+250,BJs Wholesale lowers 2019 sales outlook to approximately 12.9 bln from 12.9 bln-13.2 bln,-1,-1,0.8956,0.02379322052001953
+251,"Brixmor Property FFO misses by 0.01, misses on revenue",-1,-1,0.981,0.023756742477416992
+252,"Brookfield Business Partners L.P. EPS misses by 1.41, misses on revenue",-1,-1,0.9812,0.024871826171875
+253,"Caterpillar Inc.s 2020 profit outlook trailed analysts estimates, with the heavy-equipment saying continued econo...",-1,-1,0.9382,0.02525782585144043
+254,Coach owner Tapestry cuts profit forecast on coronavirus hit,-1,-1,0.9792,0.024398088455200195
+255,"CoreSite Realty FFO misses by 0.01, misses on revenue",-1,-1,0.9813,0.026040077209472656
+256,Kellogg sees 2020 adj. currency-neutral EPS down 3%-4%,-1,-1,0.6942,0.025088071823120117
+257,Kohls Q3 EPS 78 cents vs. 98 cents,-1,1,0.678,0.025871992111206055
+258,Kohls Q3 revenue 4.625 bln vs. 4.628 bln; FactSet consensus 4.399 bln,-1,1,0.9817,0.027359962463378906
+259,Macys Q3 same-store sales down 3.5%,-1,-1,0.9671,0.028043031692504883
+260,National Oilwell Varco EPS of -1.01,-1,-1,0.6045,0.025765180587768555
+261,"New Jersey Resources EPS misses by 0.33, misses on revenue",-1,-1,0.9813,0.024508953094482422
+262,New York Times sees Q1 ad revenue down about 10%,-1,-1,0.8197,0.025012969970703125
+263,"Nordic American Tankers EPS misses by 0.04, misses on revenue",-1,-1,0.9819,0.026209592819213867
+264,Penn National EPS of -0.80,-1,-1,0.5538,0.02443408966064453
+265,"PPDAI Group EPS misses by 0.0452, misses on revenue",-1,-1,0.9813,0.025964021682739258
+266,"Ship Finance EPS misses by 0.18, misses on revenue",-1,-1,0.9809,0.024724960327148438
+267,"Suburban Propane Partners EPS misses by 0.02, misses on revenue",-1,-1,0.9816,0.02508378028869629
+268,Target Hospitality Corp. Just Missed EPS By 34%: Heres What Analysts Think Will Happen Next,-1,-1,0.9706,0.026194095611572266
+269,ThermoGenesis misses on revenue,-1,-1,0.979,0.024227142333984375
+270,"Tyson Foods EPS misses by 0.01, misses on revenue",-1,-1,0.9818,0.02389216423034668
+271,Tyson Foods Q1 prepared foods sales fell 3.1% to 2.14 bln,-1,-1,0.9713,0.02494215965270996
+272,"Vir Biotechnology EPS misses by 0.52, misses on revenue",-1,-1,0.981,0.02451777458190918
+273,"Volkswagen cuts profit, sales forecasts as autos downturn bites",-1,-1,0.9781,0.02496504783630371
+274,Zynga (ZNGA) Q4 Earnings Miss Estimates - Nasdaq,-1,-1,0.9814,0.0246279239654541
+275,"AngioDynamics beats by 0.02, beats on revs; withdraws FY20 guidance",1,-1,0.8437,0.02477884292602539
+276,"Brighthouse Financial EPS beats by 0.27, beats on revenue",1,1,0.9828,0.02479696273803711
+277,"Chegg EPS beats by 0.06, beats on revenue",1,1,0.9891,0.02598285675048828
+278,"II-VI EPS in-line, beats on revenue",1,1,0.994,0.024378061294555664
+279,"j2 Global EPS beats by 0.01, beats on revenue",1,1,0.9904,0.025433063507080078
+280,"Mimecast EPS beats by 0.02, beats on revenue",1,1,0.9897,0.02287912368774414
+281,PriceSmart announced that for the month of March 2020 net merchandise sales increased 17.1% to 306.1...,1,1,0.9944,0.02576279640197754
+282,"SMART Global EPS beats by 0.02, beats on revenue",1,1,0.9911,0.024480104446411133
+283,Ã‚Â Chegg Reports 2019 Financial Results and Raises 2020 Guidance,1,1,0.9939,0.024653196334838867
+284,"Albany EPS beats by 0.24, beats on revenue",1,1,0.9864,0.024366140365600586
+285,"Becton Dickinson Earnings, Revenue Beat in Q1",1,1,0.954,0.024836063385009766
+286,"Blackbaud EPS beats by 0.01, beats on revenue",1,1,0.9822,0.024143218994140625
+287,Chipotle Earnings Highlight Strong Business Momentum,1,1,0.9956,0.02518296241760254
+288,"Construction Partners EPS in-line, beats on revenue",1,1,0.9934,0.024322032928466797
+289,Equinor fourth-quarter profit beats forecast amid oilfield startup,1,1,0.9837,0.02704620361328125
+290,"Euroseas EPS beats by 0.02, beats on revenue",1,1,0.9891,0.02772998809814453
+291,"EVI Industries Sets Records for Revenue, Gross Profit and Operating Cash Flow for Second Quarter of Fiscal 2020",1,1,0.9899,0.024815797805786133
+292,Fiat Chrysler fourth-quarter lifted by North America business to meet expectations,1,1,0.9914,0.023920774459838867
+293,Geelys Volvo posts 18% rise in fourth-quarter profit,1,1,0.9962,0.025604963302612305
+294,Home Depot Q3 comparable-store sales in U.S. up 3.8%,1,1,0.9916,0.02449798583984375
+295,"VI EPS in-line, beats on revenue",1,1,0.9928,0.023817062377929688
+296,Just Energy (JE) Tops Q3 Earnings Estimates,1,1,0.9937,0.024257898330688477
+297,"LexinFintech EPS in-line, beats on revenue",1,1,0.995,0.02606201171875
+298,Madison Square Garden Q2 EPS 3.93 vs. 3.42,1,-1,0.6787,0.024058818817138672
+299,Nokia posts surprise fourth-quarter profit rise on cost cuts,1,1,0.9942,0.023872852325439453
+300,"OneMain Holdings EPS beats by 0.21, beats on revenue",1,1,0.9848,0.02593684196472168
+301,"PJT Partners EPS beats by 0.11, beats on revenue",1,1,0.9918,0.028142929077148438
+302,Popeyes Chicken Sandwich Causes Sales to Jump 42% Higher,1,1,0.9933,0.028502941131591797
+303,"QIWI plc EPS beats by 0.15, beats on revenue",1,1,0.9879,0.025374889373779297
+304,Rapid7 (RPD) Q4 Earnings and Revenues Beat Estimates,1,1,0.9534,0.024687767028808594
+305,"Regeneron Pharmaceuticals EPS beats by 0.59, beats on revenue",1,1,0.9871,0.024447917938232422
+306,"RMR Group EPS beats by 0.01, beats on revenue",1,1,0.9909,0.024064064025878906
+307,Samsung first-quarter beats estimates; chips likely to prop up virus-hit second-quarter - Reuters,1,-1,0.9778,0.023478031158447266
+308,Sanofi eyes more EPS growth this year as it narrows focus,1,1,0.5885,0.024055004119873047
+309,Skechers Announces Record Fourth Quarter Sales of 1.33 Billion and Record Annual Sales of 5.22 Billion in 2019,1,1,0.9942,0.02525782585144043
+310,Strong cash flow keeps Totals fourth-quarter net profit steady,1,1,0.9948,0.02352595329284668
+311,The Estée Lauder Companies Delivers Exceptional Fiscal 2020 Second Quarter Results,1,1,0.9956,0.026214122772216797
+312,TJX raises 2020 EPS outlook to 2.61-2.63 from 2.56-2.61,1,1,0.996,0.024194002151489258
+313,"Transurban : 1st Half Profit Up 46%, Increased Traffic Drives Toll Revenue Rise …",1,1,0.9946,0.025924205780029297
+314,"Twitter notches first 1 billion quarterly revenue, beating estimates",1,1,0.9894,0.023488998413085938
+315,"Twitter tops user, sales expectations for 4Q",1,1,0.9923,0.02416706085205078
+316,New York Times beats earnings estimates for Q4 as subscriptions rise,1,1,0.9933,0.02394700050354004
+317,UPL Q3 Results: Profit Meets Estimates As Latin American Markets Shine,1,1,0.994,0.023933887481689453
+318,"Viomi Technology EPS beats by 0.01, beats on revenue",1,1,0.9924,0.024363040924072266
+319,"Volvo Cars posts rise in fourth-quarter profit, helped by cost cuts and sales growth",1,1,0.9955,0.02463388442993164
+320,Yum! Brands Reports Solid Fourth-Quarter Results and Completion of Strategic Transformation; System Sales Growth of 10%; Same-Store Sales Growth of 2%; GAAP Operating Profit Decline of (26)%; Core Operating Profit Growth of 14%,1,-1,0.5923,0.025503158569335938
+321,AUD/USD Weekly Price Forecast – Australian Dollar Slams Into Resistance,-1,-1,0.9729,0.025803089141845703
+322,EUR/USD Price Forecast – Euro Looks Likely To Break Down,-1,-1,0.9356,0.023324966430664062
+323,Euro pinned near 10-day lows as outlook bleak - SI,-1,-1,0.9805,0.02435612678527832
+324,The Euro Is A Structural Short As BoJo’s Landslide Victory Ensures The U.K.’s Exit From the E.U.,-1,-1,0.9363,0.024448156356811523
+325,U.S. Dollar Index Futures (DX) Technical Analysis – Looking for Break into Retracement Zone at 97.630 to 97.472,-1,1,0.6284,0.02423715591430664
+326,Canadian dollar climbs to 11-day high amid coronavirus optimism,1,1,0.9739,0.024428606033325195
+327,EUR/USD Failure of 1-2-3 Pattern Might be Bullish,1,-1,0.9803,0.026014089584350586
+328,GBP/JPY Price Forecast – British Pound Gaps Higher After Election Results,1,1,0.8325,0.02342510223388672
+329,GBP/USD – Pound Soars as Conservatives Cruise to Majority,1,1,0.9698,0.024710893630981445
+330,Pound Jumps To The Highest This Year As Boris Johnson Heads For Majority,1,1,0.9902,0.02475118637084961
+331,"South Africas rand firmer as risk takers return, stocks up 3.29%",1,-1,0.9779,0.025054216384887695
+332,USD/JPY Forecast: USD to Consolidate Against JPY - DailyForex.com,1,1,0.8748,0.023710966110229492
+333,USD/JPY Weekly Price Forecast – Dollar Continues To Test Resistance,1,1,0.7116,0.02310800552368164
+334,A Health Check of India Shadow Banks Points to Prolonged Trouble,-1,-1,0.9806,0.025667667388916016
+335,American farmers are already suffering for lack of exports (via ),-1,-1,0.9754,0.024404048919677734
+336,Banks undergoing real stress test as recession fears continue by,-1,-1,0.9824,0.025578022003173828
+337,Business tax payments will hit a record low this year,-1,-1,0.9755,0.023459196090698242
+338,Canadas economy could end up being the big loser as a rail strike drags on,-1,-1,0.977,0.024934053421020508
+339,Caution Abounds Even as Emerging Markets Ready Year-Ending Rally,-1,-1,0.6831,0.026227951049804688
+340,China M&A Bankers Face Another Grim Year,-1,-1,0.9758,0.023745059967041016
+341,Coronavirus pandemic has driven a very ample market correction: former European Central Bank chief…,-1,1,0.9713,0.02411508560180664
+342,Coronavirus will probably destroy one of the stock markets biggest crutches by,-1,-1,0.9706,0.024389982223510742
+343,Every Bubble Eventually Finds Its Pin,-1,1,0.9602,0.026600122451782227
+344,Here is a list of companies that have suspended dividends or stopped stock buybacks in April,-1,-1,0.9804,0.026582002639770508
+345,"Highlight: Were gonna see companies start to report results and I think its gonna look ugly, Mike Bai…",-1,-1,0.9758,0.02766704559326172
+346,New by shows is already impacting the US economy with unprecedented speed and sever…,-1,1,0.9315,0.02423882484436035
+347,"Only 11% of quant funds are ahead of their benchmark YTD, underperforming by 3.2ppt: BofA",-1,-1,0.9046,0.02415323257446289
+348,Small U.S. businesses were already struggling. Then coronavirus hit,-1,-1,0.9711,0.024821996688842773
+349,Survey: 1 in 6 shoppers are still paying off last years holiday debt by,-1,-1,0.9814,0.02500176429748535
+350,Tech War Set To Deepen As China Stockpiles US Chips Amid Silicon Curtain Threat,-1,-1,0.8726,0.024630069732666016
+351,"The days of extraordinary market returns are over, says BlackRock",-1,-1,0.7168,0.02426886558532715
+352,"The dual shocks of the Saudi-Russian oil price war and the Covid-19 pandemic could put 500,000 Albertans out of wor…",-1,-1,0.962,0.02522897720336914
+353,The Fraud That Is ESG Strikes Again: Six Of Top 10 ESG Funds Underperform The S&P500,-1,-1,0.9761,0.025380849838256836
+354,"The job loss reflected in Fridays report is a shock that is unprecedented, as is the uncertainty surrounding it-wh…",-1,-1,0.9662,0.026160240173339844
+355,Trader Warns The Rally Is Crumbling Below The Surface,-1,-1,0.9776,0.025077104568481445
+356,"Turkish banks refuse to lend to Istanbul, hey heres an idea: lets open it up to the European idiots who will buy…",-1,1,0.9927,0.025287866592407227
+357,Videoconferences Zoom Toward Market-Boom Reckoning.,-1,1,0.9272,0.025439023971557617
+358,"When Chinese Consumers Stay Home, the Worlds Retailers Take Hit",-1,-1,0.966,0.024753093719482422
+359,"U.S. is past the peak, economy to reopen shortly - JPMorgan",1,1,0.7863,0.02657294273376465
+360,Conditions for stock picking are improving as shares of big U.S. companies have begun to diverge,1,1,0.9948,0.023023128509521484
+361,"Highlight: Youre seeing some level of optimism, just because weve come way off the lows, says.…",1,1,0.9921,0.025310277938842773
+362,"Highlight: Berenberg reiterates its Buy rating on BYND. I think the most exciting part is the growth potential,…",1,1,0.9959,0.024691343307495117
+363,"Highlight: Goldman Sachs predicts that gold will reach 1,600 an ounce by 2020. “1,600 is gonna be a footnote,” sa…",1,1,0.9654,0.02537083625793457
+364,Navigant Research Report Shows Commercial Lighting Controls Revenue Is Expected to Experience a 5% Compound Annual Growth Rate from 2019-2028,1,1,0.9964,0.02409505844116211
+365,Santa Claus rally,1,1,0.7793,0.02529001235961914
+366,Spirit MTA REIT (NYSE:SMTA) Shares Have Generated A Total Return Of 34% In The Last Year,1,1,0.995,0.0242769718170166
+367,The Consumer Economy Continues to Shrug Off Industry’s Woes,1,1,0.9408,0.025651216506958008
+368,The EVN (VIE:EVN) Share Price Has Gained 60% And Shareholders Are Hoping For More,1,1,0.9968,0.024691104888916016
+369,The number of customers canceling Netflix hasn’t accelerated around the debut of rival services from Disney and App…,1,-1,0.9229,0.024451017379760742
+370,This chart shows why BlackRock is upbeat on U.S. credit despite the pandemic,1,1,0.9775,0.024230003356933594
+371,This Is Why Peloton Stock Remains a Buy,1,1,0.8509,0.02499699592590332
+372,"This ratio suggests the U.S. stock market will take a ‘brief pause’ then climb higher, analyst says - MarketWatch",1,1,0.9912,0.02532505989074707
+373,"U.S. banks will likely be allowed to keep paying dividends, even as the coronavirus pandemic threatens to create a…",1,-1,0.8783,0.024834156036376953
+374,Weekly portfolios report : Stress quickly erased …,1,-1,0.9593,0.024372339248657227
+375,Gold Price Forecast – Gold Markets Decline Into The Weekend,-1,-1,0.9787,0.024451255798339844
+376,Brazils Vale loses spot as worlds top iron ore producer to Rio Tinto,-1,-1,0.9706,0.02431488037109375
+377,Indias gold imports declined for the fifth month as the slowest economic growth in six years curbed demand during…,-1,-1,0.9757,0.02421712875366211
+378,Gold Falls After Strong Jobless Report,-1,-1,0.9745,0.023684978485107422
+379,Gold Edges Lower With Investors Eyeing Economic Data,-1,-1,0.9751,0.024914026260375977
+380,Gold Edges Lower With Investors Eyeing Economic Data,-1,-1,0.9751,0.025393247604370117
+381,Copper drops again; LME closes Ring for first time since WW II,-1,-1,0.9654,0.023996353149414062
+382,Volatility in New York gold prices impacting liquidity in London - LBMA …,-1,-1,0.9804,0.024020910263061523
+383,"CUR GLD IAU - Gold closing in on 1,700",1,1,0.9852,0.02524733543395996
+384,"Dec. gold climbs 2.40, or 0.2%, to settle at 1,474.30/oz",1,1,0.9844,0.025086164474487305
+385,"Feb. gold climbs 8.90, or 0.6%, to settle at 1,481.20/oz",1,1,0.9867,0.026332378387451172
+386,"Gold futures climb nearly 3%, settling at the highest level since December 2012",1,1,0.9887,0.02611994743347168
+387,Gold Soars To 8-Year Highs As Stocks Melt-Up On Massive Short-Squeeze,1,1,0.9487,0.028764009475708008
+388,Silver Weekly Price Forecast – Silver Markets Rally Significantly,1,1,0.7036,0.02417898178100586
+389,Gold rises,1,1,0.9906,0.02442789077758789
+390,Gold: Prepare For Bull Market To Begin Any Day.,1,1,0.9746,0.02463507652282715
+391,Align loses patent case against 3Shape,-1,-1,0.9762,0.025732994079589844
+392,Alstoms U.K. unit fined 15 million pounds in connection with bribes paid in Tunisia,-1,-1,0.9787,0.026085853576660156
+393,"Amazon files suit, challenging Pentagon’s 10 billion cloud contract to Microsoft",-1,-1,0.9759,0.024765968322753906
+394,Amazons Third-Party Marketplace Faces Fresh Regulatory Headwinds,-1,-1,0.9759,0.023747920989990234
+395,Auto parts supplier Prevent sues Volkswagen for suppressing competition,-1,-1,0.7925,0.024148941040039062
+396,EU probes Qualcomm over radio-frequency chips,-1,-1,0.7514,0.025079965591430664
+397,Indias state-run banks report fraud of more than 13 billion in 6 months,-1,-1,0.975,0.023818016052246094
+398,"Madhya Pradesh Vyapam Scam: Man Gets 10 Years, 30 Others Get 7 Years In Jail",-1,-1,0.9765,0.025730609893798828
+399,New York hits Juul with a lawsuit,-1,-1,0.9685,0.02441120147705078
+400,Rio Tinto faces Mongolia lawsuit over Oyu Tolgoi mine,-1,-1,0.9781,0.025790929794311523
+401,Sanctions-hit refiner Nynas handed administrator by Swedish court,-1,-1,0.9782,0.024497270584106445
+402,U.S. agency probes 12th Tesla crash tied to possible Autopilot use,-1,-1,0.9792,0.024070024490356445
+403,UK regulator orders recall of fire-risk Whirlpool washing machines,-1,-1,0.9789,0.025297880172729492
+404,"United was sued by a passenger for refusing to issue refunds, just days after U.S. regulators ordered airlines to r…",-1,-1,0.9781,0.025500059127807617
+405,UPDATE 1-Italian police search ArcelorMittal offices over Ilva probe,-1,-1,0.9792,0.025219202041625977
+406,Walmart employees family files wrongful death lawsuit after man dies of coronavirus complications,-1,-1,0.9792,0.02378106117248535
+407,WeWork Faces Another Investigation Over Neumann,-1,-1,0.9788,0.023498058319091797
+408,Teva in talks with DoJ to end generics probes - Bloomberg,1,1,0.8705,0.0250699520111084
+409,BPH Energy : Settlement of Litigation,1,-1,0.9033,0.02497696876525879
+410,Enterprise Wins Favorable Ruling From Texas Supreme Court,1,1,0.995,0.03133583068847656
+411,Fiat reaches settlement with Italy tax agency over Chrysler value claim,1,-1,0.9493,0.026482820510864258
+412,GM not liable for punitive damages in ignition switch cases: U.S. appeals court,1,-1,0.8983,0.023975849151611328
+413,Gm wins key legal victory over pre-bankruptcy liability,1,1,0.9927,0.024283885955810547
+414,HSBC makes last-minute settlement with ex-currencies head,1,-1,0.9667,0.023614883422851562
+415,Americas manufacturing sector is in a recession. But that is only part of the story. The industry has expanded by...,-1,1,0.961,0.024791955947875977
+416,Argentinas story: ⏩ Leaders spend ⏩ Investors sour ⏩ Inflation spikes ⏩ Recession hits 🔃 Repeat (via…,-1,-1,0.9727,0.025351285934448242
+417,Brazil coffee production falls 20%,-1,-1,0.9725,0.02491307258605957
+418,Brazil is losing one of its most reliable growth drivers as consumer demand plummets,-1,-1,0.9703,0.024764299392700195
+419,Builder confidence slips in November,-1,-1,0.9789,0.024129152297973633
+420,"Canada’s job market unexpectedly weakened for a second-straight month, registering the biggest drop in employment s…",-1,-1,0.971,0.02546215057373047
+421,China braces for a wave of soured loans with a new bad-debt manager,-1,1,0.5685,0.02519822120666504
+422,China delays trade data; S&P cuts growth forecast,-1,-1,0.9787,0.023698091506958008
+423,Chinas first-quarter smartphone sales may halve due to coronavirus: analysts,-1,-1,0.9774,0.023862123489379883
+424,Eurozone PMI Shows Economy Close To Stagnation. Sign up for updates on Seeking Alpha!,-1,-1,0.8879,0.02481818199157715
+425,Fitch Ratings adds to the drumbeat of credit assessors warning Oman about its precarious public finances,-1,-1,0.8879,0.026803016662597656
+426,German Economic Weakness Exposed Again as Industry Slumps,-1,-1,0.9761,0.024437904357910156
+427,Germany’s machine makers warned that concerns over investments from China into Europe’s largest economy are at risk…,-1,-1,0.9754,0.025367021560668945
+428,Gig workers could increase unemployment claims by another 10%: economist by,-1,1,0.9793,0.026647090911865234
+429,Goldman Sachs sees China lowering its economic growth target for 2020 to around 6%,-1,-1,0.9703,0.02831721305847168
+430,"Half of small businesses fall behind on April rent, poll finds - WSJ",-1,-1,0.9787,0.024348020553588867
+431,Jobless claims hits 2.5 months high,-1,-1,0.9774,0.025380849838256836
+432,Lackluster U.S. retail sales dim fourth quarter economic growth outlook,-1,-1,0.9777,0.024412870407104492
+433,Larry Kudlow says Dec. 15 tariffs are still on the table,-1,-1,0.9175,0.025104284286499023
+434,Lebanon Turns to IMF as Fitch Sounds Alarm on Default,-1,-1,0.7406,0.02747321128845215
+435,"March 2020 SCE records a substantial deterioration in financial and economic expectations, including sharp declines…",-1,-1,0.9779,0.02394700050354004
+436,March SCE results show a sharp deterioration in consumer expectations. Check out the findings at the Center for Mic…,-1,-1,0.9783,0.025264978408813477
+437,Mass layoffs push Canada consumer confidence to all-time low,-1,-1,0.9738,0.024990081787109375
+438,"Mortgage forbearance requests jump nearly 2,000% as borrowers seek relief during coronavirus outbreak",-1,1,0.9857,0.02379322052001953
+439,Our microeconomists take a look at the substantial deterioration in consumer expectations in March as a result of t…,-1,-1,0.978,0.025498151779174805
+440,Retail sales falls short of expectation,-1,-1,0.9745,0.024889707565307617
+441,Revised Mexican data paints an even bleaker picture of a stagnant economy,-1,-1,0.9691,0.024871826171875
+442,San Francisco Faces Budget Gap as 6 Billion Can’t Meet Costs,-1,-1,0.965,0.024705886840820312
+443,Sentiment among U.S. small businesses collapsed in March by the most on record,-1,-1,0.9692,0.024014949798583984
+444,Spanish Farmers Rise Up Against Unfair Prices Amidst The Worst Agri-Food Crisis In Decades,-1,1,0.984,0.024965286254882812
+445,Stock Market Update: November retail sales increase less than expected,-1,1,0.9906,0.024424314498901367
+446,Substantial deterioration in consumer expectations: NY Fed survey by,-1,-1,0.9808,0.023669004440307617
+447,Texas manufacturing activity weakens slightly,-1,-1,0.9697,0.02369403839111328
+448,The real estate market in downtown Los Angeles is taking a hit as Chinese cash dries up,-1,-1,0.8389,0.025195837020874023
+449,The U.S. budget deficit widened in November to 208.8 billion,-1,-1,0.975,0.024305105209350586
+450,"U.S. coal production will fall even more sharply than expected this year, dragging down demand for electricity",-1,-1,0.9699,0.024139881134033203
+451,"U.S. economy is in a contraction, says Larry Kudlow, adding that it could reopen in four to eight weeks",-1,1,0.9835,0.024079084396362305
+452,"U.S. retail sales rise slightly, cast shadow on Q4 economic growth",-1,1,0.9874,0.025702714920043945
+453,U.S. Stocks Drop on Economic Growth Concerns,-1,-1,0.98,0.025335073471069336
+454,US Proved Oil & Gas Reserves Hit New Record High,-1,1,0.9824,0.024818897247314453
+455,Diesel Demand Slump Signals Manufacturing Recession Is Still Raging,-1,-1,0.9807,0.025289058685302734
+456,December University of Michigan Consumer Sentiment- Prelim 99.2 vs 96.5 consensus;…,1,-1,0.7577,0.024553298950195312
+457,November Nonfarm Payrolls 266K vs 182K consensus,1,-1,0.6117,0.024665117263793945
+458,October Wholesale Inventories M/M -0.7% vs +0.2% consensus,1,1,0.9296,0.02429485321044922
+459,12.23 Lakh New Jobs Created In September: ESIC Payroll Data,1,1,0.9821,0.026939868927001953
+460,"At 11.2%, Air Passenger Growth Returns To Double-Digits In November",1,1,0.9928,0.023312091827392578
+461,"Austria is planning the first steps to restart its economy as soon as next week, the first European country to do so",1,1,0.9961,0.025034189224243164
+462,Booming London Defies Weak Second Quarter for Britain’s Economy,1,1,0.7676,0.024281024932861328
+463,Building permits rise 5% in October to 1.461 million rate,1,1,0.9961,0.02468085289001465
+464,Canadian builders began 2020 with a strong rebound in housing starts that is good news for the nations increasingl…,1,1,0.9957,0.024487972259521484
+465,China is buying more U.S. soybeans as both countries try to reach an initial agreement on trade.,1,1,0.9952,0.02482318878173828
+466,"China is in the process of waiving retaliatory tariffs on imports of U.S. pork and soy by domestic companies, a pro…",1,1,0.9871,0.024305343627929688
+467,"Consumer credit 18.9BN, Exp. 16BN, Last 9.6BN",1,-1,0.9193,0.024278879165649414
+468,Corporate venture capital deals hit new record as banks invest in fintech competitors,1,1,0.993,0.02539229393005371
+469,"Dubai Economy Grew 2.1% in First Half of 2019, Says Media Office",1,1,0.9961,0.024775028228759766
+470,Fannie boosts 2020 real GDP outlook on housing strength,1,1,0.9965,0.027212142944335938
+471,Global air passenger traffic has grown at 4% YoY in 2019 ytd while air freight volumes contracted 4% over the same period: BofA,1,1,0.996,0.027904987335205078
+472,"Global Economy Wont See Recession in 2020, Says Quilvest",1,-1,0.8707,0.026854991912841797
+473,GlobalData : Global sales of psychiatric drugs could reach more than 40bn by 2025 due to ... …,1,1,0.9863,0.025393009185791016
+474,Goldman: Go Long On Fracking,1,-1,0.979,0.024513959884643555
+475,Here Is The Main Reason For Todays Blockbuster Jobs Report,1,1,0.9526,0.025319814682006836
+476,Housing starts climb 3.8% in October to 1.314 million rate,1,1,0.993,0.024590015411376953
+477,"IHS Markit sees global GDP growth stabilizing at 2.5% in 2020, rising to 2.7% in 2021",1,1,0.9958,0.02525806427001953
+478,Illinoiss Legalized Pot Sales Debut Beats All States Except One,1,1,0.992,0.024903297424316406
+479,"Job Growth Surges In January, Beating Wall Street Expectations",1,1,0.9933,0.024463891983032227
+480,Job growth swells in January,1,1,0.9906,0.023497819900512695
+481,Jobs Report Should Bolster Fed Confidence: Riccadonna (Radio),1,1,0.9955,0.026121139526367188
+482,Mild weather boosts U.S. job growth; but benchmark revisions show ebbing momentum,1,1,0.9921,0.024636030197143555
+483,Mnuchin says trade deal with China to boost global economy,1,1,0.9966,0.02436208724975586
+484,RECAP 11/22 TRUMPSAYS: China deal is coming along very well Live Breaking trading news,1,1,0.9924,0.02456188201904297
+485,Saudi Arabias Unemployment Falls to Lowest in Over Three Years,1,-1,0.9738,0.02494192123413086
+486,"Small Business Roundtable with President Trump: Regulatory Relief is Boosting Revenues, Job Growth and Entrepreneur…",1,1,0.9952,0.024770021438598633
+487,"Stock Market Update: Housing starts, building permits pick up in October",1,1,0.9553,0.024591684341430664
+488,U.K. House Prices Rise 0.4% With Signs of Strengthening Economy,1,1,0.9939,0.024475812911987305
+489,U.S. factory and services activity quicken in November: Markit,1,1,0.9867,0.02388286590576172
+490,UMich Consumer Confidence Surges In Early December Read,1,1,0.9933,0.0244600772857666
+491,United States: JOLTS Job Openings better than estimates at 6.88M,1,1,0.9904,0.02488994598388672
+492,"US industrial production snaps back, rises 1.1% in November",1,1,0.9928,0.02777385711669922
+493,WRAPUP 1-U.S. housing starts rise; permits highest in over 12 years,1,1,0.9934,0.027178049087524414
+494,Zimbabwe to the IMF: “Our fundamentals are now sound”,1,1,0.9822,0.025601863861083984
+495,Asia markets mostly fall as Chinas trade data gets delayed,-1,-1,0.9779,0.02494215965270996
+496,China Risks Exporting Market Volatility Like Never Before,-1,-1,0.9746,0.02417588233947754
+497,"Dow closes about 102 points, 0.4%, lower",-1,-1,0.973,0.024413108825683594
+498,Dow falls 0.5%;S&P 500 falls 0.3% at Fridays open,-1,-1,0.9714,0.024848222732543945
+499,Dow is down over 500 points. Heres what you need to know now,-1,-1,0.9765,0.024243831634521484
+500,Dow Jones Industrial Average 8 points lower,-1,-1,0.9767,0.025213003158569336
+501,Final-hour selloff costs stocks all their gains Tuesday as the Dow ends down 26,-1,-1,0.9787,0.024209260940551758
+502,Futures extend declines after January jobs data,-1,-1,0.9823,0.025413036346435547
+503,Higher tariffs threat weigh on global markets,-1,-1,0.9705,0.027852773666381836
+504,"Japanese shares fall led by IT sector, as Trump warns of more tariffs",-1,-1,0.9776,0.02418994903564453
+505,"Nasdaq-100 futures fall 20 points, or 0.2%",-1,-1,0.972,0.02502608299255371
+506,S&P Futures Crater 40 Points In One Tick On Huge For Sell Closing Imbalance,-1,-1,0.978,0.02657318115234375
+507,Stock Market Live Updates: Markets lower as US-China trade optimism dissipates,-1,-1,0.9739,0.025722980499267578
+508,"Stock Market Update: Asia closes mixed, Asia trades lower",-1,-1,0.9809,0.024113893508911133
+509,Stock Market Update: Futures slip lower following trade tweet from CNBC reporter,-1,-1,0.9832,0.02511119842529297
+510,Stock Market Update: Semiconductor stocks pull back after Qualcomm earnings,-1,-1,0.9761,0.024551868438720703
+511,Stock-index futures turn negative,-1,-1,0.9781,0.02491283416748047
+512,Stocks hit lows of the day as oil briefly plunges more than 9%,-1,-1,0.9749,0.02584695816040039
+513,Stocks hit lows of the day as oil plunges briefly plunges more than 9%,-1,-1,0.9756,0.026968002319335938
+514,Stocks open lower on trade deal skepticism,-1,-1,0.9805,0.027193784713745117
+515,The Dow is down more than 500 points as Fridays selloff intensifies,-1,-1,0.9792,0.024381160736083984
+516,"The S&P 500s chart is signaling a near-term pullback, technical analyst warns (via )",-1,-1,0.9812,0.023700952529907227
+517,"Trade, U.S. Elections Are Top Market Risks, Says Goldman Sachss Moe",-1,-1,0.9802,0.023569345474243164
+518,Fed fires a dud as financial sector plunges,-1,-1,0.9729,0.024322986602783203
+519,Overnight Summary -- World markets extending gains overnight,1,1,0.9707,0.02429485321044922
+520,Market Briefing: Market still riding hope of COVID-19 plateauing,1,1,0.9733,0.024155855178833008
+521,All three benchmarks trade in record territory,1,1,0.9721,0.024641036987304688
+522,Asian markets gain amid fresh hopes for U.S.-China trade deal,1,1,0.9959,0.023814916610717773
+523,Asian shares advance after Fed keeps interest rates steady,1,1,0.9938,0.023223876953125
+524,Bulletproof stock market shakes off negative trade headlines and keeps marching to records,1,-1,0.8843,0.02600693702697754
+525,"Dow ends nearly 1,600 points higher on hopes coronavirus peak is near",1,1,0.9163,0.02518606185913086
+526,"Dow Industrials Surge 1,200 Points at Start of Challenging Week …",1,1,0.9911,0.02483391761779785
+527,"Dow jumps 170 points, Amazon leads S&P 500 and Nasdaq to record highs",1,1,0.991,0.02834296226501465
+528,Dow scores triple-digit gain on rosier investor view of U.S.-China trade talks,1,1,0.9945,0.026449918746948242
+529,"Dow up 26 points, or 0.1%; S&P 500 adds 1 point",1,1,0.9918,0.023250818252563477
+530,Emerging Markets Get Fresh Boost of Hope Over Trade Deal,1,1,0.9963,0.025272130966186523
+531,European shares extend winning streak; Qiagen jumps as company explores sale,1,1,0.995,0.026179790496826172
+532,Futures climb on China plan to cut tariffs on U.S. products,1,1,0.9782,0.024259090423583984
+533,Futures Fly On Trade Optimism Amid Barrage Of Megamergers,1,1,0.8956,0.025638103485107422
+534,"Global stocks gain after China cuts U.S. import tariffs, virus fears wane",1,1,0.9688,0.02456498146057129
+535,Heres what has futures higher to kick off the holiday week,1,1,0.9946,0.02418208122253418
+536,Hong Kong Stocks Nearly Recover Post-Holiday Losses With Rally,1,-1,0.5368,0.025477170944213867
+537,Industrials Up As Global Growth Fears Subside -- Industrials Roundup …,1,-1,0.9736,0.02480173110961914
+538,Muni-Bond Bankers Brace For Record Year In 2020: Mysak (Radio),1,1,0.9934,0.0242919921875
+539,Nasdaq hits record at closing bell as investors digest phase onetrade deal,1,1,0.9912,0.028373003005981445
+540,"Nasdaq-100 futures rise 18 points, or 0.2%",1,1,0.9949,0.02323627471923828
+541,NYSI buy signal that triggered last week remains modestly above the 8 EMA level,1,-1,0.9617,0.024650096893310547
+542,S&P 500 Price Forecast – Stock Markets Break To A Fresh New High - Yahoo Finance,1,1,0.9574,0.024778127670288086
+543,"S&P 500, Nasdaq Composite post record close as stocks rise",1,1,0.9935,0.024213075637817383
+544,"S&P 500, Nasdaq hit record closing highs; Chinese workers return",1,1,0.973,0.023502111434936523
+545,"S&P 500, Nasdaq reach record closing highs; Chinese workers return",1,1,0.9865,0.024106979370117188
+546,"S&P 500, Nasdaq see closing highs; Slack halted for coming news",1,-1,0.9677,0.025368690490722656
+547,S&P rises 5%,1,1,0.995,0.024239063262939453
+548,"So far, the train is coming in right on schedule; Dow up 25% off the lows. BA consolidating its run up.",1,1,0.9921,0.02447795867919922
+549,Stock Market Heads Off A Correction – For Now.,1,1,0.5785,0.02423095703125
+550,"Stock market live updates: Dow futures up 800 points, set to add to 1,600-point Monday rally",1,1,0.9858,0.024814844131469727
+551,Stock Market Update: Global stocks begin the week on higher note,1,1,0.9693,0.02413201332092285
+552,"Stock Market Update: Global stocks gain, with indices in Hong Kong and the UK outperforming",1,1,0.9907,0.0244448184967041
+553,Stock Market Update: S&P 500 financials sector up more than 4% this month,1,1,0.9532,0.02440500259399414
+554,Stock Market Update: Stock market drifts in record territory,1,-1,0.9797,0.0260009765625
+555,"Stock Market Update: Stock market posts incremental gains, closes at new highs",1,1,0.7134,0.02673482894897461
+556,StockBeat - Chip Stocks Rise as Huawei Granted Another Reprieve on Trade Ban,1,1,0.9936,0.027940034866333008
+557,"Stock-index futures extend gains after jobless claims, productivity data",1,1,0.9903,0.02543163299560547
+558,Stocks aim for back-to-back gains as investors focus on coronavirus case tally,1,1,0.9908,0.02464604377746582
+559,Dow up 3.90% - Nasdaq up 2.68% - S&P up 2.76%,1,1,0.9894,0.02431201934814453
+560,Stocks open higher as major indexes extend push into record territory,1,1,0.9854,0.02460789680480957
+561,"Stocks open higher on rosy data, waning virus fears",1,-1,0.8902,0.024106979370117188
+562,Stocks perk up after Fed decision,1,1,0.9727,0.024437904357910156
+563,"Stocks rose after China moves to step up intellectual property protection, a step that investors hope may address k…",1,1,0.995,0.024013757705688477
+564,Dow up 7.59% - Nasdaq up 7.35% - S&P up 6.95%,1,1,0.99,0.02472710609436035
+565,Tech stocks led all three major U.S. stock averages marginally into the black following upbeat statements on the U.…,1,-1,0.8823,0.02427506446838379
+566,The market bounced back after President Trump said the US and China are “potentially very close” on a trade deal. T…,1,1,0.9756,0.025439977645874023
+567,TSX opens higher on signs of coronavirus slowdown,1,1,0.9873,0.023890972137451172
+568,U.S. Stock Futures Extend Gain on China’s Tariff Olive Branch,1,1,0.9928,0.025371789932250977
+569,U.S. Stocks Rise as China Calls for Better Communication on Trade …,1,1,0.9931,0.023761987686157227
+570,U.S. stocks surged the most in more than a week on Monday after death tolls in some of the hardest-hit areas showed…,1,1,0.9858,0.027591943740844727
+571,Wall Street closes up more than 7% on hopes of slowing coronavirus deaths,1,1,0.7585,0.02551102638244629
+572,Wall Street scraps its recession assumptions after robust jobs data,1,-1,0.9654,0.025177001953125
+573,While market strain triggered by the coronavirus pandemic has eased since the Federal Reserves historic interventi…,1,1,0.6185,0.024810075759887695
+574,Why the markets look clean into 2019 year-end,1,1,0.9575,0.023601770401000977
+575,Franklin Resources drops after November AUM signals red alert,-1,-1,0.979,0.02415299415588379
+576,Fords Value Has Tanked: Recovery Looks Poor.,-1,-1,0.9693,0.024797916412353516
+577,A Segment Of Junk Bonds Signals Stress. Continue reading,-1,-1,0.9756,0.024219751358032227
+578,Market Briefing: Downshift,-1,-1,0.5768,0.026734113693237305
+579,Luxury sector shakeup sends investors scrambling,-1,-1,0.9721,0.026964902877807617
+580,TSLA short 🤣,-1,1,0.6017,0.024206161499023438
+581,"Yes, This Is An Unpopular Opinion: Twilio Is Overvalued.",-1,-1,0.9779,0.027405738830566406
+582,XLU Weekly: The Relief Rally From 43.44s Stalls At 58.09s.,-1,1,0.8972,0.024112701416015625
+583,Companies Like Juggernaut Exploration (CVE:JUGR) Can Be Considered Quite Risky,-1,-1,0.9764,0.024248123168945312
+584,Credit Woes Come Calling For The South Africa,-1,-1,0.9719,0.02496790885925293
+585,Dow heavyweight Boeing ending strong decade with whimper,-1,1,0.7585,0.024249792098999023
+586,Elon Musk Loses 5.9 Billion as Tesla Succumbs to the Laws of Gravity,-1,-1,0.9637,0.02573680877685547
+587,"GlobalData : H&Ms recovery derailed by COVID-19, says GlobalData …",-1,-1,0.9784,0.023766040802001953
+588,Hedge Funds Are Dumping Capital Senior Living Corporation (CSU),-1,-1,0.9731,0.024888992309570312
+589,Hedge Funds Are Dumping UMB Financial Corporation (UMBF),-1,-1,0.9794,0.025427818298339844
+590,Hedge Funds Are Selling Genco Shipping & Trading Limited (GNK),-1,1,0.9589,0.025164127349853516
+591,Hedge Funds Are Selling InVitae Corporation (NVTA),-1,1,0.9868,0.023969173431396484
+592,Hedge Funds Are Selling PennyMac Financial Services Inc (PFSI),-1,1,0.9378,0.024387836456298828
+593,Hedge Funds Aren’t Crazy About eGain Communications Corporation (EGAN) Anymore,-1,1,0.9795,0.024267196655273438
+594,Hedge Funds Aren’t Crazy About Titan Machinery Inc. (TITN) Anymore,-1,1,0.9859,0.02480316162109375
+595,Heres Why Zogenix Took a Tumble Today,-1,-1,0.9601,0.026190996170043945
+596,"Introducing Hitech & Development Wireless Sweden Holding (STO:HDW B), The Stock That Slid 60% In The Last Year",-1,-1,0.6391,0.026378154754638672
+597,Investors Who Bought Elanco Animal Health (NYSE:ELAN) Shares A Year Ago Are Now Down 23%,-1,-1,0.9769,0.02790093421936035
+598,Look to go short ES if it goes offered below 3107.50 or if the a.m. open is below 3107.50 and goes offered below t…,-1,1,0.7865,0.02820611000061035
+599,RECAP 12/10 Unusual Puts: ITCI Jan 6 P AAPL Jan 240 P FXB Dec 123 P JD Jan 31 P NLOK Dec 26 P PDD Apr 35 P…,-1,1,0.7944,0.024656057357788086
+600,"Sensex, Nifty Halt Four-Day Gaining Streak As RIL, HDFC Drag",-1,-1,0.9776,0.024734973907470703
+601,Why Carnival Stock Lost 14% in January,-1,-1,0.9739,0.024964094161987305
+602,ACST adding. Big catalyst coming up very soon. Stock has been under accumulation. CaPre (TRILOGY 1 and 2) Hypertri...,1,1,0.9844,0.02674412727355957
+603,AIKI my position remains intact. Buying dips.,1,-1,0.8341,0.02480626106262207
+604,Amazon: One Of The Best Long-Term Investment In The Tech Sector.,1,1,0.9961,0.0242917537689209
+605,"BOXL buyers into the close, nice !!!",1,1,0.9758,0.026234149932861328
+606,BOXL loading up again !!! Last month K Laser Technology reported 30.2% Stake.,1,1,0.9843,0.023971080780029297
+607,BOXL nice start !!!! PDSB still accumulating.,1,1,0.9872,0.025859832763671875
+608,BPTH buy the dip.,1,1,0.9903,0.023949146270751953
+609,BURL certainly isnt looking shabby,1,-1,0.948,0.02509784698486328
+610,Caterpillars Expected Dividend Hike And Buybacks Will Push The Stock Higher.,1,1,0.9913,0.023478031158447266
+611,"Cerner: Undervalued, Wide Moat, Dominant.",1,1,0.9353,0.024970054626464844
+612,"CIFS could squeeze over 1 , im long and will add + on the break of the pivot level.",1,1,0.993,0.025147199630737305
+613,CPHI here is the technical chart. With some buying volume this China play could soar just like YGYI,1,1,0.9933,0.024649858474731445
+614,DG 52-week high,1,1,0.8965,0.024522066116333008
+615,EDNT great news this morning. Taking some before it explodes higher. NEWS: Edison Nation is Pleased to Announce th…,1,1,0.9903,0.025658130645751953
+616,FMG Offers Compelling Valuation And Dividend Yield (8%-10%).,1,1,0.9966,0.02367568016052246
+617,Casino sector attracts some bets,1,1,0.9934,0.024626970291137695
+618,Gold & Silver Update: December May Be A Bottom.,1,-1,0.973,0.02469611167907715
+619,Marriott seen running up 20% gain,1,1,0.9939,0.02509593963623047
+620,"MYOV is breaking out in pre-market, but we neeed more volume to confirm.",1,1,0.9841,0.024286746978759766
+621,NIO nice breakout this morning. Next stop 2.46,1,1,0.9263,0.025532960891723633
+622,NYMT out 1.82 from 1.60,1,1,0.9659,0.023608684539794922
+623,PACD taking some. Risky but chart looks perfect for a bounce. I like this as a sympathy play off todays BORR move…,1,1,0.9891,0.02461099624633789
+624,RH clears prior high of 192 after gapping up over its 50-day on volume. On watch how it acts around 200.,1,1,0.9887,0.024419069290161133
+625,SINT volume Alert !! Big buy blocks. Momentum is coming back to this name. First pivot 50c,1,1,0.9943,0.02502298355102539
+626,SINT woke up !!!! New,1,1,0.9088,0.02396082878112793
+627,First Trust Cloud Computing ETF Should Benefit From Near-Term Surge In Demand Due To COVID-19.…,1,1,0.9966,0.023585081100463867
+628,SOLO could fuel shares of,1,1,0.9934,0.059168100357055664
+629,SRNE Took some. Love the news.,1,1,0.9888,0.028085947036743164
+630,Time To Reach For Constellation Brands During The Coronavirus.,1,1,0.9727,0.025418996810913086
+631,AT&T: An Attractive Options Strategy For The Coming Months.,1,1,0.9962,0.02492690086364746
+632,TOPS Wow..... Morgan Stanley 13G 6.7%,1,1,0.8646,0.02677297592163086
+633,"Total: Solid Quarter, Continuing To Execute On Growth Story. Continue reading",1,1,0.9946,0.025712966918945312
+634,"Taiwan Semiconductor: Visibility May Be Limited In The Near-Term, But Long-Term Growth Outlook Is Favorable.…",1,1,0.9929,0.02511286735534668
+635,TXN highs out of a long base and above 8 and 21 MAs,1,1,0.9921,0.025796175003051758
+636,WestRock: Strong Tailwinds Supporting The Bull Thesis Despite COVID-19.,1,1,0.9207,0.024737834930419922
+637,Yext: A Coronavirus Bull Case.,1,-1,0.9766,0.0251309871673584
+638,"Z strong close, nice candle as nears breakout",1,1,0.9819,0.026985883712768555
+639,“It’s my biggest holding.” Mark Cuban says he has nearly 1 billion in Amazon stock.,1,1,0.9938,0.029772043228149414
+640,"9:45 am (its early) SPY 272.99 1,520 STOCKS are up from the open vs 1,700 that are down from the open. IWM 116.87",1,1,0.9799,0.02699112892150879
+641,"A Rising Share Price Has Us Looking Closely At Fortinet, Inc.s (NASDAQ:FTNT) P/E Ratio",1,1,0.9936,0.02392101287841797
+642,A Rising Share Price Has Us Looking Closely At Vipshop Holdings Limiteds (NYSE:VIPS) P/E Ratio,1,1,0.9946,0.025331974029541016
+643,added MRK Feb 90/Dec 90.50 Call Diagonals,1,1,0.9708,0.023113012313842773
+644,Amazon is becoming a go-to for bulls - heres the chart now,1,1,0.9883,0.024541139602661133
+645,"Beyond Meat among the stocks set to benefit from ongoing pork shortage, Bernstein says",1,1,0.9957,0.025235891342163086
+646,ChartTraders recent YMm0 short took off for a +700 pt gain in less than 30 minutes. Learn more and …,1,1,0.9823,0.024122953414916992
+647,Ethereum (ETH) Price May Soon Surge 50%: Here’s Why - Ethereum World News,1,1,0.9941,0.024537086486816406
+648,Firan Technology Group Corporation (TSE:FTG) Is Employing Capital Very Effectively,1,1,0.9959,0.027249813079833984
+649,GE’s ‘Beat-and-Raise Story’ Leads Longtime Skeptic to Upgrade,1,1,0.9819,0.026425838470458984
+650,Hedge Funds Are Betting On Catchmark Timber Trust Inc (CTT),1,1,0.9902,0.025896072387695312
+651,Hedge Funds Are Buying Costamare Inc (CMRE),1,1,0.9935,0.02471184730529785
+652,"Hedge Funds Are Optimistic About Merck & Co., Inc. (MRK)",1,1,0.9869,0.023833036422729492
+653,Hedge Funds Have Never Been More Bullish On ADMA Biologics Inc (ADMA),1,1,0.9201,0.02285003662109375
+654,Hedge Funds Have Never Been More Bullish On BioSpecifics Technologies Corp. (BSTC),1,1,0.9325,0.02536296844482422
+655,"Hedge Funds Have Never Been More Bullish On New York Mortgage Trust, Inc. (NYMT)",1,1,0.8571,0.0237729549407959
+656,"Hedge Funds Have Never Been This Bullish On Hallmark Financial Services, Inc. (HALL)",1,1,0.5617,0.024738073348999023
+657,Hedge Funds Have Never Been This Bullish On North American Construction Group Ltd. (NOA),1,-1,0.528,0.025583982467651367
+658,Here comes the bounce,1,1,0.9762,0.024073123931884766
+659,Heres what has stocks surging midday,1,1,0.9415,0.024077177047729492
+660,Home Depot stock is still a good investment despite rare misstep: analysts,1,1,0.9936,0.024744272232055664
+661,Inc. was on course to exceed 1 trillion in market value again after results beat expectati...,1,1,0.9837,0.025036096572875977
+662,"If You Had Bought AXA (EPA:CS) Stock Five Years Ago, You Could Pocket A 33% Gain Today",1,1,0.9955,0.024876117706298828
+663,"If You Had Bought Century Communities (NYSE:CCS) Stock Five Years Ago, You Could Pocket A 61% Gain Today",1,1,0.9949,0.023778676986694336
+664,Industrials with nice bull flags breaking out today EMR ZBRA PH,1,1,0.9824,0.024322986602783203
+665,Investors Who Bought Profile Systems & Software A.E (ATH:PROF) Shares Three Years Ago Are Now Up 739%,1,1,0.9961,0.024461746215820312
+666,Investors Who Bought Zogenix (NASDAQ:ZGNX) Shares Five Years Ago Are Now Up 411%,1,1,0.9952,0.024293184280395508
+667,Knoll (NYSE:KNL) Has A Pretty Healthy Balance Sheet,1,1,0.9953,0.02398824691772461
+668,"Prudential Financial, Inc. Just Beat EPS By 11%: Heres What Analysts Think Will Happen Next",1,1,0.7828,0.025055885314941406
+669,Publicis Groupe (EPA:PUB) Has A Pretty Healthy Balance Sheet,1,1,0.9956,0.02335500717163086
+670,RECAP 12/10 +Pos Comments: HUYA + Hedgeye TSLA + Rosenblatt TXMD + CJS INFY + BofAML,1,1,0.7547,0.025779247283935547
+671,Scalp Traders recent CVNA swing long ripped higher for a +90% gain in just one week. Learn more and …,1,1,0.9843,0.02325129508972168
+672,"Shareholders Are Loving LeMaitre Vascular, Inc.s (NASDAQ:LMAT) 1.0% Yield",1,1,0.9951,0.02479720115661621
+673,Stock Market Update: Apple continues to outperform,1,1,0.9582,0.024370908737182617
+674,Stock Market Update: Apple supplier Synaptics impresses investors,1,1,0.9909,0.02506709098815918
+675,Stock Traders Are Dumping Virus Hedges After ‘Peak Fear’ Passes,1,-1,0.9813,0.02467203140258789
+676,"Tesla TSLA with 1400 January 2022 1280 calls bought to open 33.50 to 36 for around 5M And with that, I am off...",1,-1,0.9546,0.02531719207763672
+677,The Bull Case for Shopify Stock Is More Relevant Than Ever,1,1,0.9829,0.02421283721923828
+678,The Knight-Swift Transportation Holdings (NYSE:KNX) Share Price Is Up 16% And Shareholders Are Holding On,1,1,0.9954,0.02421092987060547
+679,The Maxim Integrated Products (NASDAQ:MXIM) Share Price Has Gained 100% And Shareholders Are Hoping For More,1,1,0.997,0.025414228439331055
+680,We have been following PGNY closely all week; added it to our Buy Alert list on Tuesday. Today its ripping to new…,1,1,0.9719,0.027326345443725586
+681,Why Capri Holdings Is a Buy This Season,1,1,0.9915,0.026051044464111328
+682,"Why Ebix, Inc. (NASDAQ:EBIX) Should Be In Your Dividend Portfolio",1,1,0.9891,0.029556989669799805
+683,Why Has Cree’s Revenue Jumped 40% In The Past 2 Years?,1,1,0.9933,0.024667978286743164
+684,Why Shares of TransDigm Group Soared in January,1,1,0.994,0.052136898040771484
+685,Why Snap Stock Jumped Today,1,1,0.969,0.05428028106689453
+686,Why Visas Stock Price Could Keep Rising,1,1,0.9406,0.025485754013061523
+687,"Why You Should Like Aena S.M.E., S.A.’s (BME:AENA)",1,1,0.9881,0.02468585968017578
+688,"With EPS Growth And More, Robertet (EPA:RBT) Is Interesting",1,1,0.9963,0.026036977767944336
+689,Aquestive readies equity offering; shares down 7% after hours,-1,1,0.8318,0.02456378936767578
+690,CymaBat halts trial of seladelpar; shares dip 4%,-1,-1,0.9781,0.024410009384155273
+691,CIM (-1.8% pre) Chimera Investment (CIM) Announces Public Offering of Convertible Senior Notes - SI,-1,1,0.9963,0.025551319122314453
+692,Lindsay -2% as COVID-19 impact remains uncertain,-1,-1,0.9736,0.025016069412231445
+693,Moderna files for mixed shelf; shares down 8% after hours,-1,1,0.8597,0.025516033172607422
+694,Theravance readies 150M stock offering; shares down 5% after hours,-1,1,0.7886,0.023834705352783203
+695,UBER shares down 3.7% after company loses London licence over safety failures,-1,-1,0.9778,0.02474808692932129
+696,Slack -5% after statement on IBM,-1,-1,0.9782,0.026302099227905273
+697,Abiomed down 8% on guidance cut,-1,-1,0.9195,0.024185895919799805
+698,Adamis Pharma -61% on FDAs Zimhi rejection,-1,1,0.9331,0.02390003204345703
+699,Afya -3.4% on offering of class A common shares,-1,1,0.9961,0.02422499656677246
+700,Akoustis down 13% on pricing equity offering,-1,-1,0.7311,0.024829864501953125
+701,Applied Genetic Tech down 7% premarket after pricing equity offering,-1,-1,0.6722,0.024613142013549805
+702,"As Kohls shares plunge, Cramer calls out CEO for glossing over why earnings missed estimates",-1,-1,0.9737,0.024676799774169922
+703,Athenex down 17% on oral paclitaxel data,-1,-1,0.9051,0.024873018264770508
+704,Becton Dickinsons stock tumbles 11% premarket after Q1 results,-1,-1,0.9778,0.0247189998626709
+705,"Becton Dickinsons stock tumbles, as lowered earnings guidance offsets profit beat",-1,-1,0.9802,0.02520918846130371
+706,"Becton, Dickinson slips 9% on lowered guidance",-1,-1,0.9815,0.02416396141052246
+707,Cabot Microelectronics tanks on soft guidance,-1,1,0.9645,0.025433063507080078
+708,Checkpoint Therapeutics down 14% after hours on equity offering,-1,1,0.6578,0.025416851043701172
+709,Ciena Corp. shares slide after earnings miss,-1,-1,0.9814,0.025152921676635742
+710,Ether Turns Negative For the Year as Crypto Sell-Off Accelerates,-1,-1,0.9782,0.02480602264404297
+711,GoPros stock tumbles 13% premarket after Q4 results late Wednesday,-1,-1,0.978,0.025265216827392578
+712,"Irish bank and real-estate stocks fall after a strong electoral showing for Sinn in, a left-wing nationalist part...",-1,-1,0.9784,0.025656938552856445
+713,Slack shares halted for pending news.,-1,-1,0.9823,0.024063825607299805
+714,"KL, CBAY among premarket losers",-1,-1,0.9445,0.024877071380615234
+715,Kohls -11% after profit view slashed,-1,-1,0.9767,0.025052309036254883
+716,Kohls stock drops 10% after it cuts guidance,-1,-1,0.978,0.025012969970703125
+717,Macy’s shares sink after date-breach reports,-1,-1,0.9768,0.02449822425842285
+718,Mahindra & Mahindra shares head for their steepest decline in more than a decade after surprise drop in earnings,-1,-1,0.976,0.024209976196289062
+719,Myriad Genetics slips 27% premarket after weak FQ2 and guidance cut,-1,-1,0.9809,0.024595975875854492
+720,New York Mortgage Trust sinks 2.7% after announcing capital raise,-1,-1,0.9727,0.0279543399810791
+721,"Nios stock falls after January deliveries decline on coronavirus, New Years holiday timing effects",-1,-1,0.979,0.027132034301757812
+722,Organogenesis -8.9% amid 9M-share offering,-1,1,0.995,0.0258939266204834
+723,PagSeguro slides 4.5% after Q3 disappoints,-1,-1,0.9777,0.024032115936279297
+724,Post Holdings -4% after earnings miss,-1,-1,0.9774,0.023913860321044922
+725,PTC Therapeutics down 6% premarket on risidplam data,-1,1,0.6566,0.024908065795898438
+726,"QD, HEXO among premarket losers",-1,-1,0.9737,0.02506232261657715
+727,Roku -5.1% after filing to offer up to 1M shares,-1,1,0.9935,0.025164127349853516
+728,Roku shares dropped after it notified users that FOX channels will be not accessible for the Super Bowl,-1,-1,0.9808,0.025176048278808594
+729,Roku stock falls after disclosure of shareholder resales,-1,-1,0.975,0.023717880249023438
+730,SES shares tumble 20% after FCC chairman voices support for public airwaves sale,-1,-1,0.9783,0.023150920867919922
+731,Slack shares slump as Microsoft continues to make corporate inroads,-1,-1,0.9778,0.024179935455322266
+732,SunPowers stock sinks after plans to sell 22 million shares to the public,-1,-1,0.9732,0.02511000633239746
+733,"Synthetic Biologics, Inc. (SYN) Sinks -4.79% Today: Breaking Down The Root Causes - Find News",-1,-1,0.9722,0.025207042694091797
+734,"Taco Bell, KFC parent Yum Brands stock drops after profit misses but revenue beat",-1,-1,0.9819,0.024180889129638672
+735,Tesla -3% as China slowdown factors in,-1,-1,0.9789,0.023468971252441406
+736,Tesla falls more than 6% after Cybertruck flub—Cramer and other pros talk prospects TSLA (via ),-1,-1,0.9735,0.025096893310546875
+737,"Teslas stock falls again, extends pullback to 22%",-1,-1,0.977,0.02425694465637207
+738,"Twilio Crushes Q4 Expectations, Shares Fall 7% on Modest Bottom-Line Guidance",-1,-1,0.9731,0.02499675750732422
+739,"Tyson Foods -4% after chicken, beef sales disappoint",-1,-1,0.9786,0.024379968643188477
+740,"Ubers UBER share price is down approximately 29% since its IPO in May 2019, while the S&P 500 is up nearly 8% dur…",-1,-1,0.9778,0.02483201026916504
+741,Varonis -6% on wider-than-expected loss forecast,-1,-1,0.9684,0.02348184585571289
+742,Woodward 6% post Q4 earnings miss,-1,-1,0.9816,0.024585962295532227
+743,3.1% amid two-notch cut at Wells Fargo,-1,1,0.5317,0.024025917053222656
+744,WWE Plunges After Sales Forecast Uncovers Dismal Fan Engagement,-1,-1,0.9752,0.02634119987487793
+745,"Zoom shares slip over security concerns, rising competition",-1,-1,0.9819,0.024133920669555664
+746,"Zoom shares slip over security concerns, rising competition",-1,-1,0.9819,0.023900747299194336
+747,AAPL (+0.2% pre) Apple to expand operations in India: IT minister,1,1,0.9961,0.024713993072509766
+748,"AAXN gapped up on earnings, up 24.57% on 6x average volume. It cleared the top of its earnings gap up at 71. On wa…",1,1,0.916,0.024539947509765625
+749,AVDL (+2.7% pre) Avadel Pharmaceuticals Achieves Enrollment Target in REST-ON Phase 3 Pivotal Trial of FT218 for E…,1,1,0.9966,0.026720046997070312
+750,Baudax Bio +7% premarket on Anjeso launch in U.S.,1,1,0.9946,0.024216175079345703
+751,CANF (+20.3% pre) Can-Fite BioPharma (CANF) Announces Positive Top Line Results from its Phase II NASH Study with…,1,1,0.9963,0.02526402473449707
+752,PFAS chemical makers climb as Congress makes no decision,1,-1,0.6381,0.024599075317382812
+753,Canopy Growth +4% premarket on new cannabis license for Smiths Falls facility,1,1,0.995,0.02371978759765625
+754,DPW (+90.0% pre) DPW Holdings Announces That Its Coolisys Power Electronics Business Sees Increased Offshore Manuf…,1,1,0.9967,0.024484872817993164
+755,ENOB (+17.5% pre) Enochian Biosciences (ENOB) Expands Infectious Disease Pipeline by Entering Pact to Acquire Excl…,1,1,0.9962,0.025295734405517578
+756,"HCHC (+5.7% pre) HC2 Holdings (HCHC) in Advanced Discussions to Sell Continental Insurance, Retains Advisor to Exp…",1,1,0.9909,0.025680065155029297
+757,FDA OKs Intercept’s NDA for obeticholic acid; shares up 5% premarket,1,1,0.9945,0.023717880249023438
+758,"JAN (+92.2% pre) JanOne entered into a Patent and Know How License Agreement with UAB Research Foundation, TheraVa…",1,1,0.9965,0.024567127227783203
+759,"JKHY day highs and clearing resistance, name not far from its record highs",1,1,0.9382,0.024756193161010742
+760,Kodiak Sciences up 9% on positive early-stage KSI-301 data,1,1,0.9947,0.02529001235961914
+761,"LIVX (+16.8% pre) LiveXLive Media (LIVX), Samsung Announce Production And Distribution Partnership - SI - SI",1,1,0.9966,0.02458810806274414
+762,Luminex Q1 revenue tops guidance; shares up 7% after hours,1,1,0.9951,0.026443958282470703
+763,M (+11.7% pre) Macys finance chief Paula Price to step down in May - SI,1,-1,0.9448,0.026598215103149414
+764,"MGI (+4.2% pre) Ripple Makes Investment in MoneyGram Equity to Complete Original Investment Commitment, Expansion…",1,1,0.9965,0.03343796730041504
+765,Meritage Homes 1Q20 orders rise 23% Y/Y; shares up 20%,1,1,0.9959,0.024187088012695312
+766,InspireMD chief to step down; shares up 3%,1,-1,0.5318,0.024610042572021484
+767,Intellia up 5% on new data from CRSPR/Cas9 programs,1,1,0.9951,0.026070117950439453
+768,NVCR shows institutional accumulation with blue skyscraper last week and closing near highs. Forms a cup base with…,1,1,0.9813,0.025567054748535156
+769,Organovo stockholders nix Tarveda merger; shares up 2% after hours,1,1,0.9532,0.02478790283203125
+770,PACD Added + shares on pullback. BORR +130% they will find this sympathy play very soon. Money will flow into this…,1,1,0.9645,0.024486780166625977
+771,"PSTI (+56.3% pre) Pluristem Reports Preliminary Data from its COVID-19 Compassionate Use Program, Treating Seven P…",1,1,0.9655,0.025675058364868164
+772,SRNE (+36.3% pre) Sorrento Therapeutics shares soar 25% after it rejects offer from two companies - MW,1,-1,0.8973,0.024679899215698242
+773,"RTX, SKT among premarket gainers",1,1,0.9943,0.025016069412231445
+774,"STZ (+4.9% pre) UBS Upgrades Constellation Brands (STZ) to Buy, 180 PT",1,1,0.996,0.023765087127685547
+775,TIF (+5.6% pre) LVMH aims to restore Tiffanys sparkle with 16.2 billion takeover - Reuters,1,1,0.9962,0.023704051971435547
+776,TSLA +7% in pm (BLOG IDEA). Breaking out of the bullish flag that i mentioned several times last week.,1,-1,0.938,0.024888992309570312
+777,VRNS (+0.0% pre) Varonis Systems reports preliminary Q1 - SA,1,1,0.9002,0.02455615997314453
+778,"XOM (+5.8% pre) Exxon cuts full-year capex forecast by 30%, maintains long-term outlook - SA",1,-1,0.9778,0.024673938751220703
+779,ZIOP (+6.4% pre) Ziopharm Oncology Presents Encouraging Clinical Data for Controlled IL-12 for the Treatment of Re…,1,1,0.9951,0.025211334228515625
+780,"ZS (+3.6% pre) BofA/Merrill Lynch Upgrades Zscaler (ZS) to Buy; Cyber Security Opportunity Too Big to Ignore, 68…",1,1,0.5219,0.024257898330688477
+781,AbbVie stock jumps 2.6% premarket,1,1,0.9951,0.02358412742614746
+782,AIAs announcement of a new CEO sends shares higher in Hong Kong,1,1,0.9961,0.024013042449951172
+783,AMC Entertainment rallies after big Frozen 2 weekend,1,1,0.6454,0.024346113204956055
+784,"ArcelorMittal shares surge on higher operating profit, dividend than expected",1,1,0.9954,0.02504706382751465
+785,Argo Group gains 2.2% after moving to refresh board,1,1,0.9959,0.0242159366607666
+786,Athenex up 28% on expected positive data on oral paclitaxel,1,1,0.9946,0.024922847747802734
+787,Aurora beefs up leadership team; shares up 3% premarket,1,1,0.996,0.02473902702331543
+788,Bill.com +72% in trading debut,1,1,0.9906,0.024670124053955078
+789,BioLineRx reports data on triple combination arm of COMBAT/KEYNOTE-202 study; shares up 21% premarket,1,1,0.9959,0.024165868759155273
+790,Brazil broker XP surges in debut after 1.96 billion U.S.,1,1,0.9952,0.02460503578186035
+791,Bristol-Myers +3% premarket on Q4 beat,1,1,0.9378,0.023331165313720703
+792,Canopy Growth +4% premarket on new cannabis license for Smiths Falls facility,1,1,0.995,0.02590203285217285
+793,Carnivals stock soars after Saudi sovereign wealth fund takes stake in the crippled cruise company,1,1,0.8524,0.023792028427124023
+794,Co-Diagnostics up 36% on coronavirus test sales,1,1,0.9918,0.024975061416625977
+795,Eidos up 13% on sustained benefit of AG10 in ATTR-CM,1,1,0.996,0.02516007423400879
+796,Endonovo up 35% on SofPulse collaboration,1,1,0.9955,0.024798154830932617
+797,Extreme Networks stock up 2.6% premarket,1,1,0.9945,0.023810863494873047
+798,"Gap ticks higher despite lowered full-year comps, which point to a bah humbug holiday quarter",1,1,0.8637,0.02437305450439453
+799,Intelsat +10%; Height expects C-band payout to rise,1,1,0.9954,0.0245668888092041
+800,"Intelsats stock bounces 6.6% premarket, after plummeting 55% over the past 2 days to 19-mo. low",1,-1,0.8865,0.025273799896240234
+801,Kodiak Sciences up 9% on positive early-stage KSI-301 data,1,1,0.9947,0.02515697479248047
+802,LiveXLive +23% on Samsung tie-up,1,1,0.991,0.02517414093017578
+803,"Marriott Up Over 14%, on Pace for Largest Percent Increase Since December 2008 -- Data Tal...…",1,1,0.9921,0.023826122283935547
+804,"Medtronics stock surges after earnings rise above expectations, and outlook raised",1,1,0.9939,0.025511980056762695
+805,National Oilwell Varco +10% after Q4 results,1,-1,0.5172,0.02591991424560547
+806,Nio Shares Continue Higher Despite Predictions Of Record Plunge In Chinese Auto Sales,1,1,0.9888,0.026044130325317383
+807,One Medical parent 1Life Healthcare stock soars 38% in early debut trading,1,1,0.9946,0.02675604820251465
+808,Qiagen shares surge as diagnostics group says open to takeover talks,1,1,0.9953,0.025337696075439453
+809,RealNetworks CEO Rob Glaser to invest into the Company; shares +12%,1,1,0.9949,0.024956226348876953
+810,Sanofi Q4 top-line up 7%; shares up 3% premarket,1,1,0.9941,0.025109052658081055
+811,ServiceNow stock up 4% on news it is joining the S&P 500,1,1,0.9949,0.02470111846923828
+812,Shares of SoftBank-backed OneConnect rise 5% in U.S. market debut,1,1,0.9951,0.02485513687133789
+813,Splunk boosted on FCF potential; shares +3.4%,1,1,0.9966,0.024471044540405273
+814,Splunk sees its biggest surge in a year after reporting strong third-quarter sales. Bloombergs Taylor Riggs…,1,1,0.9946,0.024422883987426758
+815,Starbucks climbs as Pershing reinvests with 720 million stake,1,1,0.9901,0.024224042892456055
+816,Stock Market Update: Amazon and Microsoft hit new highs,1,1,0.9289,0.02477884292602539
+817,"Tesla Tops 900 in Parabolic Surge, Spurring Analyst Downgrade",1,-1,0.8156,0.023782968521118164
+818,"Teslas stock ticks up after Deutsche Bank lifts price target, which implies an 18% decline",1,-1,0.9623,0.02491903305053711
+819,Transocean up 4% on new 91M contract,1,1,0.9957,0.02352309226989746
+820,Trevena refiles U.S. application for IV oliceridine; shares up 6%,1,1,0.9961,0.022552013397216797
+821,Unisyss stock soars 16% premarket after sale of U.S. Federal business for 1.2 bln,1,1,0.9931,0.024589061737060547
+822,Wayfair soared as much as 51% after the online home-goods retailer said first-quarter net revenue growth would at l…,1,1,0.9943,0.02453470230102539
