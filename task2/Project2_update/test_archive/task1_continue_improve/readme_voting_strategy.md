@@ -1,0 +1,28 @@
+# try_ensemble_baseline
+
+```json
+{
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8285873891217878,
+      0.8273679293185743,
+      0.8255024162699293,
+      0.847956787395286,
+      0.8145285689697392
+    ],
+    "average_score": 0.8287886182150632,
+    "n_jobs": 2,
+    "datetime": null
+  }
+```

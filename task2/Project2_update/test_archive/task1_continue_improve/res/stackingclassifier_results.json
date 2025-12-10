@@ -1,26 +1,3298 @@
-{
-  "classifier": "StackingClassifier",
-  "base_estimators": [
-    "ExtraTreesClassifier_NoHandcrafted",
-    "LogisticRegression_NoHandcrafted",
-    "LinearSVC_WithHandcrafted",
-    "SGDClassifier_NoHandcrafted",
-    "SVC_Sigmoid_NoHandcrafted",
-    "ExtraTreesClassifier_WithHandcrafted",
-    "MLPClassifier_WithHandcrafted",
-    "SVC_Poly_WithHandcrafted",
-    "MultinomialNB_WithHandcrafted",
-    "BernoulliNB_WithHandcrafted"
-  ],
-  "cv_folds": 5,
-  "cv_scores": [
-    0.8235924597240536,
-    0.8107337389288453,
-    0.8229996313998599,
-    0.8381555028589445,
-    0.8081184237539591
-  ],
-  "average_score": 0.8207199513331325,
-  "n_jobs": 2,
-  "datetime": null
-}
+[
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8235924597240536,
+      0.8107337389288453,
+      0.8229996313998599,
+      0.8381555028589445,
+      0.8081184237539591
+    ],
+    "average_score": 0.8207199513331325,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8281295655721711,
+      0.8204597575985978,
+      0.8228364017272417,
+      0.8432001651435954,
+      0.8137388871054906
+    ],
+    "average_score": 0.8256729554294193,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8306487613350915,
+      0.8122418232982902,
+      0.8217993120277541,
+      0.843041778143651,
+      0.8096514338374804
+    ],
+    "average_score": 0.8234766217284534,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8270368284137082,
+      0.8197689079616192,
+      0.8214311239310383,
+      0.8471233777560973,
+      0.8038136424090638
+    ],
+    "average_score": 0.8238347760943053,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.830810930745894,
+      0.8107337389288453,
+      0.8194390380148767,
+      0.8406815041307735,
+      0.8148237795093484
+    ],
+    "average_score": 0.8232977982659475,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8234207865467511,
+      0.8111584815229268,
+      0.8208179173778467,
+      0.8421000689212796,
+      0.8111584815229268
+    ],
+    "average_score": 0.8217311471783463,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8221561395289891,
+      0.8133257082316546,
+      0.8208179173778467,
+      0.8472868217054264,
+      0.8133257082316546
+    ],
+    "average_score": 0.8233824590151142,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8245116873497972,
+      0.8133257082316546,
+      0.822068830490104,
+      0.8444567843105143,
+      0.8137388871054906
+    ],
+    "average_score": 0.8236203794975122,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8207100378508164,
+      0.8117721290787813,
+      0.8141397752538909,
+      0.8436520489847074,
+      0.8068295913111887
+    ],
+    "average_score": 0.8194207164958769,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8187120075213312,
+      0.8115706749086781,
+      0.8170787640019993,
+      0.8441423872864336,
+      0.8154951543017046
+    ],
+    "average_score": 0.8213997976040293,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8177876904570971,
+      0.8089933810444839,
+      0.8143356719018082,
+      0.8417809083059251,
+      0.8120307909145119
+    ],
+    "average_score": 0.8189856885247652,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8292227829914134,
+      0.8169951948603588,
+      0.8195652724433377,
+      0.8405181962478651,
+      0.8111584815229268
+    ],
+    "average_score": 0.8234919856131804,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8259445602610661,
+      0.8256026522580071,
+      0.8194001761883093,
+      0.8425515293552069,
+      0.8061916588647114
+    ],
+    "average_score": 0.8239381153854601,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.826694919369237,
+      0.8178758619881343,
+      0.8219085805934242,
+      0.8399015131357209,
+      0.8126545227495778
+    ],
+    "average_score": 0.8238070795672188,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8259445602610661,
+      0.8184843931664971,
+      0.8214311239310383,
+      0.8463453771174249,
+      0.8074884517362216
+    ],
+    "average_score": 0.8239387812424497,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8295546895072431,
+      0.8146185090793248,
+      0.8217993120277541,
+      0.843041778143651,
+      0.8109476917760069
+    ],
+    "average_score": 0.8239923961067961,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8203422870911429,
+      0.813533846535217,
+      0.8203422870911429,
+      0.8474477813715492,
+      0.8064077514983463
+    ],
+    "average_score": 0.8216147907174797,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8232463458074025,
+      0.815025984486925,
+      0.8242518887435109,
+      0.8461844140222248,
+      0.813114446615275
+    ],
+    "average_score": 0.8243646159350677,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8245116873497972,
+      0.8111584815229268,
+      0.8233180274684615,
+      0.8432001651435954,
+      0.812449725400494
+    ],
+    "average_score": 0.822927617377055,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8190659732546284,
+      0.8109476917760069,
+      0.8206552556568119,
+      0.8439814598423083,
+      0.812449725400494
+    ],
+    "average_score": 0.8214200211860498,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8203422870911429,
+      0.8079115992748838,
+      0.8154212968266696,
+      0.8383212301178962,
+      0.8096514338374804
+    ],
+    "average_score": 0.8183295694296145,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.824852749907443,
+      0.813533846535217,
+      0.8209778688918848,
+      0.8421000689212796,
+      0.8113661340749873
+    ],
+    "average_score": 0.8225661336661624,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8250191936630445,
+      0.8221403696989664,
+      0.8206552556568119,
+      0.8490189792427928,
+      0.8061916588647114
+    ],
+    "average_score": 0.8246050914252654,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8259445602610661,
+      0.8092144111715444,
+      0.8245655239176376,
+      0.8435095114219264,
+      0.8094044829036716
+    ],
+    "average_score": 0.8225276979351692,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8226704580075149,
+      0.8175940571488254,
+      0.8216166491365008,
+      0.8454020521565283,
+      0.8040323864860561
+    ],
+    "average_score": 0.8222631205870851,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8286228508248857,
+      0.8094345339654462,
+      0.8207100378508164,
+      0.8432001651435954,
+      0.8102830610122308
+    ],
+    "average_score": 0.8224501297593949,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8194390380148767,
+      0.8085696753203593,
+      0.8177876904570971,
+      0.8476062764146265,
+      0.8038136424090638
+    ],
+    "average_score": 0.8194432645232046,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8210663970340412,
+      0.8115706749086781,
+      0.8197276308912896,
+      0.8465038662669422,
+      0.8096514338374804
+    ],
+    "average_score": 0.8217040005876862,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8221561395289891,
+      0.813533846535217,
+      0.8244100300889183,
+      0.843356069916262,
+      0.8079115992748838
+    ],
+    "average_score": 0.822273537068854,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8158046395203307,
+      0.815025984486925,
+      0.8206552556568119,
+      0.843041778143651,
+      0.8100756712916395
+    ],
+    "average_score": 0.8209206658198717,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8145285689697392,
+      0.8068303145290221,
+      0.8177876904570971,
+      0.8444567843105143,
+      0.8157037246873023
+    ],
+    "average_score": 0.8198614165907351,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8214115380095549,
+      0.8236103599543297,
+      0.8206552556568119,
+      0.8463453771174249,
+      0.8077016171827849
+    ],
+    "average_score": 0.8239448295841812,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8259445602610661,
+      0.813533846535217,
+      0.8256581860450382,
+      0.8388030305624355,
+      0.8137388871054906
+    ],
+    "average_score": 0.8235357021018495,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8210663970340412,
+      0.813533846535217,
+      0.8175481448743432,
+      0.8466599007934614,
+      0.8087831165106365
+    ],
+    "average_score": 0.82151828114954,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8194390380148767,
+      0.8137388871054906,
+      0.8168912623586597,
+      0.8443008223441301,
+      0.8087831165106365
+    ],
+    "average_score": 0.8206306252667588,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8158046395203307,
+      0.812449725400494,
+      0.821745628445604,
+      0.8419417438947988,
+      0.8111584815229268
+    ],
+    "average_score": 0.8206200437568307,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8303164919751064,
+      0.817197833618203,
+      0.8204898640017747,
+      0.8362894264538377,
+      0.8115706749086781
+    ],
+    "average_score": 0.8231728581915199,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8270368284137082,
+      0.817397446224272,
+      0.8206552556568119,
+      0.8438180203917974,
+      0.8089933810444839
+    ],
+    "average_score": 0.8235801863462147,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8303164919751064,
+      0.8120307909145119,
+      0.8184756679318056,
+      0.843356069916262,
+      0.8102830610122308
+    ],
+    "average_score": 0.8228924163499833,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8295546895072431,
+      0.8163110352883339,
+      0.8217993120277541,
+      0.843041778143651,
+      0.8061916588647114
+    ],
+    "average_score": 0.8233796947663388,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8317433092731991,
+      0.8100756712916395,
+      0.8230691163001478,
+      0.843041778143651,
+      0.8126545227495778
+    ],
+    "average_score": 0.8241168795516429,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.826694919369237,
+      0.8100756712916395,
+      0.8167008225782182,
+      0.849654467880536,
+      0.8100756712916395
+    ],
+    "average_score": 0.8226403104822542,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8232463458074025,
+      0.815025984486925,
+      0.8168846899224805,
+      0.8449191755303168,
+      0.8133257082316546
+    ],
+    "average_score": 0.8226803807957559,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8268672351706055,
+      0.8113661340749873,
+      0.8244100300889183,
+      0.8419417438947988,
+      0.813940855098506
+    ],
+    "average_score": 0.8237051996655632,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8227062043662595,
+      0.8122418232982902,
+      0.8240910807028986,
+      0.8416175425671918,
+      0.8137388871054906
+    ],
+    "average_score": 0.8228791076080262,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8225204777179517,
+      0.80920049471885,
+      0.8072402198725779,
+      0.8427174800187291,
+      0.8107337389288453
+    ],
+    "average_score": 0.8184824822513909,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8237613861936396,
+      0.8197689079616192,
+      0.821745628445604,
+      0.8449191755303168,
+      0.8079115992748838
+    ],
+    "average_score": 0.8236213394812127,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8326732073643411,
+      0.8157037246873023,
+      0.8195652724433377,
+      0.8373866381428103,
+      0.8064077514983463
+    ],
+    "average_score": 0.8223473188272277,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8279597765858718,
+      0.8133257082316546,
+      0.8195652724433377,
+      0.8474477813715492,
+      0.8079115992748838
+    ],
+    "average_score": 0.8232420275814594,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.830146351648142,
+      0.812449725400494,
+      0.8179783698160263,
+      0.8441423872864336,
+      0.8053275630739304
+    ],
+    "average_score": 0.8220088794450053,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8228890764618565,
+      0.8113661340749873,
+      0.8240910807028986,
+      0.8439814598423083,
+      0.8137388871054906
+    ],
+    "average_score": 0.8232133276375082,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8239275864639237,
+      0.8199629654975419,
+      0.8219085805934242,
+      0.8428808896367854,
+      0.8068303145290221
+    ],
+    "average_score": 0.8231020673441394,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8306487613350915,
+      0.8105165966398205,
+      0.8245655239176376,
+      0.8386449742746458,
+      0.8104873321026757
+    ],
+    "average_score": 0.8229726376539741,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8272037197073431,
+      0.813533846535217,
+      0.8198872712221079,
+      0.8490189792427928,
+      0.8055401375375365
+    ],
+    "average_score": 0.8230367908489995,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8228890764618565,
+      0.8109476917760069,
+      0.8170787640019993,
+      0.8432001651435954,
+      0.8018751219529741
+    ],
+    "average_score": 0.8191981638672864,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8181661185008392,
+      0.8087831165106365,
+      0.8228364017272417,
+      0.8417809083059251,
+      0.8100756712916395
+    ],
+    "average_score": 0.8203284432672564,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8270368284137082,
+      0.813533846535217,
+      0.8175481448743432,
+      0.8419417438947988,
+      0.8079115992748838
+    ],
+    "average_score": 0.8215944325985902,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8279597765858718,
+      0.8133257082316546,
+      0.8215799542834428,
+      0.8416175425671918,
+      0.8111584815229268
+    ],
+    "average_score": 0.8231282926382175,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8246835879839626,
+      0.8148237795093484,
+      0.8215799542834428,
+      0.845686482924457,
+      0.8096514338374804
+    ],
+    "average_score": 0.8232850477077382,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8290528116227169,
+      0.8042158142326697,
+      0.8192323221029616,
+      0.843041778143651,
+      0.815025984486925
+    ],
+    "average_score": 0.8221137421177849,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8282966607980787,
+      0.8146185090793248,
+      0.8203422870911429,
+      0.8509172012830793,
+      0.8070524656400143
+    ],
+    "average_score": 0.8242454247783281,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8293900688434535,
+      0.8059723235559862,
+      0.8228890764618565,
+      0.8403523293423191,
+      0.8182845765597975
+    ],
+    "average_score": 0.8233776749526825,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8201540840875243,
+      0.8083530312424158,
+      0.8175940571488254,
+      0.8493301825630402,
+      0.8087831165106365
+    ],
+    "average_score": 0.8208428943104884,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8221561395289891,
+      0.8133257082316546,
+      0.8190616898254701,
+      0.840938374706748,
+      0.8118166022908782
+    ],
+    "average_score": 0.8214597029167481,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8241595860406316,
+      0.8068295913111887,
+      0.8242518887435109,
+      0.8416175425671918,
+      0.812449725400494
+    ],
+    "average_score": 0.8218616668126033,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8203422870911429,
+      0.8107337389288453,
+      0.8240910807028986,
+      0.8423830173764414,
+      0.8085696753203593
+    ],
+    "average_score": 0.8212239598839375,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8165074214290006,
+      0.8089933810444839,
+      0.8152251488001089,
+      0.8472868217054264,
+      0.8157037246873023
+    ],
+    "average_score": 0.8207432995332644,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8290528116227169,
+      0.8215482192226379,
+      0.8212403591870411,
+      0.84441359169499,
+      0.8070524656400143
+    ],
+    "average_score": 0.8246614894734801,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8282966607980787,
+      0.8144101479915433,
+      0.8192323221029616,
+      0.8461844140222248,
+      0.8148237795093484
+    ],
+    "average_score": 0.8245894648848313,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8252505554423649,
+      0.812682448964769,
+      0.8203217223519854,
+      0.8493301825630402,
+      0.8064077514983463
+    ],
+    "average_score": 0.8227985321641011,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.828345652304549,
+      0.8070524656400143,
+      0.8126545227495778,
+      0.8471233777560973,
+      0.8094345339654462
+    ],
+    "average_score": 0.820922110483137,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.824886871348379,
+      0.8105165966398205,
+      0.8226704580075149,
+      0.8412831406359909,
+      0.8133257082316546
+    ],
+    "average_score": 0.822536554972672,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8168846899224805,
+      0.8115706749086781,
+      0.8204898640017747,
+      0.8438180203917974,
+      0.8048927196834175
+    ],
+    "average_score": 0.8195311937816296,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8235924597240536,
+      0.8048260456465115,
+      0.8222263975698728,
+      0.8432001651435954,
+      0.811970521225398
+    ],
+    "average_score": 0.8211631178618862,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.817263350355318,
+      0.8092144111715444,
+      0.8253440071429082,
+      0.845243583025706,
+      0.8089933810444839
+    ],
+    "average_score": 0.821211746547992,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8183509594014852,
+      0.8144101479915433,
+      0.8177876904570971,
+      0.8425515293552069,
+      0.8025133626063858
+    ],
+    "average_score": 0.8191227379623436,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8136328025028224,
+      0.8096514338374804,
+      0.8229996313998599,
+      0.8441423872864336,
+      0.8087831165106365
+    ],
+    "average_score": 0.8198418743074466,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8159918809521538,
+      0.8089933810444839,
+      0.8206552556568119,
+      0.8433124288156025,
+      0.8064077514983463
+    ],
+    "average_score": 0.8190721395934798,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8272037197073431,
+      0.813533846535217,
+      0.8215799542834428,
+      0.8422119234715302,
+      0.8087831165106365
+    ],
+    "average_score": 0.8226625121016339,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8303164919751064,
+      0.8029055658090182,
+      0.8229996313998599,
+      0.8394194293254165,
+      0.8128562404513922
+    ],
+    "average_score": 0.8216994717921586,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8279597765858718,
+      0.8094345339654462,
+      0.8250191936630445,
+      0.8471233777560973,
+      0.8115706749086781
+    ],
+    "average_score": 0.8242215113758276,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.826694919369237,
+      0.8083530312424158,
+      0.8154212968266696,
+      0.8498129320479594,
+      0.8083530312424158
+    ],
+    "average_score": 0.8217270421457394,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8190659732546284,
+      0.8098651375172561,
+      0.8253440071429082,
+      0.8472868217054264,
+      0.8148237795093484
+    ],
+    "average_score": 0.8232771438259135,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8265198600535089,
+      0.8105165966398205,
+      0.8192323221029616,
+      0.8472868217054264,
+      0.8115706749086781
+    ],
+    "average_score": 0.823025255082079,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8246835879839626,
+      0.8129000356757975,
+      0.8242518887435109,
+      0.8425515293552069,
+      0.8102830610122308
+    ],
+    "average_score": 0.8229340205541418,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8284610825618093,
+      0.81419867061631,
+      0.823160166823888,
+      0.8435095114219264,
+      0.8077016171827849
+    ],
+    "average_score": 0.8234062097213437,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.821745628445604,
+      0.8169951948603588,
+      0.8203217223519854,
+      0.8449191755303168,
+      0.8064077514983463
+    ],
+    "average_score": 0.8220778945373223,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8315783308122215,
+      0.8129000356757975,
+      0.823160166823888,
+      0.8458627518516718,
+      0.8102830610122308
+    ],
+    "average_score": 0.8247568692351619,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8250191936630445,
+      0.8148237795093484,
+      0.8203422870911429,
+      0.8436520489847074,
+      0.8053275630739304
+    ],
+    "average_score": 0.8218329744644347,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8281295655721711,
+      0.8152834747117746,
+      0.8198005917081811,
+      0.8395826654454674,
+      0.8079115992748838
+    ],
+    "average_score": 0.8221415793424957,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8277872731988106,
+      0.8133257082316546,
+      0.8156144525409099,
+      0.8447531975662692,
+      0.8077016171827849
+    ],
+    "average_score": 0.821836449744086,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8105641454054899,
+      0.8072208180925666,
+      0.8273679293185743,
+      0.8392536252920753,
+      0.8051117659551875
+    ],
+    "average_score": 0.8179036568127787,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.821745628445604,
+      0.8061411115490738,
+      0.8287819852174879,
+      0.8377050629461293,
+      0.7979817086120845
+    ],
+    "average_score": 0.8184710993540758,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8027151020251367,
+      0.8100726361432358,
+      0.8286228508248857,
+      0.8403523293423191,
+      0.8027350801741531
+    ],
+    "average_score": 0.8168995997019461,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.7988565414136786,
+      0.8098457630027436,
+      0.8216166491365008,
+      0.8370579503449078,
+      0.8070524656400143
+    ],
+    "average_score": 0.8148858739075691,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8262752186444047,
+      0.8195718877270575,
+      0.8203217223519854,
+      0.8450826306951393,
+      0.8077016171827849
+    ],
+    "average_score": 0.8237906153202743,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8282966607980787,
+      0.8129000356757975,
+      0.822068830490104,
+      0.841000522095454,
+      0.8064077514983463
+    ],
+    "average_score": 0.8221347601115561,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8303164919751064,
+      0.817197833618203,
+      0.8219085805934242,
+      0.8507587740308571,
+      0.8051117659551875
+    ],
+    "average_score": 0.8250586892345556,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.826694919369237,
+      0.8161116401359938,
+      0.8168912623586597,
+      0.8436520489847074,
+      0.8038136424090638
+    ],
+    "average_score": 0.8214327026515325,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8076376679504894,
+      0.8074538858078096,
+      0.8300327586290046,
+      0.8383212301178962,
+      0.8048927196834175
+    ],
+    "average_score": 0.8176676524377235,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8229996313998599,
+      0.82124271377922,
+      0.8184756679318056,
+      0.845243583025706,
+      0.7973495937697104
+    ],
+    "average_score": 0.8210622379812603,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8192323221029616,
+      0.8107337389288453,
+      0.8178633899118033,
+      0.8458627518516718,
+      0.8007972140628422
+    ],
+    "average_score": 0.8188978833716248,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8215799542834428,
+      0.813114446615275,
+      0.8175481448743432,
+      0.839743353532045,
+      0.7992816564614756
+    ],
+    "average_score": 0.8182535111533162,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8223303475542172,
+      0.8146185090793248,
+      0.8121658755808188,
+      0.8416175425671918,
+      0.8020899541493661
+    ],
+    "average_score": 0.8185644457861837,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8045856704450713,
+      0.813766262318881,
+      0.8276883828859564,
+      0.843356069916262,
+      0.7966795930421207
+    ],
+    "average_score": 0.8172151957216582,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8188882586500283,
+      0.8161116401359938,
+      0.8150452316936607,
+      0.843041778143651,
+      0.7966795930421207
+    ],
+    "average_score": 0.817953300333091,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8240910807028986,
+      0.813533846535217,
+      0.8214115380095549,
+      0.8439814598423083,
+      0.8053275630739304
+    ],
+    "average_score": 0.8216690976327818,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8328383445975911,
+      0.8094345339654462,
+      0.8244100300889183,
+      0.8411562709921809,
+      0.8079115992748838
+    ],
+    "average_score": 0.823150155783804,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8326732073643411,
+      0.8133257082316546,
+      0.8194001761883093,
+      0.8499689698035471,
+      0.8027350801741531
+    ],
+    "average_score": 0.823620628352401,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8288801340663864,
+      0.8118166022908782,
+      0.8156144525409099,
+      0.8436520489847074,
+      0.8053275630739304
+    ],
+    "average_score": 0.8210581601913625,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8014309488902107,
+      0.8100726361432358,
+      0.8276883828859564,
+      0.8383212301178962,
+      0.8038136424090638
+    ],
+    "average_score": 0.8162653680892726,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8303164919751064,
+      0.817197833618203,
+      0.8209778688918848,
+      0.849654467880536,
+      0.8040323864860561
+    ],
+    "average_score": 0.8244358097703574,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8215799542834428,
+      0.8107337389288453,
+      0.8175481448743432,
+      0.8395826654454674,
+      0.7956050228310502
+    ],
+    "average_score": 0.8170099052726298,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8250191936630445,
+      0.8157037246873023,
+      0.824852749907443,
+      0.8485508076526521,
+      0.8040323864860561
+    ],
+    "average_score": 0.8236317724792996,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8279597765858718,
+      0.8076836126984965,
+      0.8265951968935974,
+      0.8406815041307735,
+      0.8102830610122308
+    ],
+    "average_score": 0.8226406302641941,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8287047293032623,
+      0.8148506830327141,
+      0.8239275864639237,
+      0.850434591142166,
+      0.8027350801741531
+    ],
+    "average_score": 0.8241305340232439,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8274340389164926,
+      0.8100726361432358,
+      0.8152251488001089,
+      0.8445846765020335,
+      0.8098651375172561
+    ],
+    "average_score": 0.8214363275758254,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8029171199247347,
+      0.805904904509108,
+      0.8319056593071432,
+      0.8357928094700239,
+      0.8027350801741531
+    ],
+    "average_score": 0.8158511146770326,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8279597765858718,
+      0.8211385104733229,
+      0.8223303475542172,
+      0.8352724768069575,
+      0.8038136424090638
+    ],
+    "average_score": 0.8221029507658866,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8188882586500283,
+      0.8139840508922559,
+      0.8194001761883093,
+      0.8417809083059251,
+      0.8005794548562213
+    ],
+    "average_score": 0.8189265697785479,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8299735134033821,
+      0.8129000356757975,
+      0.8228364017272417,
+      0.8478921100138048,
+      0.8038136424090638
+    ],
+    "average_score": 0.823483140645858,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8281295655721711,
+      0.8210513956679899,
+      0.8204898640017747,
+      0.8425515293552069,
+      0.8085696753203593
+    ],
+    "average_score": 0.8241584059835004,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8292227829914134,
+      0.8094345339654462,
+      0.8168846899224805,
+      0.8399015131357209,
+      0.8100756712916395
+    ],
+    "average_score": 0.82110383826134,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8279597765858718,
+      0.8133257082316546,
+      0.8195652724433377,
+      0.8499689698035471,
+      0.8089933810444839
+    ],
+    "average_score": 0.823962621621779,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8214311239310383,
+      0.8122418232982902,
+      0.8177876904570971,
+      0.8439814598423083,
+      0.8077016171827849
+    ],
+    "average_score": 0.8206287429423037,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8167008225782182,
+      0.8111584815229268,
+      0.8206552556568119,
+      0.8419417438947988,
+      0.8111584815229268
+    ],
+    "average_score": 0.8203229570351365,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8290528116227169,
+      0.813533846535217,
+      0.8242518887435109,
+      0.8416175425671918,
+      0.8077016171827849
+    ],
+    "average_score": 0.8232315413302842,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8210663970340412,
+      0.8133257082316546,
+      0.8186377103153082,
+      0.8466599007934614,
+      0.8087831165106365
+    ],
+    "average_score": 0.8216945665770204,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8268672351706055,
+      0.8133257082316546,
+      0.823160166823888,
+      0.8417809083059251,
+      0.8102830610122308
+    ],
+    "average_score": 0.8230834159088609,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.826694919369237,
+      0.8096514338374804,
+      0.8250191936630445,
+      0.8471233777560973,
+      0.8077016171827849
+    ],
+    "average_score": 0.8232381083617287,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "StackingClassifier",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "final_estimator": "LogisticRegression",
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8290528116227169,
+      0.8122418232982902,
+      0.8198872712221079,
+      0.8474477813715492,
+      0.8016570214737658
+    ],
+    "average_score": 0.822057341797686,
+    "n_jobs": 2,
+    "datetime": null
+  }
+]

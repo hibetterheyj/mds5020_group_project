@@ -1,26 +1,3168 @@
-{
-  "classifier": "VotingClassifier_Hard",
-  "base_estimators": [
-    "ExtraTreesClassifier_NoHandcrafted",
-    "LogisticRegression_NoHandcrafted",
-    "LinearSVC_WithHandcrafted",
-    "SGDClassifier_NoHandcrafted",
-    "SVC_Sigmoid_NoHandcrafted",
-    "ExtraTreesClassifier_WithHandcrafted",
-    "MLPClassifier_WithHandcrafted",
-    "SVC_Poly_WithHandcrafted",
-    "MultinomialNB_WithHandcrafted",
-    "BernoulliNB_WithHandcrafted"
-  ],
-  "cv_folds": 5,
-  "cv_scores": [
-    0.8228190089028378,
-    0.8187970267162973,
-    0.8277713377328066,
-    0.8405084750179141,
-    0.8132755153853966
-  ],
-  "average_score": 0.8246342727510505,
-  "n_jobs": 2,
-  "datetime": null
-}
+[
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8228190089028378,
+      0.8187970267162973,
+      0.8277713377328066,
+      0.8405084750179141,
+      0.8132755153853966
+    ],
+    "average_score": 0.8246342727510505,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8275294771781757,
+      0.8236103599543297,
+      0.8215799542834428,
+      0.8552757135706537,
+      0.8126545227495778
+    ],
+    "average_score": 0.8281300055472359,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8315829029609322,
+      0.8167118416413852,
+      0.8170547239310146,
+      0.8522365077904349,
+      0.8079115992748838
+    ],
+    "average_score": 0.8250995151197301,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8290924292865473,
+      0.8234215758578177,
+      0.8174450438873729,
+      0.8549896264109943,
+      0.8100756712916395
+    ],
+    "average_score": 0.8270048693468743,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8276883828859564,
+      0.8182845765597975,
+      0.8181661185008392,
+      0.8480671655578781,
+      0.8098651375172561
+    ],
+    "average_score": 0.8244142762043454,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8211351295973774,
+      0.8152706262649808,
+      0.8204898640017747,
+      0.8395559129461766,
+      0.8106885095658151
+    ],
+    "average_score": 0.821428008475225,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8209778688918848,
+      0.8195718877270575,
+      0.8195652724433377,
+      0.847915949650555,
+      0.8102830610122308
+    ],
+    "average_score": 0.8236628079450131,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8233180274684615,
+      0.8148237795093484,
+      0.8203217223519854,
+      0.8483624479064439,
+      0.8077016171827849
+    ],
+    "average_score": 0.8229055188838048,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8175481448743432,
+      0.8167118416413852,
+      0.8170547239310146,
+      0.8424092640201546,
+      0.8104873321026757
+    ],
+    "average_score": 0.8208422613139147,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8198872712221079,
+      0.8181433262763076,
+      0.8168846899224805,
+      0.8427086439077719,
+      0.8079115992748838
+    ],
+    "average_score": 0.8211071061207104,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8208179173778467,
+      0.8104873321026757,
+      0.8176238666947262,
+      0.8455580573970752,
+      0.8085696753203593
+    ],
+    "average_score": 0.8206113697785365,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8306340470101233,
+      0.8165074214290006,
+      0.8179729866964559,
+      0.8455580573970752,
+      0.8081184237539591
+    ],
+    "average_score": 0.8237581872573229,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8320654006296334,
+      0.816580738941742,
+      0.8183509594014852,
+      0.8471233777560973,
+      0.804444771450833
+    ],
+    "average_score": 0.8237130496359581,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8320654006296334,
+      0.8176669137477518,
+      0.8188750676041102,
+      0.8455154242327705,
+      0.8061411115490738
+    ],
+    "average_score": 0.8240527835526679,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8336251213438567,
+      0.813940855098506,
+      0.8152706262649808,
+      0.8463453771174249,
+      0.8040323864860561
+    ],
+    "average_score": 0.8226428732621649,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8322225526291097,
+      0.8186812154781619,
+      0.8170787640019993,
+      0.8427174800187291,
+      0.8094345339654462
+    ],
+    "average_score": 0.8240269092186893,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8237613861936396,
+      0.8198410814884085,
+      0.8159092115475073,
+      0.8404014221960612,
+      0.7981275189195398
+    ],
+    "average_score": 0.8196081240690314,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.823160166823888,
+      0.8169951948603588,
+      0.8156242510409261,
+      0.8370579503449078,
+      0.8042478749834773
+    ],
+    "average_score": 0.8194170876107115,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8229996313998599,
+      0.8148237795093484,
+      0.8187120075213312,
+      0.8383212301178962,
+      0.8096514338374804
+    ],
+    "average_score": 0.8209016164771832,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8214115380095549,
+      0.8135452779489297,
+      0.8252505554423649,
+      0.8420382266826997,
+      0.8021889614368203
+    ],
+    "average_score": 0.8208869119040738,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8204898640017747,
+      0.817397446224272,
+      0.8199771071244717,
+      0.8416175425671918,
+      0.8079100272823427
+    ],
+    "average_score": 0.8214783974400106,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8244868521230659,
+      0.8235924597240536,
+      0.8209778688918848,
+      0.8445161584081777,
+      0.8118319570389906
+    ],
+    "average_score": 0.8250810592372346,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.828443942620445,
+      0.8186812154781619,
+      0.8179729866964559,
+      0.851673460699271,
+      0.804460134339194
+    ],
+    "average_score": 0.8242463479667055,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8295388136354056,
+      0.8126545227495778,
+      0.8187120075213312,
+      0.8472598680344877,
+      0.8087831165106365
+    ],
+    "average_score": 0.8233896656902878,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8274925779317169,
+      0.8136328025028224,
+      0.8168846899224805,
+      0.847684970244376,
+      0.808720202578805
+    ],
+    "average_score": 0.8228830486360401,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8296825391288575,
+      0.8125475658483585,
+      0.8190616898254701,
+      0.8467196132342282,
+      0.8081184237539591
+    ],
+    "average_score": 0.8232259663581747,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8282979648999181,
+      0.8102830610122308,
+      0.8134431605398221,
+      0.8419417438947988,
+      0.7971296158919674
+    ],
+    "average_score": 0.8182191092477474,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8217376410850079,
+      0.8170787640019993,
+      0.8186377103153082,
+      0.8370658858581492,
+      0.8074404888029778
+    ],
+    "average_score": 0.8203920980126884,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.815986805697244,
+      0.8198005917081811,
+      0.8195652724433377,
+      0.8386002820042266,
+      0.8081184237539591
+    ],
+    "average_score": 0.8204142751213898,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8177071246521203,
+      0.8152251488001089,
+      0.8201508103076427,
+      0.8388030305624355,
+      0.8025133626063858
+    ],
+    "average_score": 0.8188798953857386,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8203500755194798,
+      0.8056673047833326,
+      0.8170547239310146,
+      0.8427086439077719,
+      0.8055401375375365
+    ],
+    "average_score": 0.818264177135827,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8258113353595374,
+      0.8210513956679899,
+      0.8157967885508407,
+      0.8458627518516718,
+      0.8068303145290221
+    ],
+    "average_score": 0.8230705171918125,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8281494382406174,
+      0.8197689079616192,
+      0.8167118416413852,
+      0.8436605083066436,
+      0.8089933810444839
+    ],
+    "average_score": 0.8234568154389498,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8181433262763076,
+      0.813766262318881,
+      0.8152251488001089,
+      0.8394838892437795,
+      0.8012109081831269
+    ],
+    "average_score": 0.8175659069644408,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.821745628445604,
+      0.8126545227495778,
+      0.8134431605398221,
+      0.8345257907418423,
+      0.7988302004966974
+    ],
+    "average_score": 0.8162398605947088,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8172219642932511,
+      0.8148237795093484,
+      0.8190616898254701,
+      0.8372235869961361,
+      0.7953752913752914
+    ],
+    "average_score": 0.8167412623998993,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8285873891217878,
+      0.8273679293185743,
+      0.8255024162699293,
+      0.847956787395286,
+      0.8145285689697392
+    ],
+    "average_score": 0.8287886182150632,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8315829029609322,
+      0.8210513956679899,
+      0.8226704580075149,
+      0.8526317341575146,
+      0.815025984486925
+    ],
+    "average_score": 0.8285924950561754,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8314336288853617,
+      0.817197833618203,
+      0.8174450438873729,
+      0.8515269304782181,
+      0.815025984486925
+    ],
+    "average_score": 0.8265258842712161,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8296825391288575,
+      0.8246835879839626,
+      0.8192323221029616,
+      0.8538836458674527,
+      0.8141397752538909
+    ],
+    "average_score": 0.8283243740674251,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.833112134657984,
+      0.8245116873497972,
+      0.8141840575760032,
+      0.8482159922814173,
+      0.8102830610122308
+    ],
+    "average_score": 0.8260613865754864,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8306340470101233,
+      0.8169951948603588,
+      0.8156144525409099,
+      0.8476062764146265,
+      0.8081184237539591
+    ],
+    "average_score": 0.8237936789159954,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8226831914218242,
+      0.8152706262649808,
+      0.822068830490104,
+      0.8417546373442456,
+      0.8123582159762444
+    ],
+    "average_score": 0.8228271002994798,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8194074141710865,
+      0.8174450438873729,
+      0.8219085805934242,
+      0.8409394083519915,
+      0.8085227007155603
+    ],
+    "average_score": 0.8216446295438871,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8239231003904078,
+      0.8163110352883339,
+      0.8183108799137635,
+      0.8512268242279594,
+      0.8077016171827849
+    ],
+    "average_score": 0.82349469140065,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8204990337938136,
+      0.8156242510409261,
+      0.8183108799137635,
+      0.8446102921611409,
+      0.8055401375375365
+    ],
+    "average_score": 0.8209169188894361,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.833112134657984,
+      0.8227062043662595,
+      0.8192323221029616,
+      0.8441423872864336,
+      0.8077016171827849
+    ],
+    "average_score": 0.8253789331192847,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8337748284841762,
+      0.8276120344228735,
+      0.8174450438873729,
+      0.8463453771174249,
+      0.8107337389288453
+    ],
+    "average_score": 0.8271822045681386,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8333181151858476,
+      0.8185414863619868,
+      0.8197689079616192,
+      0.8440636465388601,
+      0.804444771450833
+    ],
+    "average_score": 0.8240273854998292,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8323771343720529,
+      0.8232298992275038,
+      0.8167008225782182,
+      0.8431387384517363,
+      0.8077016171827849
+    ],
+    "average_score": 0.8246296423624593,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8234732324784573,
+      0.8159092115475073,
+      0.8203217223519854,
+      0.8449191755303168,
+      0.804444771450833
+    ],
+    "average_score": 0.8218136226718199,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8303639258028794,
+      0.8243370271157573,
+      0.8198872712221079,
+      0.8456176610475212,
+      0.8091060534719948
+    ],
+    "average_score": 0.8258623877320522,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8244868521230659,
+      0.8254281947494791,
+      0.8208179173778467,
+      0.8436812345429241,
+      0.808720202578805
+    ],
+    "average_score": 0.8246268802744241,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8277713377328066,
+      0.8188750676041102,
+      0.8163576180086212,
+      0.8488653452474507,
+      0.8018751219529741
+    ],
+    "average_score": 0.8227488981091925,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8300987520877688,
+      0.8134431605398221,
+      0.8165361581130157,
+      0.8435095114219264,
+      0.8074404888029778
+    ],
+    "average_score": 0.8222056141931022,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8209302325581396,
+      0.8198005917081811,
+      0.8164589238352172,
+      0.8420392960810748,
+      0.803794866165327
+    ],
+    "average_score": 0.8206047820695879,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.828443942620445,
+      0.8186812154781619,
+      0.8187120075213312,
+      0.8449191755303168,
+      0.8029535089650759
+    ],
+    "average_score": 0.8227419700230663,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8270554772340628,
+      0.817397446224272,
+      0.8179729866964559,
+      0.8455580573970752,
+      0.8143356719018082
+    ],
+    "average_score": 0.8244639278907349,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8311274374747828,
+      0.8176669137477518,
+      0.8196212426087979,
+      0.8483898656821405,
+      0.8070524656400143
+    ],
+    "average_score": 0.8247715850306975,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8309704830053668,
+      0.8163688707526116,
+      0.8201540840875243,
+      0.8467889567072803,
+      0.8100726361432358
+    ],
+    "average_score": 0.8248710061392037,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8325291646080528,
+      0.8128562404513922,
+      0.8152706262649808,
+      0.8455580573970752,
+      0.8077016171827849
+    ],
+    "average_score": 0.8227831411808572,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8309704830053668,
+      0.817397446224272,
+      0.8170787640019993,
+      0.8419417438947988,
+      0.8107337389288453
+    ],
+    "average_score": 0.8236244352110564,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8273679293185743,
+      0.8161538743404338,
+      0.817197833618203,
+      0.8391178650715457,
+      0.8007513947587034
+    ],
+    "average_score": 0.8201177794214921,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8222263975698728,
+      0.8157037246873023,
+      0.8145370577419996,
+      0.8405181962478651,
+      0.8102830610122308
+    ],
+    "average_score": 0.8206536874518541,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.822068830490104,
+      0.8109476917760069,
+      0.8187120075213312,
+      0.8417809083059251,
+      0.8133257082316546
+    ],
+    "average_score": 0.8213670292650044,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8203217223519854,
+      0.8135452779489297,
+      0.8265198600535089,
+      0.840938374706748,
+      0.8048260456465115
+    ],
+    "average_score": 0.8212302561415367,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8204898640017747,
+      0.812449725400494,
+      0.8187120075213312,
+      0.8438180203917974,
+      0.8089910382757755
+    ],
+    "average_score": 0.8208921311182346,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8275294771781757,
+      0.813766262318881,
+      0.8149054581018382,
+      0.8439814598423083,
+      0.8059723235559862
+    ],
+    "average_score": 0.8212309961994378,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8287819852174879,
+      0.8074538858078096,
+      0.8132505352657933,
+      0.8400128371866135,
+      0.8068295913111887
+    ],
+    "average_score": 0.8192657669577785,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8199771071244717,
+      0.8174332165188823,
+      0.8204597575985978,
+      0.8361564121470181,
+      0.8015930521764253
+    ],
+    "average_score": 0.819123909113079,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8234207865467511,
+      0.8111548327944289,
+      0.8126545227495778,
+      0.8301614016212486,
+      0.7981275189195398
+    ],
+    "average_score": 0.8151038125263093,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8199771071244717,
+      0.8122376401976775,
+      0.8205275974813478,
+      0.8385643205978935,
+      0.7992026070219245
+    ],
+    "average_score": 0.818101854484663,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.825961882789713,
+      0.8184843931664971,
+      0.8159665041707153,
+      0.8480671655578781,
+      0.8068303145290221
+    ],
+    "average_score": 0.8230620520427652,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8281494382406174,
+      0.817197833618203,
+      0.8179729866964559,
+      0.8458627518516718,
+      0.8102830610122308
+    ],
+    "average_score": 0.8238932142838358,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8204898640017747,
+      0.8124616595879749,
+      0.8152251488001089,
+      0.8394838892437795,
+      0.8012109081831269
+    ],
+    "average_score": 0.817774293963353,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8228364017272417,
+      0.8100756712916395,
+      0.8134431605398221,
+      0.8390852331309429,
+      0.8001340055293543
+    ],
+    "average_score": 0.8171148944438,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8159665041707153,
+      0.8122418232982902,
+      0.8179729866964559,
+      0.8373866381428103,
+      0.7966795930421207
+    ],
+    "average_score": 0.8160495090700784,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8143619934573004,
+      0.812682448964769,
+      0.8177876904570971,
+      0.833631995327599,
+      0.7992816564614756
+    ],
+    "average_score": 0.8155491569336484,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8307780386392145,
+      0.8225204777179517,
+      0.8194001761883093,
+      0.845243583025706,
+      0.8137388871054906
+    ],
+    "average_score": 0.8263362325353345,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8301869151620117,
+      0.824886871348379,
+      0.8176238666947262,
+      0.8474477813715492,
+      0.8169951948603588
+    ],
+    "average_score": 0.827428125887405,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8311274374747828,
+      0.8198410814884085,
+      0.8186812154781619,
+      0.8438847431434999,
+      0.8070524656400143
+    ],
+    "average_score": 0.8241173886449735,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8312818131937704,
+      0.8195718877270575,
+      0.8156144525409099,
+      0.8396628616704096,
+      0.8113661340749873
+    ],
+    "average_score": 0.823499429841427,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8212897185693027,
+      0.8146185090793248,
+      0.8181433262763076,
+      0.846020957333424,
+      0.8105165966398205
+    ],
+    "average_score": 0.8221178215796359,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8275294771781757,
+      0.8233167104050922,
+      0.8190659732546284,
+      0.8356372855451973,
+      0.8059723235559862
+    ],
+    "average_score": 0.8223043539878161,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8273494232265131,
+      0.8163110352883339,
+      0.8163576180086212,
+      0.8447531975662692,
+      0.8029535089650759
+    ],
+    "average_score": 0.8215449566109626,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8221621746677424,
+      0.8120121452732155,
+      0.8229996313998599,
+      0.8396991375044981,
+      0.8069400599577812
+    ],
+    "average_score": 0.8207626297606193,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8225335594012444,
+      0.8210513956679899,
+      0.8195652724433377,
+      0.847915949650555,
+      0.8018751219529741
+    ],
+    "average_score": 0.8225882598232201,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8245655239176376,
+      0.82124271377922,
+      0.8179729866964559,
+      0.8447613645571672,
+      0.8025133626063858
+    ],
+    "average_score": 0.8222111903113734,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8192588116590278,
+      0.810926779729867,
+      0.8161334184857643,
+      0.842560171666318,
+      0.8061587834404437
+    ],
+    "average_score": 0.8190075929962841,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8237757505829061,
+      0.8159665041707153,
+      0.8170547239310146,
+      0.8403610117272908,
+      0.8068303145290221
+    ],
+    "average_score": 0.8207976609881898,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8256581860450382,
+      0.8117721290787813,
+      0.8152706262649808,
+      0.843356069916262,
+      0.7977546484523229
+    ],
+    "average_score": 0.8187623319514771,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8158366710352113,
+      0.8089146456041596,
+      0.8184756679318056,
+      0.8347215101151011,
+      0.8050777954140572
+    ],
+    "average_score": 0.816605258020067,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8111743082766091,
+      0.8105641454054899,
+      0.8215799542834428,
+      0.8325291646080528,
+      0.8068303145290221
+    ],
+    "average_score": 0.8165355774205233,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.814281472238687,
+      0.8184843931664971,
+      0.8228364017272417,
+      0.8388030305624355,
+      0.7985994014599349
+    ],
+    "average_score": 0.8186009398309592,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.814594522927648,
+      0.8087571753744397,
+      0.8137911690397232,
+      0.8389585687068435,
+      0.8057495154052425
+    ],
+    "average_score": 0.8163701902907794,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8223813009430916,
+      0.8159092115475073,
+      0.8157967885508407,
+      0.8386449742746458,
+      0.8012229350441059
+    ],
+    "average_score": 0.8187910420720381,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8234732324784573,
+      0.8148237795093484,
+      0.8143619934573004,
+      0.8364497901326899,
+      0.8033806070565259
+    ],
+    "average_score": 0.8184978805268643,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8194001761883093,
+      0.8161538743404338,
+      0.8170787640019993,
+      0.8400128371866135,
+      0.8007513947587034
+    ],
+    "average_score": 0.8186794092952118,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.823160166823888,
+      0.8102830610122308,
+      0.8152706262649808,
+      0.8373866381428103,
+      0.7983651839174901
+    ],
+    "average_score": 0.8168931352322801,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8164589238352172,
+      0.8146185090793248,
+      0.8203217223519854,
+      0.8336006820921412,
+      0.7943015765864728
+    ],
+    "average_score": 0.8158602827890282,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8218817275747509,
+      0.8170787640019993,
+      0.8166175543488922,
+      0.8361160280829905,
+      0.804196488705497
+    ],
+    "average_score": 0.819178112542826,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8207890946679204,
+      0.8185329150289333,
+      0.8162975517387315,
+      0.8342089831248466,
+      0.8016357656372791
+    ],
+    "average_score": 0.8182928620395422,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8178633899118033,
+      0.8165074214290006,
+      0.8165361581130157,
+      0.8366075989069434,
+      0.796054290588148
+    ],
+    "average_score": 0.8167137717897821,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8226831914218242,
+      0.8043926226935254,
+      0.8172219642932511,
+      0.8384572276818049,
+      0.7949794135798824
+    ],
+    "average_score": 0.8155468839340576,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8135054896559103,
+      0.8158046395203307,
+      0.8175481448743432,
+      0.8301869151620117,
+      0.7919752797897445
+    ],
+    "average_score": 0.813804093800468,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8175481448743432,
+      0.8137388871054906,
+      0.8176238666947262,
+      0.835192734110301,
+      0.7945309264368952
+    ],
+    "average_score": 0.8157269118443512,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8268115295783897,
+      0.8177998405077427,
+      0.8222263975698728,
+      0.8417546373442456,
+      0.8091060534719948
+    ],
+    "average_score": 0.8235396916944492,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8221621746677424,
+      0.8250191936630445,
+      0.823160166823888,
+      0.8386002820042266,
+      0.8085227007155603
+    ],
+    "average_score": 0.8234929035748924,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8253039294594089,
+      0.8225204777179517,
+      0.8148786561431647,
+      0.8490189792427928,
+      0.801435625953416
+    ],
+    "average_score": 0.8226315337033467,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8242100710051462,
+      0.8172219642932511,
+      0.8152090185265785,
+      0.8424092640201546,
+      0.8046691905534523
+    ],
+    "average_score": 0.8207439016797166,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8161342659579963,
+      0.8163576180086212,
+      0.8166175543488922,
+      0.8370658858581492,
+      0.8016357656372791
+    ],
+    "average_score": 0.8175622179621875,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8262552447560979,
+      0.8210513956679899,
+      0.8168846899224805,
+      0.845243583025706,
+      0.800358394393119
+    ],
+    "average_score": 0.8219586615530787,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8233925802879292,
+      0.8221561395289891,
+      0.8155283051670829,
+      0.8412142373590081,
+      0.796912807676262
+    ],
+    "average_score": 0.8198408140038543,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8223813009430916,
+      0.8182845765597975,
+      0.8159665041707153,
+      0.8408422728901157,
+      0.8059557223049606
+    ],
+    "average_score": 0.8206860753737362,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8245655239176376,
+      0.8146185090793248,
+      0.8167118416413852,
+      0.8386449742746458,
+      0.8057495154052425
+    ],
+    "average_score": 0.8200580728636473,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8194001761883093,
+      0.8148506830327141,
+      0.8181661185008392,
+      0.8400128371866135,
+      0.8020599515904773
+    ],
+    "average_score": 0.8188979532997906,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8219085805934242,
+      0.8077016171827849,
+      0.8163576180086212,
+      0.8419417438947988,
+      0.7994405901895641
+    ],
+    "average_score": 0.8174700299738387,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8141208209541372,
+      0.813114446615275,
+      0.8203217223519854,
+      0.8337685961296765,
+      0.7977546484523229
+    ],
+    "average_score": 0.8158160469006794,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8190616898254701,
+      0.8102962381235559,
+      0.8192539557475803,
+      0.8356220279894989,
+      0.7951421240128548
+    ],
+    "average_score": 0.815875207139792,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8162975517387315,
+      0.8122418232982902,
+      0.8152706262649808,
+      0.8350299227535757,
+      0.7958313466385123
+    ],
+    "average_score": 0.8149342541388181,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 7,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8250163073241688,
+      0.8197689079616192,
+      0.8145370577419996,
+      0.8450826306951393,
+      0.8051117659551875
+    ],
+    "average_score": 0.8219033339356228,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8272037288906852,
+      0.8227062043662595,
+      0.8183108799137635,
+      0.8443008223441301,
+      0.8094044829036716
+    ],
+    "average_score": 0.8243852236837019,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8269046502654025,
+      0.8263420359143419,
+      0.8192323221029616,
+      0.84571161773707,
+      0.8113661340749873
+    ],
+    "average_score": 0.8259113520189526,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8278446657159704,
+      0.8159092115475073,
+      0.8174450438873729,
+      0.8472868217054264,
+      0.8057497185678663
+    ],
+    "average_score": 0.8228470922848287,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8256581860450382,
+      0.8192539557475803,
+      0.8165361581130157,
+      0.8454020521565283,
+      0.8085696753203593
+    ],
+    "average_score": 0.8230840054765043,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8178633899118033,
+      0.8152251488001089,
+      0.8170547239310146,
+      0.8408422728901157,
+      0.8085696753203593
+    ],
+    "average_score": 0.8199110421706803,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8262752186444047,
+      0.8180817411429501,
+      0.8152706262649808,
+      0.8414516267613701,
+      0.8059723235559862
+    ],
+    "average_score": 0.8214103072739384,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8248686441459647,
+      0.8165074214290006,
+      0.8157967885508407,
+      0.8447613645571672,
+      0.8040323864860561
+    ],
+    "average_score": 0.8211933210338058,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LogisticRegression_NoHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.828443942620445,
+      0.8179783698160263,
+      0.8168846899224805,
+      0.8488653452474507,
+      0.8098651375172561
+    ],
+    "average_score": 0.8244074970247317,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "ExtraTreesClassifier_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8264365329601933,
+      0.8157037246873023,
+      0.8165361581130157,
+      0.8438180203917974,
+      0.8072720767604489
+    ],
+    "average_score": 0.8219533025825516,
+    "n_jobs": 2,
+    "datetime": null
+  },
+  {
+    "classifier": "VotingClassifier_Hard",
+    "base_estimators": [
+      "LogisticRegression_NoHandcrafted",
+      "LinearSVC_WithHandcrafted",
+      "SGDClassifier_NoHandcrafted",
+      "SVC_Sigmoid_NoHandcrafted",
+      "ExtraTreesClassifier_WithHandcrafted",
+      "MLPClassifier_WithHandcrafted",
+      "SVC_Poly_WithHandcrafted",
+      "MultinomialNB_WithHandcrafted",
+      "BernoulliNB_WithHandcrafted"
+    ],
+    "num_estimators": 9,
+    "cv_folds": 5,
+    "cv_scores": [
+      0.8203500755194798,
+      0.8199629654975419,
+      0.8148786561431647,
+      0.839743353532045,
+      0.8040323864860561
+    ],
+    "average_score": 0.8197934874356575,
+    "n_jobs": 2,
+    "datetime": null
+  }
+]
